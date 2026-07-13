@@ -2,6 +2,7 @@ import { createHashRouter } from 'react-router-dom';
 import RootLayout from './RootLayout';
 import Today from './pages/Today';
 import ListenList from './pages/listen/ListenList';
+import ListenLesson from './pages/listen/ListenLesson';
 import ReadList from './pages/read/ReadList';
 import ReadArticle from './pages/read/ReadArticle';
 import WriteHome from './pages/write/WriteHome';
@@ -17,6 +18,7 @@ export const router = createHashRouter([
     children: [
       { index: true, element: <Today /> },
       { path: 'listen', element: <ListenList /> },
+      { path: 'listen/:id', element: <ListenLesson /> },
       { path: 'read', element: <ReadList /> },
       { path: 'read/:id', element: <ReadArticle /> },
       { path: 'write', element: <WriteHome /> },

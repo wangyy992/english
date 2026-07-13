@@ -9,3 +9,10 @@ export function blankTerm(context: string, term: string): string {
   const pattern = new RegExp(escapeRegExp(term), 'i');
   return pattern.test(context) ? context.replace(pattern, '______') : context;
 }
+
+export function formatTime(seconds: number): string {
+  const total = Math.max(0, Math.floor(seconds));
+  const m = Math.floor(total / 60);
+  const s = total % 60;
+  return `${m}:${String(s).padStart(2, '0')}`;
+}

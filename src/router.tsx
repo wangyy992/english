@@ -6,6 +6,8 @@ import ListenLesson from './pages/listen/ListenLesson';
 import ReadList from './pages/read/ReadList';
 import ReadArticle from './pages/read/ReadArticle';
 import WriteHome from './pages/write/WriteHome';
+import Translate from './pages/write/Translate';
+import FreeWrite from './pages/write/FreeWrite';
 import VocabHome from './pages/vocab/VocabHome';
 import Settings from './pages/Settings';
 
@@ -22,6 +24,8 @@ export const router = createHashRouter([
       { path: 'read', element: <ReadList /> },
       { path: 'read/:id', element: <ReadArticle /> },
       { path: 'write', element: <WriteHome /> },
+      { path: 'write/translate', element: <Translate /> },
+      { path: 'write/free', element: <FreeWrite /> },
       { path: 'vocab', element: <VocabHome /> },
       { path: 'settings', element: <Settings /> },
     ],

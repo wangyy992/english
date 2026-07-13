@@ -1,18 +1,21 @@
-import { createElement, useRef } from 'react';
+import { createElement, useRef, type ReactNode } from 'react';
 import { useWordLookup } from '../context/WordLookupContext';
 import type { VocabEntry } from '../types';
 
 interface SelectableTextProps {
-  text: string;
+  context: string;
   source: VocabEntry['source'];
   className?: string;
   as?: 'span' | 'p';
+  children?: ReactNode;
 }
 
 // Wraps a sentence/paragraph so the user can select a word or phrase inside
-// it and get the §7 lookup popover. `text` doubles as the vocab entry's
-// `context` field when the selection is saved.
-export default function SelectableText({ text, source, className, as = 'span' }: SelectableTextProps) {
+// it and get the §7 lookup popover. `context` is the plain-text sentence
+// stored on the vocab entry; `children` (defaulting to `context`) is what
+// actually renders, so callers can inject markup (e.g. vocab highlights)
+// without changing what gets saved as the entry's context.
+export default function SelectableText({ context, source, className, as = 'span', children }: SelectableTextProps) {
   const ref = useRef<HTMLElement>(null);
   const { open } = useWordLookup();
 
@@ -26,7 +29,7 @@ export default function SelectableText({ text, source, className, as = 'span' }:
     const rect = sel.getRangeAt(0).getBoundingClientRect();
     open({
       word,
-      context: text,
+      context,
       source,
       anchor: { x: rect.left + rect.width / 2, y: rect.bottom },
     });
@@ -35,6 +38,6 @@ export default function SelectableText({ text, source, className, as = 'span' }:
   return createElement(
     as,
     { ref, className, onMouseUp: handleSelection, onTouchEnd: handleSelection },
-    text,
+    children ?? context,
   );
 }

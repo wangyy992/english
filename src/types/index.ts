@@ -35,7 +35,7 @@ export interface AudioLesson {
 export interface Article {
   id: string;
   title: string;
-  level: CEFRLevel | number;
+  level: CEFRLevel;
   topic: string;
   paragraphs: string[];
 }

@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 import { useSettings } from '../context/SettingsContext';
 import { testConnection } from '../lib/deepseek';
 import * as storage from '../lib/storage';
+import * as vocab from '../lib/vocab';
 import ConfirmDialog from '../components/ConfirmDialog';
 import type { CEFRLevel } from '../types';
 
@@ -74,6 +75,17 @@ export default function Settings() {
     storage.clearAll();
     setConfirmClear(false);
     window.location.reload();
+  };
+
+  const handleExportVocabCsv = () => {
+    const csv = vocab.toCsv(vocab.getAll());
+    const blob = new Blob(['﻿' + csv], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `siji-vocab-${new Date().toISOString().slice(0, 10)}.csv`;
+    a.click();
+    URL.revokeObjectURL(url);
   };
 
   return (
@@ -164,6 +176,12 @@ export default function Settings() {
             className="rounded-xl bg-gray-100 py-2.5 text-sm font-medium text-gray-700"
           >
             导出全部数据 JSON
+          </button>
+          <button
+            onClick={handleExportVocabCsv}
+            className="rounded-xl bg-gray-100 py-2.5 text-sm font-medium text-gray-700"
+          >
+            导出生词本 CSV
           </button>
           <button
             onClick={() => fileInputRef.current?.click()}

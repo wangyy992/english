@@ -4,11 +4,14 @@ import { RouterProvider } from 'react-router-dom'
 import './index.css'
 import { router } from './router'
 import { SettingsProvider } from './context/SettingsContext'
+import { WordLookupProvider } from './context/WordLookupContext'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <SettingsProvider>
-      <RouterProvider router={router} />
+      <WordLookupProvider>
+        <RouterProvider router={router} />
+      </WordLookupProvider>
     </SettingsProvider>
   </StrictMode>,
 )

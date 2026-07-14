@@ -1,0 +1,62 @@
+name: Fetch daily listening lessons
+
+on:
+  schedule:
+    - cron: '30 5 * * *' # daily, ~13:30 Beijing time
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: fetch-lessons
+  cancel-in-progress: false
+
+jobs:
+  fetch-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install transcription dependencies
+        run: pip install faster-whisper
+      - name: Fetch and transcribe new episodes
+        run: python scripts/fetch_lessons.py
+      - name: Commit new lessons
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet public/data/lessons.json 2>/dev/null && \
+             ! git status --porcelain public/data/lessons.json | grep -q .; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git add public/data/lessons.json
+            git commit -m "chore: add new listening lessons from podcast feeds"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # Pushing with GITHUB_TOKEN doesn't trigger deploy.yml, so build and
+      # deploy here whenever the lesson data changed (or on manual dispatch).
+      - uses: actions/setup-node@v4
+        if: steps.commit.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
+        with:
+          node-version: 20
+      - name: Build
+        if: steps.commit.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
+        run: |
+          npm install
+          npm run build
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.commit.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
+        with:
+          path: dist
+      - uses: actions/deploy-pages@v4
+        if: steps.commit.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'

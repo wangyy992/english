@@ -1,15 +1,23 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { getAllLessons } from '../../lib/lessons';
+import { getAllLessons, loadAllLessons } from '../../lib/lessons';
 import * as progress from '../../lib/progress';
+import type { AudioLesson } from '../../types';
 
 export default function ListenList() {
   const navigate = useNavigate();
-  const lessons = getAllLessons();
+  const [lessons, setLessons] = useState<AudioLesson[]>(getAllLessons);
   const [completedIds, setCompletedIds] = useState<string[]>([]);
 
   useEffect(() => {
     setCompletedIds(progress.getProgress().completedLessonIds);
+    let alive = true;
+    loadAllLessons().then((all) => {
+      if (alive) setLessons(all);
+    });
+    return () => {
+      alive = false;
+    };
   }, []);
 
   return (

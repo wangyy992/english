@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useSettings } from '../context/SettingsContext';
-import { getAllLessons } from '../lib/lessons';
+import { getAllLessons, loadAllLessons } from '../lib/lessons';
 import * as articlesLib from '../lib/articles';
 import * as vocab from '../lib/vocab';
 import * as writingLib from '../lib/writing';
@@ -43,6 +43,13 @@ export default function Today() {
     setLesson(pickLesson(getAllLessons(), p.completedLessonIds, settings.level));
     setArticle(pickArticle(articlesLib.getAllArticles(), p.completedArticleIds, settings.level));
     setDueCount(vocab.getDueEntries().length);
+    let alive = true;
+    loadAllLessons().then((all) => {
+      if (alive) setLesson(pickLesson(all, p.completedLessonIds, settings.level));
+    });
+    return () => {
+      alive = false;
+    };
   }, [settings.level]);
 
   useEffect(() => {

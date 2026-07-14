@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { getLessonById } from '../../lib/lessons';
+import { getLessonById, loadAllLessons } from '../../lib/lessons';
 import * as progress from '../../lib/progress';
-import type { SelfRating } from '../../types';
+import type { AudioLesson, SelfRating } from '../../types';
 import AudioPlayer from '../../components/listen/AudioPlayer';
 import ShadowControls from '../../components/listen/ShadowControls';
 import SelectableText from '../../components/SelectableText';
@@ -18,7 +18,20 @@ const RATING_OPTIONS: { value: SelfRating; label: string; className: string }[] 
 
 export default function ListenLesson() {
   const { id } = useParams<{ id: string }>();
-  const lesson = id ? getLessonById(id) : undefined;
+  // undefined = still loading remote lessons; null = definitively not found
+  const [lesson, setLesson] = useState<AudioLesson | null | undefined>(id ? getLessonById(id) : null);
+
+  useEffect(() => {
+    if (!id) return;
+    let alive = true;
+    setLesson(getLessonById(id));
+    loadAllLessons().then((all) => {
+      if (alive) setLesson(all.find((l) => l.id === id) ?? null);
+    });
+    return () => {
+      alive = false;
+    };
+  }, [id]);
 
   const audioRef = useRef<HTMLAudioElement>(null);
   const loopRef = useRef<{ start: number; end: number } | null>(null);
@@ -116,6 +129,10 @@ export default function ListenLesson() {
     window.addEventListener('keydown', handler);
     return () => window.removeEventListener('keydown', handler);
   }, [stage, rowState, lesson]);
+
+  if (lesson === undefined) {
+    return <div className="p-4 text-sm text-gray-400">加载中…</div>;
+  }
 
   if (!lesson) {
     return (

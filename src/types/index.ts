@@ -38,6 +38,9 @@ export interface Article {
   level: CEFRLevel;
   topic: string;
   paragraphs: string[];
+  // Present on daily-fetched articles: attribution for republished content.
+  sourceName?: string;
+  sourceUrl?: string;
 }
 
 export interface MyArticle extends Article {

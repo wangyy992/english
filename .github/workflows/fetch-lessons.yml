@@ -1,4 +1,4 @@
-name: Fetch daily listening lessons
+name: Fetch daily study material
 
 on:
   schedule:
@@ -8,6 +8,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/fetch_lessons.py'
+      - 'scripts/fetch_articles.py'
       - '.github/workflows/fetch-lessons.yml'
 
 permissions:
@@ -31,25 +32,26 @@ jobs:
           python-version: '3.12'
       - name: Install transcription dependencies
         run: pip install faster-whisper
-      - name: Fetch and transcribe new episodes
+      - name: Fetch and transcribe new podcast episodes
         run: python scripts/fetch_lessons.py
-      - name: Commit new lessons
+      - name: Fetch new reading articles
+        run: python scripts/fetch_articles.py
+      - name: Commit new material
         id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet public/data/lessons.json 2>/dev/null && \
-             ! git status --porcelain public/data/lessons.json | grep -q .; then
+          git add public/data/lessons.json public/data/articles.json
+          if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
-            git add public/data/lessons.json
-            git commit -m "chore: add new listening lessons from podcast feeds"
+            git commit -m "chore: add new study material from feeds"
             git push
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
       # Pushing with GITHUB_TOKEN doesn't trigger deploy.yml, so build and
-      # deploy here whenever the lesson data changed (or on manual dispatch).
+      # deploy here whenever the material changed (or on manual dispatch).
       - uses: actions/setup-node@v4
         if: steps.commit.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
         with:

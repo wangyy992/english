@@ -15,6 +15,13 @@ export default function ReadList() {
   useEffect(() => {
     setArticles(articlesLib.getAllArticles());
     setCompletedIds(progress.getProgress().completedArticleIds);
+    let alive = true;
+    articlesLib.loadAllArticles().then((all) => {
+      if (alive) setArticles(all);
+    });
+    return () => {
+      alive = false;
+    };
   }, []);
 
   const handlePasteSubmit = () => {

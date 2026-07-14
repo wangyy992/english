@@ -27,8 +27,33 @@ export function addMyArticle(input: AddMyArticleInput): MyArticle {
   return article;
 }
 
+// Remote articles are produced daily by the fetch workflow (The Conversation
+// Atom feeds, CC BY-ND) and published as a static JSON asset alongside the
+// app, same pattern as remote lessons.
+let remoteArticles: Article[] | null = null;
+let remoteFetch: Promise<Article[]> | null = null;
+
+async function fetchRemoteArticles(): Promise<Article[]> {
+  try {
+    const res = await fetch('./data/articles.json');
+    if (!res.ok) return [];
+    const data = (await res.json()) as Article[];
+    return Array.isArray(data) ? data : [];
+  } catch {
+    return [];
+  }
+}
+
+export async function loadAllArticles(): Promise<Article[]> {
+  if (remoteArticles === null) {
+    remoteFetch ??= fetchRemoteArticles();
+    remoteArticles = await remoteFetch;
+  }
+  return getAllArticles();
+}
+
 export function getAllArticles(): Article[] {
-  return [...getMyArticles(), ...PRESET_ARTICLES];
+  return [...getMyArticles(), ...(remoteArticles ?? []), ...PRESET_ARTICLES];
 }
 
 export function getArticleById(id: string): Article | undefined {

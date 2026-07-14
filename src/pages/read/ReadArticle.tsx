@@ -15,14 +15,23 @@ export default function ReadArticle() {
 
   useEffect(() => {
     if (!id) return;
-    setArticle(articlesLib.getArticleById(id) ?? null);
+    setArticle(articlesLib.getArticleById(id));
     setVocabTerms(vocab.getAll().map((e) => e.term));
     setFinished(progress.getProgress().completedArticleIds.includes(id));
+    let alive = true;
+    articlesLib.loadAllArticles().then((all) => {
+      if (alive) setArticle(all.find((a) => a.id === id) ?? null);
+    });
+    return () => {
+      alive = false;
+    };
   }, [id]);
 
   const source = useMemo(() => (id ? { module: 'read' as const, materialId: id } : null), [id]);
 
-  if (article === undefined) return null;
+  if (article === undefined) {
+    return <div className="p-4 text-sm text-gray-400">加载中…</div>;
+  }
 
   if (article === null || !source) {
     return (
@@ -62,6 +71,19 @@ export default function ReadArticle() {
           </SelectableText>
         ))}
       </div>
+
+      {article.sourceName && (
+        <p className="mt-6 text-xs text-gray-400">
+          来源:
+          {article.sourceUrl ? (
+            <a href={article.sourceUrl} target="_blank" rel="noreferrer" className="underline">
+              {article.sourceName}
+            </a>
+          ) : (
+            article.sourceName
+          )}
+        </p>
+      )}
 
       <button
         onClick={handleFinish}

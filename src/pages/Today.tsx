@@ -47,6 +47,9 @@ export default function Today() {
     loadAllLessons().then((all) => {
       if (alive) setLesson(pickLesson(all, p.completedLessonIds, settings.level));
     });
+    articlesLib.loadAllArticles().then((all) => {
+      if (alive) setArticle(pickArticle(all, p.completedArticleIds, settings.level));
+    });
     return () => {
       alive = false;
     };

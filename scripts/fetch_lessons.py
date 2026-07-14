@@ -29,19 +29,18 @@ KEEP_PER_FEED = 10
 # How many new episodes to transcribe per feed per run (bounds runtime).
 MAX_NEW_PER_RUN = 2
 
+# Each feed may define start/end trim markers (case-insensitive regex).
+# Podcast episodes carry injected ads before and after the actual programme;
+# we keep only the sentences from the first start_marker match through the
+# last end_marker match. If a marker isn't found, that side is left untrimmed.
 FEEDS = [
     {
         "prefix": "bbc-6min",
         "source": "BBC 6 Minute English",
         "rss": "https://podcasts.files.bbci.co.uk/p02pc9tn.rss",
         "level": 2,
-    },
-    {
-        "prefix": "voa-learning",
-        "source": "VOA Learning English",
-        # VOA is a U.S. federal government work: public domain.
-        "rss": "https://learningenglish.voanews.com/podcast/?count=20&zoneId=1689",
-        "level": 1,
+        "start_marker": r"minute english from bbc learning english",
+        "end_marker": r"bbclearningenglish\.com",
     },
 ]
 
@@ -109,6 +108,25 @@ def transcribe(audio_path: Path):
     return sentences
 
 
+def trim_to_programme(sentences, start_marker: str | None, end_marker: str | None):
+    """Cut injected podcast ads: keep first start_marker match → last end_marker match."""
+    first = 0
+    last = len(sentences) - 1
+    if start_marker:
+        pat = re.compile(start_marker, re.IGNORECASE)
+        for i, s in enumerate(sentences):
+            if pat.search(s["text"]):
+                first = i
+                break
+    if end_marker:
+        pat = re.compile(end_marker, re.IGNORECASE)
+        for i in range(len(sentences) - 1, -1, -1):
+            if pat.search(sentences[i]["text"]):
+                last = i
+                break
+    return sentences[first : last + 1]
+
+
 def load_existing():
     if LESSONS_JSON.exists():
         return json.loads(LESSONS_JSON.read_text())
@@ -143,6 +161,9 @@ def main() -> int:
                 continue
             finally:
                 audio_path.unlink(missing_ok=True)
+            sentences = trim_to_programme(
+                sentences, feed.get("start_marker"), feed.get("end_marker")
+            )
             if len(sentences) < 5:
                 print(f"[warn] too few sentences, skipping {lesson_id}", file=sys.stderr)
                 continue
@@ -154,7 +175,9 @@ def main() -> int:
                     "source": feed["source"],
                     "title": it["title"],
                     "level": feed["level"],
-                    "audioUrl": it["audio_url"],
+                    # https upgrade: the app is served over https, so an
+                    # http:// enclosure would be blocked as mixed content.
+                    "audioUrl": re.sub(r"^http://", "https://", it["audio_url"]),
                     "sentences": sentences,
                     "addedAt": int(time.time() * 1000),
                 },

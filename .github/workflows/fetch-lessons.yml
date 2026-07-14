@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: '30 5 * * *' # daily, ~13:30 Beijing time
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/fetch_lessons.py'
+      - '.github/workflows/fetch-lessons.yml'
 
 permissions:
   contents: write

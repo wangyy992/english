@@ -1,1 +1,589 @@
-[]
+[
+ {
+  "id": "bbc-6min-rude-emails",
+  "guid": "urn:bbc:podcast:p0nwb7hm",
+  "source": "BBC 6 Minute English",
+  "title": "Rude emails",
+  "level": 2,
+  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0nwb722.mp3",
+  "sentences": [
+   {
+    "start": 90.3,
+    "end": 111.74,
+    "text": "Hello, this is 6 Minute English from BBC Learning English."
+   },
+   {
+    "start": 111.74,
+    "end": 113.26,
+    "text": "I'm Phil. And I'm Becca."
+   },
+   {
+    "start": 114.14,
+    "end": 120.14,
+    "text": "Sending emails is a big part of modern work and most people try to write emails politely."
+   },
+   {
+    "start": 120.78,
+    "end": 131.02,
+    "text": "Most, but not all. Recently, BBC Radio 4 programme All In The Mind asked listeners to tell them what they find rude in emails."
+   },
+   {
+    "start": 131.58,
+    "end": 138.22,
+    "text": "Here, presenter Claudia Hammond and guest Pete Olusoga discuss what listeners had to say."
+   },
+   {
+    "start": 138.86,
+    "end": 146.54,
+    "text": "Rachel in Manchester says what annoys her is people who start their emails with just your name and without a simple greeting like hi."
+   },
+   {
+    "start": 146.54,
+    "end": 151.58,
+    "text": "She says the unnecessary formality always has the effect of putting her immediately on the defensive."
+   },
+   {
+    "start": 151.58,
+    "end": 158.62,
+    "text": "We've got an anonymous one here who recently received a single emoji in response to a carefully considered and worded email."
+   },
+   {
+    "start": 158.62,
+    "end": 165.5,
+    "text": "One listener doesn't like emails which start with just her name because they put her on the defensive."
+   },
+   {
+    "start": 165.5,
+    "end": 173.18,
+    "text": "The phrase to put someone on the defensive means to do or say something which makes them feel threatened or unsure."
+   },
+   {
+    "start": 173.9,
+    "end": 181.1,
+    "text": "Another listener found it rude when their email was answered with a single emoji and I think that would annoy me too."
+   },
+   {
+    "start": 182.06,
+    "end": 193.9,
+    "text": "These emails are examples of people being uncivil and adjective meaning rude or impolite and just a note the noun that goes with this is incivility."
+   },
+   {
+    "start": 193.9,
+    "end": 210.62,
+    "text": "In this episode we'll be hearing more about rude emails at work and as usual we'll be learning some useful new vocabulary all of which you can find on our website bbclearningenglish.com But first I have a question for you Phil."
+   },
+   {
+    "start": 210.62,
+    "end": 222.7,
+    "text": "Last year thousands of US government workers received an email requiring them to justify their job by listing five things they had accomplished that week or resign."
+   },
+   {
+    "start": 223.34,
+    "end": 224.78,
+    "text": "But who sent this email?"
+   },
+   {
+    "start": 225.34,
+    "end": 236.22,
+    "text": "Was it A. Donald Trump B. J. D. Vance or C. Elon Musk Ooh I don't know maybe J. D. Vance?"
+   },
+   {
+    "start": 236.22,
+    "end": 238.38,
+    "text": "We'll find out later in the programme."
+   },
+   {
+    "start": 238.94,
+    "end": 247.26,
+    "text": "Now according to some psychologists rudeness in emails is based on a fight or flight response humans feel when stressed."
+   },
+   {
+    "start": 248.06,
+    "end": 255.66,
+    "text": "Here psychologist Dr Emma Russell explains these responses for BBC Radio 4's All in the Mind."
+   },
+   {
+    "start": 255.66,
+    "end": 261.9,
+    "text": "So a fight response is usually when we try to dominate or belittle other people."
+   },
+   {
+    "start": 261.9,
+    "end": 272.54,
+    "text": "Emails that are hostile in tone and language or even CC'ing senior personnel in on the message in order to elevate an issue and put someone in their place."
+   },
+   {
+    "start": 272.54,
+    "end": 278.22,
+    "text": "Then the flight response is when people try to protect themselves by withdrawing or avoiding."
+   },
+   {
+    "start": 278.22,
+    "end": 285.9,
+    "text": "They won't reply or if they do reply maybe they don't answer all of the points in the email they're just trying to get it off their plate."
+   },
+   {
+    "start": 285.9,
+    "end": 292.14,
+    "text": "The fight response can make us belittle someone, make them feel inferior or unimportant."
+   },
+   {
+    "start": 292.7,
+    "end": 299.26,
+    "text": "For example, a boss sends a group email in which they give someone else the credit for the work you did."
+   },
+   {
+    "start": 299.9,
+    "end": 303.58,
+    "text": "The boss wants to put you in your place."
+   },
+   {
+    "start": 303.58,
+    "end": 308.94,
+    "text": "An idiom meaning to show someone that they are less important than they think they are."
+   },
+   {
+    "start": 309.5,
+    "end": 317.5,
+    "text": "The flight response, meanwhile, can be seen when co-workers ignore your message or give a quick unhelpful reply."
+   },
+   {
+    "start": 318.38,
+    "end": 321.98,
+    "text": "Such colleagues want to get work off their plate."
+   },
+   {
+    "start": 321.98,
+    "end": 328.62,
+    "text": "Another idiom meaning to remove tasks from your own workload and give them to someone else to deal with."
+   },
+   {
+    "start": 328.62,
+    "end": 336.46,
+    "text": "Unfortunately, when stressed and working to a deadline it's hard to make sure all your emails are polite."
+   },
+   {
+    "start": 336.46,
+    "end": 341.98,
+    "text": "That's what Emma Russell said when she spoke to BBC Radio 4's All in the Mind."
+   },
+   {
+    "start": 341.98,
+    "end": 349.98,
+    "text": "Because we're operating in these environments where we are all quite frazzled, we are more at risk of engaging in instability."
+   },
+   {
+    "start": 349.98,
+    "end": 353.5,
+    "text": "We're more likely to be uncivil when we're frazzled."
+   },
+   {
+    "start": 353.5,
+    "end": 360.7,
+    "text": "An informal adjective describing feeling tired or anxious because you're doing too many things at the same time."
+   },
+   {
+    "start": 361.34,
+    "end": 363.74,
+    "text": "Luckily, there are ways to help."
+   },
+   {
+    "start": 363.74,
+    "end": 368.54,
+    "text": "If you feel angry when writing an email, pause before you hit send."
+   },
+   {
+    "start": 369.1,
+    "end": 373.66,
+    "text": "One day it might save your friendship or even your job."
+   },
+   {
+    "start": 374.3,
+    "end": 382.06,
+    "text": "OK, Becca, I'm going to politely ask you to please reveal the answer to your question."
+   },
+   {
+    "start": 382.06,
+    "end": 391.58,
+    "text": "Of course, Phil. I asked you who sent the email requiring workers to justify their employment or resign."
+   },
+   {
+    "start": 391.58,
+    "end": 395.82,
+    "text": "I said that I thought it might have been JD Vance."
+   },
+   {
+    "start": 395.82,
+    "end": 398.62,
+    "text": "Well, we're not going to fire you, Phil."
+   },
+   {
+    "start": 398.62,
+    "end": 402.06,
+    "text": "But you are wrong. The correct answer was Elon Musk."
+   },
+   {
+    "start": 402.78,
+    "end": 405.98,
+    "text": "OK, let's recap the vocabulary we've learnt."
+   },
+   {
+    "start": 405.98,
+    "end": 413.34,
+    "text": "Starting with the idiom, put someone on the defensive, meaning to make someone feel threatened or unsure."
+   },
+   {
+    "start": 413.34,
+    "end": 417.18,
+    "text": "The adjective uncivil means impolite."
+   },
+   {
+    "start": 417.18,
+    "end": 420.38,
+    "text": "And we have a similar noun that's incivility."
+   },
+   {
+    "start": 420.38,
+    "end": 425.26,
+    "text": "To belittle someone means to make them feel inferior or unimportant."
+   },
+   {
+    "start": 425.26,
+    "end": 431.5,
+    "text": "If you put someone in their place, you show them that they're not as important as they think they are."
+   },
+   {
+    "start": 431.5,
+    "end": 438.54,
+    "text": "To get something off your plate means to give someone else a task or problem instead of dealing with it yourself."
+   },
+   {
+    "start": 439.26,
+    "end": 445.42,
+    "text": "And finally, if you're frazzled, you feel tired or anxious because you're doing too much."
+   },
+   {
+    "start": 446.3,
+    "end": 449.26,
+    "text": "Once again, our six minutes are up."
+   },
+   {
+    "start": 449.26,
+    "end": 455.1,
+    "text": "If you want to know more about communication at work, check out our series Office English."
+   },
+   {
+    "start": 455.1,
+    "end": 464.22,
+    "text": "It's on our website along with a quiz and a worksheet for this episode and that's bbclearningenglish.com."
+   }
+  ],
+  "addedAt": 1784035120237
+ },
+ {
+  "id": "bbc-6min-should-we-cycle-more",
+  "guid": "urn:bbc:podcast:p0nxqs31",
+  "source": "BBC 6 Minute English",
+  "title": "Should we cycle more?",
+  "level": 2,
+  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0nxqqhc.mp3",
+  "sentences": [
+   {
+    "start": 71.44,
+    "end": 74.44,
+    "text": "Hello, this is 6 Minute English from BBC Learning English."
+   },
+   {
+    "start": 74.44,
+    "end": 76.44,
+    "text": "I'm Neil. And I'm Becca."
+   },
+   {
+    "start": 76.44,
+    "end": 79.44,
+    "text": "Cycling is a popular activity in Britain."
+   },
+   {
+    "start": 79.44,
+    "end": 84.44,
+    "text": "Yes, this year, sales of bicycles, or bikes as they're usually called, are up in Britain."
+   },
+   {
+    "start": 84.44,
+    "end": 88.44,
+    "text": "Many people choose cycling because it's good for their health and the environment."
+   },
+   {
+    "start": 88.44,
+    "end": 92.44,
+    "text": "And electric bikes are making cycling accessible to more people."
+   },
+   {
+    "start": 92.44,
+    "end": 94.44,
+    "text": "Including older people."
+   },
+   {
+    "start": 94.44,
+    "end": 102.44,
+    "text": "In this episode, we'll visit two countries – one with a long history of cycling and another where it's just getting started."
+   },
+   {
+    "start": 102.44,
+    "end": 106.44,
+    "text": "And, as usual, we'll be learning some useful new words and phrases."
+   },
+   {
+    "start": 106.44,
+    "end": 113.44,
+    "text": "And remember, you'll find all the vocabulary from this episode on our website – bbclearningenglish.com."
+   },
+   {
+    "start": 113.44,
+    "end": 121.44,
+    "text": "But first, Neil, I have a question about a country that's world-famous for its bikes – the Netherlands, also often referred to as Holland."
+   },
+   {
+    "start": 122.44,
+    "end": 130.44,
+    "text": "The Netherlands cycle network spreads over 95,000 miles and there are more bikes in the country than its 18 million citizens."
+   },
+   {
+    "start": 130.44,
+    "end": 135.44,
+    "text": "So, roughly speaking, how many bikes are there in the Netherlands?"
+   },
+   {
+    "start": 135.44,
+    "end": 142.44,
+    "text": "Is it A – 20 million, B – 24 million, or C – 34 million?"
+   },
+   {
+    "start": 142.44,
+    "end": 145.44,
+    "text": "Well, I'm going to say C – 34 million."
+   },
+   {
+    "start": 145.44,
+    "end": 149.44,
+    "text": "Ah, well, we'll reveal the correct answer later in the programme."
+   },
+   {
+    "start": 149.44,
+    "end": 156.44,
+    "text": "Staying in the Netherlands, let's hear from Meredith Glaser, CEO of Amsterdam's urban cycling institution."
+   },
+   {
+    "start": 156.44,
+    "end": 163.44,
+    "text": "Here, Meredith tells BBC World Service programme The Inquiry more about Dutch people's love of cycling."
+   },
+   {
+    "start": 163.44,
+    "end": 176.44,
+    "text": "The bicycle is deeply ingrained into Dutch culture, but the rise of cycling started in the industrial era when bicycle manufacturing took off."
+   },
+   {
+    "start": 176.44,
+    "end": 184.44,
+    "text": "And it went from a toy for rich people to an everyday tool for transportation."
+   },
+   {
+    "start": 184.44,
+    "end": 188.44,
+    "text": "And this was a really important milestone for cycling in the Netherlands."
+   },
+   {
+    "start": 188.44,
+    "end": 191.44,
+    "text": "Cycling is deeply ingrained into Dutch culture."
+   },
+   {
+    "start": 191.44,
+    "end": 202.44,
+    "text": "Deeply ingrained are two words that go together commonly and it means something that's firmly established within a person or culture and unlikely to change."
+   },
+   {
+    "start": 202.44,
+    "end": 206.44,
+    "text": "During the 1890s, bike manufacturing took off in the Netherlands."
+   },
+   {
+    "start": 206.44,
+    "end": 211.44,
+    "text": "Take-off is a phrasal verb meaning to suddenly become popular or successful."
+   },
+   {
+    "start": 211.44,
+    "end": 216.44,
+    "text": "Certain brands became symbols of a new, comfortable style of bike."
+   },
+   {
+    "start": 216.44,
+    "end": 219.44,
+    "text": "New factories made bikes cheaper to buy."
+   },
+   {
+    "start": 219.44,
+    "end": 222.44,
+    "text": "This was a milestone for cycling in the Netherlands."
+   },
+   {
+    "start": 222.44,
+    "end": 228.44,
+    "text": "A milestone is an important event in someone's life or in the development of something."
+   },
+   {
+    "start": 228.44,
+    "end": 235.44,
+    "text": "Our second destination is better known for cars than bicycles, the United Arab Emirates or UAE."
+   },
+   {
+    "start": 235.44,
+    "end": 244.44,
+    "text": "UAE is hoping cycling could be a greener way for visitors to explore tourist attractions in cities like Dubai and Abu Dhabi."
+   },
+   {
+    "start": 244.44,
+    "end": 251.44,
+    "text": "Transport consultant Martin Tillman, who lives in the Gulf region, explained more to BBC World Service programme The Inquiry."
+   },
+   {
+    "start": 251.44,
+    "end": 254.44,
+    "text": "We also have quality of life and liveability."
+   },
+   {
+    "start": 255.44,
+    "end": 266.44,
+    "text": "All the cities in the Gulf are very competitive and they would love to be ranked very high in those global rankings and cycling is seen as part of that quality of life solution."
+   },
+   {
+    "start": 266.44,
+    "end": 272.44,
+    "text": "Gulf cities like Dubai want a reputation as places with a good quality of life."
+   },
+   {
+    "start": 272.44,
+    "end": 280.44,
+    "text": "The phrase quality of life refers to someone's level of enjoyment, comfort and health when living in a particular place."
+   },
+   {
+    "start": 280.44,
+    "end": 283.44,
+    "text": "It's a measure of a person's overall wellbeing."
+   },
+   {
+    "start": 283.44,
+    "end": 290.44,
+    "text": "Gulf cities are also interested in liveability, the degree to which somewhere is a pleasant place to live."
+   },
+   {
+    "start": 290.44,
+    "end": 302.44,
+    "text": "Cycling is good for mental as well as physical health and Dubai's town planners are hoping the 600 kilometres of cycle tracks already built will make the city more attractive to live in."
+   },
+   {
+    "start": 302.44,
+    "end": 306.44,
+    "text": "Of course, there are big differences between the Netherlands and UAE."
+   },
+   {
+    "start": 306.44,
+    "end": 312.44,
+    "text": "The temperature for one, which in Dubai regularly hits 45 degrees Celsius."
+   },
+   {
+    "start": 312.44,
+    "end": 322.44,
+    "text": "Martin told BBC World Service's The Inquiry that Dubai is studying countries like the Netherlands, not to copy them, but to discover what works."
+   },
+   {
+    "start": 322.44,
+    "end": 329.44,
+    "text": "It's certainly not a copy and paste of what is good in Holland or Denmark but the key is that we're looking for the principles."
+   },
+   {
+    "start": 329.44,
+    "end": 334.44,
+    "text": "Cycling in UAE isn't a copy and paste of cycling in Holland."
+   },
+   {
+    "start": 334.44,
+    "end": 341.44,
+    "text": "Martin uses the phrase a copy and paste to mean an exact copy of something which is moved and put somewhere else."
+   },
+   {
+    "start": 341.44,
+    "end": 351.44,
+    "text": "Dubai can't simply copy the Netherlands and a range of measures, including water stations and shaded rest areas, have been created for cycling in the heat."
+   },
+   {
+    "start": 351.44,
+    "end": 360.44,
+    "text": "Cycling isn't the perfect solution for everyone everywhere but in some places it can be a popular and green alternative."
+   },
+   {
+    "start": 360.44,
+    "end": 364.44,
+    "text": "Yes, just look at the Netherlands and that reminds me of your question, Becca."
+   },
+   {
+    "start": 364.44,
+    "end": 368.44,
+    "text": "Yes, I asked you roughly how many bikes are there in the Netherlands."
+   },
+   {
+    "start": 368.44,
+    "end": 372.44,
+    "text": "I said 34 million, was I right?"
+   },
+   {
+    "start": 372.44,
+    "end": 379.44,
+    "text": "There are certainly a lot of bikes in the Netherlands, however, there are only, roughly, 24 million bikes."
+   },
+   {
+    "start": 379.44,
+    "end": 382.44,
+    "text": "Only? There's still quite a lot!"
+   },
+   {
+    "start": 382.44,
+    "end": 391.44,
+    "text": "Right, let's recap the vocabulary we've learnt, starting with deeply ingrained, a combination of words meaning well-established and unlikely to change."
+   },
+   {
+    "start": 391.44,
+    "end": 395.44,
+    "text": "If something takes off, it suddenly becomes popular or successful."
+   },
+   {
+    "start": 395.44,
+    "end": 400.44,
+    "text": "A milestone is an important event in the development of something or someone."
+   },
+   {
+    "start": 400.44,
+    "end": 406.44,
+    "text": "Quality of life describes a person's wellbeing in terms of their level of enjoyment, comfort and health."
+   },
+   {
+    "start": 406.44,
+    "end": 411.44,
+    "text": "The noun liveability means the degree to which a place is pleasant to live in."
+   },
+   {
+    "start": 411.44,
+    "end": 418.44,
+    "text": "And finally, a copy and paste is an exact copy of something which is then moved and put somewhere else."
+   },
+   {
+    "start": 418.44,
+    "end": 427.44,
+    "text": "Once again, our six minutes are up but remember you can find a transcript and a worksheet and a quiz all over on our website at bbclearningenglish.com."
+   }
+  ],
+  "addedAt": 1784035014722
+ }
+]

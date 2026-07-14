@@ -25,9 +25,11 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 LESSONS_JSON = REPO_ROOT / "public" / "data" / "lessons.json"
 
 # Newest-first cap on how many lessons we keep per feed in lessons.json.
-KEEP_PER_FEED = 10
-# How many new episodes to transcribe per feed per run (bounds runtime).
-MAX_NEW_PER_RUN = 2
+KEEP_PER_FEED = 40
+# How many not-yet-fetched episodes to transcribe per feed per run (bounds
+# runtime). Feeds are processed newest-first, so beyond keeping up with new
+# releases this steadily backfills the archive a few episodes per day.
+MAX_NEW_PER_RUN = 5
 
 # Each feed may define start/end trim markers (case-insensitive regex).
 # Podcast episodes carry injected ads before and after the actual programme;
@@ -41,6 +43,14 @@ FEEDS = [
         "level": 2,
         "start_marker": r"minute english from bbc learning english",
         "end_marker": r"bbclearningenglish\.com",
+    },
+    {
+        "prefix": "bbc-tews",
+        "source": "BBC The English We Speak",
+        "rss": "https://podcasts.files.bbci.co.uk/p02pc9zn.rss",
+        "level": 1,
+        "start_marker": r"english we speak",
+        "end_marker": r"bbclearningenglish\.com|goodbye|bye[.!\s]*$",
     },
 ]
 

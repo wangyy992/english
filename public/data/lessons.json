@@ -1,5 +1,2460 @@
 [
  {
+  "id": "bbc-tews-the-english-we-speak-flow-state",
+  "guid": "urn:bbc:podcast:p0nbyzx9",
+  "source": "BBC The English We Speak",
+  "title": "The English We Speak: Flow State",
+  "level": 1,
+  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0nbyxxp.mp3",
+  "sentences": [
+   {
+    "start": 60.32,
+    "end": 73.36,
+    "text": "Available at Lowe's Hello and welcome to The English We Speak, where we explain phrases and expressions used by fluent English speakers so that you can use them too."
+   },
+   {
+    "start": 73.92,
+    "end": 78.32,
+    "text": "I'm Feifei and here with me is Becca. How are you doing, Becca?"
+   },
+   {
+    "start": 78.32,
+    "end": 95.52,
+    "text": "Hey Feifei, I'm doing well, thanks. I've had a very productive morning. I finished lots of tasks and made a to-do list for the afternoon. I feel like I've entered a flow state pretty early in the day. Yes, you seem to have been very busy. But Becca, what do you mean by a flow state?"
+   },
+   {
+    "start": 96.08,
+    "end": 107.28,
+    "text": "The phrase flow state gained popularity on social media. A lot of young people use it as part of their everyday language. When we enter a flow state, we feel that we are fully focused on something."
+   },
+   {
+    "start": 107.28,
+    "end": 112.16,
+    "text": "It's a kind of mental state where we're fully concentrated on whatever we're doing."
+   },
+   {
+    "start": 112.16,
+    "end": 122.0,
+    "text": "And because of that, we feel like time moves more quickly. We might not think about anything other than what we're doing, and we might do it more skillfully and easily as a result."
+   },
+   {
+    "start": 122.0,
+    "end": 127.68,
+    "text": "Ah, that's why you feel like you've had a very productive morning. Do you enter a flow state often?"
+   },
+   {
+    "start": 128.72,
+    "end": 144.8,
+    "text": "Not very often. It's hard to enter a flow state or get into a flow state when the conditions around you aren't right. For example, I love going to cafes to do some work, but it can be hard to get into a flow state there because they're sometimes busy or distracting."
+   },
+   {
+    "start": 144.8,
+    "end": 150.72,
+    "text": "Yes, I agree. And is it only work tasks that you feel you get into a flow state for?"
+   },
+   {
+    "start": 151.36,
+    "end": 157.52,
+    "text": "Not at all. It's probably easier to get into a flow state with activities that you really enjoy."
+   },
+   {
+    "start": 157.52,
+    "end": 162.48,
+    "text": "For example, I love painting, but I don't do it often. I just don't have the time."
+   },
+   {
+    "start": 163.12,
+    "end": 178.56,
+    "text": "So when I have an idea of something I'd like to paint, I make sure that I have a free day to do it. I sit comfortably, put on some relaxing music, and I enter a flow state. Before I know it, it's dark outside and the day has completely passed me by."
+   },
+   {
+    "start": 178.56,
+    "end": 184.4,
+    "text": "You paint the day away, Becca! Now let's listen to more examples of flow state."
+   },
+   {
+    "start": 189.12,
+    "end": 200.88,
+    "text": "When I pick up my guitar and start playing, I enter a flow state quite quickly, and then time flies. I've got no idea what's happening, and it could be hours later when I finish."
+   },
+   {
+    "start": 202.72,
+    "end": 213.04,
+    "text": "I find it easiest to get into a flow state. When I'm working from home, I've got some music on that I like, and I've got a hot drink with me, then I can just start work and carry on for ages."
+   },
+   {
+    "start": 214.96,
+    "end": 219.12,
+    "text": "I find it really hard to get into a flow state when lots of people are talking around me."
+   },
+   {
+    "start": 219.12,
+    "end": 234.67,
+    "text": "I really just need silence. This is a cool expression. I think I've heard a flow state being used in meditation before. You certainly might have done Feifei."
+   },
+   {
+    "start": 234.67,
+    "end": 239.39,
+    "text": "Flow state is also a technique in yoga and meditation to train the mind to focus."
+   },
+   {
+    "start": 240.19,
+    "end": 251.87,
+    "text": "You might also hear it in science. Flow state happens when particles are able to move, or flow, more freely. For example, when solid ice is heated and becomes a liquid."
+   },
+   {
+    "start": 251.87,
+    "end": 263.47,
+    "text": "So, in science, flow state has quite a different meaning to the one we've talked about in this programme. It does. Now, let's get into a flow state and get this episode edited and posted."
+   },
+   {
+    "start": 263.47,
+    "end": 269.15,
+    "text": "Yes, let's do that. We'll be back next time with another useful English phrase. See you soon."
+   },
+   {
+    "start": 269.15,
+    "end": 283.55,
+    "text": "Bye! ...buried himself in a coffin for days..."
+   },
+   {
+    "start": 283.55,
+    "end": 285.39,
+    "text": "...counted to 100,000 on camera..."
+   },
+   {
+    "start": 285.39,
+    "end": 289.79,
+    "text": "...and even recreated squid games, all in an attempt to go viral on the internet."
+   },
+   {
+    "start": 289.79,
+    "end": 292.67,
+    "text": "...but it all started when he gave a homeless man $10,000."
+   },
+   {
+    "start": 293.47,
+    "end": 295.95,
+    "text": "So, is he a philanthropist reshaping capitalism?"
+   },
+   {
+    "start": 295.95,
+    "end": 298.35,
+    "text": "Or is he just the king of the attention economy?"
+   },
+   {
+    "start": 298.35,
+    "end": 300.03,
+    "text": "Find out on Good Bad Billionaire."
+   },
+   {
+    "start": 300.03,
+    "end": 303.15,
+    "text": "Listen on bbc.com or wherever you get your podcasts."
+   }
+  ],
+  "addedAt": 1784187907701
+ },
+ {
+  "id": "bbc-tews-the-english-we-speak-yap",
+  "guid": "urn:bbc:podcast:p0nd94sh",
+  "source": "BBC The English We Speak",
+  "title": "The English We Speak: Yap",
+  "level": 1,
+  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0nd91kk.mp3",
+  "sentences": [
+   {
+    "start": 86.28,
+    "end": 95.28,
+    "text": "Hello, and welcome to The English We Speak, where we explain expressions used by fluent English speakers so that you can use them too."
+   },
+   {
+    "start": 95.28,
+    "end": 97.28,
+    "text": "I'm Feifei, and I'm joined by Georgie."
+   },
+   {
+    "start": 97.28,
+    "end": 99.28,
+    "text": "Hi Feifei, how are you?"
+   },
+   {
+    "start": 99.28,
+    "end": 101.28,
+    "text": "I'm very well, thank you. How are you?"
+   },
+   {
+    "start": 101.28,
+    "end": 104.28,
+    "text": "Well, to be honest, I'm feeling pretty great today, actually."
+   },
+   {
+    "start": 104.28,
+    "end": 110.28,
+    "text": "I woke up feeling really energetic, I felt really well rested, and then I had the most delicious breakfast."
+   },
+   {
+    "start": 110.28,
+    "end": 122.28,
+    "text": "So the day started off really well, and now I'm just really excited for the week ahead, because I've got lots of nice plans, I need to go out and buy some food, and things like that, because I have a friend coming to stay, so she'll need some food."
+   },
+   {
+    "start": 122.28,
+    "end": 128.28,
+    "text": "Okay, okay Georgie, there is a time for yapping, and it's not now."
+   },
+   {
+    "start": 128.28,
+    "end": 130.28,
+    "text": "Let's get on with the programme."
+   },
+   {
+    "start": 130.28,
+    "end": 137.28,
+    "text": "Oh, okay, sorry Feifei. Well, you just told me to stop yapping, so why don't we learn yap in this programme?"
+   },
+   {
+    "start": 138.28,
+    "end": 144.28,
+    "text": "Yap is a slang word, which means talk or gossip continuously for a long time."
+   },
+   {
+    "start": 144.28,
+    "end": 149.28,
+    "text": "It refers to informal on-series chat, so it's not used in formal settings."
+   },
+   {
+    "start": 149.28,
+    "end": 155.28,
+    "text": "Yes, I actually used this the other day because I saw a really old friend who I hadn't seen for ages."
+   },
+   {
+    "start": 155.28,
+    "end": 159.28,
+    "text": "I went to hers for dinner, and we spent the whole evening yapping."
+   },
+   {
+    "start": 159.28,
+    "end": 163.28,
+    "text": "We yapped non-stop until about midnight. We had a lot to catch up on."
+   },
+   {
+    "start": 163.28,
+    "end": 174.28,
+    "text": "Right, so yap can be used when one person is chatting endlessly, but it's also something that you can do with another person. You can both yap together."
+   },
+   {
+    "start": 174.28,
+    "end": 178.28,
+    "text": "Exactly. Now, it can occasionally have a slight negative connotation."
+   },
+   {
+    "start": 178.28,
+    "end": 183.28,
+    "text": "When someone is talking too much and you want them to stop, you can say stop yapping."
+   },
+   {
+    "start": 183.28,
+    "end": 189.28,
+    "text": "Right, like what I said to you at the beginning of the programme. Let's listen to more examples."
+   },
+   {
+    "start": 190.28,
+    "end": 198.39,
+    "text": "Don't ask me what my favourite animal is. I could yap about animals all day."
+   },
+   {
+    "start": 198.39,
+    "end": 201.39,
+    "text": "I could yap on and on and on."
+   },
+   {
+    "start": 201.39,
+    "end": 208.39,
+    "text": "I was trying to explain something to my son over dinner, and he didn't really understand and wasn't paying attention."
+   },
+   {
+    "start": 208.39,
+    "end": 211.39,
+    "text": "He just looked at me and said, what are you yapping about?"
+   },
+   {
+    "start": 211.39,
+    "end": 219.39,
+    "text": "I call my mum on the way home from work, and we always end up yapping for ages, and then I'm eating dinner really, really late."
+   },
+   {
+    "start": 220.39,
+    "end": 227.63,
+    "text": "So yapping means talking a lot in an informal way."
+   },
+   {
+    "start": 227.63,
+    "end": 230.63,
+    "text": "What about its use, Georgie? What can we do with the word?"
+   },
+   {
+    "start": 230.63,
+    "end": 234.63,
+    "text": "Well, you can follow it with at and yap at someone."
+   },
+   {
+    "start": 234.63,
+    "end": 238.63,
+    "text": "I was yapping at you earlier about my morning, which you didn't like."
+   },
+   {
+    "start": 238.63,
+    "end": 240.63,
+    "text": "You can also yap about something."
+   },
+   {
+    "start": 240.63,
+    "end": 244.63,
+    "text": "For example, my friend and I were yapping about our lives after dinner."
+   },
+   {
+    "start": 244.63,
+    "end": 248.63,
+    "text": "You can also be a yapper. That's a word for a person who yaps a lot."
+   },
+   {
+    "start": 248.63,
+    "end": 250.63,
+    "text": "Are you a yapper, Georgie?"
+   },
+   {
+    "start": 250.63,
+    "end": 254.63,
+    "text": "Well, I guess so. OK. Let's recap."
+   },
+   {
+    "start": 254.63,
+    "end": 260.63,
+    "text": "We learnt the word yap, which means chat continuously and informally for a long time."
+   },
+   {
+    "start": 260.63,
+    "end": 262.63,
+    "text": "Thanks for joining us. Goodbye."
+   },
+   {
+    "start": 262.63,
+    "end": 282.88,
+    "text": "Goodbye. Bye-bye."
+   }
+  ],
+  "addedAt": 1784187837781
+ },
+ {
+  "id": "bbc-tews-the-english-we-speak-can-t-see-the-wood-for-the",
+  "guid": "urn:bbc:podcast:p0nfnb2k",
+  "source": "BBC The English We Speak",
+  "title": "The English We Speak: Can't see the wood for the trees",
+  "level": 1,
+  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0nfn7z6.mp3",
+  "sentences": [
+   {
+    "start": 87.28,
+    "end": 96.28,
+    "text": "Hello and welcome to The English We Speak, where we explain expressions used by fluent English speakers so that you can use them too."
+   },
+   {
+    "start": 96.28,
+    "end": 99.28,
+    "text": "I'm Feifei and I'm joined by Georgie. How are you?"
+   },
+   {
+    "start": 99.28,
+    "end": 101.28,
+    "text": "I'm very well, thank you, Feifei. How are you?"
+   },
+   {
+    "start": 101.28,
+    "end": 106.28,
+    "text": "I'm very well. Thank you, Georgie. So what are we learning in this programme?"
+   },
+   {
+    "start": 106.28,
+    "end": 112.28,
+    "text": "Well, the other day I thought of quite an old idiom, can't see the wood for the trees."
+   },
+   {
+    "start": 112.28,
+    "end": 115.28,
+    "text": "Now it's old, but it is still quite commonly used."
+   },
+   {
+    "start": 115.28,
+    "end": 124.28,
+    "text": "If you can't see the wood for the trees, it means that you're so focused on the small details of something that you aren't looking at the situation as a whole and what's important."
+   },
+   {
+    "start": 124.28,
+    "end": 129.28,
+    "text": "Oh right, because wood in British English can mean something similar to forest."
+   },
+   {
+    "start": 129.28,
+    "end": 140.28,
+    "text": "So if you're standing in front of an individual tree, maybe looking at the details of the bark, you can't see the entire forest. You can't see the wood for the trees."
+   },
+   {
+    "start": 140.28,
+    "end": 145.28,
+    "text": "Right, which is why in American English you might also hear can't see the forest for the trees."
+   },
+   {
+    "start": 145.28,
+    "end": 151.28,
+    "text": "Yes. Why don't we have an example, Georgie? How would we use it in the context of work?"
+   },
+   {
+    "start": 151.28,
+    "end": 162.28,
+    "text": "OK, so imagine a team working on a document. They spend hours thinking about the font size, but the content of the document is unclear and the overall structure doesn't make sense."
+   },
+   {
+    "start": 162.28,
+    "end": 168.28,
+    "text": "If you're obsessing over the font size, you're missing the bigger issue. The document itself isn't working."
+   },
+   {
+    "start": 168.28,
+    "end": 180.28,
+    "text": "Yes, the team can't see the wood for the trees. This idiom is often used gently to give advice rather than criticism. Shall we have some more examples?"
+   },
+   {
+    "start": 181.28,
+    "end": 192.46,
+    "text": "When I was writing my novel, I couldn't see the wood for the trees. I kept getting stuck on the same sentence, writing it over and over again."
+   },
+   {
+    "start": 192.46,
+    "end": 200.46,
+    "text": "When I was planning my wedding, I just became obsessed with the seating plan. I couldn't think about anything else. I couldn't see the wood for the trees."
+   },
+   {
+    "start": 200.46,
+    "end": 211.46,
+    "text": "I've been working on this project for so long. I can't see the wood for the trees at this point. I've forgotten why we're doing it in the first place. I think I need to get an outside perspective."
+   },
+   {
+    "start": 212.46,
+    "end": 226.27,
+    "text": "So, can't see the wood for the trees is about not being able to assess the whole situation because you're too focused on small details. It's about losing perspective."
+   },
+   {
+    "start": 226.27,
+    "end": 239.27,
+    "text": "Yes, and there's some other useful language to use in this context. If someone can't see the wood for the trees, they should take a step back and look at the bigger picture. The bigger picture is a phrase meaning the situation as a whole."
+   },
+   {
+    "start": 239.27,
+    "end": 252.27,
+    "text": "Yes, they shouldn't get bogged down in the details. Now, a bog is an area of wet, muddy ground. So, if you get bogged down in the details, the details are slowing your progress."
+   },
+   {
+    "start": 252.27,
+    "end": 255.27,
+    "text": "Those are all useful phrases to use. OK, let's recap."
+   },
+   {
+    "start": 255.27,
+    "end": 267.27,
+    "text": "We learnt the idiom can't see the wood for the trees, which means you focus too much on smaller details that you forget to look at the whole situation. Join us again next time. Goodbye."
+   }
+  ],
+  "addedAt": 1784187772011
+ },
+ {
+  "id": "bbc-tews-the-english-we-speak-think-on-your-feet",
+  "guid": "urn:bbc:podcast:p0nh0hhc",
+  "source": "BBC The English We Speak",
+  "title": "The English We Speak: Think on your feet",
+  "level": 1,
+  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0nh0dqf.mp3",
+  "sentences": [
+   {
+    "start": 89.52,
+    "end": 103.84,
+    "text": "Hello and welcome to The English We Speak, where we explain phrases and expressions used by fluent English speakers, so that you can use them too."
+   },
+   {
+    "start": 103.84,
+    "end": 108.96,
+    "text": "I'm Feifei. And I'm Phil. Feifei, what would you rather be?"
+   },
+   {
+    "start": 108.96,
+    "end": 112.48,
+    "text": "An eagle or a bear? And why?"
+   },
+   {
+    "start": 112.48,
+    "end": 114.72,
+    "text": "What? Quickly, what's your answer?"
+   },
+   {
+    "start": 114.72,
+    "end": 115.68,
+    "text": "How do you explain it?"
+   },
+   {
+    "start": 116.96,
+    "end": 120.48,
+    "text": "Maybe a bear? But what on earth was that, Phil?"
+   },
+   {
+    "start": 121.36,
+    "end": 126.88,
+    "text": "Well, I've just been reading a book about the world's worst job interview questions."
+   },
+   {
+    "start": 126.88,
+    "end": 131.84,
+    "text": "And apparently that's a good one to see how well people think on their feet."
+   },
+   {
+    "start": 131.84,
+    "end": 134.0,
+    "text": "Did I get the job? Never mind."
+   },
+   {
+    "start": 134.0,
+    "end": 138.24,
+    "text": "Maybe we should learn that expression, think on your feet."
+   },
+   {
+    "start": 138.24,
+    "end": 143.36,
+    "text": "I'm sitting down, so can you think on your feet when you're not on your feet?"
+   },
+   {
+    "start": 143.36,
+    "end": 145.84,
+    "text": "I mean, it's a good question, but yes, you can."
+   },
+   {
+    "start": 145.84,
+    "end": 153.2,
+    "text": "It's not literal. If you can think on your feet, it means you can think quickly and make a decision when you're under pressure."
+   },
+   {
+    "start": 153.76,
+    "end": 162.24,
+    "text": "Yes, I'm not sure about that interview question, but being able to think on your feet is really important in a lot of jobs."
+   },
+   {
+    "start": 162.24,
+    "end": 166.96,
+    "text": "It means you can deal with fast-moving, stressful environments."
+   },
+   {
+    "start": 166.96,
+    "end": 169.12,
+    "text": "Yeah, and it's not just work either."
+   },
+   {
+    "start": 169.12,
+    "end": 176.48,
+    "text": "If you want to be good at playing sports or even video games, you often need to think on your feet to beat your opponent."
+   },
+   {
+    "start": 176.96,
+    "end": 180.24,
+    "text": "Let's hear some other people using think on your feet."
+   },
+   {
+    "start": 184.43,
+    "end": 187.07,
+    "text": "Oh, I really hate when plans change."
+   },
+   {
+    "start": 187.07,
+    "end": 189.07,
+    "text": "I'm not great at thinking on my feet."
+   },
+   {
+    "start": 190.75,
+    "end": 196.67,
+    "text": "I lost my whole presentation just before the meeting, so I had to think on my feet and invent the whole thing."
+   },
+   {
+    "start": 198.03,
+    "end": 203.95,
+    "text": "My three-year-old niece asked lots of difficult questions and I always have to think on my feet to answer her."
+   },
+   {
+    "start": 207.66,
+    "end": 213.34,
+    "text": "We've been learning the expression think on your feet to mean think and make decisions quickly."
+   },
+   {
+    "start": 214.06,
+    "end": 218.3,
+    "text": "Yes, we can also use think on the spot to mean the same."
+   },
+   {
+    "start": 218.3,
+    "end": 220.46,
+    "text": "Immediately decide what to do."
+   },
+   {
+    "start": 220.46,
+    "end": 226.94,
+    "text": "OK, and that's it for this programme, but join us next time to learn more English phrases and expressions."
+   },
+   {
+    "start": 226.94,
+    "end": 232.06,
+    "text": "Because having a wide vocabulary is really helpful when you need to think on your feet."
+   },
+   {
+    "start": 232.06,
+    "end": 233.82,
+    "text": "That's right. Goodbye."
+   }
+  ],
+  "addedAt": 1784187698644
+ },
+ {
+  "id": "bbc-tews-the-english-we-speak-take-it-as-a-given",
+  "guid": "urn:bbc:podcast:p0njcp6n",
+  "source": "BBC The English We Speak",
+  "title": "The English We Speak: Take it as a given",
+  "level": 1,
+  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0njcnkq.mp3",
+  "sentences": [
+   {
+    "start": 89.28,
+    "end": 98.28,
+    "text": "Welcome to The English We Speak, where we explain phrases and expressions used by fluent English speakers so that you can use them too."
+   },
+   {
+    "start": 98.28,
+    "end": 105.28,
+    "text": "I'm Feifei. And I'm Phil. Feifei, it feels like spring outside. I'm starting to get excited."
+   },
+   {
+    "start": 105.28,
+    "end": 107.28,
+    "text": "Oh yeah, it sounds like you've got plans."
+   },
+   {
+    "start": 107.28,
+    "end": 111.28,
+    "text": "Yes, I'm going to spend this weekend away walking in the mountains."
+   },
+   {
+    "start": 111.28,
+    "end": 113.28,
+    "text": "The mountains? I hope you're prepared."
+   },
+   {
+    "start": 113.28,
+    "end": 120.28,
+    "text": "The forecast is good, but you should take it as a given that the weather can change quickly up in the mountains."
+   },
+   {
+    "start": 120.28,
+    "end": 125.28,
+    "text": "I mean, that is what all the advice is. So yes, I probably should take that as a given."
+   },
+   {
+    "start": 125.28,
+    "end": 128.28,
+    "text": "I'll make sure I take some proper outdoor clothes."
+   },
+   {
+    "start": 128.28,
+    "end": 132.28,
+    "text": "I think we should take a closer look at that expression. Take it as a given."
+   },
+   {
+    "start": 132.28,
+    "end": 140.28,
+    "text": "Yes. Something that you can take as a given is something that you can assume to be true."
+   },
+   {
+    "start": 140.28,
+    "end": 145.28,
+    "text": "You might not be 100% sure, but it's something that's very likely to be true."
+   },
+   {
+    "start": 145.28,
+    "end": 154.28,
+    "text": "Yes, if you're planning to drive somewhere nice on a sunny weekend, you should take it as a given that there'll be a lot of traffic and it will take longer than you expect."
+   },
+   {
+    "start": 154.28,
+    "end": 164.28,
+    "text": "Yes, here's another example. If you change your computer password at work, you can take it as a given that it will take you two weeks to learn it by heart."
+   },
+   {
+    "start": 164.28,
+    "end": 168.28,
+    "text": "Yeah, let's hear some other people using take it as a given."
+   },
+   {
+    "start": 172.38,
+    "end": 178.38,
+    "text": "We can take it as a given that nothing will work again today. The computers, nothing's working."
+   },
+   {
+    "start": 178.38,
+    "end": 184.38,
+    "text": "This work is for our most important client, so I'll take it as a given that you've checked everything really carefully."
+   },
+   {
+    "start": 184.38,
+    "end": 194.53,
+    "text": "Ooh, you're wearing your dancing shoes. I can take it as a given that you're coming to the party later."
+   },
+   {
+    "start": 194.53,
+    "end": 199.53,
+    "text": "We've been learning the expression take it as a given to mean assume something is true."
+   },
+   {
+    "start": 199.53,
+    "end": 207.53,
+    "text": "Yes, a very similar expression is take it as read. It means accept something is true without checking to make sure."
+   },
+   {
+    "start": 207.53,
+    "end": 214.53,
+    "text": "OK, that's it for this programme, but join us next time to learn more English phrases and expressions."
+   },
+   {
+    "start": 214.53,
+    "end": 219.53,
+    "text": "You can take it as a given that it'll be a great opportunity to learn a new phrase or expression."
+   },
+   {
+    "start": 219.53,
+    "end": 221.53,
+    "text": "That is right. Goodbye."
+   }
+  ],
+  "addedAt": 1784187641291
+ },
+ {
+  "id": "bbc-6min-how-do-we-adapt-to-the-cold",
+  "guid": "urn:bbc:podcast:p0n7j4vf",
+  "source": "BBC 6 Minute English",
+  "title": "How do we adapt to the cold?",
+  "level": 2,
+  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0n7j0wx.mp3",
+  "sentences": [
+   {
+    "start": 0.0,
+    "end": 3.52,
+    "text": "This BBC podcast is supported by ads outside the UK."
+   },
+   {
+    "start": 31.28,
+    "end": 35.28,
+    "text": "How did a boycott Jimmy become a billionaire from posting videos?"
+   },
+   {
+    "start": 35.28,
+    "end": 41.28,
+    "text": "On Good Bad Billionaire, we're going to find out how the world's most popular YouTuber, MrBeast, made his fortune."
+   },
+   {
+    "start": 41.28,
+    "end": 49.28,
+    "text": "He's buried himself in a coffin for days, counter to 100,000 on camera, and even recreated squid games, all in an attempt to go viral on the internet."
+   },
+   {
+    "start": 49.28,
+    "end": 53.28,
+    "text": "But it all started when he gave a homeless man $10,000."
+   },
+   {
+    "start": 53.28,
+    "end": 55.28,
+    "text": "So is he a philanthropist reshaping capitalism?"
+   },
+   {
+    "start": 55.28,
+    "end": 57.28,
+    "text": "Or is he just the king of the attention economy?"
+   },
+   {
+    "start": 57.28,
+    "end": 63.28,
+    "text": "Find out on Good Bad Billionaire, Listen on bbc.com or wherever you get your podcasts."
+   },
+   {
+    "start": 89.28,
+    "end": 95.28,
+    "text": "Search Learning English for Work in your podcast app or visit bbclearningenglish.com to listen."
+   },
+   {
+    "start": 122.04,
+    "end": 124.04,
+    "text": "Are you good at dealing with the cold, Phil?"
+   },
+   {
+    "start": 124.04,
+    "end": 128.04,
+    "text": "I'm not sure, but I do know that I don't like it. What about you, Becca?"
+   },
+   {
+    "start": 128.04,
+    "end": 134.04,
+    "text": "Well, I'd rather be too hot and cool down than too cold and try to warm up."
+   },
+   {
+    "start": 134.04,
+    "end": 139.04,
+    "text": "Yes, me too. Here in the UK, it never gets as cold as Finland."
+   },
+   {
+    "start": 139.04,
+    "end": 146.04,
+    "text": "But it's not unusual to see some people dressed in t-shirts while others are wrapped up in warm clothes."
+   },
+   {
+    "start": 146.04,
+    "end": 149.04,
+    "text": "Why do people feel the cold so differently?"
+   },
+   {
+    "start": 149.04,
+    "end": 155.04,
+    "text": "That's what we'll be discussing in this episode, as well as learning some useful new words and phrases."
+   },
+   {
+    "start": 155.04,
+    "end": 163.04,
+    "text": "And as always, you'll find all the vocabulary from this episode, plus a quiz and worksheet on our website, bbclearningenglish.com."
+   },
+   {
+    "start": 163.04,
+    "end": 165.04,
+    "text": "But now I have a question for you, Becca."
+   },
+   {
+    "start": 165.04,
+    "end": 174.04,
+    "text": "According to the Guinness Book of World Records, the lowest temperature ever recorded was a very cold minus 89 degrees Celsius."
+   },
+   {
+    "start": 174.04,
+    "end": 183.04,
+    "text": "But where? Was it A, the Arctic, B, Antarctica or C, the top of Mount Everest?"
+   },
+   {
+    "start": 183.04,
+    "end": 187.04,
+    "text": "I'm going to guess B, Antarctica."
+   },
+   {
+    "start": 187.04,
+    "end": 191.04,
+    "text": "OK, well, we'll find out the answer at the end of the programme."
+   },
+   {
+    "start": 191.04,
+    "end": 198.04,
+    "text": "Our experience of cold depends on many things, including our genes, culture and place of birth."
+   },
+   {
+    "start": 198.04,
+    "end": 203.04,
+    "text": "But perhaps the most obvious thing is the clothes we wear."
+   },
+   {
+    "start": 203.04,
+    "end": 211.04,
+    "text": "Professor Gunil Sartran lives on the icy island of Svalbard, 800 miles inside the Arctic Circle."
+   },
+   {
+    "start": 212.04,
+    "end": 221.04,
+    "text": "Here she advises presenter Caroline Steele on how to dress against the cold for BBC World Service programme Crowd Science."
+   },
+   {
+    "start": 221.04,
+    "end": 225.04,
+    "text": "So what should we consider when choosing our clothes?"
+   },
+   {
+    "start": 225.04,
+    "end": 231.04,
+    "text": "First of all, I would say that perhaps the gender differs."
+   },
+   {
+    "start": 231.04,
+    "end": 235.04,
+    "text": "So male often are more tolerant perhaps than females."
+   },
+   {
+    "start": 235.04,
+    "end": 237.04,
+    "text": "Then it's of course what you're used to."
+   },
+   {
+    "start": 237.04,
+    "end": 240.04,
+    "text": "Are you used to dealing with the cold? Are you not?"
+   },
+   {
+    "start": 241.04,
+    "end": 246.04,
+    "text": "Gunil says that first and foremost, men and women filled the cold differently."
+   },
+   {
+    "start": 246.04,
+    "end": 251.04,
+    "text": "She uses the phrase first and foremost to mean more than anything else."
+   },
+   {
+    "start": 251.04,
+    "end": 257.04,
+    "text": "She wants to emphasise that something, in this case someone's gender, is the most important thing to consider."
+   },
+   {
+    "start": 257.04,
+    "end": 262.04,
+    "text": "There is some debate about whether men or women are more tolerant of the cold."
+   },
+   {
+    "start": 262.04,
+    "end": 268.04,
+    "text": "Being tolerant of something means being able to endure it without getting hurt."
+   },
+   {
+    "start": 269.04,
+    "end": 276.04,
+    "text": "Another important factor is whether you are used to the cold, if being in cold environments is something you're familiar with."
+   },
+   {
+    "start": 276.04,
+    "end": 283.04,
+    "text": "It might sound obvious that someone born in Arctic Svalbard would feel less cold than someone born in Brazil."
+   },
+   {
+    "start": 283.04,
+    "end": 291.04,
+    "text": "But apart from environmental factors, are there actual physical differences that allow people to cope better with the cold?"
+   },
+   {
+    "start": 291.04,
+    "end": 299.04,
+    "text": "Dr. Kara Okubok studies reindeer herders in northern Finland, people who live in cold temperatures every day and have done for centuries."
+   },
+   {
+    "start": 299.04,
+    "end": 306.04,
+    "text": "She measures their reaction to extreme cold and compares it to ordinary Finns from warmer parts of the country."
+   },
+   {
+    "start": 306.04,
+    "end": 313.04,
+    "text": "Here, Kara shares her findings with Caroline Steele from BBC World Service's Crowd Science."
+   },
+   {
+    "start": 313.04,
+    "end": 318.04,
+    "text": "Ok, and my guess is the reindeer herders deal better in the cold?"
+   },
+   {
+    "start": 318.04,
+    "end": 326.04,
+    "text": "Yes and no! The more data we collect within this area, the more confusing the picture gets."
+   },
+   {
+    "start": 326.04,
+    "end": 336.04,
+    "text": "I can say that subjectively at this point, the reindeer herders at least kind of mentally handle the cold far better. They are far less likely to shiver."
+   },
+   {
+    "start": 336.04,
+    "end": 344.04,
+    "text": "So, do the reindeer herders deal better with the cold? The answer is yes and no."
+   },
+   {
+    "start": 344.04,
+    "end": 350.04,
+    "text": "A phrase meaning partly and partly not, used when there's no clear answer to a question."
+   },
+   {
+    "start": 350.04,
+    "end": 359.04,
+    "text": "However, Kara does say, subjectively, the herders manage better. They don't feel so cold."
+   },
+   {
+    "start": 359.04,
+    "end": 366.04,
+    "text": "Subjectively means based on your personal inner experience rather than objective facts."
+   },
+   {
+    "start": 366.04,
+    "end": 372.04,
+    "text": "And physically, there are differences too. Reindeer herders are less likely to shiver."
+   },
+   {
+    "start": 373.04,
+    "end": 387.04,
+    "text": "The shaky movement that cold muscles make to try and warm them up. In fact, how we experience the cold is probably a combination of everything we've discussed, including genetic adaptations passed on from parents to children."
+   },
+   {
+    "start": 387.04,
+    "end": 393.04,
+    "text": "Right, I'm off to find my gloves and woolly hat, so why don't you reveal the answer to the question, Phil?"
+   },
+   {
+    "start": 393.04,
+    "end": 401.04,
+    "text": "Yes, I asked where the lowest temperature on Earth was ever recorded. You said B, Antarctica."
+   },
+   {
+    "start": 401.04,
+    "end": 411.04,
+    "text": "And that is the right answer. The lowest temperature ever recorded on Earth was at the Vostok Research Station in Antarctica in 1983."
+   },
+   {
+    "start": 411.04,
+    "end": 419.04,
+    "text": "Let's recap the vocabulary we've learnt, starting with the phrase first and foremost, meaning more than anything else."
+   },
+   {
+    "start": 419.04,
+    "end": 425.04,
+    "text": "A person who is tolerant of something is able to endure it without being hurt."
+   },
+   {
+    "start": 425.04,
+    "end": 428.04,
+    "text": "If you're used to something, you're familiar with it."
+   },
+   {
+    "start": 428.04,
+    "end": 436.04,
+    "text": "The idiom yes and no means partly and partly not and is used when you can't give a clear answer to a question."
+   },
+   {
+    "start": 436.04,
+    "end": 443.04,
+    "text": "The adverb subjectively means in a way that's based on your personal experience rather than objective facts."
+   },
+   {
+    "start": 444.04,
+    "end": 450.04,
+    "text": "And finally, a shiver is the shaking movement made by your muscles when you feel cold or afraid."
+   },
+   {
+    "start": 450.04,
+    "end": 459.04,
+    "text": "Once again, our six minutes are up. But remember, you'll find a quiz and a worksheet for this episode on our website, bbclearningenglish.com."
+   }
+  ],
+  "addedAt": 1784187588224
+ },
+ {
+  "id": "bbc-6min-weight-loss-drugs",
+  "guid": "urn:bbc:podcast:p0n8vl35",
+  "source": "BBC 6 Minute English",
+  "title": "Weight loss drugs",
+  "level": 2,
+  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0n8vh7b.mp3",
+  "sentences": [
+   {
+    "start": 0.0,
+    "end": 3.52,
+    "text": "This BBC podcast is supported by ads outside the UK."
+   },
+   {
+    "start": 31.28,
+    "end": 35.28,
+    "text": "How did a boycott Jimmy become a billionaire from posting videos?"
+   },
+   {
+    "start": 35.28,
+    "end": 41.28,
+    "text": "On Good Bad Billionaire, we're going to find out how the world's most popular YouTuber, MrBeast, made his fortune."
+   },
+   {
+    "start": 41.28,
+    "end": 49.28,
+    "text": "He's buried himself in a coffin for days, counter to 100,000 on camera, and even recreated squid games, all in an attempt to go viral on the internet."
+   },
+   {
+    "start": 49.28,
+    "end": 53.28,
+    "text": "But it all started when he gave a homeless man $10,000."
+   },
+   {
+    "start": 53.28,
+    "end": 55.28,
+    "text": "So is he a philanthropist reshaping capitalism?"
+   },
+   {
+    "start": 55.28,
+    "end": 57.28,
+    "text": "Or is he just the king of the attention economy?"
+   },
+   {
+    "start": 57.28,
+    "end": 63.28,
+    "text": "Find out on Good Bad Billionaire, listen on BBC.com or wherever you get your podcasts."
+   },
+   {
+    "start": 91.07,
+    "end": 93.07,
+    "text": "I'm Neil. And I'm Georgie."
+   },
+   {
+    "start": 93.07,
+    "end": 96.07,
+    "text": "Neil, I saw you eating a healthy-looking salad earlier."
+   },
+   {
+    "start": 96.07,
+    "end": 98.07,
+    "text": "Is there anything else you do to stay healthy?"
+   },
+   {
+    "start": 98.07,
+    "end": 105.07,
+    "text": "At the moment, I am following an exercise routine and I'm eating healthily."
+   },
+   {
+    "start": 105.07,
+    "end": 107.07,
+    "text": "But I'm not sure if it's having much effect."
+   },
+   {
+    "start": 107.07,
+    "end": 113.07,
+    "text": "How about you? Well, I'm training for a half marathon at the moment, so I'm doing a lot of running."
+   },
+   {
+    "start": 113.07,
+    "end": 115.07,
+    "text": "But I still eat a lot of sugar."
+   },
+   {
+    "start": 115.07,
+    "end": 123.07,
+    "text": "A sweet treat. Diet, exercise and eating in moderation help some people stay at a healthy weight."
+   },
+   {
+    "start": 123.07,
+    "end": 130.07,
+    "text": "But with around 65% of British adults estimated to be overweight, that doesn't help everyone."
+   },
+   {
+    "start": 130.07,
+    "end": 134.07,
+    "text": "But this has changed with the recent invention of weight-loss drugs."
+   },
+   {
+    "start": 134.07,
+    "end": 140.07,
+    "text": "Yes, weight-loss drugs like ozempic and manjaro have been a hot topic this year."
+   },
+   {
+    "start": 140.07,
+    "end": 146.07,
+    "text": "The drugs are modified versions of natural hormones which make us feel full when released into the body."
+   },
+   {
+    "start": 146.07,
+    "end": 152.07,
+    "text": "Weight-loss drugs are injected into the tummy and replicate this effect but last much longer."
+   },
+   {
+    "start": 152.07,
+    "end": 156.07,
+    "text": "The idea is that you feel full for longer, eat less and lose weight."
+   },
+   {
+    "start": 156.07,
+    "end": 165.07,
+    "text": "In this episode, we'll be hearing more about these drugs helping people lose weight and, as usual, we'll be learning some useful new words and phrases."
+   },
+   {
+    "start": 165.07,
+    "end": 170.07,
+    "text": "Plus, there's a worksheet and quiz to practise all the vocabulary we'll learn on our website."
+   },
+   {
+    "start": 170.07,
+    "end": 173.07,
+    "text": "But first, I have a question for you, Neil."
+   },
+   {
+    "start": 173.07,
+    "end": 178.07,
+    "text": "The measurement used by doctors to estimate if someone is at a healthy weight is called BMI."
+   },
+   {
+    "start": 178.07,
+    "end": 181.07,
+    "text": "But what does BMI stand for?"
+   },
+   {
+    "start": 181.07,
+    "end": 188.07,
+    "text": "Is it A, British Medical Index, B, Body Mass Index or C, Body Muscle Index?"
+   },
+   {
+    "start": 188.07,
+    "end": 196.07,
+    "text": "Well, I am 99.9% certain that I know the answer, Georgie, so I don't want to spoil it for our listeners."
+   },
+   {
+    "start": 196.07,
+    "end": 198.07,
+    "text": "So we'll just find out at the end."
+   },
+   {
+    "start": 198.07,
+    "end": 203.07,
+    "text": "OK then. For radio listener Lynn Massey-Davis, weight-loss drugs have been life-changing."
+   },
+   {
+    "start": 203.07,
+    "end": 211.07,
+    "text": "Using the drug Mount Jaro, Lynn lost 20kg in six months and now feels happier than ever about her weight."
+   },
+   {
+    "start": 211.07,
+    "end": 216.07,
+    "text": "Something she discussed with Greg Foote, presenter of BBC Radio 4 programme Sliced Bread."
+   },
+   {
+    "start": 216.07,
+    "end": 218.07,
+    "text": "What's it like to be on it?"
+   },
+   {
+    "start": 218.07,
+    "end": 221.07,
+    "text": "Well, I don't get hungry, so food noise stops."
+   },
+   {
+    "start": 221.07,
+    "end": 229.07,
+    "text": "In all those scripts about yourself that you're a bad person for eating, I feel like that judgement has drifted into the ether."
+   },
+   {
+    "start": 229.07,
+    "end": 231.07,
+    "text": "And when you say food noise, what do you mean by that?"
+   },
+   {
+    "start": 231.07,
+    "end": 236.07,
+    "text": "For me, it was a conflict, like I got the devil and an angel on my shoulders."
+   },
+   {
+    "start": 236.07,
+    "end": 240.07,
+    "text": "The angel said, don't eat that because you shouldn't eat food."
+   },
+   {
+    "start": 240.07,
+    "end": 243.07,
+    "text": "The devil inside me said, oh, but you just want to taste."
+   },
+   {
+    "start": 243.07,
+    "end": 250.07,
+    "text": "It damaged my self-esteem for a very, very long time, probably for the best part of maybe 50 years."
+   },
+   {
+    "start": 250.07,
+    "end": 257.07,
+    "text": "Weight-loss drugs help Lynn reduce food noise, a term for intrusive and unwanted thoughts about food."
+   },
+   {
+    "start": 257.07,
+    "end": 264.07,
+    "text": "In fact, Lynn says her unwanted food noise has gone into the ether, meaning it has completely disappeared."
+   },
+   {
+    "start": 264.07,
+    "end": 268.07,
+    "text": "Before using Mount Jaro, Lynn felt conflicted about food."
+   },
+   {
+    "start": 268.07,
+    "end": 276.07,
+    "text": "She says there was an angel on one shoulder and a devil on the other, an old idiom which describes having a personal dilemma."
+   },
+   {
+    "start": 276.07,
+    "end": 285.07,
+    "text": "An imaginary angel representing Lynn's conscience told her what she should do while a devil sat on the other shoulder whispering temptations in her ear."
+   },
+   {
+    "start": 285.07,
+    "end": 292.07,
+    "text": "Over many years, this inner conflict damaged Lynn's self-esteem, her belief and confidence in her own abilities."
+   },
+   {
+    "start": 292.07,
+    "end": 296.07,
+    "text": "Interestingly, weight-loss drugs weren't invented to lose weight at all."
+   },
+   {
+    "start": 296.07,
+    "end": 303.07,
+    "text": "They were originally designed for diabetes, a disease caused when somebody's blood sugar levels get too high."
+   },
+   {
+    "start": 303.07,
+    "end": 307.07,
+    "text": "It was only later that doctors noticed the drug's effect on weight."
+   },
+   {
+    "start": 307.07,
+    "end": 314.07,
+    "text": "Professor Giles Yeo researches obesity and is also a consultant for companies developing weight-loss drugs."
+   },
+   {
+    "start": 314.07,
+    "end": 318.07,
+    "text": "Here he is talking to BBC Radio 4's Sliced Bread."
+   },
+   {
+    "start": 318.07,
+    "end": 329.07,
+    "text": "We talked about Ozimpic first because that was the first on the market for diabetes and then people began to notice as a side effect that people were losing weight."
+   },
+   {
+    "start": 329.07,
+    "end": 337.07,
+    "text": "A lot of people with diabetes also have obesity and part of the effects of actually reversing the diabetes is the fact that they lose weight."
+   },
+   {
+    "start": 337.07,
+    "end": 340.07,
+    "text": "Doctors began to sort of prescribe them off-label."
+   },
+   {
+    "start": 340.07,
+    "end": 343.07,
+    "text": "Ozimpic was the first drug on the market."
+   },
+   {
+    "start": 343.07,
+    "end": 346.07,
+    "text": "When something is on the market, it's available for sale."
+   },
+   {
+    "start": 346.07,
+    "end": 352.07,
+    "text": "Ozimpic was designed for diabetes, but doctors noticed that patients lost weight as a side effect."
+   },
+   {
+    "start": 352.07,
+    "end": 357.07,
+    "text": "A side effect is an unexpected secondary effect of a drug or medicine."
+   },
+   {
+    "start": 357.07,
+    "end": 362.07,
+    "text": "It's usually an undesirable effect, although not in this case as it helped people lose weight."
+   },
+   {
+    "start": 362.07,
+    "end": 366.07,
+    "text": "But could weight-loss drugs be too good to be true?"
+   },
+   {
+    "start": 366.07,
+    "end": 374.07,
+    "text": "A public health official in the UK warns that the drugs alone are not the solution and that people should be encouraged to have a healthier lifestyle."
+   },
+   {
+    "start": 374.07,
+    "end": 378.07,
+    "text": "Right, Georgie, isn't it time you revealed the answer to your question?"
+   },
+   {
+    "start": 378.07,
+    "end": 385.07,
+    "text": "Yes, I asked about BMI, which is the measurement used by doctors to estimate if someone is at a healthy weight."
+   },
+   {
+    "start": 385.07,
+    "end": 388.07,
+    "text": "But what does BMI stand for?"
+   },
+   {
+    "start": 388.07,
+    "end": 390.07,
+    "text": "Now, Neil, you didn't give me an answer earlier."
+   },
+   {
+    "start": 390.07,
+    "end": 395.07,
+    "text": "Yes, that's because I was sure the answer is B, body mass index."
+   },
+   {
+    "start": 395.07,
+    "end": 397.07,
+    "text": "That's correct, well done."
+   },
+   {
+    "start": 397.07,
+    "end": 404.07,
+    "text": "OK, let's recap the vocabulary we've learnt, starting with food noise – intrusive and unwanted thoughts about food."
+   },
+   {
+    "start": 404.07,
+    "end": 413.07,
+    "text": "The idiom an angel on one shoulder and a devil on the other describes a personal dilemma where someone must choose whether to follow their conscience or not."
+   },
+   {
+    "start": 413.07,
+    "end": 417.07,
+    "text": "Self-esteem means a belief in your own abilities and value."
+   },
+   {
+    "start": 417.07,
+    "end": 423.07,
+    "text": "If something disappears into the ether, it completely goes away – it vanishes into the air."
+   },
+   {
+    "start": 423.07,
+    "end": 427.07,
+    "text": "A product which is on the market is available for people to buy."
+   },
+   {
+    "start": 427.07,
+    "end": 435.07,
+    "text": "And finally, a side effect is an unexpected and usually unwanted secondary effect of a drug or medicine."
+   },
+   {
+    "start": 435.07,
+    "end": 437.07,
+    "text": "Once again, our six minutes are up."
+   },
+   {
+    "start": 437.07,
+    "end": 446.07,
+    "text": "But if you're interested in programmes about health, we have a health topic page, which you can find on our website, bbclearningenglish.com."
+   }
+  ],
+  "addedAt": 1784187484503
+ },
+ {
+  "id": "bbc-6min-are-saunas-good-for-you",
+  "guid": "urn:bbc:podcast:p0nb6y5v",
+  "source": "BBC 6 Minute English",
+  "title": "Are saunas good for you?",
+  "level": 2,
+  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0nb6w9d.mp3",
+  "sentences": [
+   {
+    "start": 89.28,
+    "end": 99.58,
+    "text": "Hello, this is 6 Minute English from BBC Learning English. I'm Neil."
+   },
+   {
+    "start": 99.58,
+    "end": 106.58,
+    "text": "And I'm Georgie. In winter, people find different ways of keeping warm, like wearing extra clothes or staying indoors."
+   },
+   {
+    "start": 106.58,
+    "end": 111.58,
+    "text": "But in some countries, there's another way of keeping the cold out – going for a sauna."
+   },
+   {
+    "start": 111.58,
+    "end": 119.58,
+    "text": "Yes, Nordic countries like Sweden and Finland have a long history of taking saunas, but now they're popping up in Britain too."
+   },
+   {
+    "start": 120.58,
+    "end": 122.58,
+    "text": "Have you ever been for a sauna, Georgie?"
+   },
+   {
+    "start": 122.58,
+    "end": 129.58,
+    "text": "I have, yes. And if I'm honest, I'm not a huge fan. I don't really like being too hot. It's uncomfortable. What about you, Neil?"
+   },
+   {
+    "start": 129.58,
+    "end": 134.58,
+    "text": "Oh, really? I quite like a sauna. You feel really refreshed afterwards."
+   },
+   {
+    "start": 134.58,
+    "end": 141.58,
+    "text": "So what is a sauna? Well, a typical sauna is a small wooden room heated with steam to around 80 degrees Celsius."
+   },
+   {
+    "start": 141.58,
+    "end": 146.58,
+    "text": "It's hot enough to make anyone sweat. But are saunas good for your health as well?"
+   },
+   {
+    "start": 146.58,
+    "end": 151.58,
+    "text": "That's what James Gallagher wanted to find out for BBC Radio 4 programme Inside Health."
+   },
+   {
+    "start": 151.58,
+    "end": 160.58,
+    "text": "We're seeing what saunas do to the human body. They're popping up all over the country with claims that high temperatures boost your health and wellbeing."
+   },
+   {
+    "start": 160.58,
+    "end": 162.58,
+    "text": "But are they all they're cracked up to be?"
+   },
+   {
+    "start": 162.58,
+    "end": 169.58,
+    "text": "James wants to find out if saunas are all they're cracked up to be. He means, are they as good as people say."
+   },
+   {
+    "start": 169.58,
+    "end": 175.58,
+    "text": "And that's exactly what we'll be finding out in this episode, along with some useful new words and phrases."
+   },
+   {
+    "start": 175.58,
+    "end": 183.58,
+    "text": "And remember, you can practise all the new vocabulary from this episode with the quiz and worksheet on our website, bbclearningenglish.com."
+   },
+   {
+    "start": 183.58,
+    "end": 190.58,
+    "text": "But now I have a question for you, Georgie. The word sauna comes from the Finnish language. But what does it mean?"
+   },
+   {
+    "start": 190.58,
+    "end": 196.58,
+    "text": "Does it mean A, sweat, B, hot water or C, bathhouse?"
+   },
+   {
+    "start": 196.58,
+    "end": 200.58,
+    "text": "Ooh, I'm going to guess C, bathhouse."
+   },
+   {
+    "start": 200.58,
+    "end": 204.58,
+    "text": "OK, well, we'll find out if you're right at the end of the programme."
+   },
+   {
+    "start": 204.58,
+    "end": 209.58,
+    "text": "In recent winters, saunas have grown in popularity in the UK."
+   },
+   {
+    "start": 209.58,
+    "end": 215.58,
+    "text": "BBC reporter James Gallagher met some people going to Moor A sauna, a beach sauna in South Wales."
+   },
+   {
+    "start": 215.58,
+    "end": 218.58,
+    "text": "He asked them why they love saunas so much."
+   },
+   {
+    "start": 218.58,
+    "end": 223.86,
+    "text": "Hello, everyone. Hello."
+   },
+   {
+    "start": 223.86,
+    "end": 225.86,
+    "text": "Who loves a sauna? Me."
+   },
+   {
+    "start": 225.86,
+    "end": 234.86,
+    "text": "Me. Tell me why. Oh, it's just so relaxing. It just makes you feel at ease."
+   },
+   {
+    "start": 234.86,
+    "end": 238.86,
+    "text": "It's also great for relaxing muscles if you're up tense or anything like that at all."
+   },
+   {
+    "start": 238.86,
+    "end": 249.86,
+    "text": "Yeah, I always love coming down here when I'm a bit stressed out and by the time that I'm finished, I feel like I've completely reset. It's wonderful."
+   },
+   {
+    "start": 249.86,
+    "end": 255.86,
+    "text": "The first speaker says saunas make her feel at ease, a phrase meaning comfortable and relaxed."
+   },
+   {
+    "start": 255.86,
+    "end": 262.86,
+    "text": "And the next speaker thinks saunas are great if you feel tense, an adjective meaning worried and unable to relax."
+   },
+   {
+    "start": 262.86,
+    "end": 266.86,
+    "text": "Saunas make the final speaker feel like she's reset."
+   },
+   {
+    "start": 266.86,
+    "end": 272.86,
+    "text": "You might already know the word reset to mean turning a computer off and on again when it's not working."
+   },
+   {
+    "start": 272.86,
+    "end": 279.86,
+    "text": "But used in connection with a person, reset means to start again after a rest so that you feel better about life."
+   },
+   {
+    "start": 279.86,
+    "end": 285.86,
+    "text": "So it seems saunas do help people feel better, but is there actual medical evidence that it's good for us?"
+   },
+   {
+    "start": 285.86,
+    "end": 294.86,
+    "text": "Here's James Gallagher again speaking with Professor Damian Bailey, an expert in human physiology for BBC Radio 4 programme Inside Health."
+   },
+   {
+    "start": 294.86,
+    "end": 300.86,
+    "text": "When we start to connect this to the arguments around health benefits, is there a health benefit to going in a sauna?"
+   },
+   {
+    "start": 300.86,
+    "end": 305.86,
+    "text": "Yeah, I mean, I looked at the research really closely. I was fascinated by the evidence."
+   },
+   {
+    "start": 305.86,
+    "end": 309.86,
+    "text": "Huge benefits. I mean, really huge benefits. And it's cultural, of course."
+   },
+   {
+    "start": 309.86,
+    "end": 313.86,
+    "text": "Five million people in Finland, 90% of them use saunas."
+   },
+   {
+    "start": 313.86,
+    "end": 322.86,
+    "text": "Maybe we should be copying what the Finns do because there's a 40% reduction in all cause mortality with the sauna goers."
+   },
+   {
+    "start": 322.86,
+    "end": 328.86,
+    "text": "Now, this is what we would call observational data, but it's based on thousands and thousands of sauna goers."
+   },
+   {
+    "start": 328.86,
+    "end": 333.86,
+    "text": "These are observational data sets. So we really do need what we call RCTs, randomized controlled trials."
+   },
+   {
+    "start": 333.86,
+    "end": 337.86,
+    "text": "So everything, just as you've mentioned there, everything is absolutely controlled."
+   },
+   {
+    "start": 337.86,
+    "end": 341.86,
+    "text": "But we can't turn our noses up at the current data, the observational data."
+   },
+   {
+    "start": 341.86,
+    "end": 348.86,
+    "text": "Damian discusses the evidence from Finland, a country where 90% of the population are regular sauna goers."
+   },
+   {
+    "start": 348.86,
+    "end": 353.86,
+    "text": "And it's impressive, a 40% reduction in deaths from all causes."
+   },
+   {
+    "start": 353.86,
+    "end": 365.86,
+    "text": "But it's important to remember that this is based on observational data, information collected from watching people's natural behaviour and not from controlled medical trials."
+   },
+   {
+    "start": 365.86,
+    "end": 372.86,
+    "text": "Nevertheless, this observational data is based on evidence from thousands and thousands of Finns over many years."
+   },
+   {
+    "start": 372.86,
+    "end": 375.86,
+    "text": "That's why Damian thinks we shouldn't turn our noses up at it."
+   },
+   {
+    "start": 375.86,
+    "end": 379.86,
+    "text": "We shouldn't reject it simply because we think it's not good enough for us."
+   },
+   {
+    "start": 379.86,
+    "end": 383.86,
+    "text": "Well, all this talk about saunas has made me want to give it another try."
+   },
+   {
+    "start": 383.86,
+    "end": 386.86,
+    "text": "But not before you reveal the answer to your question, Neil."
+   },
+   {
+    "start": 386.86,
+    "end": 394.86,
+    "text": "I asked you what the Finnish word sauna means. Is it A, sweat, B, hot water or C, bathhouse?"
+   },
+   {
+    "start": 394.86,
+    "end": 397.86,
+    "text": "And I said bathhouse, am I right?"
+   },
+   {
+    "start": 397.86,
+    "end": 399.86,
+    "text": "You are absolutely correct. Well done."
+   },
+   {
+    "start": 399.86,
+    "end": 404.86,
+    "text": "Yay! OK, let's recap the vocabulary we've learnt in this episode."
+   },
+   {
+    "start": 404.86,
+    "end": 409.86,
+    "text": "If something is not all it's cracked up to be, it isn't as good as people say."
+   },
+   {
+    "start": 409.86,
+    "end": 413.86,
+    "text": "When someone's at ease, they feel comfortable and unstressed."
+   },
+   {
+    "start": 413.86,
+    "end": 417.86,
+    "text": "Whereas, a tense person is worried and unable to relax."
+   },
+   {
+    "start": 417.86,
+    "end": 423.86,
+    "text": "When someone resets, they start again after a rest, which has made them feel better about life."
+   },
+   {
+    "start": 423.86,
+    "end": 430.86,
+    "text": "Observational data is information collected from watching people's natural behaviour without interfering in it."
+   },
+   {
+    "start": 430.86,
+    "end": 436.86,
+    "text": "And finally, if you turn your nose up at something, you reject it because you think it's not good enough for you."
+   },
+   {
+    "start": 437.86,
+    "end": 447.86,
+    "text": "Once again, our six minutes are up, but if you want to improve your English with more trending topics and useful vocabulary, you'll find plenty on our website, bbclearningenglish.com."
+   }
+  ],
+  "addedAt": 1784187373405
+ },
+ {
+  "id": "bbc-6min-the-future-of-food",
+  "guid": "urn:bbc:podcast:p0nccgt3",
+  "source": "BBC 6 Minute English",
+  "title": "The future of food",
+  "level": 2,
+  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0nccg0b.mp3",
+  "sentences": [
+   {
+    "start": 0.0,
+    "end": 3.52,
+    "text": "This BBC podcast is supported by ads outside the UK."
+   },
+   {
+    "start": 31.28,
+    "end": 35.28,
+    "text": "How did a boycott Jimmy become a billionaire from posting videos?"
+   },
+   {
+    "start": 35.28,
+    "end": 41.28,
+    "text": "On Good Bad Billionaire, we're going to find out how the world's most popular YouTuber, MrBeast, made his fortune."
+   },
+   {
+    "start": 41.28,
+    "end": 49.28,
+    "text": "He's buried himself in a coffin for days, counter to 100,000 on camera, and even recreated squid games, all in an attempt to go viral on the internet."
+   },
+   {
+    "start": 49.28,
+    "end": 53.28,
+    "text": "But it all started when he gave a homeless man $10,000."
+   },
+   {
+    "start": 53.28,
+    "end": 55.28,
+    "text": "So is he a philanthropist reshaping capitalism?"
+   },
+   {
+    "start": 55.28,
+    "end": 57.28,
+    "text": "Or is he just the king of the attention economy?"
+   },
+   {
+    "start": 57.28,
+    "end": 63.28,
+    "text": "Find out on Good Bad Billionaire, listen on BBC.com or wherever you get your podcasts."
+   },
+   {
+    "start": 89.28,
+    "end": 95.28,
+    "text": "Learn about the world and improve your reading skills with The Reading Room at bbclearningenglish.com."
+   },
+   {
+    "start": 120.98,
+    "end": 134.98,
+    "text": "I try to pay attention and buy stuff that's locally produced but actually sometimes I don't really look. How about you?"
+   },
+   {
+    "start": 134.98,
+    "end": 142.98,
+    "text": "I actually have a calendar on my kitchen wall which tells me which fruits and vegetables are grown at what times of year."
+   },
+   {
+    "start": 142.98,
+    "end": 146.98,
+    "text": "The reality is that the supply of fresh food to the UK is fragile."
+   },
+   {
+    "start": 146.98,
+    "end": 156.98,
+    "text": "The UK imports around 40% of its food and this supply chain can easily be disrupted by wars, shortages and increasingly by climate change."
+   },
+   {
+    "start": 156.98,
+    "end": 171.98,
+    "text": "In fact, the UK Government's Department for Environment, Food and Rural Affairs recently reported on the importance of food security, the term for having a reliable enough supply of affordable, healthy food to feed everyone."
+   },
+   {
+    "start": 171.98,
+    "end": 177.98,
+    "text": "In this episode, we'll be investigating the issues affecting food production in the UK."
+   },
+   {
+    "start": 177.98,
+    "end": 188.98,
+    "text": "As usual, we'll learn some useful new vocabulary and remember there's a quiz, worksheet and transcript of this episode on our website bbclearningenglish.com."
+   },
+   {
+    "start": 188.98,
+    "end": 191.98,
+    "text": "But first, of course, Pippa, I have a quiz question for you."
+   },
+   {
+    "start": 191.98,
+    "end": 197.98,
+    "text": "I mentioned that Britain imports 40% of its food from other producers, mostly in Europe."
+   },
+   {
+    "start": 197.98,
+    "end": 202.98,
+    "text": "But which European country does the UK import the most food from?"
+   },
+   {
+    "start": 202.98,
+    "end": 207.98,
+    "text": "Is it a. France, b. The Netherlands or c. Ireland?"
+   },
+   {
+    "start": 207.98,
+    "end": 214.98,
+    "text": "I've seen the Netherlands on a lot of food packaging in the UK, so I'm going to say b. The Netherlands."
+   },
+   {
+    "start": 214.98,
+    "end": 218.98,
+    "text": "OK, well, we'll find out if you're right later in the programme."
+   },
+   {
+    "start": 218.98,
+    "end": 224.98,
+    "text": "According to the UK Government's recent report, there are many issues affecting Britain's food supply."
+   },
+   {
+    "start": 224.98,
+    "end": 233.98,
+    "text": "Geopolitical conflicts like those in Ukraine and Iran, droughts and water shortages, loss of biodiversity caused by climate change."
+   },
+   {
+    "start": 233.98,
+    "end": 235.98,
+    "text": "The list goes on and on."
+   },
+   {
+    "start": 235.98,
+    "end": 243.98,
+    "text": "Here, climate reporter Mark Pointing discusses the report's conclusions with BBC Radio 4's The Food Programme."
+   },
+   {
+    "start": 243.98,
+    "end": 253.98,
+    "text": "And it really draws on scientific research to come up with what it calls as a reasonable worst-case scenario for how biodiversity loss could affect UK security."
+   },
+   {
+    "start": 253.98,
+    "end": 256.98,
+    "text": "And its conclusions are really quite stark."
+   },
+   {
+    "start": 256.98,
+    "end": 264.98,
+    "text": "The first line of the report says global ecosystem degradation and collapse threatens the UK's national security."
+   },
+   {
+    "start": 264.98,
+    "end": 270.98,
+    "text": "The report describes a worst-case scenario where Britain runs out of food."
+   },
+   {
+    "start": 270.98,
+    "end": 276.98,
+    "text": "A worst-case scenario is the worst possible thing that could happen in a particular situation."
+   },
+   {
+    "start": 277.98,
+    "end": 279.98,
+    "text": "Mark says the report's conclusions are stark."
+   },
+   {
+    "start": 279.98,
+    "end": 283.98,
+    "text": "An adjective which in this case means obvious or severe."
+   },
+   {
+    "start": 283.98,
+    "end": 287.98,
+    "text": "Another problem with food security relates to climate change."
+   },
+   {
+    "start": 287.98,
+    "end": 299.98,
+    "text": "Carbon emissions from food production make up around a third of all greenhouse gases, from the diesel used to drive tractors, to fertilisers, to cows and sheep producing methane."
+   },
+   {
+    "start": 299.98,
+    "end": 304.98,
+    "text": "Emma Pinchbeck is the Chief Executive of the UK's Climate Change Committee."
+   },
+   {
+    "start": 304.98,
+    "end": 308.98,
+    "text": "She spoke about this problem with BBC Radio 4's The Food Programme."
+   },
+   {
+    "start": 308.98,
+    "end": 314.98,
+    "text": "The biggest chunk of emissions from agriculture comes from simply having livestock on the land."
+   },
+   {
+    "start": 314.98,
+    "end": 317.98,
+    "text": "That's the bit of the puzzle that we need to think about going forward."
+   },
+   {
+    "start": 317.98,
+    "end": 324.98,
+    "text": "And in the way that we've thought about it, for every cow or sheep we take off the land, we put on something else."
+   },
+   {
+    "start": 324.98,
+    "end": 330.98,
+    "text": "And what that does overall is it makes farmers and landowners part of the solution to climate change, not the problem."
+   },
+   {
+    "start": 330.98,
+    "end": 337.98,
+    "text": "Livestock, that's farm animals such as cattle, sheep and pigs, contribute most of the carbon emissions from agriculture."
+   },
+   {
+    "start": 337.98,
+    "end": 347.98,
+    "text": "Moving towards a sustainable food supply involves reducing the amount of meat and dairy we eat in favour of non-animal protein, such as beans and lentils."
+   },
+   {
+    "start": 347.98,
+    "end": 353.98,
+    "text": "Encouraging farmers and consumers to move away from meat is a piece of the puzzle, according to Emma."
+   },
+   {
+    "start": 353.98,
+    "end": 361.98,
+    "text": "A piece of the puzzle means a part of the solution to a problem, in this case the twin problems of food security and climate change."
+   },
+   {
+    "start": 361.98,
+    "end": 366.98,
+    "text": "Emma says it's important to think again about how farmland is used."
+   },
+   {
+    "start": 366.98,
+    "end": 373.98,
+    "text": "For every cow or sheep taken off the land, something else, such as a fruit tree or vegetable crop, is put in its place."
+   },
+   {
+    "start": 373.98,
+    "end": 377.98,
+    "text": "That way farmers become part of the solution, not the problem."
+   },
+   {
+    "start": 377.98,
+    "end": 383.98,
+    "text": "An idiom meaning that if you are not actively trying to fix a problem, you are helping it continue."
+   },
+   {
+    "start": 383.98,
+    "end": 389.98,
+    "text": "Lots of ideas to chew over there, Neil. But now, isn't it time you revealed the answer to your question?"
+   },
+   {
+    "start": 389.98,
+    "end": 395.98,
+    "text": "My question was, which European country does the UK import the most food from?"
+   },
+   {
+    "start": 395.98,
+    "end": 400.98,
+    "text": "And you said B, the Netherlands. And you were absolutely correct, Pippa."
+   },
+   {
+    "start": 400.98,
+    "end": 408.98,
+    "text": "It is the Netherlands. The UK imports £7.6 billion worth of imports, especially vegetables and dairy."
+   },
+   {
+    "start": 409.98,
+    "end": 420.98,
+    "text": "OK, let's recap the vocabulary we've learned, starting with food security – the situation where a country has a reliable enough supply of food to feed its population."
+   },
+   {
+    "start": 420.98,
+    "end": 426.98,
+    "text": "The worst case scenario is the worst possible thing that could happen in a particular situation."
+   },
+   {
+    "start": 426.98,
+    "end": 431.98,
+    "text": "The adjective stock has several meanings, including obvious and severe."
+   },
+   {
+    "start": 431.98,
+    "end": 437.98,
+    "text": "Livestock are animals and birds that are kept on a farm, such as cows, sheep or chickens."
+   },
+   {
+    "start": 437.98,
+    "end": 441.98,
+    "text": "The phrase a piece of the puzzle means a part of the solution to a problem."
+   },
+   {
+    "start": 441.98,
+    "end": 451.98,
+    "text": "And finally, the idiom be part of the solution, not the problem means that if you are not actively trying to fix a problem, you are helping it continue."
+   },
+   {
+    "start": 451.98,
+    "end": 461.98,
+    "text": "Once again, our six minutes are up. But if this topic has made you hungry for more, why not check out our food topic page on our website, bbclearningenglish.com."
+   }
+  ],
+  "addedAt": 1784187263714
+ },
+ {
+  "id": "bbc-6min-love-the-foods-you-hate",
+  "guid": "urn:bbc:podcast:p0ndq0lv",
+  "source": "BBC 6 Minute English",
+  "title": "Love the foods you hate",
+  "level": 2,
+  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0ndpzkz.mp3",
+  "sentences": [
+   {
+    "start": 0.0,
+    "end": 3.52,
+    "text": "This BBC podcast is supported by ads outside the UK."
+   },
+   {
+    "start": 31.28,
+    "end": 35.28,
+    "text": "How did a boycott Jimmy become a billionaire from posting videos?"
+   },
+   {
+    "start": 35.28,
+    "end": 41.28,
+    "text": "On Good Bad Billionaire, we're going to find out how the world's most popular YouTuber, MrBeast, made his fortune."
+   },
+   {
+    "start": 41.28,
+    "end": 49.28,
+    "text": "He's buried himself in a coffin for days, counter to 100,000 on camera, and even recreated squid games, all in an attempt to go viral on the internet."
+   },
+   {
+    "start": 49.28,
+    "end": 53.28,
+    "text": "But it all started when he gave a homeless man $10,000."
+   },
+   {
+    "start": 53.28,
+    "end": 55.28,
+    "text": "So is he a philanthropist reshaping capitalism?"
+   },
+   {
+    "start": 55.28,
+    "end": 57.28,
+    "text": "Or is he just the king of the attention economy?"
+   },
+   {
+    "start": 57.28,
+    "end": 63.28,
+    "text": "Find out on Good Bad Billionaire Listen on bbc.com or wherever you get your podcasts."
+   },
+   {
+    "start": 89.28,
+    "end": 95.28,
+    "text": "Search Learning English for Work in your podcast app or visit bbclearningenglish.com to listen."
+   },
+   {
+    "start": 120.94,
+    "end": 122.94,
+    "text": "I first tried it. I really didn't like it."
+   },
+   {
+    "start": 122.94,
+    "end": 126.94,
+    "text": "But after a while, I got used to it and actually now I really love it."
+   },
+   {
+    "start": 126.94,
+    "end": 129.94,
+    "text": "How about you? A similar story to me with olives."
+   },
+   {
+    "start": 129.94,
+    "end": 131.94,
+    "text": "I used to really hate olives."
+   },
+   {
+    "start": 131.94,
+    "end": 134.94,
+    "text": "But as I've grown older, I've also grown to love them."
+   },
+   {
+    "start": 134.94,
+    "end": 144.94,
+    "text": "Well, in this episode, we'll be learning from food experts about why there are some foods we just hate and whether it's possible to learn to love them."
+   },
+   {
+    "start": 144.94,
+    "end": 153.94,
+    "text": "Yes, and as usual, you can find a transcript for this episode along with all the vocabulary and worksheet on our website bbclearningenglish.com."
+   },
+   {
+    "start": 153.94,
+    "end": 155.94,
+    "text": "OK, it's a question for you, Becca."
+   },
+   {
+    "start": 155.94,
+    "end": 161.94,
+    "text": "What word means to have a fear of new things, such as trying new foods?"
+   },
+   {
+    "start": 161.94,
+    "end": 168.94,
+    "text": "Is it A, aerophobia, B, claustrophobia, or C, neophobia?"
+   },
+   {
+    "start": 168.94,
+    "end": 173.94,
+    "text": "Well, Neil, I'll go for C, neophobia, because Neo sounds like new."
+   },
+   {
+    "start": 173.94,
+    "end": 175.94,
+    "text": "That's clever thinking, but let's see."
+   },
+   {
+    "start": 175.94,
+    "end": 177.94,
+    "text": "Now, though, back to food."
+   },
+   {
+    "start": 177.94,
+    "end": 181.94,
+    "text": "Some experts have said that we can teach ourselves to like new things."
+   },
+   {
+    "start": 181.94,
+    "end": 191.94,
+    "text": "Ruth Alexander asks Dr Dana Small of McGill University where our dislike of certain foods comes from in this BBC World Service programme, The Food Chain."
+   },
+   {
+    "start": 191.94,
+    "end": 197.94,
+    "text": "Are food dislikes learned or genetic, hardwired in some way?"
+   },
+   {
+    "start": 197.94,
+    "end": 202.94,
+    "text": "Both. So there's many reasons why you can dislike a food."
+   },
+   {
+    "start": 202.94,
+    "end": 208.94,
+    "text": "For example, you could via genetics smell coriander or taste coriander differently."
+   },
+   {
+    "start": 208.94,
+    "end": 213.94,
+    "text": "So that's genetic, but there's also a really strong learning component."
+   },
+   {
+    "start": 213.94,
+    "end": 219.94,
+    "text": "Dana explains that how we taste or smell something can be different depending on our genetics."
+   },
+   {
+    "start": 219.94,
+    "end": 223.94,
+    "text": "However, how we taste or smell something can also be learnt."
+   },
+   {
+    "start": 223.94,
+    "end": 231.94,
+    "text": "Ruth asked if a dislike for certain food is hardwired, and Dana confirmed that this is sometimes the case."
+   },
+   {
+    "start": 231.94,
+    "end": 237.94,
+    "text": "The adjective hardwired describes automatically thinking or behaving in a particular way."
+   },
+   {
+    "start": 237.94,
+    "end": 240.94,
+    "text": "For instance, because it's genetic."
+   },
+   {
+    "start": 240.94,
+    "end": 244.94,
+    "text": "And Dana says that you could taste food differently to others via genetics."
+   },
+   {
+    "start": 244.94,
+    "end": 248.94,
+    "text": "The preposition via means by the way of or by the use of."
+   },
+   {
+    "start": 248.94,
+    "end": 251.94,
+    "text": "For example, I get to work via a train."
+   },
+   {
+    "start": 251.94,
+    "end": 256.94,
+    "text": "So, there are lots of different reasons why we dislike some foods, but can we change that?"
+   },
+   {
+    "start": 257.94,
+    "end": 264.94,
+    "text": "Let's listen to dietician Claire Thornton Wood, explaining on the BBC World Service programme The Food Chain."
+   },
+   {
+    "start": 264.94,
+    "end": 275.94,
+    "text": "One of the really good techniques that we might use is something called masking, where you dip a food that you don't like into something that you do like."
+   },
+   {
+    "start": 275.94,
+    "end": 284.94,
+    "text": "For those parents who really say they like everything, we actually get chocolate-covered insects and we offer those."
+   },
+   {
+    "start": 284.94,
+    "end": 287.94,
+    "text": "And actually, people do eat them and try them."
+   },
+   {
+    "start": 287.94,
+    "end": 296.94,
+    "text": "And I think it's the concept that it's an insect, but usually they find that once they eat it, there isn't anything inherently unpleasant about it."
+   },
+   {
+    "start": 296.94,
+    "end": 300.94,
+    "text": "It's a little bit like eating just a bit of crunchy chocolate."
+   },
+   {
+    "start": 300.94,
+    "end": 302.94,
+    "text": "Claire uses masking."
+   },
+   {
+    "start": 302.94,
+    "end": 305.94,
+    "text": "Masking is the act of stopping something from being seen."
+   },
+   {
+    "start": 305.94,
+    "end": 310.94,
+    "text": "In Claire's clinic, she masks the disliked foods with something that is liked."
+   },
+   {
+    "start": 310.94,
+    "end": 316.94,
+    "text": "Yes, and what parents usually find out is that the food they dislike isn't inherently bad."
+   },
+   {
+    "start": 316.94,
+    "end": 322.94,
+    "text": "The adverb inherently describes something that exists in a way which is natural or essential."
+   },
+   {
+    "start": 322.94,
+    "end": 325.94,
+    "text": "So, insects aren't inherently unpleasant to eat."
+   },
+   {
+    "start": 325.94,
+    "end": 331.94,
+    "text": "Some of us think they are because the concept of eating them could be strange to us culturally."
+   },
+   {
+    "start": 331.94,
+    "end": 334.94,
+    "text": "We talked about how people sometimes fear trying new food."
+   },
+   {
+    "start": 334.94,
+    "end": 337.94,
+    "text": "Claire talks about where these fears might come from."
+   },
+   {
+    "start": 337.94,
+    "end": 347.94,
+    "text": "For instance, just say that you had eaten prawns in the past and you had become unwell from eating them, you know, you'd have what you call a dodgy prawn."
+   },
+   {
+    "start": 347.94,
+    "end": 356.94,
+    "text": "There's a good chance that you might actually associate that with eating the prawn and think, oh, I don't want to eat prawn again because it's going to make me unwell."
+   },
+   {
+    "start": 356.94,
+    "end": 359.94,
+    "text": "So that's a sort of fear-based avoidance."
+   },
+   {
+    "start": 359.94,
+    "end": 365.94,
+    "text": "Claire said that you're likely to have a fear of a food if you've had a bad experience with it."
+   },
+   {
+    "start": 365.94,
+    "end": 370.94,
+    "text": "She uses the example of eating a dodgy prawn, which would make you unwell."
+   },
+   {
+    "start": 370.94,
+    "end": 375.94,
+    "text": "If something is dodgy, it's generally bad or has a bad reputation."
+   },
+   {
+    "start": 375.94,
+    "end": 382.94,
+    "text": "But when we talk about food, it could mean that it's undercooked, old or has been left out, therefore making you sick."
+   },
+   {
+    "start": 382.94,
+    "end": 385.94,
+    "text": "In fact, we may avoid dodgy things."
+   },
+   {
+    "start": 385.94,
+    "end": 388.94,
+    "text": "To avoid is to keep away from something."
+   },
+   {
+    "start": 388.94,
+    "end": 391.94,
+    "text": "So, avoidance is the act of keeping away."
+   },
+   {
+    "start": 391.94,
+    "end": 394.94,
+    "text": "Now, Neil, that reminds me of the question you asked earlier."
+   },
+   {
+    "start": 394.94,
+    "end": 401.94,
+    "text": "Ah, yes. I asked you what word means to have a fear of new things and you answered C – neophobia."
+   },
+   {
+    "start": 401.94,
+    "end": 405.94,
+    "text": "And, Becca, I'm pleased to say your answer was correct."
+   },
+   {
+    "start": 405.94,
+    "end": 408.94,
+    "text": "So my thinking was right! That's great!"
+   },
+   {
+    "start": 408.94,
+    "end": 421.94,
+    "text": "Now let's have a recap of the language we've learnt in this episode, starting with hard-wired, which describes automatically thinking or behaving in a particular way – because of genetics, for example."
+   },
+   {
+    "start": 421.94,
+    "end": 425.94,
+    "text": "Via is a preposition that means by way of or by use of."
+   },
+   {
+    "start": 425.94,
+    "end": 430.94,
+    "text": "We had masking – that's hiding or stopping something from being seen."
+   },
+   {
+    "start": 430.94,
+    "end": 435.94,
+    "text": "The adverb inherently describes something that exists in a way which is natural or essential."
+   },
+   {
+    "start": 435.94,
+    "end": 441.94,
+    "text": "We also had avoidance – that is the act of keeping away from something."
+   },
+   {
+    "start": 441.94,
+    "end": 446.94,
+    "text": "And finally, when we talk about food, dodgy means something that can make you unwell."
+   },
+   {
+    "start": 447.94,
+    "end": 457.94,
+    "text": "Once again, our six minutes are up, but head over to our website bbclearningenglish.com for a quiz and worksheet for this episode. See you there soon, but for now, it's goodbye!"
+   }
+  ],
+  "addedAt": 1784187158803
+ },
+ {
   "id": "bbc-tews-the-english-we-speak-a-hunch",
   "guid": "urn:bbc:podcast:p0nkqlyq",
   "source": "BBC The English We Speak",

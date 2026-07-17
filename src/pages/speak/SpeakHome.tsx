@@ -6,7 +6,7 @@ const ENTRIES: { to: string; icon: ReactNode; title: string; desc: string }[] = 
   { to: '/listen', icon: <ListenIcon />, title: '跟读', desc: '进入听力材料的跟读阶段,逐句发音评分' },
   { to: '/speak/dialogue', icon: <DialogueIcon />, title: '情景对话', desc: '点餐 / 面试 / 机场等场景,AI 扮演对方' },
   { to: '/speak/ielts', icon: <GradIcon />, title: '雅思口语模拟', desc: 'Part 1/2/3 仿真题,四维评分' },
-  { to: '/pronounce', icon: <SpeakIcon />, title: '发音基础（多语言）', desc: '粤语粤拼 / 韩语谚文 / 法语音标,跟读评分' },
+  { to: '/pronounce', icon: <SpeakIcon />, title: '语言基础（多语言）', desc: '粤语 / 韩语 / 法语:发音 + 常用短语,跟读评分' },
 ];
 
 export default function SpeakHome() {

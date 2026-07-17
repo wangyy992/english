@@ -3,6 +3,7 @@ import * as vocab from '../../lib/vocab';
 import * as progress from '../../lib/progress';
 import * as planner from '../../lib/planner';
 import * as ability from '../../lib/ability';
+import * as wordbooks from '../../lib/wordbooks';
 import { applyReview, endOfToday, type ReviewResult } from '../../lib/srs';
 import { useSettings } from '../../context/SettingsContext';
 import type { VocabEntry } from '../../types';
@@ -17,10 +18,23 @@ export default function VocabHome() {
   const [done, setDone] = useState(false);
 
   useEffect(() => {
-    const q = vocab.getReviewQueue(settings.dailyNewCards);
-    setQueue(q.entries);
-    setStats({ dueCount: q.dueCount, newCount: q.newCount, reviewedToday: q.reviewedToday });
-    setDone(q.entries.length === 0);
+    let alive = true;
+    (async () => {
+      // 新卡額度用不完時,先從當前詞書補詞再組隊列
+      try {
+        await wordbooks.ensureDailyFeed(settings.dailyNewCards);
+      } catch {
+        // 詞書加載失敗不阻塞複習
+      }
+      if (!alive) return;
+      const q = vocab.getReviewQueue(settings.dailyNewCards);
+      setQueue(q.entries);
+      setStats({ dueCount: q.dueCount, newCount: q.newCount, reviewedToday: q.reviewedToday });
+      setDone(q.entries.length === 0);
+    })();
+    return () => {
+      alive = false;
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

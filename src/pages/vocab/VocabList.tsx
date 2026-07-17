@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import * as vocab from '../../lib/vocab';
+import DictSearch from '../../components/vocab/DictSearch';
+import WordbookPicker from '../../components/vocab/WordbookPicker';
 import type { VocabEntry } from '../../types';
 
 type FilterModule = 'all' | VocabEntry['source']['module'];
@@ -9,6 +11,8 @@ const FILTER_LABEL: Record<FilterModule, string> = {
   listen: '听力',
   read: '阅读',
   write: '写作',
+  wordbook: '词书',
+  dict: '查词',
 };
 
 function stageLabel(srs: VocabEntry['srs']): string {
@@ -46,6 +50,12 @@ export default function VocabList({ banner }: { banner?: string }) {
   return (
     <div className="p-4">
       {banner && <div className="mb-4 rounded-xl bg-green-50 px-4 py-3 text-sm text-green-700">{banner}</div>}
+
+      <div className="mb-4 space-y-3">
+        <DictSearch onAdded={() => setEntries(vocab.getAll())} />
+        <WordbookPicker />
+      </div>
+
       <h1 className="text-xl font-semibold text-gray-900">生词本</h1>
 
       <input

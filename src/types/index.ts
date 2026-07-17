@@ -89,7 +89,7 @@ export interface VocabEntry {
   defEn?: string;
   defZh?: string;
   context: string;
-  source: { module: 'listen' | 'read' | 'write'; materialId: string };
+  source: { module: 'listen' | 'read' | 'write' | 'wordbook' | 'dict'; materialId: string };
   addedAt: number;
   srs: SrsState;
 }

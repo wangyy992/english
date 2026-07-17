@@ -2,8 +2,27 @@
 // API using the key stored via storage.ts. Components must never call
 // fetch() for AI directly — always go through chatJSON().
 
-import { get } from './storage';
+import { get, set } from './storage';
 import type { Settings } from '../types';
+
+// 本月用量估算(成本護欄):按字符/4 粗估 tokens,本地逐月累計。
+type LlmUsageMap = Record<string, number>; // 'YYYY-MM' → est. tokens
+
+function usageMonthKey(): string {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`;
+}
+
+function recordUsage(chars: number): void {
+  const map = get<LlmUsageMap>('llm_usage') ?? {};
+  map[usageMonthKey()] = (map[usageMonthKey()] ?? 0) + Math.round(chars / 4);
+  set('llm_usage', map);
+}
+
+export function getMonthTokenEstimate(): number {
+  const map = get<LlmUsageMap>('llm_usage') ?? {};
+  return Math.round(map[usageMonthKey()] ?? 0);
+}
 
 const ENDPOINT = 'https://api.deepseek.com/chat/completions';
 
@@ -68,6 +87,7 @@ async function callOnce(systemPrompt: string, userPrompt: string, apiKey: string
   if (typeof content !== 'string') {
     throw new DeepSeekRequestError('Unexpected DeepSeek response shape');
   }
+  recordUsage(systemPrompt.length + userPrompt.length + content.length);
   return content;
 }
 

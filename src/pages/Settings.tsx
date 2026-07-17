@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 import { useSettings } from '../context/SettingsContext';
-import { testConnection } from '../lib/deepseek';
+import { getMonthTokenEstimate, testConnection } from '../lib/deepseek';
 import * as storage from '../lib/storage';
 import * as vocab from '../lib/vocab';
 import { MODULE_LABEL, PLAN_MODULES } from '../lib/planner';
@@ -146,6 +146,9 @@ export default function Settings() {
             </span>
           )}
         </div>
+        <p className="mt-3 text-xs text-gray-400">
+          本月估算用量:约 {(getMonthTokenEstimate() / 1000).toFixed(1)}k tokens(按字符数本地粗估)
+        </p>
       </section>
 
       <section className="rounded-2xl bg-white p-4 shadow-sm">

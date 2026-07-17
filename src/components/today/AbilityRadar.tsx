@@ -18,16 +18,16 @@ export default function AbilityRadar({ scores }: { scores: Record<AbilityDim, nu
   return (
     <svg width={SIZE} height={SIZE} viewBox={`0 0 ${SIZE} ${SIZE}`} aria-label="五维能力雷达图">
       {[0.33, 0.66, 1].map((r) => (
-        <polygon key={r} points={polygon(ABILITY_DIMS.map(() => r))} fill="none" stroke="#e5e7eb" strokeWidth="1" />
+        <polygon key={r} points={polygon(ABILITY_DIMS.map(() => r))} fill="none" stroke="#E7E2D9" strokeWidth="1" />
       ))}
       {ABILITY_DIMS.map((_, i) => {
         const [x, y] = point(i, 1);
-        return <line key={i} x1={CX} y1={CY} x2={x} y2={y} stroke="#e5e7eb" strokeWidth="1" />;
+        return <line key={i} x1={CX} y1={CY} x2={x} y2={y} stroke="#E7E2D9" strokeWidth="1" />;
       })}
       <polygon
         points={polygon(ABILITY_DIMS.map((d) => Math.max(0.05, scores[d] / 100)))}
-        fill="rgb(37 99 235 / 0.2)"
-        stroke="#2563eb"
+        fill="rgb(180 79 43 / 0.16)"
+        stroke="#B44F2B"
         strokeWidth="1.5"
       />
       {ABILITY_DIMS.map((d, i) => {

@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 
 interface TaskCardProps {
-  icon: string;
+  icon: ReactNode;
   title: string;
   subtitle: string;
   actionLabel: string;
@@ -26,9 +26,11 @@ export default function TaskCard({
   targetLabel,
 }: TaskCardProps) {
   return (
-    <div className="rounded-2xl bg-white p-4 shadow-sm">
+    <div className="rounded-2xl border border-gray-200/70 bg-white p-4 shadow-card">
       <div className="flex items-center gap-3">
-        <span className="text-2xl">{icon}</span>
+        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand-50 text-brand-600">
+          {icon}
+        </span>
         <div className="min-w-0 flex-1">
           <div className="flex items-center gap-1.5">
             <h2 className="font-medium text-gray-900">{title}</h2>

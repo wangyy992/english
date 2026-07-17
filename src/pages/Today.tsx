@@ -14,6 +14,8 @@ import { MODULE_LABEL } from '../lib/planner';
 import TaskCard from '../components/today/TaskCard';
 import DurationPicker from '../components/today/DurationPicker';
 import AbilityRadar from '../components/today/AbilityRadar';
+import { ListenIcon, ReadIcon, SpeakIcon, VocabIcon, WriteIcon } from '../components/icons';
+import type { ReactNode } from 'react';
 import type { AudioLesson, Article, CEFRLevel, DayPlan, PlanTask } from '../types';
 
 const CEFR_TO_LESSON_LEVEL: Record<CEFRLevel, 1 | 2 | 3> = { A2: 1, B1: 2, B2: 2, C1: 3 };
@@ -193,33 +195,33 @@ export default function Today() {
           ? '去设置页填入 DeepSeek API Key'
           : '题目生成失败,进入页面重试';
 
-  const view: Record<PlanTask['module'], { icon: string; subtitle: string; to: string; progressMs: (t: PlanTask) => number }> = {
+  const view: Record<PlanTask['module'], { icon: ReactNode; subtitle: string; to: string; progressMs: (t: PlanTask) => number }> = {
     listen: {
-      icon: '🎧',
+      icon: <ListenIcon />,
       subtitle: lesson ? lesson.title : '暂无可推荐的听力材料',
       to: lesson ? `/listen/${lesson.id}` : '/listen',
       progressMs: (t) => t.playbackMs ?? 0,
     },
     speak: {
-      icon: '🎙️',
+      icon: <SpeakIcon />,
       subtitle: '跟读 / 情景对话 / 雅思模拟',
       to: '/speak',
       progressMs: (t) => t.spentMs,
     },
     read: {
-      icon: '📖',
+      icon: <ReadIcon />,
       subtitle: article ? article.title : '暂无可推荐的文章',
       to: article ? `/read/${article.id}` : '/read',
       progressMs: (t) => t.spentMs,
     },
     write: {
-      icon: '✍️',
+      icon: <WriteIcon />,
       subtitle: writeSubtitle,
       to: plan.tasks.find((t) => t.module === 'write')?.meta?.writeMode === 'free' ? '/write/free' : '/write/translate',
       progressMs: (t) => t.spentMs,
     },
     vocab: {
-      icon: '🗂️',
+      icon: <VocabIcon />,
       subtitle: (() => {
         const t = plan.tasks.find((x) => x.module === 'vocab');
         return t && (t.meta?.cards ?? 0) > 0 ? `${t.meta?.cards} 张卡` : '今日无复习 ✓';

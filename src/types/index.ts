@@ -43,6 +43,9 @@ export interface Settings {
   dailyNewCards: number;
   /** 上次選擇的今日學習總時長(分鐘) */
   plannerMinutes: number;
+  /** Azure 語音服務(留空則用瀏覽器基礎模式) */
+  azureRegion: string;
+  azureKey: string;
   /** 五模組時長權重(相對值,內部歸一化) */
   plannerWeights: PlannerWeights;
 }

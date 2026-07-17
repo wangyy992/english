@@ -4,6 +4,7 @@ import { testConnection } from '../lib/deepseek';
 import * as storage from '../lib/storage';
 import * as vocab from '../lib/vocab';
 import { MODULE_LABEL, PLAN_MODULES } from '../lib/planner';
+import { getMonthAzureSeconds, testAzureConnection } from '../lib/speech';
 import ConfirmDialog from '../components/ConfirmDialog';
 import type { CEFRLevel } from '../types';
 
@@ -13,6 +14,11 @@ export default function Settings() {
   const { settings, updateSettings } = useSettings();
   const [keyDraft, setKeyDraft] = useState(settings.deepseekApiKey);
   const [testState, setTestState] = useState<{ status: 'idle' | 'loading' | 'done'; ok?: boolean; message?: string }>({
+    status: 'idle',
+  });
+  const [azureRegionDraft, setAzureRegionDraft] = useState(settings.azureRegion);
+  const [azureKeyDraft, setAzureKeyDraft] = useState(settings.azureKey);
+  const [azureTest, setAzureTest] = useState<{ status: 'idle' | 'loading' | 'done'; ok?: boolean; message?: string }>({
     status: 'idle',
   });
   const [newTag, setNewTag] = useState('');
@@ -34,6 +40,23 @@ export default function Settings() {
     saveKey();
     const result = await testConnection(key);
     setTestState({ status: 'done', ok: result.ok, message: result.message });
+  };
+
+  const saveAzure = () => {
+    updateSettings({ azureRegion: azureRegionDraft.trim(), azureKey: azureKeyDraft.trim() });
+  };
+
+  const handleAzureTest = async () => {
+    const region = azureRegionDraft.trim();
+    const key = azureKeyDraft.trim();
+    if (!region || !key) {
+      setAzureTest({ status: 'done', ok: false, message: '请先填入 Region 和 Key' });
+      return;
+    }
+    setAzureTest({ status: 'loading' });
+    saveAzure();
+    const result = await testAzureConnection(region, key);
+    setAzureTest({ status: 'done', ok: result.ok, message: result.message });
   };
 
   const addTag = () => {
@@ -167,6 +190,43 @@ export default function Settings() {
             添加
           </button>
         </div>
+      </section>
+
+      <section className="rounded-2xl bg-white p-4 shadow-sm">
+        <h2 className="text-sm font-semibold text-gray-900">Azure 语音服务</h2>
+        <p className="mt-1 text-xs text-gray-500">
+          用于跟读音素级发音评分与复述转写。不填则用浏览器基础模式(仅词级对/错,无分数)。
+        </p>
+        <input
+          value={azureRegionDraft}
+          onChange={(e) => setAzureRegionDraft(e.target.value)}
+          onBlur={saveAzure}
+          placeholder="Region,如 eastasia"
+          className="mt-3 w-full rounded-xl border border-gray-200 px-3 py-2.5 text-sm"
+          autoComplete="off"
+        />
+        <input
+          type="password"
+          value={azureKeyDraft}
+          onChange={(e) => setAzureKeyDraft(e.target.value)}
+          onBlur={saveAzure}
+          placeholder="Key"
+          className="mt-2 w-full rounded-xl border border-gray-200 px-3 py-2.5 text-sm"
+          autoComplete="off"
+        />
+        <div className="mt-3 flex items-center gap-3">
+          <button
+            onClick={handleAzureTest}
+            disabled={azureTest.status === 'loading'}
+            className="rounded-xl bg-brand-600 px-4 py-2 text-sm font-medium text-white disabled:opacity-50"
+          >
+            {azureTest.status === 'loading' ? '测试中…' : '测试连接'}
+          </button>
+          {azureTest.status === 'done' && (
+            <span className={`text-sm ${azureTest.ok ? 'text-green-600' : 'text-red-600'}`}>{azureTest.message}</span>
+          )}
+        </div>
+        <p className="mt-3 text-xs text-gray-400">本月估算用量:{Math.round(getMonthAzureSeconds() / 60)} 分钟(按呼叫时长本地累计)</p>
       </section>
 
       <section className="rounded-2xl bg-white p-4 shadow-sm">

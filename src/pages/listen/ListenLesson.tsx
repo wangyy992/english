@@ -6,11 +6,12 @@ import * as planner from '../../lib/planner';
 import type { AudioLesson, SelfRating } from '../../types';
 import AudioPlayer from '../../components/listen/AudioPlayer';
 import ShadowControls from '../../components/listen/ShadowControls';
+import RetellPanel from '../../components/listen/RetellPanel';
 import SelectableText from '../../components/SelectableText';
 
-type Stage = 'blind' | 'intensive' | 'shadow';
+type Stage = 'blind' | 'intensive' | 'shadow' | 'retell';
 
-const STAGE_LABEL: Record<Stage, string> = { blind: '盲听', intensive: '精听', shadow: '跟读' };
+const STAGE_LABEL: Record<Stage, string> = { blind: '盲听', intensive: '精听', shadow: '跟读', retell: '复述' };
 const RATING_OPTIONS: { value: SelfRating; label: string; className: string }[] = [
   { value: 'good', label: '大概懂了', className: 'bg-green-50 text-green-700' },
   { value: 'half', label: '一半一半', className: 'bg-yellow-50 text-yellow-700' },
@@ -75,8 +76,11 @@ export default function ListenLesson() {
     if (audioRef.current) audioRef.current.playbackRate = rate;
   }, [rate]);
 
-  // 任務計時:盲聽/精聽計入「聽」,跟讀計入「說」
-  useEffect(() => planner.trackModule(stage === 'shadow' ? 'speak' : 'listen'), [stage]);
+  // 任務計時:盲聽/精聽計入「聽」,跟讀/復述計入「說」
+  useEffect(
+    () => planner.trackModule(stage === 'shadow' || stage === 'retell' ? 'speak' : 'listen'),
+    [stage],
+  );
 
   // 「聽」的硬驗證:音頻實際播放時長
   useEffect(() => {
@@ -240,7 +244,9 @@ export default function ListenLesson() {
         </div>
       )}
 
-      {stage !== 'blind' && (
+      {stage === 'retell' && <RetellPanel originalText={lesson.sentences.map((s) => s.text).join(' ')} />}
+
+      {stage !== 'blind' && stage !== 'retell' && (
         <div className="mt-4 space-y-2 px-4">
           {lesson.sentences.map((sentence, i) => {
             const expanded = stage === 'shadow' || (rowState?.index === i && rowState.expanded);

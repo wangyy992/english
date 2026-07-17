@@ -34,7 +34,12 @@ function getApiKey(): string {
   return key;
 }
 
-async function callOnce(systemPrompt: string, userPrompt: string, apiKey: string): Promise<string> {
+export interface ChatOptions {
+  /** 批改/評分類呼叫應 ≤ 0.3;默認 0.7 */
+  temperature?: number;
+}
+
+async function callOnce(systemPrompt: string, userPrompt: string, apiKey: string, options?: ChatOptions): Promise<string> {
   // isNative branch (future): when running under Capacitor, swap this fetch()
   // for CapacitorHttp.post() to avoid iOS ATS / CORS restrictions. Everything
   // else in this file stays the same.
@@ -50,7 +55,7 @@ async function callOnce(systemPrompt: string, userPrompt: string, apiKey: string
         { role: 'system', content: systemPrompt },
         { role: 'user', content: userPrompt },
       ],
-      temperature: 0.7,
+      temperature: options?.temperature ?? 0.7,
     }),
   });
 
@@ -66,13 +71,13 @@ async function callOnce(systemPrompt: string, userPrompt: string, apiKey: string
   return content;
 }
 
-export async function chatJSON<T>(systemPrompt: string, userPrompt: string): Promise<T> {
+export async function chatJSON<T>(systemPrompt: string, userPrompt: string, options?: ChatOptions): Promise<T> {
   const apiKey = getApiKey();
 
   let lastError: unknown;
   for (let attempt = 0; attempt < 2; attempt++) {
     try {
-      const raw = await callOnce(systemPrompt, userPrompt, apiKey);
+      const raw = await callOnce(systemPrompt, userPrompt, apiKey, options);
       return JSON.parse(stripJsonFence(raw)) as T;
     } catch (err) {
       lastError = err;

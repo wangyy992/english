@@ -34,8 +34,14 @@ interface SpeechProvider {
 - 轉寫 + 原文摘要交 DeepSeek,固定 rubric 輸出 JSON:內容覆蓋度(0-5)、語法問題列表(原句→修正)、用詞升級建議(≤3 條)、一句話總評。
 - 發音分(Azure 可用時)與內容分並列展示。
 
-**驗收:**
-- [ ] 無 Azure Key:跟讀全流程可用,顯示基礎模式,無報錯
-- [ ] 有 Key:故意讀錯一詞,該詞標紅且音素明細合理(人工)
-- [ ] Azure 中途斷網:自動降級,不丟錄音流程
-- [ ] 復述批改 JSON 合法;同一錄音批改 3 次,覆蓋度分差 ≤ 1
+**驗收:**(2026-07-17 實現;語音需真麥克風,人工項待用戶確認)
+- [ ] 無 Azure Key:跟讀全流程可用,顯示基礎模式,無報錯(**人工**)
+- [ ] 有 Key:故意讀錯一詞,該詞標紅且音素明細合理(**人工**)
+- [ ] Azure 中途斷網:自動降級,不丟錄音流程(**人工**;代碼路徑:失敗返回無分結果→UI 落到僅錄音對比)
+- [x] 復述批改 JSON 合法(schema 校驗+重試已測);同一錄音批改 3 次覆蓋度分差 ≤ 1(**人工**,temperature=0.2)
+
+**實現註記:**
+- 介面偏差:PRD 原型 `assessScripted(text, audio: Blob)` 改為串流會話語義(scripted 靜音自動結束、unscripted 返回 session 手動 stop)。原因:瀏覽器 SpeechRecognition 無法評測既有音頻,Azure SDK 推薦路徑也是麥克風串流(正是為規避錄音格式轉換);錄音 Blob 由呼叫方 Recorder 並行採集
+- Azure SDK 動態 import,獨立 chunk 447KB,不佔首屏
+- 測試連接用 issueToken 端點,不產生識別費用;用量按會話時長本地逐月累計
+- 復述計時計入「說」;chatJSON 新增 temperature 參數(復述批改 0.2)

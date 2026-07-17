@@ -1,15 +1,18 @@
 import { useEffect, useRef, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useParams, useSearchParams } from 'react-router-dom';
 import { getLessonById, loadAllLessons } from '../../lib/lessons';
 import * as progress from '../../lib/progress';
+import * as planner from '../../lib/planner';
+import * as ability from '../../lib/ability';
 import type { AudioLesson, SelfRating } from '../../types';
 import AudioPlayer from '../../components/listen/AudioPlayer';
 import ShadowControls from '../../components/listen/ShadowControls';
+import RetellPanel from '../../components/listen/RetellPanel';
 import SelectableText from '../../components/SelectableText';
 
-type Stage = 'blind' | 'intensive' | 'shadow';
+type Stage = 'blind' | 'intensive' | 'shadow' | 'retell';
 
-const STAGE_LABEL: Record<Stage, string> = { blind: '盲听', intensive: '精听', shadow: '跟读' };
+const STAGE_LABEL: Record<Stage, string> = { blind: '盲听', intensive: '精听', shadow: '跟读', retell: '复述' };
 const RATING_OPTIONS: { value: SelfRating; label: string; className: string }[] = [
   { value: 'good', label: '大概懂了', className: 'bg-green-50 text-green-700' },
   { value: 'half', label: '一半一半', className: 'bg-yellow-50 text-yellow-700' },
@@ -18,6 +21,7 @@ const RATING_OPTIONS: { value: SelfRating; label: string; className: string }[] 
 
 export default function ListenLesson() {
   const { id } = useParams<{ id: string }>();
+  const [searchParams] = useSearchParams();
   // undefined = still loading remote lessons; null = definitively not found
   const [lesson, setLesson] = useState<AudioLesson | null | undefined>(id ? getLessonById(id) : null);
 
@@ -39,7 +43,7 @@ export default function ListenLesson() {
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [rate, setRate] = useState(1);
-  const [stage, setStage] = useState<Stage>('blind');
+  const [stage, setStage] = useState<Stage>(searchParams.get('stage') === 'shadow' ? 'shadow' : 'blind');
   const [rowState, setRowState] = useState<{ index: number; expanded: boolean } | null>(null);
   const [understood, setUnderstood] = useState<Set<number>>(new Set());
   const [rated, setRated] = useState(false);
@@ -72,6 +76,19 @@ export default function ListenLesson() {
   useEffect(() => {
     if (audioRef.current) audioRef.current.playbackRate = rate;
   }, [rate]);
+
+  // 任務計時:盲聽/精聽計入「聽」,跟讀/復述計入「說」
+  useEffect(
+    () => planner.trackModule(stage === 'shadow' || stage === 'retell' ? 'speak' : 'listen'),
+    [stage],
+  );
+
+  // 「聽」的硬驗證:音頻實際播放時長
+  useEffect(() => {
+    if (!playing) return;
+    const id = window.setInterval(() => planner.addListenPlayback(1000), 1000);
+    return () => window.clearInterval(id);
+  }, [playing]);
 
   const togglePlay = () => {
     const audio = audioRef.current;
@@ -149,6 +166,7 @@ export default function ListenLesson() {
     progress.setListeningRating(lesson.id, rating);
     progress.markLessonDone(lesson.id);
     progress.markToday('listen');
+    ability.noteListeningSelfRating(rating);
     setRated(true);
   };
 
@@ -228,7 +246,9 @@ export default function ListenLesson() {
         </div>
       )}
 
-      {stage !== 'blind' && (
+      {stage === 'retell' && <RetellPanel originalText={lesson.sentences.map((s) => s.text).join(' ')} />}
+
+      {stage !== 'blind' && stage !== 'retell' && (
         <div className="mt-4 space-y-2 px-4">
           {lesson.sentences.map((sentence, i) => {
             const expanded = stage === 'shadow' || (rowState?.index === i && rowState.expanded);

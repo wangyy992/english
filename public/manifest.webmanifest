@@ -1,6 +1,6 @@
 {
-  "name": "四技 · 英语听说读写学习工具",
-  "short_name": "四技",
+  "name": "知更 Robin",
+  "short_name": "知更",
   "description": "听力精听 + 跟读、划词阅读、AI 翻译/写作批改、带 SRS 的全局生词本",
   "start_url": "./#/",
   "scope": "./",

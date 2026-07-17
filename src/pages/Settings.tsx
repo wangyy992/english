@@ -1,12 +1,159 @@
 import { useRef, useState } from 'react';
 import { useSettings } from '../context/SettingsContext';
-import { testConnection } from '../lib/deepseek';
+import { getMonthTokenEstimate, testConnection } from '../lib/deepseek';
 import * as storage from '../lib/storage';
 import * as vocab from '../lib/vocab';
+import { MODULE_LABEL, PLAN_MODULES } from '../lib/planner';
+import { ACHIEVEMENTS, getRewards } from '../lib/rewards';
+import { getMonthAzureSeconds, testAzureConnection } from '../lib/speech';
+import * as sync from '../lib/sync';
 import ConfirmDialog from '../components/ConfirmDialog';
 import type { CEFRLevel } from '../types';
 
 const LEVELS: CEFRLevel[] = ['A2', 'B1', 'B2', 'C1'];
+
+function SyncSection() {
+  const [config, setConfig] = useState(sync.getConfig);
+  const [url, setUrl] = useState('');
+  const [email, setEmail] = useState('');
+  const [code, setCode] = useState('');
+  const [phase, setPhase] = useState<'form' | 'code'>('form');
+  const [busy, setBusy] = useState(false);
+  const [message, setMessage] = useState<string | null>(null);
+
+  const handleRequestCode = async () => {
+    setBusy(true);
+    setMessage(null);
+    try {
+      const res = await sync.requestCode(url, email);
+      setPhase('code');
+      setMessage(res.devCode ? `调试模式验证码:${res.devCode}` : '验证码已发送到邮箱,10 分钟内有效');
+    } catch (err) {
+      setMessage(err instanceof Error ? err.message : '发送失败');
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  const handleVerify = async () => {
+    setBusy(true);
+    setMessage(null);
+    try {
+      await sync.verifyCode(url, email, code.trim());
+      setConfig(sync.getConfig());
+      setMessage('登录成功,已同步');
+    } catch (err) {
+      setMessage(err instanceof Error ? err.message : '登录失败');
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  const handleSyncNow = async () => {
+    setBusy(true);
+    setMessage(null);
+    try {
+      await sync.push();
+      setMessage('已同步');
+    } catch (err) {
+      setMessage(err instanceof Error ? err.message : '同步失败');
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  const meta = sync.getMeta();
+
+  return (
+    <section className="rounded-2xl bg-white p-4 shadow-sm">
+      <h2 className="text-sm font-semibold text-gray-900">云同步</h2>
+      {config ? (
+        <div className="mt-2">
+          <p className="text-sm text-gray-700">已登录:{config.email}</p>
+          <p className="mt-1 text-xs text-gray-400">
+            {meta.lastSyncAt > 0 ? `上次同步 ${new Date(meta.lastSyncAt).toLocaleString()}` : '尚未同步'}
+            ;改动后约 3 秒自动上传,打开 App 时自动拉取。
+          </p>
+          <div className="mt-3 flex gap-2">
+            <button
+              onClick={handleSyncNow}
+              disabled={busy}
+              className="rounded-xl bg-brand-600 px-4 py-2 text-sm font-medium text-white disabled:opacity-50"
+            >
+              {busy ? '同步中…' : '立即同步'}
+            </button>
+            <button
+              onClick={() => {
+                sync.logout();
+                setConfig(null);
+                setPhase('form');
+              }}
+              className="rounded-xl bg-gray-100 px-4 py-2 text-sm text-gray-500"
+            >
+              登出
+            </button>
+          </div>
+        </div>
+      ) : (
+        <div className="mt-2">
+          <p className="text-xs text-gray-500">
+            多设备同步进度,需要先部署同步服务(见仓库 docs/sync-deploy.md),然后邮箱验证码登录。
+          </p>
+          <input
+            value={url}
+            onChange={(e) => setUrl(e.target.value)}
+            placeholder="同步服务地址,如 https://robin-sync.xxx.workers.dev"
+            className="mt-3 w-full rounded-xl border border-gray-200 px-3 py-2.5 text-sm"
+            autoComplete="off"
+          />
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="邮箱"
+            className="mt-2 w-full rounded-xl border border-gray-200 px-3 py-2.5 text-sm"
+            autoComplete="email"
+          />
+          {phase === 'code' && (
+            <input
+              value={code}
+              onChange={(e) => setCode(e.target.value)}
+              placeholder="6 位验证码"
+              inputMode="numeric"
+              className="mt-2 w-full rounded-xl border border-gray-200 px-3 py-2.5 text-sm"
+              autoComplete="one-time-code"
+            />
+          )}
+          <div className="mt-3 flex items-center gap-3">
+            {phase === 'form' ? (
+              <button
+                onClick={handleRequestCode}
+                disabled={busy || !url.trim() || !email.trim()}
+                className="rounded-xl bg-brand-600 px-4 py-2 text-sm font-medium text-white disabled:opacity-50"
+              >
+                {busy ? '发送中…' : '发送验证码'}
+              </button>
+            ) : (
+              <>
+                <button
+                  onClick={handleVerify}
+                  disabled={busy || code.trim().length < 6}
+                  className="rounded-xl bg-brand-600 px-4 py-2 text-sm font-medium text-white disabled:opacity-50"
+                >
+                  {busy ? '登录中…' : '登录'}
+                </button>
+                <button onClick={handleRequestCode} disabled={busy} className="text-xs text-gray-400 underline">
+                  重发验证码
+                </button>
+              </>
+            )}
+          </div>
+        </div>
+      )}
+      {message && <p className="mt-2 text-xs text-gray-500">{message}</p>}
+    </section>
+  );
+}
 
 export default function Settings() {
   const { settings, updateSettings } = useSettings();
@@ -14,10 +161,16 @@ export default function Settings() {
   const [testState, setTestState] = useState<{ status: 'idle' | 'loading' | 'done'; ok?: boolean; message?: string }>({
     status: 'idle',
   });
+  const [azureRegionDraft, setAzureRegionDraft] = useState(settings.azureRegion);
+  const [azureKeyDraft, setAzureKeyDraft] = useState(settings.azureKey);
+  const [azureTest, setAzureTest] = useState<{ status: 'idle' | 'loading' | 'done'; ok?: boolean; message?: string }>({
+    status: 'idle',
+  });
   const [newTag, setNewTag] = useState('');
   const [confirmClear, setConfirmClear] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [importMessage, setImportMessage] = useState<string | null>(null);
+  const rewardsData = getRewards();
 
   const saveKey = () => {
     updateSettings({ deepseekApiKey: keyDraft.trim() });
@@ -33,6 +186,23 @@ export default function Settings() {
     saveKey();
     const result = await testConnection(key);
     setTestState({ status: 'done', ok: result.ok, message: result.message });
+  };
+
+  const saveAzure = () => {
+    updateSettings({ azureRegion: azureRegionDraft.trim(), azureKey: azureKeyDraft.trim() });
+  };
+
+  const handleAzureTest = async () => {
+    const region = azureRegionDraft.trim();
+    const key = azureKeyDraft.trim();
+    if (!region || !key) {
+      setAzureTest({ status: 'done', ok: false, message: '请先填入 Region 和 Key' });
+      return;
+    }
+    setAzureTest({ status: 'loading' });
+    saveAzure();
+    const result = await testAzureConnection(region, key);
+    setAzureTest({ status: 'done', ok: result.ok, message: result.message });
   };
 
   const addTag = () => {
@@ -120,6 +290,9 @@ export default function Settings() {
             </span>
           )}
         </div>
+        <p className="mt-3 text-xs text-gray-400">
+          本月估算用量:约 {(getMonthTokenEstimate() / 1000).toFixed(1)}k tokens(按字符数本地粗估)
+        </p>
       </section>
 
       <section className="rounded-2xl bg-white p-4 shadow-sm">
@@ -167,6 +340,140 @@ export default function Settings() {
           </button>
         </div>
       </section>
+
+      <section className="rounded-2xl bg-white p-4 shadow-sm">
+        <h2 className="text-sm font-semibold text-gray-900">Azure 语音服务</h2>
+        <p className="mt-1 text-xs text-gray-500">
+          用于跟读音素级发音评分与复述转写。不填则用浏览器基础模式(仅词级对/错,无分数)。
+        </p>
+        <input
+          value={azureRegionDraft}
+          onChange={(e) => setAzureRegionDraft(e.target.value)}
+          onBlur={saveAzure}
+          placeholder="Region,如 eastasia"
+          className="mt-3 w-full rounded-xl border border-gray-200 px-3 py-2.5 text-sm"
+          autoComplete="off"
+        />
+        <input
+          type="password"
+          value={azureKeyDraft}
+          onChange={(e) => setAzureKeyDraft(e.target.value)}
+          onBlur={saveAzure}
+          placeholder="Key"
+          className="mt-2 w-full rounded-xl border border-gray-200 px-3 py-2.5 text-sm"
+          autoComplete="off"
+        />
+        <div className="mt-3 flex items-center gap-3">
+          <button
+            onClick={handleAzureTest}
+            disabled={azureTest.status === 'loading'}
+            className="rounded-xl bg-brand-600 px-4 py-2 text-sm font-medium text-white disabled:opacity-50"
+          >
+            {azureTest.status === 'loading' ? '测试中…' : '测试连接'}
+          </button>
+          {azureTest.status === 'done' && (
+            <span className={`text-sm ${azureTest.ok ? 'text-green-600' : 'text-red-600'}`}>{azureTest.message}</span>
+          )}
+        </div>
+        <p className="mt-3 text-xs text-gray-400">本月估算用量:{Math.round(getMonthAzureSeconds() / 60)} 分钟(按呼叫时长本地累计)</p>
+      </section>
+
+      <section className="rounded-2xl bg-white p-4 shadow-sm">
+        <h2 className="text-sm font-semibold text-gray-900">今日任务权重</h2>
+        <p className="mt-1 text-xs text-gray-500">学习总时长按以下相对权重分配到五个模块。</p>
+        <div className="mt-3 space-y-2">
+          {PLAN_MODULES.map((m) => (
+            <label key={m} className="flex items-center justify-between text-sm text-gray-700">
+              {MODULE_LABEL[m]}
+              <input
+                type="number"
+                min={0}
+                max={100}
+                value={settings.plannerWeights[m]}
+                onChange={(e) => {
+                  const n = Number(e.target.value);
+                  if (!Number.isFinite(n)) return;
+                  updateSettings({
+                    plannerWeights: { ...settings.plannerWeights, [m]: Math.max(0, Math.min(100, Math.round(n))) },
+                    plannerWeightsCustom: true,
+                  });
+                }}
+                className="w-20 rounded-xl border border-gray-200 px-3 py-2 text-center text-sm"
+              />
+            </label>
+          ))}
+        </div>
+        {settings.plannerWeightsCustom && (
+          <button
+            onClick={() => updateSettings({ plannerWeightsCustom: false })}
+            className="mt-3 text-xs text-brand-600 underline"
+          >
+            恢复自动权重(按弱项动态加成)
+          </button>
+        )}
+      </section>
+
+      <section className="rounded-2xl bg-white p-4 shadow-sm">
+        <h2 className="text-sm font-semibold text-gray-900">严格度</h2>
+        <p className="mt-1 text-xs text-gray-500">
+          温和:未完成仅提示,连续 3 日未达标自动下调目标。硬核:欠账滚入次日(封顶 +50%)+ 醒目提醒。
+        </p>
+        <div className="mt-3 flex gap-2">
+          {(['gentle', 'hardcore'] as const).map((s) => (
+            <button
+              key={s}
+              onClick={() => updateSettings({ strictness: s })}
+              className={`flex-1 rounded-xl py-2 text-sm font-medium ${
+                settings.strictness === s ? 'bg-brand-600 text-white' : 'bg-gray-100 text-gray-600'
+              }`}
+            >
+              {s === 'gentle' ? '温和' : '硬核'}
+            </button>
+          ))}
+        </div>
+      </section>
+
+      <section className="rounded-2xl bg-white p-4 shadow-sm">
+        <h2 className="text-sm font-semibold text-gray-900">积分与成就</h2>
+        <p className="mt-2 text-sm text-gray-700">⭐ {rewardsData.points} 分</p>
+        <div className="mt-2 flex flex-wrap gap-2">
+          {ACHIEVEMENTS.map((a) => {
+            const unlocked = rewardsData.achievements.some((x) => x.id === a.id);
+            return (
+              <span
+                key={a.id}
+                className={`rounded-full px-3 py-1 text-xs ${
+                  unlocked ? 'bg-brand-50 text-brand-700' : 'bg-gray-100 text-gray-400'
+                }`}
+              >
+                {unlocked ? '🏅 ' : '🔒 '}
+                {a.label}
+              </span>
+            );
+          })}
+        </div>
+      </section>
+
+      <section className="rounded-2xl bg-white p-4 shadow-sm">
+        <h2 className="text-sm font-semibold text-gray-900">复习</h2>
+        <label className="mt-3 flex items-center justify-between text-sm text-gray-700">
+          每日新卡上限
+          <input
+            type="number"
+            min={0}
+            max={100}
+            value={settings.dailyNewCards}
+            onChange={(e) => {
+              const n = Number(e.target.value);
+              if (Number.isFinite(n)) updateSettings({ dailyNewCards: Math.max(0, Math.min(100, Math.round(n))) });
+            }}
+            className="w-20 rounded-xl border border-gray-200 px-3 py-2 text-center text-sm"
+          />
+        </label>
+        <p className="mt-2 text-xs text-gray-500">复习间隔由 FSRS 算法自动安排,新卡超出上限的部分留到之后再学。</p>
+      </section>
+
+      <SyncSection />
 
       <section className="rounded-2xl bg-white p-4 shadow-sm">
         <h2 className="text-sm font-semibold text-gray-900">数据</h2>

@@ -1,9 +1,85 @@
 export type CEFRLevel = 'A2' | 'B1' | 'B2' | 'C1';
 
+export type PlanModule = 'listen' | 'speak' | 'read' | 'write' | 'vocab';
+
+export type PlannerWeights = Record<PlanModule, number>;
+
+export interface PlanTask {
+  module: PlanModule;
+  targetMinutes: number;
+  /** 頁面活躍計時(前台停留) */
+  spentMs: number;
+  /** listen:音頻實際播放時長 */
+  playbackMs?: number;
+  /** speak:跟讀錄音次數 */
+  recordings?: number;
+  done: boolean;
+  /** 自報完成(閱讀) */
+  selfReported?: boolean;
+  meta?: { cards?: number; episodes?: number; writeMode?: 'translate' | 'free' };
+}
+
+export interface DebtItem {
+  module: PlanModule;
+  minutes: number;
+}
+
+export interface DayPlan {
+  date: string; // YYYY-MM-DD
+  totalMinutes: number;
+  createdAt: number;
+  tasks: PlanTask[];
+  /** 昨日未完成的欠账(溫和=僅提示;硬核已滾入任務目標) */
+  debts: DebtItem[];
+  /** 今日 streak 是否已記入(完成率 ≥ 70% 時記一次) */
+  checkedIn: boolean;
+  /** 當日收官 AI 點評(≤3 句) */
+  coachComment?: string;
+  /** 跨日結算時對昨日的點評 */
+  yesterdayComment?: string;
+}
+
+/** 已結算日的摘要(連續未達標判定與獎懲用) */
+export interface PlanHistoryEntry {
+  date: string;
+  totalMinutes: number;
+  doneCount: number;
+  taskCount: number;
+  checkedIn: boolean;
+}
+
 export interface Settings {
   deepseekApiKey: string;
   level: CEFRLevel;
   interests: string[];
+  /** 每日新卡上限 */
+  dailyNewCards: number;
+  /** 上次選擇的今日學習總時長(分鐘) */
+  plannerMinutes: number;
+  /** Azure 語音服務(留空則用瀏覽器基礎模式) */
+  azureRegion: string;
+  azureKey: string;
+  /** 五模組時長權重(相對值,內部歸一化) */
+  plannerWeights: PlannerWeights;
+  /** 用戶手動調過權重(true 則不做弱項動態加成) */
+  plannerWeightsCustom: boolean;
+  /** 獎懲嚴格度 */
+  strictness: 'gentle' | 'hardcore';
+}
+
+export type SrsStateName = 'new' | 'learning' | 'review' | 'relearning';
+
+// FSRS card state (ts-fsrs Card, dates as epoch ms so it serialises to JSON).
+export interface SrsState {
+  due: number;
+  stability: number;
+  difficulty: number;
+  scheduledDays: number;
+  learningSteps: number;
+  reps: number;
+  lapses: number;
+  state: SrsStateName;
+  lastReview?: number;
 }
 
 export interface VocabEntry {
@@ -15,12 +91,7 @@ export interface VocabEntry {
   context: string;
   source: { module: 'listen' | 'read' | 'write'; materialId: string };
   addedAt: number;
-  srs: {
-    stage: 0 | 1 | 2 | 3 | 4;
-    nextReview: number;
-    lapses: number;
-    graduated?: boolean;
-  };
+  srs: SrsState;
 }
 
 export interface AudioLesson {
@@ -100,9 +171,10 @@ export interface WritingCache {
 export interface SrsLogEntry {
   entryId: string;
   at: number;
-  result: 'unknown' | 'vague' | 'known';
-  fromStage: number;
-  toStage: number;
+  /** FSRS 四鍵評分;遷移前的老日誌無此欄位(存的是 result/fromStage/toStage) */
+  rating?: 'again' | 'hard' | 'good' | 'easy';
+  fromState?: SrsStateName;
+  toState?: SrsStateName;
 }
 
 export const DEFAULT_INTERESTS = ['音乐', '游戏', '科技', '日常生活'];

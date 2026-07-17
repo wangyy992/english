@@ -1,5 +1,6 @@
 import { chatJSON } from './deepseek';
 import * as storage from './storage';
+import { buildFreeWriteGradePrompt, buildTranslationGradePrompt, GRADE_SYSTEM_PROMPT } from './prompts/writing';
 import type { CEFRLevel, FreeWriteResult, FreeWriteTopic, TranslationItem, TranslationResult, WritingCache } from '../types';
 
 const N_SENTENCES = 5;
@@ -44,10 +45,9 @@ export function saveTranslationAnswer(index: number, answer: string, result?: Tr
 }
 
 export async function gradeTranslation(zh: string, answer: string): Promise<TranslationResult> {
-  return chatJSON<TranslationResult>(
-    '你是英语写作批改老师。只输出严格的 JSON,不要任何多余文字或 Markdown 围栏。',
-    `中文原句:${zh},学生译文:${answer}。只输出 JSON:{"score": 1-5, "errors": [{"original": "错误片段", "suggestion": "改正", "type": "语法|用词|搭配", "explanation": "一句话中文解释"}], "better_version": "更地道的完整译文", "upgrades": [{"phrase": "值得学的表达", "note": "中文说明"}]}`,
-  );
+  return chatJSON<TranslationResult>(GRADE_SYSTEM_PROMPT, buildTranslationGradePrompt(zh, answer), {
+    temperature: 0.3,
+  });
 }
 
 export async function generateFreeWriteTopics(interests: string[]): Promise<FreeWriteTopic[]> {
@@ -62,8 +62,7 @@ export async function generateFreeWriteTopics(interests: string[]): Promise<Free
 }
 
 export async function gradeFreeWrite(topic: string, essay: string): Promise<FreeWriteResult> {
-  return chatJSON<FreeWriteResult>(
-    '你是英语写作批改老师。只输出严格的 JSON,不要任何多余文字或 Markdown 围栏。',
-    `写作主题:${topic}。学生作文:${essay}。只输出 JSON:{"score": 1-5, "errors": [{"original": "错误片段", "suggestion": "改正", "type": "语法|用词|搭配", "explanation": "一句话中文解释"}], "better_version": "更地道的完整译文", "upgrades": [{"phrase": "值得学的表达", "note": "中文说明"}], "structure_feedback": "一句话结构建议", "rewritten_paragraph": "只重写最弱的一段作示范"}`,
-  );
+  return chatJSON<FreeWriteResult>(GRADE_SYSTEM_PROMPT, buildFreeWriteGradePrompt(topic, essay), {
+    temperature: 0.3,
+  });
 }

@@ -10,6 +10,10 @@ import Translate from './pages/write/Translate';
 import FreeWrite from './pages/write/FreeWrite';
 import VocabHome from './pages/vocab/VocabHome';
 import Settings from './pages/Settings';
+import Placement from './pages/Placement';
+import SpeakHome from './pages/speak/SpeakHome';
+import SpeakDialogue from './pages/speak/SpeakDialogue';
+import SpeakIelts from './pages/speak/SpeakIelts';
 
 // GitHub Pages (and the future Capacitor shell) can't resolve arbitrary
 // history-API paths, so this app is hash-routed end to end.
@@ -28,6 +32,10 @@ export const router = createHashRouter([
       { path: 'write/free', element: <FreeWrite /> },
       { path: 'vocab', element: <VocabHome /> },
       { path: 'settings', element: <Settings /> },
+      { path: 'placement', element: <Placement /> },
+      { path: 'speak', element: <SpeakHome /> },
+      { path: 'speak/dialogue', element: <SpeakDialogue /> },
+      { path: 'speak/ielts', element: <SpeakIelts /> },
     ],
   },
 ]);

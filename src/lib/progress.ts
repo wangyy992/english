@@ -17,7 +17,7 @@ function dateKey(d: Date): string {
   return `${y}-${m}-${day}`;
 }
 
-function todayKey(): string {
+export function todayKey(): string {
   return dateKey(new Date());
 }
 
@@ -35,19 +35,21 @@ function saveProgress(p: ProgressData): void {
   storage.set('progress', p);
 }
 
-// Bumps the streak at most once per calendar day, the first time any task
-// is marked done that day.
-function ensureStreak(p: ProgressData): ProgressData {
+// Credits today's check-in (streak) at most once per calendar day. Called by
+// the planner when the day's completion ratio reaches the streak threshold —
+// individual task completion alone no longer bumps the streak.
+export function checkIn(): void {
+  const p = getProgress();
   const today = todayKey();
-  if (p.lastActiveDate === today) return p;
+  if (p.lastActiveDate === today) return;
   const streak = p.lastActiveDate === yesterdayKey() ? p.streak + 1 : 1;
-  return { ...p, streak, lastActiveDate: today };
+  saveProgress({ ...p, streak, lastActiveDate: today });
 }
 
 export type DailyTask = 'listen' | 'read' | 'write' | 'reviewCleared';
 
 export function markToday(task: DailyTask): void {
-  const p = ensureStreak(getProgress());
+  const p = getProgress();
   const today = todayKey();
   const log = p.logs[today] ?? { date: today };
   saveProgress({ ...p, logs: { ...p.logs, [today]: { ...log, [task]: true } } });

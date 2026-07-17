@@ -1,0 +1,19 @@
+name = "robin-sync"
+main = "src/index.ts"
+compatibility_date = "2026-01-01"
+
+# 部署前:npx wrangler kv namespace create DATA
+# 然後把生成的 id 填到下面
+[[kv_namespaces]]
+binding = "DATA"
+id = "REPLACE_WITH_KV_NAMESPACE_ID"
+
+[vars]
+# 逗號分隔的允許登錄郵箱(自用強烈建議設置成自己的郵箱)
+ALLOWED_EMAILS = ""
+# '1' = 調試模式,驗證碼隨響應返回(不配 Resend 也能跑通)
+DEV_MODE = "0"
+
+# 密鑰(不要寫在此文件):
+#   npx wrangler secret put AUTH_SECRET     ← 隨機長字符串,如 openssl rand -hex 32
+#   npx wrangler secret put RESEND_API_KEY  ← https://resend.com 免費申請

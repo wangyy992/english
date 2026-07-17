@@ -12,8 +12,15 @@ const FILTER_LABEL: Record<FilterModule, string> = {
 };
 
 function stageLabel(srs: VocabEntry['srs']): string {
-  if (srs.graduated) return '已毕业';
-  return `阶段 ${srs.stage}`;
+  switch (srs.state) {
+    case 'new':
+      return '新卡';
+    case 'learning':
+    case 'relearning':
+      return '学习中';
+    case 'review':
+      return `间隔 ${Math.max(1, Math.round(srs.scheduledDays))} 天`;
+  }
 }
 
 export default function VocabList({ banner }: { banner?: string }) {

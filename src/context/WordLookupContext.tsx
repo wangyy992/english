@@ -1,6 +1,7 @@
 import { createContext, useContext, useState, type ReactNode } from 'react';
 import type { VocabEntry } from '../types';
 import WordPopoverCard from '../components/WordPopoverCard';
+import { noteLookup } from '../lib/ability';
 
 export interface LookupRequest {
   word: string;
@@ -18,8 +19,13 @@ const WordLookupContext = createContext<WordLookupContextValue | null>(null);
 export function WordLookupProvider({ children }: { children: ReactNode }) {
   const [request, setRequest] = useState<LookupRequest | null>(null);
 
+  const open = (req: LookupRequest) => {
+    noteLookup(req.source.materialId); // 閱讀能力的生詞密度統計
+    setRequest(req);
+  };
+
   return (
-    <WordLookupContext.Provider value={{ open: setRequest }}>
+    <WordLookupContext.Provider value={{ open }}>
       {children}
       {request && <WordPopoverCard request={request} onClose={() => setRequest(null)} />}
     </WordLookupContext.Provider>

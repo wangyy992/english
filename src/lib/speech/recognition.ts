@@ -1,3 +1,6 @@
+// 低層瀏覽器語音工具:TTS 朗讀、SpeechRecognition 封裝、錄音器。
+// 原 src/lib/speech.ts 遷移至此,對外經 speech/index.ts 再導出。
+
 export function speak(text: string, lang = 'en-US'): void {
   if (!('speechSynthesis' in window)) return;
   window.speechSynthesis.cancel();
@@ -6,17 +9,23 @@ export function speak(text: string, lang = 'en-US'): void {
   window.speechSynthesis.speak(utterance);
 }
 
-interface SpeechRecognitionResultLike {
-  results: { [index: number]: { [index: number]: { transcript: string } } };
+interface SpeechRecognitionEventLike {
+  resultIndex: number;
+  results: {
+    length: number;
+    [index: number]: { isFinal?: boolean; [alt: number]: { transcript: string } };
+  };
 }
 
 interface SpeechRecognitionLike {
   lang: string;
+  continuous: boolean;
   interimResults: boolean;
   maxAlternatives: number;
   start: () => void;
   stop: () => void;
-  onresult: ((event: SpeechRecognitionResultLike) => void) | null;
+  abort?: () => void;
+  onresult: ((event: SpeechRecognitionEventLike) => void) | null;
   onerror: ((event: { error?: string }) => void) | null;
   onend: (() => void) | null;
 }
@@ -24,7 +33,10 @@ interface SpeechRecognitionLike {
 type SpeechRecognitionCtor = new () => SpeechRecognitionLike;
 
 function getSpeechRecognitionCtor(): SpeechRecognitionCtor | null {
-  const w = window as unknown as { webkitSpeechRecognition?: SpeechRecognitionCtor; SpeechRecognition?: SpeechRecognitionCtor };
+  const w = window as unknown as {
+    webkitSpeechRecognition?: SpeechRecognitionCtor;
+    SpeechRecognition?: SpeechRecognitionCtor;
+  };
   return w.webkitSpeechRecognition ?? w.SpeechRecognition ?? null;
 }
 
@@ -63,8 +75,62 @@ export function recognizeOnce(lang = 'en-US'): Promise<string> {
   });
 }
 
+export interface ContinuousRecognition {
+  /** 停止並返回累計轉寫 */
+  stop(): Promise<string>;
+  cancel(): void;
+}
+
+// 連續識別(復述等長錄音)。累計 final 片段,stop() 後返回全文。
+export function startContinuousRecognition(lang = 'en-US'): ContinuousRecognition {
+  const Ctor = getSpeechRecognitionCtor();
+  if (!Ctor) throw new Error('speech recognition not supported');
+  const recognition = new Ctor();
+  recognition.lang = lang;
+  recognition.continuous = true;
+  recognition.interimResults = false;
+  recognition.maxAlternatives = 1;
+
+  const finals: string[] = [];
+  let onended: (() => void) | null = null;
+  let ended = false;
+
+  recognition.onresult = (event) => {
+    for (let i = event.resultIndex; i < event.results.length; i++) {
+      const r = event.results[i];
+      if (r.isFinal !== false) finals.push(r[0].transcript);
+    }
+  };
+  recognition.onerror = () => {};
+  recognition.onend = () => {
+    ended = true;
+    onended?.();
+  };
+  recognition.start();
+
+  return {
+    stop() {
+      return new Promise<string>((resolve) => {
+        const finish = () => resolve(finals.join(' ').trim());
+        if (ended) {
+          finish();
+          return;
+        }
+        onended = finish;
+        recognition.stop();
+        // Safety net: some engines can delay/skip onend
+        setTimeout(finish, 3000);
+      });
+    },
+    cancel() {
+      recognition.abort?.();
+      recognition.stop();
+    },
+  };
+}
+
 // Records the mic to a blob so the user can compare "my reading" vs. the
-// original sentence audio (§4.2 A/B playback).
+// original sentence audio.
 export class Recorder {
   private mediaRecorder: MediaRecorder | null = null;
   private chunks: BlobPart[] = [];

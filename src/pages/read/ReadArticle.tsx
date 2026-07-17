@@ -3,6 +3,8 @@ import { Link, useParams } from 'react-router-dom';
 import * as articlesLib from '../../lib/articles';
 import * as vocab from '../../lib/vocab';
 import * as progress from '../../lib/progress';
+import * as planner from '../../lib/planner';
+import * as ability from '../../lib/ability';
 import { highlightVocabTerms } from '../../lib/highlight';
 import SelectableText from '../../components/SelectableText';
 import type { Article } from '../../types';
@@ -27,6 +29,9 @@ export default function ReadArticle() {
     };
   }, [id]);
 
+  // 閱讀計時(自報完成,停留時長僅記錄)
+  useEffect(() => planner.trackModule('read'), []);
+
   const source = useMemo(() => (id ? { module: 'read' as const, materialId: id } : null), [id]);
 
   if (article === undefined) {
@@ -47,6 +52,9 @@ export default function ReadArticle() {
   const handleFinish = () => {
     progress.markArticleDone(article.id);
     progress.markToday('read');
+    planner.selfReportRead();
+    const wordCount = article.paragraphs.join(' ').split(/\s+/).filter(Boolean).length;
+    ability.noteReadingFinished(wordCount, ability.takeLookupCount(article.id));
     setFinished(true);
   };
 

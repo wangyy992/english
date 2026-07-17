@@ -28,7 +28,7 @@ export default function ReviewCard({
     const dx = e.changedTouches[0].clientX - touchStartX.current;
     touchStartX.current = null;
     if (!flipped || Math.abs(dx) < SWIPE_THRESHOLD) return;
-    onAnswer(dx > 0 ? 'known' : 'unknown');
+    onAnswer(dx > 0 ? 'good' : 'again');
   };
 
   return (
@@ -66,24 +66,30 @@ export default function ReviewCard({
         )}
       </div>
       {flipped && (
-        <div className="mt-4 grid grid-cols-3 gap-2">
+        <div className="mt-4 grid grid-cols-4 gap-2">
           <button
-            onClick={() => onAnswer('unknown')}
+            onClick={() => onAnswer('again')}
             className="rounded-xl bg-red-50 py-3 text-sm font-medium text-red-600"
           >
-            不认识
+            重来
           </button>
           <button
-            onClick={() => onAnswer('vague')}
+            onClick={() => onAnswer('hard')}
             className="rounded-xl bg-yellow-50 py-3 text-sm font-medium text-yellow-700"
           >
-            模糊
+            困难
           </button>
           <button
-            onClick={() => onAnswer('known')}
+            onClick={() => onAnswer('good')}
             className="rounded-xl bg-green-50 py-3 text-sm font-medium text-green-700"
           >
-            认识
+            良好
+          </button>
+          <button
+            onClick={() => onAnswer('easy')}
+            className="rounded-xl bg-blue-50 py-3 text-sm font-medium text-blue-600"
+          >
+            简单
           </button>
         </div>
       )}

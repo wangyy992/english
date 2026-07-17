@@ -1,11 +1,19 @@
 import { createContext, useContext, useMemo, useState, type ReactNode } from 'react';
 import * as storage from '../lib/storage';
+import { DEFAULT_WEIGHTS } from '../lib/planner';
 import { DEFAULT_INTERESTS, type Settings } from '../types';
 
 const DEFAULT_SETTINGS: Settings = {
   deepseekApiKey: '',
   level: 'B1',
   interests: [...DEFAULT_INTERESTS],
+  dailyNewCards: 15,
+  plannerMinutes: 60,
+  plannerWeights: { ...DEFAULT_WEIGHTS },
+  plannerWeightsCustom: false,
+  strictness: 'gentle',
+  azureRegion: '',
+  azureKey: '',
 };
 
 function loadSettings(): Settings {

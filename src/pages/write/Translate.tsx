@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { useSettings } from '../../context/SettingsContext';
 import * as writing from '../../lib/writing';
 import * as progress from '../../lib/progress';
+import * as planner from '../../lib/planner';
+import * as ability from '../../lib/ability';
 import { DeepSeekKeyMissingError } from '../../lib/deepseek';
 import GradedAnswer from '../../components/write/GradedAnswer';
 import UpgradesList from '../../components/write/UpgradesList';
@@ -53,6 +55,15 @@ export default function Translate() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [hasApiKey]);
 
+  useEffect(() => planner.trackModule('write'), []);
+
+  const allDone = states.length > 0 && states.every((s) => s.result);
+
+  // 「寫」的完成條件:5 句全部提交批改
+  useEffect(() => {
+    if (allDone) planner.notifyWriteSubmitted();
+  }, [allDone]);
+
   if (!hasApiKey) {
     return (
       <div className="p-4">
@@ -95,13 +106,13 @@ export default function Translate() {
       writing.saveTranslationAnswer(index, answer, result);
       setStates((prev) => prev.map((s, i) => (i === index ? { ...s, grading: false, result } : s)));
       progress.markToday('write');
+      ability.noteWritingScore(result.score);
     } catch (err) {
       const message = err instanceof DeepSeekKeyMissingError ? '请先在设置页填入 API Key' : '批改失败,请重试';
       setStates((prev) => prev.map((s, i) => (i === index ? { ...s, grading: false, error: message } : s)));
     }
   };
 
-  const allDone = states.length > 0 && states.every((s) => s.result);
 
   return (
     <div className="p-4 pb-8">

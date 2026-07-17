@@ -6,8 +6,11 @@ import * as articlesLib from '../lib/articles';
 import * as vocab from '../lib/vocab';
 import * as writingLib from '../lib/writing';
 import * as progress from '../lib/progress';
+import * as planner from '../lib/planner';
+import { MODULE_LABEL } from '../lib/planner';
 import TaskCard from '../components/today/TaskCard';
-import type { AudioLesson, Article, CEFRLevel, DailyLog } from '../types';
+import DurationPicker from '../components/today/DurationPicker';
+import type { AudioLesson, Article, CEFRLevel, DayPlan, PlanTask } from '../types';
 
 const CEFR_TO_LESSON_LEVEL: Record<CEFRLevel, 1 | 2 | 3> = { A2: 1, B1: 2, B2: 2, C1: 3 };
 
@@ -24,25 +27,31 @@ function pickArticle(articles: Article[], completedIds: string[], level: CEFRLev
   return candidates.find((a) => a.level === level) ?? candidates[0];
 }
 
+function lessonMinutes(lesson: AudioLesson | undefined): number {
+  const end = lesson?.sentences.at(-1)?.end ?? 0;
+  return end / 60;
+}
+
+function minutesLabel(min: number): string {
+  return min >= 60 ? `${Math.floor(min / 60)}h${min % 60 ? `${min % 60}m` : ''}` : `${min}min`;
+}
+
 type WriteState = 'loading' | 'ready' | 'no-key' | 'error';
 
 export default function Today() {
   const navigate = useNavigate();
-  const { settings, hasApiKey } = useSettings();
+  const { settings, updateSettings, hasApiKey } = useSettings();
+  const [plan, setPlan] = useState<DayPlan | null>(() => planner.getTodayPlan());
   const [streak, setStreak] = useState(0);
-  const [todayLog, setTodayLog] = useState<DailyLog>({ date: '' });
   const [lesson, setLesson] = useState<AudioLesson | undefined>();
   const [article, setArticle] = useState<Article | undefined>();
-  const [dueCount, setDueCount] = useState(0);
   const [writeState, setWriteState] = useState<WriteState>('loading');
 
   useEffect(() => {
     const p = progress.getProgress();
     setStreak(p.streak);
-    setTodayLog(progress.getTodayLog());
     setLesson(pickLesson(getAllLessons(), p.completedLessonIds, settings.level));
     setArticle(pickArticle(articlesLib.getAllArticles(), p.completedArticleIds, settings.level));
-    setDueCount(vocab.getReviewQueue(settings.dailyNewCards).entries.length);
     let alive = true;
     loadAllLessons().then((all) => {
       if (alive) setLesson(pickLesson(all, p.completedLessonIds, settings.level));
@@ -56,6 +65,7 @@ export default function Today() {
   }, [settings.level]);
 
   useEffect(() => {
+    if (!plan) return;
     const cache = writingLib.getCache();
     if (cache.translationSet.length > 0) {
       setWriteState('ready');
@@ -70,7 +80,71 @@ export default function Today() {
       .ensureTranslationSet(settings.level, settings.interests)
       .then(() => setWriteState('ready'))
       .catch(() => setWriteState('error'));
-  }, [hasApiKey, settings.level, settings.interests]);
+  }, [plan, hasApiKey, settings.level, settings.interests]);
+
+  const startDay = (minutes: number) => {
+    updateSettings({ plannerMinutes: minutes });
+    const queue = vocab.getReviewQueue(settings.dailyNewCards);
+    const created = planner.createPlan(minutes, settings.plannerWeights, {
+      dueCards: queue.entries.length,
+      lessonMinutes: lessonMinutes(lesson),
+    });
+    setPlan(created);
+    setStreak(progress.getProgress().streak);
+  };
+
+  if (!plan) {
+    return <DurationPicker defaultMinutes={settings.plannerMinutes} streak={streak} onStart={startDay} />;
+  }
+
+  const doneCount = plan.tasks.filter((t) => t.done).length;
+
+  const writeSubtitle =
+    writeState === 'ready'
+      ? plan.tasks.find((t) => t.module === 'write')?.meta?.writeMode === 'free'
+        ? '自由写作'
+        : '5 句中译英'
+      : writeState === 'loading'
+        ? '正在准备题目…'
+        : writeState === 'no-key'
+          ? '去设置页填入 DeepSeek API Key'
+          : '题目生成失败,进入页面重试';
+
+  const view: Record<PlanTask['module'], { icon: string; subtitle: string; to: string; progressMs: (t: PlanTask) => number }> = {
+    listen: {
+      icon: '🎧',
+      subtitle: lesson ? lesson.title : '暂无可推荐的听力材料',
+      to: lesson ? `/listen/${lesson.id}` : '/listen',
+      progressMs: (t) => t.playbackMs ?? 0,
+    },
+    speak: {
+      icon: '🎙️',
+      subtitle: lesson ? `跟读 · ${lesson.title}` : '跟读练习',
+      to: lesson ? `/listen/${lesson.id}?stage=shadow` : '/listen',
+      progressMs: (t) => t.spentMs,
+    },
+    read: {
+      icon: '📖',
+      subtitle: article ? article.title : '暂无可推荐的文章',
+      to: article ? `/read/${article.id}` : '/read',
+      progressMs: (t) => t.spentMs,
+    },
+    write: {
+      icon: '✍️',
+      subtitle: writeSubtitle,
+      to: plan.tasks.find((t) => t.module === 'write')?.meta?.writeMode === 'free' ? '/write/free' : '/write/translate',
+      progressMs: (t) => t.spentMs,
+    },
+    vocab: {
+      icon: '🗂️',
+      subtitle: (() => {
+        const t = plan.tasks.find((x) => x.module === 'vocab');
+        return t && (t.meta?.cards ?? 0) > 0 ? `${t.meta?.cards} 张卡` : '今日无复习 ✓';
+      })(),
+      to: '/vocab',
+      progressMs: (t) => t.spentMs,
+    },
+  };
 
   return (
     <div className="p-4 pb-8">
@@ -82,55 +156,38 @@ export default function Today() {
         </div>
       </div>
 
+      <p className="mt-1 text-xs text-gray-400">
+        今日计划 {minutesLabel(plan.totalMinutes)} · 完成 {doneCount}/{plan.tasks.length}
+        {!plan.checkedIn && ` · 完成 ${Math.ceil(plan.tasks.length * planner.STREAK_THRESHOLD)} 项即打卡`}
+        {plan.checkedIn && ' · 已打卡 ✓'}
+      </p>
+
+      {plan.debts.length > 0 && (
+        <div className="mt-3 rounded-xl bg-amber-50 px-4 py-3 text-sm text-amber-700">
+          昨日欠账:
+          {plan.debts.map((d) => `${MODULE_LABEL[d.module]} ${d.minutes} 分钟`).join(' · ')}
+          (仅提示,不计入今日)
+        </div>
+      )}
+
       <div className="mt-4 space-y-3">
-        <TaskCard
-          icon="🎧"
-          title="听"
-          subtitle={lesson ? lesson.title : '暂无可推荐的听力材料'}
-          actionLabel="开始"
-          done={Boolean(todayLog.listen)}
-          onAction={() => (lesson ? navigate(`/listen/${lesson.id}`) : navigate('/listen'))}
-        />
-
-        <TaskCard
-          icon="📖"
-          title="读"
-          subtitle={article ? article.title : '暂无可推荐的文章'}
-          actionLabel="开始"
-          done={Boolean(todayLog.read)}
-          onAction={() => (article ? navigate(`/read/${article.id}`) : navigate('/read'))}
-          secondary={
-            <button onClick={() => navigate('/read')} className="text-xs text-brand-600 underline">
-              或粘贴一篇
-            </button>
-          }
-        />
-
-        <TaskCard
-          icon="✍️"
-          title="译"
-          subtitle={
-            writeState === 'ready'
-              ? '5 句已备好'
-              : writeState === 'loading'
-                ? '正在准备题目…'
-                : writeState === 'no-key'
-                  ? '去设置页填入 DeepSeek API Key'
-                  : '题目生成失败,进入页面重试'
-          }
-          actionLabel="开始"
-          done={Boolean(todayLog.write)}
-          onAction={() => navigate('/write/translate')}
-        />
-
-        <TaskCard
-          icon="🗂️"
-          title="复习"
-          subtitle={dueCount > 0 ? `${dueCount} 张卡到期` : '今日无复习 ✓'}
-          actionLabel={dueCount > 0 ? '开始' : '查看'}
-          done={Boolean(todayLog.reviewCleared)}
-          onAction={() => navigate('/vocab')}
-        />
+        {plan.tasks.map((task) => {
+          const v = view[task.module];
+          const targetMs = task.targetMinutes * 60000;
+          return (
+            <TaskCard
+              key={task.module}
+              icon={v.icon}
+              title={MODULE_LABEL[task.module]}
+              subtitle={v.subtitle}
+              actionLabel={task.done ? '再练' : '开始'}
+              done={task.done}
+              targetLabel={task.targetMinutes > 0 ? minutesLabel(task.targetMinutes) : undefined}
+              progress={targetMs > 0 ? Math.min(1, v.progressMs(task) / targetMs) : undefined}
+              onAction={() => navigate(v.to)}
+            />
+          );
+        })}
       </div>
     </div>
   );

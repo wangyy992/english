@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useSettings } from '../../context/SettingsContext';
 import * as writing from '../../lib/writing';
 import * as progress from '../../lib/progress';
+import * as planner from '../../lib/planner';
 import GradedAnswer from '../../components/write/GradedAnswer';
 import UpgradesList from '../../components/write/UpgradesList';
 import type { FreeWriteResult, FreeWriteTopic } from '../../types';
@@ -51,6 +52,8 @@ export default function FreeWrite() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [hasApiKey]);
 
+  useEffect(() => planner.trackModule('write'), []);
+
   useEffect(() => {
     if (!selected) return;
     timerRef.current = setInterval(() => setElapsed((e) => e + 1), 1000);
@@ -78,6 +81,7 @@ export default function FreeWrite() {
       const r = await writing.gradeFreeWrite(selected.topic, essay);
       setResult(r);
       progress.markToday('write');
+      planner.notifyWriteSubmitted();
     } catch {
       setGradeError('批改失败,请重试');
     } finally {

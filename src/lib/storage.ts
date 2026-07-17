@@ -8,7 +8,8 @@ export type StorageKey =
   | 'settings'
   | 'writing_cache'
   | 'srs_log'
-  | 'my_articles';
+  | 'my_articles'
+  | 'day_plan';
 
 import { migrateVocabData } from './srs';
 
@@ -57,7 +58,7 @@ export function remove(key: StorageKey): void {
   localStorage.removeItem(PREFIX + key);
 }
 
-const ALL_KEYS: StorageKey[] = ['vocab', 'progress', 'settings', 'writing_cache', 'srs_log', 'my_articles'];
+const ALL_KEYS: StorageKey[] = ['vocab', 'progress', 'settings', 'writing_cache', 'srs_log', 'my_articles', 'day_plan'];
 
 export function exportAll(): Record<string, unknown> {
   const out: Record<string, unknown> = {};

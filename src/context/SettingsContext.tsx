@@ -1,5 +1,6 @@
 import { createContext, useContext, useMemo, useState, type ReactNode } from 'react';
 import * as storage from '../lib/storage';
+import { DEFAULT_WEIGHTS } from '../lib/planner';
 import { DEFAULT_INTERESTS, type Settings } from '../types';
 
 const DEFAULT_SETTINGS: Settings = {
@@ -7,6 +8,8 @@ const DEFAULT_SETTINGS: Settings = {
   level: 'B1',
   interests: [...DEFAULT_INTERESTS],
   dailyNewCards: 15,
+  plannerMinutes: 60,
+  plannerWeights: { ...DEFAULT_WEIGHTS },
 };
 
 function loadSettings(): Settings {

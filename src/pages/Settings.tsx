@@ -3,6 +3,7 @@ import { useSettings } from '../context/SettingsContext';
 import { testConnection } from '../lib/deepseek';
 import * as storage from '../lib/storage';
 import * as vocab from '../lib/vocab';
+import { MODULE_LABEL, PLAN_MODULES } from '../lib/planner';
 import ConfirmDialog from '../components/ConfirmDialog';
 import type { CEFRLevel } from '../types';
 
@@ -165,6 +166,32 @@ export default function Settings() {
           <button onClick={addTag} className="rounded-xl bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700">
             添加
           </button>
+        </div>
+      </section>
+
+      <section className="rounded-2xl bg-white p-4 shadow-sm">
+        <h2 className="text-sm font-semibold text-gray-900">今日任务权重</h2>
+        <p className="mt-1 text-xs text-gray-500">学习总时长按以下相对权重分配到五个模块。</p>
+        <div className="mt-3 space-y-2">
+          {PLAN_MODULES.map((m) => (
+            <label key={m} className="flex items-center justify-between text-sm text-gray-700">
+              {MODULE_LABEL[m]}
+              <input
+                type="number"
+                min={0}
+                max={100}
+                value={settings.plannerWeights[m]}
+                onChange={(e) => {
+                  const n = Number(e.target.value);
+                  if (!Number.isFinite(n)) return;
+                  updateSettings({
+                    plannerWeights: { ...settings.plannerWeights, [m]: Math.max(0, Math.min(100, Math.round(n))) },
+                  });
+                }}
+                className="w-20 rounded-xl border border-gray-200 px-3 py-2 text-center text-sm"
+              />
+            </label>
+          ))}
         </div>
       </section>
 

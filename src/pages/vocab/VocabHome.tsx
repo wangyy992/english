@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import * as vocab from '../../lib/vocab';
 import * as progress from '../../lib/progress';
+import * as planner from '../../lib/planner';
 import { applyReview, endOfToday, type ReviewResult } from '../../lib/srs';
 import { useSettings } from '../../context/SettingsContext';
 import type { VocabEntry } from '../../types';
@@ -22,6 +23,12 @@ export default function VocabHome() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // 詞彙計時:僅在複習進行中計入
+  useEffect(() => {
+    if (done) return;
+    return planner.trackModule('vocab');
+  }, [done]);
+
   const handleAnswer = (result: ReviewResult) => {
     if (!queue || queue.length === 0) return;
     const [entry, ...rest] = queue;
@@ -42,6 +49,7 @@ export default function VocabHome() {
 
     if (next.length === 0) {
       progress.markToday('reviewCleared');
+      planner.notifyVocabCleared();
       setDone(true);
     }
     setQueue(next);

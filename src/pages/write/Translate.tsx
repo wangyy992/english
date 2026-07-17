@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useSettings } from '../../context/SettingsContext';
 import * as writing from '../../lib/writing';
 import * as progress from '../../lib/progress';
+import * as planner from '../../lib/planner';
 import { DeepSeekKeyMissingError } from '../../lib/deepseek';
 import GradedAnswer from '../../components/write/GradedAnswer';
 import UpgradesList from '../../components/write/UpgradesList';
@@ -53,6 +54,15 @@ export default function Translate() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [hasApiKey]);
 
+  useEffect(() => planner.trackModule('write'), []);
+
+  const allDone = states.length > 0 && states.every((s) => s.result);
+
+  // 「寫」的完成條件:5 句全部提交批改
+  useEffect(() => {
+    if (allDone) planner.notifyWriteSubmitted();
+  }, [allDone]);
+
   if (!hasApiKey) {
     return (
       <div className="p-4">
@@ -101,7 +111,6 @@ export default function Translate() {
     }
   };
 
-  const allDone = states.length > 0 && states.every((s) => s.result);
 
   return (
     <div className="p-4 pb-8">

@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
 import { canRecognizeSpeech, Recorder, recognizeOnce } from '../../lib/speech';
 import { diffAgainstOriginal, type DiffToken } from '../../lib/diff';
+import * as planner from '../../lib/planner';
 
 type ShadowState =
   | { status: 'idle' }
@@ -29,6 +30,7 @@ export default function ShadowControls({
     try {
       const transcript = await recognizeOnce();
       const blob = await recorder.stop();
+      planner.addSpeakRecording();
       setState({
         status: 'result',
         diff: diffAgainstOriginal(sentenceText, transcript),
@@ -36,6 +38,7 @@ export default function ShadowControls({
       });
     } catch {
       const blob = await recorder.stop();
+      planner.addSpeakRecording();
       setState({ status: 'result', diff: null, recordingUrl: URL.createObjectURL(blob) });
     }
   };
@@ -52,6 +55,7 @@ export default function ShadowControls({
       setState({ status: 'recording' });
     } else {
       const blob = await manualRecorderRef.current?.stop();
+      planner.addSpeakRecording();
       setState({ status: 'result', diff: null, recordingUrl: URL.createObjectURL(blob ?? new Blob()) });
     }
   };

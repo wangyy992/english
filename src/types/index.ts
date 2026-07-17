@@ -1,11 +1,50 @@
 export type CEFRLevel = 'A2' | 'B1' | 'B2' | 'C1';
 
+export type PlanModule = 'listen' | 'speak' | 'read' | 'write' | 'vocab';
+
+export type PlannerWeights = Record<PlanModule, number>;
+
+export interface PlanTask {
+  module: PlanModule;
+  targetMinutes: number;
+  /** 頁面活躍計時(前台停留) */
+  spentMs: number;
+  /** listen:音頻實際播放時長 */
+  playbackMs?: number;
+  /** speak:跟讀錄音次數 */
+  recordings?: number;
+  done: boolean;
+  /** 自報完成(閱讀) */
+  selfReported?: boolean;
+  meta?: { cards?: number; episodes?: number; writeMode?: 'translate' | 'free' };
+}
+
+export interface DebtItem {
+  module: PlanModule;
+  minutes: number;
+}
+
+export interface DayPlan {
+  date: string; // YYYY-MM-DD
+  totalMinutes: number;
+  createdAt: number;
+  tasks: PlanTask[];
+  /** 昨日未完成的欠账(僅提示) */
+  debts: DebtItem[];
+  /** 今日 streak 是否已記入(完成率 ≥ 70% 時記一次) */
+  checkedIn: boolean;
+}
+
 export interface Settings {
   deepseekApiKey: string;
   level: CEFRLevel;
   interests: string[];
   /** 每日新卡上限 */
   dailyNewCards: number;
+  /** 上次選擇的今日學習總時長(分鐘) */
+  plannerMinutes: number;
+  /** 五模組時長權重(相對值,內部歸一化) */
+  plannerWeights: PlannerWeights;
 }
 
 export type SrsStateName = 'new' | 'learning' | 'review' | 'relearning';

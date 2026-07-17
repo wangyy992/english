@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useParams, useSearchParams } from 'react-router-dom';
 import { getLessonById, loadAllLessons } from '../../lib/lessons';
 import * as progress from '../../lib/progress';
+import * as planner from '../../lib/planner';
 import type { AudioLesson, SelfRating } from '../../types';
 import AudioPlayer from '../../components/listen/AudioPlayer';
 import ShadowControls from '../../components/listen/ShadowControls';
@@ -18,6 +19,7 @@ const RATING_OPTIONS: { value: SelfRating; label: string; className: string }[] 
 
 export default function ListenLesson() {
   const { id } = useParams<{ id: string }>();
+  const [searchParams] = useSearchParams();
   // undefined = still loading remote lessons; null = definitively not found
   const [lesson, setLesson] = useState<AudioLesson | null | undefined>(id ? getLessonById(id) : null);
 
@@ -39,7 +41,7 @@ export default function ListenLesson() {
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [rate, setRate] = useState(1);
-  const [stage, setStage] = useState<Stage>('blind');
+  const [stage, setStage] = useState<Stage>(searchParams.get('stage') === 'shadow' ? 'shadow' : 'blind');
   const [rowState, setRowState] = useState<{ index: number; expanded: boolean } | null>(null);
   const [understood, setUnderstood] = useState<Set<number>>(new Set());
   const [rated, setRated] = useState(false);
@@ -72,6 +74,16 @@ export default function ListenLesson() {
   useEffect(() => {
     if (audioRef.current) audioRef.current.playbackRate = rate;
   }, [rate]);
+
+  // 任務計時:盲聽/精聽計入「聽」,跟讀計入「說」
+  useEffect(() => planner.trackModule(stage === 'shadow' ? 'speak' : 'listen'), [stage]);
+
+  // 「聽」的硬驗證:音頻實際播放時長
+  useEffect(() => {
+    if (!playing) return;
+    const id = window.setInterval(() => planner.addListenPlayback(1000), 1000);
+    return () => window.clearInterval(id);
+  }, [playing]);
 
   const togglePlay = () => {
     const audio = audioRef.current;

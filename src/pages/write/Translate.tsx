@@ -3,6 +3,7 @@ import { useSettings } from '../../context/SettingsContext';
 import * as writing from '../../lib/writing';
 import * as progress from '../../lib/progress';
 import * as planner from '../../lib/planner';
+import * as ability from '../../lib/ability';
 import { DeepSeekKeyMissingError } from '../../lib/deepseek';
 import GradedAnswer from '../../components/write/GradedAnswer';
 import UpgradesList from '../../components/write/UpgradesList';
@@ -105,6 +106,7 @@ export default function Translate() {
       writing.saveTranslationAnswer(index, answer, result);
       setStates((prev) => prev.map((s, i) => (i === index ? { ...s, grading: false, result } : s)));
       progress.markToday('write');
+      ability.noteWritingScore(result.score);
     } catch (err) {
       const message = err instanceof DeepSeekKeyMissingError ? '请先在设置页填入 API Key' : '批改失败,请重试';
       setStates((prev) => prev.map((s, i) => (i === index ? { ...s, grading: false, error: message } : s)));

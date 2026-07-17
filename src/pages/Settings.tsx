@@ -4,6 +4,7 @@ import { testConnection } from '../lib/deepseek';
 import * as storage from '../lib/storage';
 import * as vocab from '../lib/vocab';
 import { MODULE_LABEL, PLAN_MODULES } from '../lib/planner';
+import { ACHIEVEMENTS, getRewards } from '../lib/rewards';
 import { getMonthAzureSeconds, testAzureConnection } from '../lib/speech';
 import ConfirmDialog from '../components/ConfirmDialog';
 import type { CEFRLevel } from '../types';
@@ -25,6 +26,7 @@ export default function Settings() {
   const [confirmClear, setConfirmClear] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [importMessage, setImportMessage] = useState<string | null>(null);
+  const rewardsData = getRewards();
 
   const saveKey = () => {
     updateSettings({ deepseekApiKey: keyDraft.trim() });
@@ -246,12 +248,62 @@ export default function Settings() {
                   if (!Number.isFinite(n)) return;
                   updateSettings({
                     plannerWeights: { ...settings.plannerWeights, [m]: Math.max(0, Math.min(100, Math.round(n))) },
+                    plannerWeightsCustom: true,
                   });
                 }}
                 className="w-20 rounded-xl border border-gray-200 px-3 py-2 text-center text-sm"
               />
             </label>
           ))}
+        </div>
+        {settings.plannerWeightsCustom && (
+          <button
+            onClick={() => updateSettings({ plannerWeightsCustom: false })}
+            className="mt-3 text-xs text-brand-600 underline"
+          >
+            恢复自动权重(按弱项动态加成)
+          </button>
+        )}
+      </section>
+
+      <section className="rounded-2xl bg-white p-4 shadow-sm">
+        <h2 className="text-sm font-semibold text-gray-900">严格度</h2>
+        <p className="mt-1 text-xs text-gray-500">
+          温和:未完成仅提示,连续 3 日未达标自动下调目标。硬核:欠账滚入次日(封顶 +50%)+ 醒目提醒。
+        </p>
+        <div className="mt-3 flex gap-2">
+          {(['gentle', 'hardcore'] as const).map((s) => (
+            <button
+              key={s}
+              onClick={() => updateSettings({ strictness: s })}
+              className={`flex-1 rounded-xl py-2 text-sm font-medium ${
+                settings.strictness === s ? 'bg-brand-600 text-white' : 'bg-gray-100 text-gray-600'
+              }`}
+            >
+              {s === 'gentle' ? '温和' : '硬核'}
+            </button>
+          ))}
+        </div>
+      </section>
+
+      <section className="rounded-2xl bg-white p-4 shadow-sm">
+        <h2 className="text-sm font-semibold text-gray-900">积分与成就</h2>
+        <p className="mt-2 text-sm text-gray-700">⭐ {rewardsData.points} 分</p>
+        <div className="mt-2 flex flex-wrap gap-2">
+          {ACHIEVEMENTS.map((a) => {
+            const unlocked = rewardsData.achievements.some((x) => x.id === a.id);
+            return (
+              <span
+                key={a.id}
+                className={`rounded-full px-3 py-1 text-xs ${
+                  unlocked ? 'bg-brand-50 text-brand-700' : 'bg-gray-100 text-gray-400'
+                }`}
+              >
+                {unlocked ? '🏅 ' : '🔒 '}
+                {a.label}
+              </span>
+            );
+          })}
         </div>
       </section>
 

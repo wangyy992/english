@@ -4,6 +4,7 @@ import * as articlesLib from '../../lib/articles';
 import * as vocab from '../../lib/vocab';
 import * as progress from '../../lib/progress';
 import * as planner from '../../lib/planner';
+import * as ability from '../../lib/ability';
 import { highlightVocabTerms } from '../../lib/highlight';
 import SelectableText from '../../components/SelectableText';
 import type { Article } from '../../types';
@@ -52,6 +53,8 @@ export default function ReadArticle() {
     progress.markArticleDone(article.id);
     progress.markToday('read');
     planner.selfReportRead();
+    const wordCount = article.paragraphs.join(' ').split(/\s+/).filter(Boolean).length;
+    ability.noteReadingFinished(wordCount, ability.takeLookupCount(article.id));
     setFinished(true);
   };
 

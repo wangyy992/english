@@ -1,5 +1,6 @@
 import * as storage from './storage';
 import { countNewIntroducedToday, countReviewedToday, newSrsState } from './srs';
+import { checkVocabAchievements } from './rewards';
 import type { SrsLogEntry, VocabEntry } from '../types';
 
 export function getAll(): VocabEntry[] {
@@ -31,7 +32,9 @@ export function addEntry(input: AddEntryInput): VocabEntry {
     addedAt: Date.now(),
     srs: newSrsState(),
   };
-  saveAll([entry, ...getAll()]);
+  const all = [entry, ...getAll()];
+  saveAll(all);
+  checkVocabAchievements(all.length);
   return entry;
 }
 

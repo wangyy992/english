@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import * as vocab from '../../lib/vocab';
 import * as progress from '../../lib/progress';
 import * as planner from '../../lib/planner';
+import * as ability from '../../lib/ability';
 import { applyReview, endOfToday, type ReviewResult } from '../../lib/srs';
 import { useSettings } from '../../context/SettingsContext';
 import type { VocabEntry } from '../../types';
@@ -50,6 +51,7 @@ export default function VocabHome() {
     if (next.length === 0) {
       progress.markToday('reviewCleared');
       planner.notifyVocabCleared();
+      ability.noteVocabRetention();
       setDone(true);
     }
     setQueue(next);

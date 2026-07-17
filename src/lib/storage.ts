@@ -10,7 +10,10 @@ export type StorageKey =
   | 'srs_log'
   | 'my_articles'
   | 'day_plan'
-  | 'speech_usage';
+  | 'speech_usage'
+  | 'ability'
+  | 'rewards'
+  | 'plan_history';
 
 import { migrateVocabData } from './srs';
 
@@ -68,6 +71,9 @@ const ALL_KEYS: StorageKey[] = [
   'my_articles',
   'day_plan',
   'speech_usage',
+  'ability',
+  'rewards',
+  'plan_history',
 ];
 
 export function exportAll(): Record<string, unknown> {

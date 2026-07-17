@@ -2,7 +2,9 @@
 // 生成當日任務卡並負責計時與完成判定。所有讀寫經 storage.ts。
 import * as storage from './storage';
 import * as progress from './progress';
-import type { DayPlan, DebtItem, PlanModule, PlanTask, PlannerWeights } from '../types';
+import * as rewards from './rewards';
+import { weakestDims, type AbilityDim } from './ability';
+import type { DayPlan, DebtItem, PlanHistoryEntry, PlanModule, PlanTask, PlannerWeights, Settings } from '../types';
 
 export const PLAN_MODULES: PlanModule[] = ['listen', 'speak', 'read', 'write', 'vocab'];
 
@@ -26,6 +28,30 @@ export interface PlanContext {
   dueCards: number;
   /** 推薦聽力素材時長(分鐘),未知給 0 */
   lessonMinutes: number;
+  /** 獎懲嚴格度(默認溫和) */
+  strictness?: Settings['strictness'];
+}
+
+const DIM_TO_MODULE: Record<AbilityDim, PlanModule> = {
+  listening: 'listen',
+  speaking: 'speak',
+  reading: 'read',
+  writing: 'write',
+  vocab: 'vocab',
+};
+
+/**
+ * 動態權重:基礎權重 × 弱項加成(能力分最低的兩個維度 +50%)。
+ * 用戶手動調過權重(plannerWeightsCustom)則手動值優先,不加成。
+ */
+export function effectiveWeights(settings: Settings): PlannerWeights {
+  if (settings.plannerWeightsCustom) return settings.plannerWeights;
+  const weights = { ...settings.plannerWeights };
+  for (const dim of weakestDims()) {
+    const m = DIM_TO_MODULE[dim];
+    weights[m] = weights[m] * 1.5;
+  }
+  return weights;
 }
 
 function getStored(): DayPlan | null {
@@ -52,7 +78,51 @@ function computeDebts(prev: DayPlan | null): DebtItem[] {
     .map((t) => ({ module: t.module, minutes: remainingMinutes(t) }));
 }
 
+// ---- 歷史(連續未達標判定與跨日結算)----
+
+export function getHistory(): PlanHistoryEntry[] {
+  return storage.get<PlanHistoryEntry[]>('plan_history') ?? [];
+}
+
+function archivePlan(plan: DayPlan): void {
+  const entry: PlanHistoryEntry = {
+    date: plan.date,
+    totalMinutes: plan.totalMinutes,
+    doneCount: plan.tasks.filter((t) => t.done).length,
+    taskCount: plan.tasks.length,
+    checkedIn: plan.checkedIn,
+  };
+  const history = getHistory().filter((h) => h.date !== plan.date);
+  history.push(entry);
+  storage.set('plan_history', history.slice(-90)); // 只留 90 天
+}
+
+/** 最近 3 個有計劃的日子全部未達標? */
+export function lastThreeMissed(): boolean {
+  const recent = getHistory().slice(-3);
+  return recent.length === 3 && recent.every((h) => !h.checkedIn);
+}
+
+/**
+ * 溫和模式:連續 3 日未達標時自動下調 20% 日目標(先贏回來)。
+ * 返回給時長選擇器的默認值。
+ */
+export function suggestedMinutes(lastMinutes: number, strictness: Settings['strictness']): number {
+  if (strictness !== 'hardcore' && lastThreeMissed()) return Math.max(5, Math.round(lastMinutes * 0.8));
+  return lastMinutes;
+}
+
+/** 昨日(或更早)的計劃若有活動且尚無點評,返回它供跨日結算點評。 */
+export function getPrevPlanForReview(): DayPlan | null {
+  const prev = getStored();
+  if (!prev || prev.date >= progress.todayKey()) return null;
+  if (prev.coachComment) return null;
+  return prev.tasks.some((t) => t.spentMs > 0 || t.done) ? prev : null;
+}
+
 export function createPlan(totalMinutes: number, weights: PlannerWeights, ctx: PlanContext): DayPlan {
+  const prev = getStored();
+  if (prev && prev.date < progress.todayKey()) archivePlan(prev);
   const debts = computeDebts(getStored());
   const weightSum = PLAN_MODULES.reduce((s, m) => s + Math.max(0, weights[m] ?? 0), 0) || 1;
   const minutesFor = (m: PlanModule) => (totalMinutes * Math.max(0, weights[m] ?? 0)) / weightSum;
@@ -80,6 +150,15 @@ export function createPlan(totalMinutes: number, weights: PlannerWeights, ctx: P
     }
     return task;
   });
+
+  // 硬核模式:昨日欠账滾入今日目標,每模組封頂 +50%,超出丟棄
+  if (ctx.strictness === 'hardcore') {
+    for (const debt of debts) {
+      const task = tasks.find((t) => t.module === debt.module);
+      if (!task || task.targetMinutes <= 0) continue;
+      task.targetMinutes += Math.min(debt.minutes, Math.round(task.targetMinutes * 0.5));
+    }
+  }
 
   const plan: DayPlan = {
     date: progress.todayKey(),
@@ -116,12 +195,30 @@ function mutate(module: PlanModule, fn: (task: PlanTask) => void): void {
   if (!plan) return;
   const task = plan.tasks.find((t) => t.module === module);
   if (!task) return;
+  const wasDone = task.done;
   fn(task);
   refreshDone(task);
+  if (!wasDone && task.done) rewards.addPoints(10);
   if (!plan.checkedIn && completionRatio(plan) >= STREAK_THRESHOLD) {
     plan.checkedIn = true;
     progress.checkIn();
+    rewards.addPoints(20);
+    rewards.checkStreakAchievements();
   }
+  save(plan);
+}
+
+export function setCoachComment(comment: string): void {
+  const plan = getTodayPlan();
+  if (!plan) return;
+  plan.coachComment = comment;
+  save(plan);
+}
+
+export function setYesterdayComment(comment: string): void {
+  const plan = getTodayPlan();
+  if (!plan) return;
+  plan.yesterdayComment = comment;
   save(plan);
 }
 

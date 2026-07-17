@@ -8,6 +8,8 @@ import {
   type WordResult,
 } from '../../lib/speech';
 import * as planner from '../../lib/planner';
+import * as ability from '../../lib/ability';
+import * as rewards from '../../lib/rewards';
 
 type ShadowState =
   | { status: 'idle' }
@@ -54,6 +56,11 @@ export default function ShadowControls({
     const blob = await recorder.stop();
     planner.addSpeakRecording();
     if (result && result.words.length === 0 && !result.transcript) result = null;
+    if (result) {
+      const matched = result.words.filter((w) => w.errorType === 'none').length;
+      ability.noteShadowResult(result.overall, result.words.length > 0 ? matched / result.words.length : null);
+      rewards.checkShadowScore(result.overall);
+    }
     setState({ status: 'result', result, recordingUrl: URL.createObjectURL(blob) });
   };
 

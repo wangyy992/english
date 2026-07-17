@@ -3,6 +3,7 @@ import { useSettings } from '../../context/SettingsContext';
 import { canAssess, Recorder, startUnscripted, type UnscriptedResult, type UnscriptedSession } from '../../lib/speech';
 import { gradeRetelling, type RetellResult } from '../../lib/retell';
 import * as planner from '../../lib/planner';
+import * as ability from '../../lib/ability';
 
 const MIN_SECONDS = 60;
 const MAX_SECONDS = 120;
@@ -69,8 +70,10 @@ export default function RetellPanel({ originalText }: { originalText: string }) 
     setState({ status: 'grading', speech, recordingUrl });
     try {
       const grade = await gradeRetelling(originalText, speech.transcript);
+      ability.noteRetellResult(grade.coverage, speech.overall);
       setState({ status: 'result', speech, recordingUrl, grade, gradeError: false });
     } catch {
+      if (speech.overall !== null) ability.noteSpeakingActivity(null, speech.overall);
       setState({ status: 'result', speech, recordingUrl, grade: null, gradeError: true });
     }
   };

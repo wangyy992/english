@@ -29,9 +29,22 @@ export interface DayPlan {
   totalMinutes: number;
   createdAt: number;
   tasks: PlanTask[];
-  /** 昨日未完成的欠账(僅提示) */
+  /** 昨日未完成的欠账(溫和=僅提示;硬核已滾入任務目標) */
   debts: DebtItem[];
   /** 今日 streak 是否已記入(完成率 ≥ 70% 時記一次) */
+  checkedIn: boolean;
+  /** 當日收官 AI 點評(≤3 句) */
+  coachComment?: string;
+  /** 跨日結算時對昨日的點評 */
+  yesterdayComment?: string;
+}
+
+/** 已結算日的摘要(連續未達標判定與獎懲用) */
+export interface PlanHistoryEntry {
+  date: string;
+  totalMinutes: number;
+  doneCount: number;
+  taskCount: number;
   checkedIn: boolean;
 }
 
@@ -48,6 +61,10 @@ export interface Settings {
   azureKey: string;
   /** 五模組時長權重(相對值,內部歸一化) */
   plannerWeights: PlannerWeights;
+  /** 用戶手動調過權重(true 則不做弱項動態加成) */
+  plannerWeightsCustom: boolean;
+  /** 獎懲嚴格度 */
+  strictness: 'gentle' | 'hardcore';
 }
 
 export type SrsStateName = 'new' | 'learning' | 'review' | 'relearning';

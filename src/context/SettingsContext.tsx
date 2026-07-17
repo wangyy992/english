@@ -10,6 +10,8 @@ const DEFAULT_SETTINGS: Settings = {
   dailyNewCards: 15,
   plannerMinutes: 60,
   plannerWeights: { ...DEFAULT_WEIGHTS },
+  plannerWeightsCustom: false,
+  strictness: 'gentle',
   azureRegion: '',
   azureKey: '',
 };

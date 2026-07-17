@@ -3,6 +3,7 @@ import { Link, useParams, useSearchParams } from 'react-router-dom';
 import { getLessonById, loadAllLessons } from '../../lib/lessons';
 import * as progress from '../../lib/progress';
 import * as planner from '../../lib/planner';
+import * as ability from '../../lib/ability';
 import type { AudioLesson, SelfRating } from '../../types';
 import AudioPlayer from '../../components/listen/AudioPlayer';
 import ShadowControls from '../../components/listen/ShadowControls';
@@ -165,6 +166,7 @@ export default function ListenLesson() {
     progress.setListeningRating(lesson.id, rating);
     progress.markLessonDone(lesson.id);
     progress.markToday('listen');
+    ability.noteListeningSelfRating(rating);
     setRated(true);
   };
 

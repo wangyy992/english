@@ -3,6 +3,7 @@ import { useSettings } from '../../context/SettingsContext';
 import * as writing from '../../lib/writing';
 import * as progress from '../../lib/progress';
 import * as planner from '../../lib/planner';
+import * as ability from '../../lib/ability';
 import GradedAnswer from '../../components/write/GradedAnswer';
 import UpgradesList from '../../components/write/UpgradesList';
 import type { FreeWriteResult, FreeWriteTopic } from '../../types';
@@ -82,6 +83,7 @@ export default function FreeWrite() {
       setResult(r);
       progress.markToday('write');
       planner.notifyWriteSubmitted();
+      ability.noteWritingScore(r.score);
     } catch {
       setGradeError('批改失败,请重试');
     } finally {

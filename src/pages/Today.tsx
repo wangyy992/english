@@ -42,7 +42,7 @@ export default function Today() {
     setTodayLog(progress.getTodayLog());
     setLesson(pickLesson(getAllLessons(), p.completedLessonIds, settings.level));
     setArticle(pickArticle(articlesLib.getAllArticles(), p.completedArticleIds, settings.level));
-    setDueCount(vocab.getDueEntries().length);
+    setDueCount(vocab.getReviewQueue(settings.dailyNewCards).entries.length);
     let alive = true;
     loadAllLessons().then((all) => {
       if (alive) setLesson(pickLesson(all, p.completedLessonIds, settings.level));

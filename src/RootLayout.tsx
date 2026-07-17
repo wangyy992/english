@@ -5,7 +5,7 @@ export default function RootLayout() {
   return (
     <div className="mx-auto flex min-h-screen max-w-lg flex-col bg-gray-50">
       <header className="flex items-center justify-between px-4 py-3">
-        <span className="text-sm font-semibold tracking-wide text-gray-400">四技</span>
+        <span className="text-sm font-semibold tracking-wide text-gray-400">知更</span>
         <NavLink
           to="/settings"
           className={({ isActive }) => `text-lg ${isActive ? 'text-brand-600' : 'text-gray-400'}`}

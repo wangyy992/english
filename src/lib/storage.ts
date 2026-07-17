@@ -10,7 +10,11 @@ export type StorageKey =
   | 'srs_log'
   | 'my_articles';
 
-const SCHEMA_VERSION = 1;
+import { migrateVocabData } from './srs';
+
+// v1 → v2: vocab entries' srs moved from Leitner {stage, nextReview, graduated}
+// to FSRS card state. Migration is per-entry and idempotent.
+const SCHEMA_VERSION = 2;
 const PREFIX = 'siji:';
 
 interface Envelope<T> {
@@ -19,8 +23,11 @@ interface Envelope<T> {
 }
 
 // Per-key migration hooks, run when a stored envelope's version is older
-// than SCHEMA_VERSION. Empty for now; add entries here as the schema evolves.
-const migrations: Partial<Record<StorageKey, (data: unknown, fromVersion: number) => unknown>> = {};
+// than SCHEMA_VERSION. Must be idempotent: exported backups carry no version,
+// so importAll() re-runs them on whatever shape it receives.
+const migrations: Partial<Record<StorageKey, (data: unknown, fromVersion: number) => unknown>> = {
+  vocab: (data) => migrateVocabData(data),
+};
 
 export function get<T>(key: StorageKey): T | null {
   try {
@@ -63,7 +70,9 @@ export function exportAll(): Record<string, unknown> {
 
 export function importAll(data: Record<string, unknown>): void {
   for (const key of ALL_KEYS) {
-    if (key in data) set(key, data[key]);
+    if (!(key in data)) continue;
+    const migrate = migrations[key];
+    set(key, migrate ? migrate(data[key], 0) : data[key]);
   }
 }
 

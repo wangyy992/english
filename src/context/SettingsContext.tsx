@@ -6,6 +6,7 @@ const DEFAULT_SETTINGS: Settings = {
   deepseekApiKey: '',
   level: 'B1',
   interests: [...DEFAULT_INTERESTS],
+  dailyNewCards: 15,
 };
 
 function loadSettings(): Settings {

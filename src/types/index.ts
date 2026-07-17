@@ -4,6 +4,23 @@ export interface Settings {
   deepseekApiKey: string;
   level: CEFRLevel;
   interests: string[];
+  /** 每日新卡上限 */
+  dailyNewCards: number;
+}
+
+export type SrsStateName = 'new' | 'learning' | 'review' | 'relearning';
+
+// FSRS card state (ts-fsrs Card, dates as epoch ms so it serialises to JSON).
+export interface SrsState {
+  due: number;
+  stability: number;
+  difficulty: number;
+  scheduledDays: number;
+  learningSteps: number;
+  reps: number;
+  lapses: number;
+  state: SrsStateName;
+  lastReview?: number;
 }
 
 export interface VocabEntry {
@@ -15,12 +32,7 @@ export interface VocabEntry {
   context: string;
   source: { module: 'listen' | 'read' | 'write'; materialId: string };
   addedAt: number;
-  srs: {
-    stage: 0 | 1 | 2 | 3 | 4;
-    nextReview: number;
-    lapses: number;
-    graduated?: boolean;
-  };
+  srs: SrsState;
 }
 
 export interface AudioLesson {
@@ -100,9 +112,10 @@ export interface WritingCache {
 export interface SrsLogEntry {
   entryId: string;
   at: number;
-  result: 'unknown' | 'vague' | 'known';
-  fromStage: number;
-  toStage: number;
+  /** FSRS 四鍵評分;遷移前的老日誌無此欄位(存的是 result/fromStage/toStage) */
+  rating?: 'again' | 'hard' | 'good' | 'easy';
+  fromState?: SrsStateName;
+  toState?: SrsStateName;
 }
 
 export const DEFAULT_INTERESTS = ['音乐', '游戏', '科技', '日常生活'];

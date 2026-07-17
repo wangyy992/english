@@ -1,4 +1,5 @@
 import * as storage from './storage';
+import { countNewIntroducedToday, countReviewedToday, newSrsState } from './srs';
 import type { SrsLogEntry, VocabEntry } from '../types';
 
 export function getAll(): VocabEntry[] {
@@ -28,7 +29,7 @@ export function addEntry(input: AddEntryInput): VocabEntry {
     context: input.context,
     source: input.source,
     addedAt: Date.now(),
-    srs: { stage: 0, nextReview: Date.now(), lapses: 0 },
+    srs: newSrsState(),
   };
   saveAll([entry, ...getAll()]);
   return entry;
@@ -38,11 +39,38 @@ export function updateEntry(id: string, patch: Partial<VocabEntry>): void {
   saveAll(getAll().map((e) => (e.id === id ? { ...e, ...patch } : e)));
 }
 
-export function getDueEntries(): VocabEntry[] {
+export interface ReviewQueue {
+  entries: VocabEntry[];
+  /** 到期複習卡數(不含新卡) */
+  dueCount: number;
+  /** 今日將學的新卡數(已按每日上限截斷) */
+  newCount: number;
+  /** 今日已複習卡數 */
+  reviewedToday: number;
+}
+
+/** 到期複習卡 + 受每日上限約束的新卡。 */
+export function getReviewQueue(dailyNewCards: number): ReviewQueue {
   const now = Date.now();
-  return getAll()
-    .filter((e) => !e.srs.graduated && e.srs.nextReview <= now)
-    .sort((a, b) => a.srs.nextReview - b.srs.nextReview);
+  const all = getAll();
+  const logs = getLogs();
+
+  const due = all
+    .filter((e) => e.srs.state !== 'new' && e.srs.due <= now)
+    .sort((a, b) => a.srs.due - b.srs.due);
+
+  const newBudget = Math.max(0, dailyNewCards - countNewIntroducedToday(logs, now));
+  const fresh = all
+    .filter((e) => e.srs.state === 'new' && e.srs.due <= now)
+    .sort((a, b) => a.addedAt - b.addedAt)
+    .slice(0, newBudget);
+
+  return {
+    entries: [...due, ...fresh],
+    dueCount: due.length,
+    newCount: fresh.length,
+    reviewedToday: countReviewedToday(logs, now),
+  };
 }
 
 export function isTermSaved(term: string): boolean {
@@ -50,9 +78,12 @@ export function isTermSaved(term: string): boolean {
   return getAll().some((e) => e.term.trim().toLowerCase() === norm);
 }
 
+export function getLogs(): SrsLogEntry[] {
+  return storage.get<SrsLogEntry[]>('srs_log') ?? [];
+}
+
 export function logReview(log: SrsLogEntry): void {
-  const logs = storage.get<SrsLogEntry[]>('srs_log') ?? [];
-  storage.set('srs_log', [...logs, log]);
+  storage.set('srs_log', [...getLogs(), log]);
 }
 
 export function toCsv(entries: VocabEntry[]): string {

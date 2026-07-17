@@ -169,6 +169,25 @@ export default function Settings() {
       </section>
 
       <section className="rounded-2xl bg-white p-4 shadow-sm">
+        <h2 className="text-sm font-semibold text-gray-900">复习</h2>
+        <label className="mt-3 flex items-center justify-between text-sm text-gray-700">
+          每日新卡上限
+          <input
+            type="number"
+            min={0}
+            max={100}
+            value={settings.dailyNewCards}
+            onChange={(e) => {
+              const n = Number(e.target.value);
+              if (Number.isFinite(n)) updateSettings({ dailyNewCards: Math.max(0, Math.min(100, Math.round(n))) });
+            }}
+            className="w-20 rounded-xl border border-gray-200 px-3 py-2 text-center text-sm"
+          />
+        </label>
+        <p className="mt-2 text-xs text-gray-500">复习间隔由 FSRS 算法自动安排,新卡超出上限的部分留到之后再学。</p>
+      </section>
+
+      <section className="rounded-2xl bg-white p-4 shadow-sm">
         <h2 className="text-sm font-semibold text-gray-900">数据</h2>
         <div className="mt-3 flex flex-col gap-2">
           <button

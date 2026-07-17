@@ -11,8 +11,8 @@ export const browserProvider: SpeechProvider = {
     return Promise.resolve(canRecognizeSpeech());
   },
 
-  async assessScripted(referenceText: string): Promise<PronunciationResult> {
-    const transcript = await recognizeOnce();
+  async assessScripted(referenceText: string, locale = 'en-US'): Promise<PronunciationResult> {
+    const transcript = await recognizeOnce(locale);
     const words: WordResult[] = diffAgainstOriginal(referenceText, transcript).map((tok) => ({
       word: tok.text,
       score: null,
@@ -30,8 +30,8 @@ export const browserProvider: SpeechProvider = {
     };
   },
 
-  startUnscripted(): Promise<UnscriptedSession> {
-    const rec = startContinuousRecognition();
+  startUnscripted(locale = 'en-US'): Promise<UnscriptedSession> {
+    const rec = startContinuousRecognition(locale);
     return Promise.resolve({
       async stop() {
         const transcript = await rec.stop();

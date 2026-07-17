@@ -55,8 +55,8 @@ export interface UnscriptedSession {
 export interface SpeechProvider {
   id: SpeechProviderId;
   available(): Promise<boolean>;
-  /** 跟讀評分:開麥串流,靜音自動結束,返回詞級(及音素級)結果 */
-  assessScripted(referenceText: string): Promise<PronunciationResult>;
+  /** 跟讀評分:開麥串流,靜音自動結束,返回詞級(及音素級)結果。locale 默認 en-US,發音欄可傳 zh-HK/ko-KR/fr-FR 等 */
+  assessScripted(referenceText: string, locale?: string): Promise<PronunciationResult>;
   /** 自由口說:開麥串流轉寫 + 整體發音/流利度分 */
-  startUnscripted(): Promise<UnscriptedSession>;
+  startUnscripted(locale?: string): Promise<UnscriptedSession>;
 }

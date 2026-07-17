@@ -13,11 +13,11 @@ export function getActiveProviderId(): SpeechProviderId {
   return getAzureCredentials() ? 'azure' : 'browser';
 }
 
-/** 跟讀評分,自動選擇 Provider 並降級。 */
-export async function assessScripted(referenceText: string): Promise<PronunciationResult> {
+/** 跟讀評分,自動選擇 Provider 並降級。locale 默認 en-US。 */
+export async function assessScripted(referenceText: string, locale = 'en-US'): Promise<PronunciationResult> {
   if (getAzureCredentials()) {
     try {
-      return await azureProvider.assessScripted(referenceText);
+      return await azureProvider.assessScripted(referenceText, locale);
     } catch {
       // Azure 失敗(斷網/配額/憑證):麥克風會話已結束,無法用瀏覽器
       // 重評同一次發音,返回無分數結果讓 UI 落到「僅錄音對比」而不報錯。
@@ -32,19 +32,19 @@ export async function assessScripted(referenceText: string): Promise<Pronunciati
       };
     }
   }
-  return browserProvider.assessScripted(referenceText);
+  return browserProvider.assessScripted(referenceText, locale);
 }
 
 /** 自由口說(復述),自動選擇 Provider 並降級。 */
-export async function startUnscripted(): Promise<UnscriptedSession> {
+export async function startUnscripted(locale = 'en-US'): Promise<UnscriptedSession> {
   if (getAzureCredentials()) {
     try {
-      return await azureProvider.startUnscripted();
+      return await azureProvider.startUnscripted(locale);
     } catch {
       // 啟動失敗立刻降級瀏覽器識別
     }
   }
-  return browserProvider.startUnscripted();
+  return browserProvider.startUnscripted(locale);
 }
 
 export function canAssess(): boolean {

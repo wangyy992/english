@@ -61,11 +61,11 @@ function parseWords(detailJson: string): WordResult[] {
   }));
 }
 
-function makeRecognizer(sdk: Sdk, referenceText: string | null) {
+function makeRecognizer(sdk: Sdk, referenceText: string | null, locale = 'en-US') {
   const cred = getAzureCredentials();
   if (!cred) throw new Error('Azure credentials not configured');
   const speechConfig = sdk.SpeechConfig.fromSubscription(cred.key, cred.region);
-  speechConfig.speechRecognitionLanguage = 'en-US';
+  speechConfig.speechRecognitionLanguage = locale;
   const audioConfig = sdk.AudioConfig.fromDefaultMicrophoneInput();
   const recognizer = new sdk.SpeechRecognizer(speechConfig, audioConfig);
   const paConfig = new sdk.PronunciationAssessmentConfig(
@@ -85,9 +85,9 @@ export const azureProvider: SpeechProvider = {
     return Promise.resolve(getAzureCredentials() !== null);
   },
 
-  async assessScripted(referenceText: string): Promise<PronunciationResult> {
+  async assessScripted(referenceText: string, locale = 'en-US'): Promise<PronunciationResult> {
     const sdk = await loadSdk();
-    const recognizer = makeRecognizer(sdk, referenceText);
+    const recognizer = makeRecognizer(sdk, referenceText, locale);
     const startedAt = Date.now();
 
     try {
@@ -116,9 +116,9 @@ export const azureProvider: SpeechProvider = {
     }
   },
 
-  async startUnscripted(): Promise<UnscriptedSession> {
+  async startUnscripted(locale = 'en-US'): Promise<UnscriptedSession> {
     const sdk = await loadSdk();
-    const recognizer = makeRecognizer(sdk, null);
+    const recognizer = makeRecognizer(sdk, null, locale);
     const startedAt = Date.now();
 
     const transcripts: string[] = [];

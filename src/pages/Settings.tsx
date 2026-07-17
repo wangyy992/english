@@ -6,10 +6,154 @@ import * as vocab from '../lib/vocab';
 import { MODULE_LABEL, PLAN_MODULES } from '../lib/planner';
 import { ACHIEVEMENTS, getRewards } from '../lib/rewards';
 import { getMonthAzureSeconds, testAzureConnection } from '../lib/speech';
+import * as sync from '../lib/sync';
 import ConfirmDialog from '../components/ConfirmDialog';
 import type { CEFRLevel } from '../types';
 
 const LEVELS: CEFRLevel[] = ['A2', 'B1', 'B2', 'C1'];
+
+function SyncSection() {
+  const [config, setConfig] = useState(sync.getConfig);
+  const [url, setUrl] = useState('');
+  const [email, setEmail] = useState('');
+  const [code, setCode] = useState('');
+  const [phase, setPhase] = useState<'form' | 'code'>('form');
+  const [busy, setBusy] = useState(false);
+  const [message, setMessage] = useState<string | null>(null);
+
+  const handleRequestCode = async () => {
+    setBusy(true);
+    setMessage(null);
+    try {
+      const res = await sync.requestCode(url, email);
+      setPhase('code');
+      setMessage(res.devCode ? `调试模式验证码:${res.devCode}` : '验证码已发送到邮箱,10 分钟内有效');
+    } catch (err) {
+      setMessage(err instanceof Error ? err.message : '发送失败');
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  const handleVerify = async () => {
+    setBusy(true);
+    setMessage(null);
+    try {
+      await sync.verifyCode(url, email, code.trim());
+      setConfig(sync.getConfig());
+      setMessage('登录成功,已同步');
+    } catch (err) {
+      setMessage(err instanceof Error ? err.message : '登录失败');
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  const handleSyncNow = async () => {
+    setBusy(true);
+    setMessage(null);
+    try {
+      await sync.push();
+      setMessage('已同步');
+    } catch (err) {
+      setMessage(err instanceof Error ? err.message : '同步失败');
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  const meta = sync.getMeta();
+
+  return (
+    <section className="rounded-2xl bg-white p-4 shadow-sm">
+      <h2 className="text-sm font-semibold text-gray-900">云同步</h2>
+      {config ? (
+        <div className="mt-2">
+          <p className="text-sm text-gray-700">已登录:{config.email}</p>
+          <p className="mt-1 text-xs text-gray-400">
+            {meta.lastSyncAt > 0 ? `上次同步 ${new Date(meta.lastSyncAt).toLocaleString()}` : '尚未同步'}
+            ;改动后约 3 秒自动上传,打开 App 时自动拉取。
+          </p>
+          <div className="mt-3 flex gap-2">
+            <button
+              onClick={handleSyncNow}
+              disabled={busy}
+              className="rounded-xl bg-brand-600 px-4 py-2 text-sm font-medium text-white disabled:opacity-50"
+            >
+              {busy ? '同步中…' : '立即同步'}
+            </button>
+            <button
+              onClick={() => {
+                sync.logout();
+                setConfig(null);
+                setPhase('form');
+              }}
+              className="rounded-xl bg-gray-100 px-4 py-2 text-sm text-gray-500"
+            >
+              登出
+            </button>
+          </div>
+        </div>
+      ) : (
+        <div className="mt-2">
+          <p className="text-xs text-gray-500">
+            多设备同步进度,需要先部署同步服务(见仓库 docs/sync-deploy.md),然后邮箱验证码登录。
+          </p>
+          <input
+            value={url}
+            onChange={(e) => setUrl(e.target.value)}
+            placeholder="同步服务地址,如 https://robin-sync.xxx.workers.dev"
+            className="mt-3 w-full rounded-xl border border-gray-200 px-3 py-2.5 text-sm"
+            autoComplete="off"
+          />
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="邮箱"
+            className="mt-2 w-full rounded-xl border border-gray-200 px-3 py-2.5 text-sm"
+            autoComplete="email"
+          />
+          {phase === 'code' && (
+            <input
+              value={code}
+              onChange={(e) => setCode(e.target.value)}
+              placeholder="6 位验证码"
+              inputMode="numeric"
+              className="mt-2 w-full rounded-xl border border-gray-200 px-3 py-2.5 text-sm"
+              autoComplete="one-time-code"
+            />
+          )}
+          <div className="mt-3 flex items-center gap-3">
+            {phase === 'form' ? (
+              <button
+                onClick={handleRequestCode}
+                disabled={busy || !url.trim() || !email.trim()}
+                className="rounded-xl bg-brand-600 px-4 py-2 text-sm font-medium text-white disabled:opacity-50"
+              >
+                {busy ? '发送中…' : '发送验证码'}
+              </button>
+            ) : (
+              <>
+                <button
+                  onClick={handleVerify}
+                  disabled={busy || code.trim().length < 6}
+                  className="rounded-xl bg-brand-600 px-4 py-2 text-sm font-medium text-white disabled:opacity-50"
+                >
+                  {busy ? '登录中…' : '登录'}
+                </button>
+                <button onClick={handleRequestCode} disabled={busy} className="text-xs text-gray-400 underline">
+                  重发验证码
+                </button>
+              </>
+            )}
+          </div>
+        </div>
+      )}
+      {message && <p className="mt-2 text-xs text-gray-500">{message}</p>}
+    </section>
+  );
+}
 
 export default function Settings() {
   const { settings, updateSettings } = useSettings();
@@ -328,6 +472,8 @@ export default function Settings() {
         </label>
         <p className="mt-2 text-xs text-gray-500">复习间隔由 FSRS 算法自动安排,新卡超出上限的部分留到之后再学。</p>
       </section>
+
+      <SyncSection />
 
       <section className="rounded-2xl bg-white p-4 shadow-sm">
         <h2 className="text-sm font-semibold text-gray-900">数据</h2>

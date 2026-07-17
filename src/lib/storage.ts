@@ -54,13 +54,39 @@ export function get<T>(key: StorageKey): T | null {
   }
 }
 
+// 變更通知(同步層防抖推送用)。muted 期間(如從服務端導入時)不通知,
+// 避免「拉取→寫入→又推送」迴圈。
+const changeListeners = new Set<() => void>();
+let muted = false;
+
+export function onChange(listener: () => void): () => void {
+  changeListeners.add(listener);
+  return () => changeListeners.delete(listener);
+}
+
+export function mutateSilently(fn: () => void): void {
+  muted = true;
+  try {
+    fn();
+  } finally {
+    muted = false;
+  }
+}
+
+function notifyChange(): void {
+  if (muted) return;
+  for (const listener of changeListeners) listener();
+}
+
 export function set<T>(key: StorageKey, value: T): void {
   const envelope: Envelope<T> = { v: SCHEMA_VERSION, data: value };
   localStorage.setItem(PREFIX + key, JSON.stringify(envelope));
+  notifyChange();
 }
 
 export function remove(key: StorageKey): void {
   localStorage.removeItem(PREFIX + key);
+  notifyChange();
 }
 
 const ALL_KEYS: StorageKey[] = [

@@ -5,6 +5,9 @@ import './index.css'
 import { router } from './router'
 import { SettingsProvider } from './context/SettingsContext'
 import { WordLookupProvider } from './context/WordLookupContext'
+import * as sync from './lib/sync'
+
+sync.start()
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

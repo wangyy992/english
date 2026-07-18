@@ -12,13 +12,15 @@ export interface CourseLangMeta {
   locale: string;
   /** true = 完整家教(今日規劃/聽說讀寫);false = 詞彙+發音課程 */
   full: boolean;
+  /** 是否有聽力模組(目前僅粵語有自編 TTS 短對話) */
+  listening: boolean;
 }
 
 export const COURSE_LANGS: CourseLangMeta[] = [
-  { id: 'en', name: '英语', locale: 'en-US', full: true },
-  { id: 'yue', name: '粤语', locale: 'zh-HK', full: false },
-  { id: 'ko', name: '韩语', locale: 'ko-KR', full: false },
-  { id: 'fr', name: '法语', locale: 'fr-FR', full: false },
+  { id: 'en', name: '英语', locale: 'en-US', full: true, listening: true },
+  { id: 'yue', name: '粤语', locale: 'zh-HK', full: false, listening: true },
+  { id: 'ko', name: '韩语', locale: 'ko-KR', full: false, listening: false },
+  { id: 'fr', name: '法语', locale: 'fr-FR', full: false, listening: false },
 ];
 
 export function courseLangMeta(id: string): CourseLangMeta {

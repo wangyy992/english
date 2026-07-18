@@ -189,7 +189,7 @@ export default function Today() {
             actionLabel={dueCount > 0 ? '开始' : '去选词书'}
             onAction={() => navigate('/vocab')}
           />
-          {settings.courseLang === 'yue' && (
+          {courseLangMeta(settings.courseLang).listening && (
             <TaskCard
               icon={<ListenIcon />}
               title="听力"

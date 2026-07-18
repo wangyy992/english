@@ -189,6 +189,15 @@ export default function Today() {
             actionLabel={dueCount > 0 ? '开始' : '去选词书'}
             onAction={() => navigate('/vocab')}
           />
+          {settings.courseLang === 'yue' && (
+            <TaskCard
+              icon={<ListenIcon />}
+              title="听力"
+              subtitle="短对话精听 + 跟读评分"
+              actionLabel="进入"
+              onAction={() => navigate('/listen')}
+            />
+          )}
           <TaskCard
             icon={<SpeakIcon />}
             title="发音与短语"
@@ -197,9 +206,6 @@ export default function Today() {
             onAction={() => navigate('/pronounce')}
           />
         </div>
-        <p className="mt-5 rounded-xl bg-gray-100 px-4 py-3 text-xs text-gray-500">
-          {langName}的听力 / 阅读 / 写作课程仍在建设中,当前提供词汇背诵与发音练习。
-        </p>
       </div>
     );
   }

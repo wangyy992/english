@@ -1,6 +1,45 @@
 // 低層瀏覽器語音工具:TTS 朗讀、SpeechRecognition 封裝、錄音器。
 // 原 src/lib/speech.ts 遷移至此,對外經 speech/index.ts 再導出。
 
+/** 依次朗讀多句(盲聽整段用)。返回停止函數;每句開始時回調 index。 */
+export function speakSequence(
+  texts: string[],
+  lang = 'en-US',
+  onIndex?: (i: number) => void,
+  onEnd?: () => void,
+): () => void {
+  if (!('speechSynthesis' in window)) {
+    onEnd?.();
+    return () => {};
+  }
+  window.speechSynthesis.cancel();
+  let stopped = false;
+  let i = 0;
+  const next = () => {
+    if (stopped || i >= texts.length) {
+      if (!stopped) onEnd?.();
+      return;
+    }
+    onIndex?.(i);
+    const u = new SpeechSynthesisUtterance(texts[i]);
+    u.lang = lang;
+    u.onend = () => {
+      i++;
+      next();
+    };
+    u.onerror = () => {
+      i++;
+      next();
+    };
+    window.speechSynthesis.speak(u);
+  };
+  next();
+  return () => {
+    stopped = true;
+    window.speechSynthesis.cancel();
+  };
+}
+
 export function speak(text: string, lang = 'en-US'): void {
   if (!('speechSynthesis' in window)) return;
   window.speechSynthesis.cancel();

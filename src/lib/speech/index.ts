@@ -4,7 +4,7 @@ import { browserProvider } from './browser';
 import { azureProvider, getAzureCredentials } from './azure';
 import type { PronunciationResult, SpeechProviderId, UnscriptedSession } from './types';
 
-export { speak, canRecognizeSpeech, recognizeOnce, Recorder } from './recognition';
+export { speak, speakSequence, canRecognizeSpeech, recognizeOnce, Recorder } from './recognition';
 export { testAzureConnection } from './azure';
 export { getMonthAzureSeconds } from './usage';
 export type * from './types';

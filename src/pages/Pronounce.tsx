@@ -2,6 +2,12 @@ import { useState } from 'react';
 import { PRON_LANGS, type PronItem, type PronLang } from '../data/pronunciation';
 import { PHRASE_LANGS, type Phrase } from '../data/phrases';
 import { assessScripted, canAssess, getActiveProviderId, speak } from '../lib/speech';
+import { getCourseLang } from '../lib/lang';
+
+function defaultPronLang(): PronLang['id'] {
+  const c = getCourseLang();
+  return c === 'yue' || c === 'ko' || c === 'fr' ? c : 'yue';
+}
 
 type Mode = 'sounds' | 'phrases';
 
@@ -27,7 +33,7 @@ function phraseToTarget(p: Phrase): Target {
 }
 
 export default function Pronounce() {
-  const [langId, setLangId] = useState<PronLang['id']>('yue');
+  const [langId, setLangId] = useState<PronLang['id']>(defaultPronLang);
   const [mode, setMode] = useState<Mode>('sounds');
   const [target, setTarget] = useState<Target | null>(null);
   const [score, setScore] = useState<ScoreState>({ status: 'idle' });

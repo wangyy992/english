@@ -38,19 +38,23 @@ MAX_NEW_PER_RUN = 3
 # CPU runners; bump to "medium"/"large-v3" for better Cantonese if runtime allows.
 WHISPER_MODEL = "small"
 
-# NOTE: set `rss` to a verified RTHK (or other) Cantonese podcast RSS URL.
-# RTHK exposes per-programme RSS under https://podcast.rthk.hk/ ; the exact
-# feed URL / programme id must be confirmed with network access.
+# Cantonese podcast feeds. The pipeline tries each in order; broken/empty
+# feeds are skipped. Chatty Cantonese is a learner-oriented show with public
+# transcripts (chattycantonese.com), so linking its enclosure audio + deriving
+# our own sentence timestamps sits on the same basis as the English feeds.
+# (Feed URLs can't be verified from the dev sandbox — no outbound network to
+#  podcast hosts — so the first real test is the CI run.)
 FEEDS = [
     {
-        "prefix": "rthk",
-        "source": "RTHK Podcast",
-        "source_url": "https://podcast.rthk.hk/",
-        "rss": "https://podcast.rthk.hk/podcast/rss.xml",
+        "prefix": "chatty",
+        "source": "Chatty Cantonese 粵語白白講",
+        "source_url": "https://chattycantonese.com/",
+        "rss": "https://feeds.buzzsprout.com/1864001.rss",
     },
 ]
 
-USER_AGENT = "robin-canto-fetcher/1.0 (personal language-learning PWA)"
+# Browser-like UA: some podcast hosts (e.g. Buzzsprout) 403 unknown agents.
+USER_AGENT = "Mozilla/5.0 (compatible; RobinPodcastFetcher/1.0; +https://github.com/wangyy992/english)"
 # 中文句末標點:whisper 對粵語輸出書面中文,以此斷句。
 SENTENCE_END = re.compile(r"[。!?！?…]+$")
 

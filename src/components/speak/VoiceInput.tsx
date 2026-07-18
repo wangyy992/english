@@ -8,11 +8,13 @@ export default function VoiceInput({
   disabled,
   maxSeconds,
   label = '🎙️ 语音回答',
+  locale = 'en-US',
 }: {
   onResult: (result: UnscriptedResult) => void;
   disabled?: boolean;
   maxSeconds?: number;
   label?: string;
+  locale?: string;
 }) {
   const [recording, setRecording] = useState(false);
   const [elapsed, setElapsed] = useState(0);
@@ -41,7 +43,7 @@ export default function VoiceInput({
 
   const start = async () => {
     try {
-      sessionRef.current = await startUnscripted();
+      sessionRef.current = await startUnscripted(locale);
       setElapsed(0);
       setRecording(true);
     } catch {

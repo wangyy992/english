@@ -10,7 +10,7 @@ import FreeWrite from './pages/write/FreeWrite';
 import VocabHome from './pages/vocab/VocabHome';
 import Settings from './pages/Settings';
 import Placement from './pages/Placement';
-import SpeakHome from './pages/speak/SpeakHome';
+import SpeakRoute from './pages/speak/SpeakRoute';
 import SpeakDialogue from './pages/speak/SpeakDialogue';
 import SpeakIelts from './pages/speak/SpeakIelts';
 import Pronounce from './pages/Pronounce';
@@ -33,7 +33,7 @@ export const router = createHashRouter([
       { path: 'vocab', element: <VocabHome /> },
       { path: 'settings', element: <Settings /> },
       { path: 'placement', element: <Placement /> },
-      { path: 'speak', element: <SpeakHome /> },
+      { path: 'speak', element: <SpeakRoute /> },
       { path: 'speak/dialogue', element: <SpeakDialogue /> },
       { path: 'speak/ielts', element: <SpeakIelts /> },
       { path: 'pronounce', element: <Pronounce /> },

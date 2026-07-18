@@ -4,11 +4,14 @@
 
 export interface CantoSentence {
   text: string; // 漢字(粵語書面)
-  jyut: string; // 粵拼
-  zh: string; // 普通話中文
+  jyut?: string; // 粵拼(自編課程有)
+  zh?: string; // 普通話中文(自編課程有)
+  start?: number; // 真音頻課程:句子起始秒
+  end?: number; // 真音頻課程:句子結束秒
 }
 
-export type CantoLessonType = 'dialogue' | 'broadcast';
+// dialogue/broadcast:自編 + TTS;live:抓取的真實電台音頻 + whisper 轉寫
+export type CantoLessonType = 'dialogue' | 'broadcast' | 'live';
 
 export interface CantoLesson {
   id: string;
@@ -16,6 +19,10 @@ export interface CantoLesson {
   title: string;
   desc: string;
   sentences: CantoSentence[];
+  /** 真音頻課程:發布方 CDN 音頻 URL(音頻不落庫) */
+  audioUrl?: string;
+  source?: string;
+  sourceUrl?: string;
 }
 
 export const CANTO_LESSONS: CantoLesson[] = [
@@ -111,6 +118,28 @@ export const CANTO_LESSONS: CantoLesson[] = [
   },
 ];
 
+let fetchedCache: CantoLesson[] | null = null;
+
+// 抓取的真實電台課程(由 scripts/fetch_canto.py 在 CI 生成);文件可能不存在。
+async function loadFetched(): Promise<CantoLesson[]> {
+  if (fetchedCache) return fetchedCache;
+  try {
+    const res = await fetch('./data/canto-lessons.json');
+    if (!res.ok) throw new Error('no canto-lessons');
+    const data = (await res.json()) as CantoLesson[];
+    fetchedCache = Array.isArray(data) ? data : [];
+  } catch {
+    fetchedCache = [];
+  }
+  return fetchedCache;
+}
+
+/** 自編課程 + 抓取的真實課程,合併(自編在前)。 */
+export async function loadCantoLessons(): Promise<CantoLesson[]> {
+  const fetched = await loadFetched();
+  return [...CANTO_LESSONS, ...fetched];
+}
+
 export function getCantoLesson(id: string): CantoLesson | undefined {
-  return CANTO_LESSONS.find((l) => l.id === id);
+  return CANTO_LESSONS.find((l) => l.id === id) ?? fetchedCache?.find((l) => l.id === id);
 }

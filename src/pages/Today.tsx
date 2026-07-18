@@ -14,7 +14,7 @@ import { MODULE_LABEL } from '../lib/planner';
 import TaskCard from '../components/today/TaskCard';
 import DurationPicker from '../components/today/DurationPicker';
 import AbilityRadar from '../components/today/AbilityRadar';
-import { ListenIcon, ReadIcon, SpeakIcon, VocabIcon, WriteIcon } from '../components/icons';
+import { DialogueIcon, ListenIcon, ReadIcon, SpeakIcon, VocabIcon, WriteIcon } from '../components/icons';
 import { courseLangMeta } from '../lib/lang';
 import type { ReactNode } from 'react';
 import type { AudioLesson, Article, CEFRLevel, DayPlan, PlanTask } from '../types';
@@ -196,6 +196,15 @@ export default function Today() {
               subtitle="短对话精听 + 跟读评分"
               actionLabel="进入"
               onAction={() => navigate('/listen')}
+            />
+          )}
+          {courseLangMeta(settings.courseLang).speaking && (
+            <TaskCard
+              icon={<DialogueIcon />}
+              title="对话"
+              subtitle="AI 用广东话陪你练情景对话"
+              actionLabel="进入"
+              onAction={() => navigate('/speak')}
             />
           )}
           <TaskCard

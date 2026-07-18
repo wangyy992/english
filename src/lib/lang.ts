@@ -14,13 +14,15 @@ export interface CourseLangMeta {
   full: boolean;
   /** 是否有聽力模組(目前僅粵語有自編 TTS 短對話) */
   listening: boolean;
+  /** 是否有情景對話(說)模組 */
+  speaking: boolean;
 }
 
 export const COURSE_LANGS: CourseLangMeta[] = [
-  { id: 'en', name: '英语', locale: 'en-US', full: true, listening: true },
-  { id: 'yue', name: '粤语', locale: 'zh-HK', full: false, listening: true },
-  { id: 'ko', name: '韩语', locale: 'ko-KR', full: false, listening: false },
-  { id: 'fr', name: '法语', locale: 'fr-FR', full: false, listening: false },
+  { id: 'en', name: '英语', locale: 'en-US', full: true, listening: true, speaking: true },
+  { id: 'yue', name: '粤语', locale: 'zh-HK', full: false, listening: true, speaking: true },
+  { id: 'ko', name: '韩语', locale: 'ko-KR', full: false, listening: false, speaking: false },
+  { id: 'fr', name: '法语', locale: 'fr-FR', full: false, listening: false, speaking: false },
 ];
 
 export function courseLangMeta(id: string): CourseLangMeta {

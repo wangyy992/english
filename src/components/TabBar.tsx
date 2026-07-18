@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { HomeIcon, ListenIcon, ReadIcon, SpeakIcon, VocabIcon, WriteIcon } from './icons';
+import { DialogueIcon, HomeIcon, ListenIcon, ReadIcon, SpeakIcon, VocabIcon, WriteIcon } from './icons';
 import { courseLangMeta, getCourseLang } from '../lib/lang';
 import type { ReactNode } from 'react';
 
@@ -20,10 +20,11 @@ const FULL_TABS: Tab[] = [
   { to: '/vocab', label: '词', icon: <VocabIcon />, end: false },
 ];
 
-function courseTabs(hasListening: boolean): Tab[] {
+function courseTabs(meta: { listening: boolean; speaking: boolean }): Tab[] {
   return [
     { to: '/', label: '今日', icon: <HomeIcon />, end: true },
-    ...(hasListening ? [{ to: '/listen', label: '听', icon: <ListenIcon />, end: false }] : []),
+    ...(meta.listening ? [{ to: '/listen', label: '听', icon: <ListenIcon />, end: false }] : []),
+    ...(meta.speaking ? [{ to: '/speak', label: '说', icon: <DialogueIcon />, end: false }] : []),
     { to: '/pronounce', label: '发音', icon: <SpeakIcon />, end: false },
     { to: '/vocab', label: '词', icon: <VocabIcon />, end: false },
   ];
@@ -31,7 +32,7 @@ function courseTabs(hasListening: boolean): Tab[] {
 
 export default function TabBar() {
   const lang = getCourseLang();
-  const tabs = lang === 'en' ? FULL_TABS : courseTabs(courseLangMeta(lang).listening);
+  const tabs = lang === 'en' ? FULL_TABS : courseTabs(courseLangMeta(lang));
   return (
     <nav
       className="fixed bottom-0 left-0 right-0 z-40 border-t border-gray-200 bg-paper/95 backdrop-blur pb-[env(safe-area-inset-bottom)]"

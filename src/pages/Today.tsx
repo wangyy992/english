@@ -15,6 +15,7 @@ import TaskCard from '../components/today/TaskCard';
 import DurationPicker from '../components/today/DurationPicker';
 import AbilityRadar from '../components/today/AbilityRadar';
 import { ListenIcon, ReadIcon, SpeakIcon, VocabIcon, WriteIcon } from '../components/icons';
+import { courseLangMeta } from '../lib/lang';
 import type { ReactNode } from 'react';
 import type { AudioLesson, Article, CEFRLevel, DayPlan, PlanTask } from '../types';
 
@@ -166,6 +167,42 @@ export default function Today() {
       </div>
     </div>
   );
+
+  // 非英語課程:詞彙 + 發音課程(暫無完整聽說讀寫規劃)
+  if (settings.courseLang !== 'en') {
+    const dueCount = vocab.getReviewQueue(settings.dailyNewCards).entries.length;
+    const langName = courseLangMeta(settings.courseLang).name;
+    return (
+      <div className="p-4 pb-8">
+        <div className="flex items-center justify-between">
+          <h1 className="text-xl font-semibold text-gray-900">{langName} · 词汇课程</h1>
+          <div className="flex items-center gap-2 text-sm text-gray-500">
+            <span>⭐ {rewards.getRewards().points}</span>
+            <span>🔥 {streak} 天</span>
+          </div>
+        </div>
+        <div className="mt-4 space-y-3">
+          <TaskCard
+            icon={<VocabIcon />}
+            title="词汇复习"
+            subtitle={dueCount > 0 ? `${dueCount} 张卡到期` : '在「词」页选一本词书开始'}
+            actionLabel={dueCount > 0 ? '开始' : '去选词书'}
+            onAction={() => navigate('/vocab')}
+          />
+          <TaskCard
+            icon={<SpeakIcon />}
+            title="发音与短语"
+            subtitle="音位表 + 常用短语,跟读评分"
+            actionLabel="进入"
+            onAction={() => navigate('/pronounce')}
+          />
+        </div>
+        <p className="mt-5 rounded-xl bg-gray-100 px-4 py-3 text-xs text-gray-500">
+          {langName}的听力 / 阅读 / 写作课程仍在建设中,当前提供词汇背诵与发音练习。
+        </p>
+      </div>
+    );
+  }
 
   if (!plan) {
     const suggested = planner.suggestedMinutes(settings.plannerMinutes, settings.strictness);

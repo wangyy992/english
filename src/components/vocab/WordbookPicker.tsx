@@ -19,6 +19,8 @@ export default function WordbookPicker() {
     const next = activeId === id ? null : id;
     wordbooks.setActive(next);
     setActiveId(next);
+    // 啟用詞書後刷新,讓複習隊列立即從詞書補入新卡(避免同路由不重掛載)
+    if (next) window.location.reload();
   };
 
   return (

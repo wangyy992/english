@@ -5,6 +5,7 @@ import { DEFAULT_INTERESTS, type Settings } from '../types';
 
 const DEFAULT_SETTINGS: Settings = {
   deepseekApiKey: '',
+  courseLang: 'en',
   level: 'B1',
   interests: [...DEFAULT_INTERESTS],
   dailyNewCards: 15,
@@ -37,6 +38,12 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
     setSettings((prev) => {
       const next = { ...prev, ...patch };
       storage.set('settings', next);
+      // 切換課程語言:重設存儲命名空間並刷新,讓各頁按新語言重新載入數據
+      if (patch.courseLang && patch.courseLang !== prev.courseLang) {
+        storage.setActiveLang(patch.courseLang);
+        window.location.assign('#/');
+        window.location.reload();
+      }
       return next;
     });
   };

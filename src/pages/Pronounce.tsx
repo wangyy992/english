@@ -72,26 +72,31 @@ export default function Pronounce() {
     }
   };
 
+  // 英語課(探索用)顯示三語 tab;具體語言課程鎖定該語言、不顯示切換
+  const showLangTabs = getCourseLang() === 'en';
+
   return (
     <div className="p-4 pb-8">
-      <h1 className="text-xl font-semibold text-gray-900">语言基础</h1>
-      <p className="mt-1 text-xs text-gray-400">粤语 / 韩语 / 法语。点条目听发音,选中后可跟读评分。</p>
+      <h1 className="text-xl font-semibold text-gray-900">{showLangTabs ? '语言基础' : `${pronLang.name}发音`}</h1>
+      <p className="mt-1 text-xs text-gray-400">点条目听发音,选中后可跟读评分。</p>
 
-      <div className="mt-4 flex gap-2">
-        {PRON_LANGS.map((l) => (
-          <button
-            key={l.id}
-            onClick={() => switchLang(l.id)}
-            className={`flex-1 rounded-xl py-2 text-sm font-medium ${
-              langId === l.id ? 'bg-brand-600 text-white' : 'bg-white text-gray-600 shadow-card'
-            }`}
-          >
-            {l.name}
-          </button>
-        ))}
-      </div>
+      {showLangTabs && (
+        <div className="mt-4 flex gap-2">
+          {PRON_LANGS.map((l) => (
+            <button
+              key={l.id}
+              onClick={() => switchLang(l.id)}
+              className={`flex-1 rounded-xl py-2 text-sm font-medium ${
+                langId === l.id ? 'bg-brand-600 text-white' : 'bg-white text-gray-600 shadow-card'
+              }`}
+            >
+              {l.name}
+            </button>
+          ))}
+        </div>
+      )}
 
-      <div className="mt-2 flex gap-2">
+      <div className="mt-3 flex gap-2">
         {(['sounds', 'phrases'] as Mode[]).map((m) => (
           <button
             key={m}

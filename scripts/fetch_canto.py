@@ -31,9 +31,15 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 CANTO_JSON = REPO_ROOT / "public" / "data" / "canto-lessons.json"
+# 被語言守門丟棄的 guid,持久化以免每日 cron 重複下載+轉寫同一集
+SKIP_JSON = REPO_ROOT / "public" / "data" / "canto-skip.json"
 
 KEEP_PER_FEED = 20
-MAX_NEW_PER_RUN = 3
+MAX_NEW_PER_RUN = 1
+# 每課句數上限(整集播客過長時截為片段,避免幾百句的巨無霸)
+MAX_SENTENCES = 80
+# 語言守門:轉寫的中文字佔比低於此值視為英語/非粵語集數,丟棄
+MIN_CJK_RATIO = 0.5
 # Cantonese whisper model. "small" is a size/quality/runtime compromise for
 # CPU runners; bump to "medium"/"large-v3" for better Cantonese if runtime allows.
 WHISPER_MODEL = "small"
@@ -44,10 +50,18 @@ WHISPER_MODEL = "small"
 # our own sentence timestamps sits on the same basis as the English feeds.
 # (Feed URLs can't be verified from the dev sandbox — no outbound network to
 #  podcast hosts — so the first real test is the CI run.)
-# 已停用:Chatty Cantonese 實測含大量英語嘉賓訪談(非純粵語音頻),不適合作
-# 粵語聽力源。等確認一個「純粵語音頻 + 授權清晰」的 RSS 後再填回。管線本身
-# 已在 CI 驗證可用(抓取→whisper→時間戳→JSON→部署全鏈路 OK)。
-FEEDS: list[dict] = []
+# Cantonese feeds. 語言守門會自動丟棄英語為主的集數,故混入的源也安全。
+# RTHK Naked Cantonese 為教學向(英語偏多,可能被守門過濾);理想是純粵語原生
+# 節目(如 RTHK 廣東話新聞/清談,或 Canto Be Like 等)。RSS URL 無法在沙盒
+# 驗證,以 CI 首跑為準。
+FEEDS: list[dict] = [
+    {
+        "prefix": "rthk-naked",
+        "source": "RTHK Naked Cantonese",
+        "source_url": "https://podcast.rthk.hk/podcast/item.php?pid=45",
+        "rss": "https://podcast.rthk.hk/podcast/rss.php?pid=45&lang=zh-CN",
+    },
+]
 
 # Browser-like UA: some podcast hosts (e.g. Buzzsprout) 403 unknown agents.
 USER_AGENT = "Mozilla/5.0 (compatible; RobinPodcastFetcher/1.0; +https://github.com/wangyy992/english)"
@@ -113,6 +127,14 @@ def slug(guid: str) -> str:
     return re.sub(r"[^a-zA-Z0-9]+", "", guid)[-16:] or str(int(time.time()))
 
 
+def cjk_ratio(sentences) -> float:
+    """轉寫中中文字佔非空白字符的比例(判斷是否粵語/中文集數)。"""
+    text = "".join(s["text"] for s in sentences)
+    cjk = sum(1 for c in text if "一" <= c <= "鿿")
+    total = sum(1 for c in text if not c.isspace())
+    return cjk / total if total else 0.0
+
+
 def load_existing():
     if CANTO_JSON.exists():
         try:
@@ -122,9 +144,19 @@ def load_existing():
     return []
 
 
+def load_skip() -> set:
+    if SKIP_JSON.exists():
+        try:
+            return set(json.loads(SKIP_JSON.read_text()))
+        except Exception:  # noqa: BLE001
+            return set()
+    return set()
+
+
 def main() -> int:
     existing = load_existing()
-    known = {l.get("guid") for l in existing}
+    skip = load_skip()
+    known = {l.get("guid") for l in existing} | skip
 
     for feed in FEEDS:
         try:
@@ -152,6 +184,12 @@ def main() -> int:
             if len(sentences) < 5:
                 print(f"[warn] too few sentences, skip {lesson_id}", file=sys.stderr)
                 continue
+            ratio = cjk_ratio(sentences)
+            if ratio < MIN_CJK_RATIO:
+                print(f"[warn] not Cantonese (CJK ratio {ratio:.2f}), skip {lesson_id}", file=sys.stderr)
+                skip.add(it["guid"])  # 持久化,避免下次重抓同一集
+                continue
+            sentences = sentences[:MAX_SENTENCES]
             existing.insert(
                 0,
                 {
@@ -178,7 +216,8 @@ def main() -> int:
 
     CANTO_JSON.parent.mkdir(parents=True, exist_ok=True)
     CANTO_JSON.write_text(json.dumps(kept, ensure_ascii=False, indent=1))
-    print(f"[info] wrote {len(kept)} canto lessons")
+    SKIP_JSON.write_text(json.dumps(sorted(skip), ensure_ascii=False))
+    print(f"[info] wrote {len(kept)} canto lessons, {len(skip)} skipped guids")
     return 0
 
 

@@ -44,14 +44,10 @@ WHISPER_MODEL = "small"
 # our own sentence timestamps sits on the same basis as the English feeds.
 # (Feed URLs can't be verified from the dev sandbox — no outbound network to
 #  podcast hosts — so the first real test is the CI run.)
-FEEDS = [
-    {
-        "prefix": "chatty",
-        "source": "Chatty Cantonese 粵語白白講",
-        "source_url": "https://chattycantonese.com/",
-        "rss": "https://feeds.buzzsprout.com/1864001.rss",
-    },
-]
+# 已停用:Chatty Cantonese 實測含大量英語嘉賓訪談(非純粵語音頻),不適合作
+# 粵語聽力源。等確認一個「純粵語音頻 + 授權清晰」的 RSS 後再填回。管線本身
+# 已在 CI 驗證可用(抓取→whisper→時間戳→JSON→部署全鏈路 OK)。
+FEEDS: list[dict] = []
 
 # Browser-like UA: some podcast hosts (e.g. Buzzsprout) 403 unknown agents.
 USER_AGENT = "Mozilla/5.0 (compatible; RobinPodcastFetcher/1.0; +https://github.com/wangyy992/english)"

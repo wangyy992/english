@@ -132,3 +132,13 @@
 - GLAFF 數據集:https://huggingface.co/datasets/datasets-CNRS/GLAFF
 - RFI 法語學習:https://francaisfacile.rfi.fr
 - Jyutping 表:https://opencantonese.org/
+
+---
+
+## 粵語聽力素材源(留待真音頻管線)
+
+當前粵語聽力用「自編短對話 + TTS(zh-HK)」實現(音頻不落庫)。日後接真實素材可考慮:
+
+- **RTHK Podcast One / Naked Cantonese**(podcast.rthk.hk):香港公營廣播,粵語節目豐富;Naked Cantonese 是語言學習向。授權需逐節目確認,無現成逐句轉寫 → 需 whisper(支持 yue)生成句級時間戳,沿用英語 `fetch_lessons.py` 管線思路。
+- **CantoTalk Music**:附文本、英譯、粵拼、詞彙表;授權待確認。
+- 通用做法延續:音頻不落庫、註明出處;轉寫用 faster-whisper 粵語模型。

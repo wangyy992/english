@@ -22,6 +22,7 @@ const FULL_TABS: Tab[] = [
 
 const COURSE_TABS: Tab[] = [
   { to: '/', label: '今日', icon: <HomeIcon />, end: true },
+  { to: '/listen', label: '听', icon: <ListenIcon />, end: false },
   { to: '/pronounce', label: '发音', icon: <SpeakIcon />, end: false },
   { to: '/vocab', label: '词', icon: <VocabIcon />, end: false },
 ];

@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useSettings } from '../context/SettingsContext';
 import { lookupWord, type DictionaryLookup } from '../lib/dictionary';
 import { speak } from '../lib/speech';
+import { courseLocale } from '../lib/lang';
 import { chatJSON } from '../lib/deepseek';
 import * as vocab from '../lib/vocab';
 import type { LookupRequest } from '../context/WordLookupContext';
@@ -95,7 +96,7 @@ export default function WordPopoverCard({ request, onClose }: { request: LookupR
             <span className="ml-2 text-sm text-gray-400">{dict.phonetic}</span>
           )}
         </div>
-        <button onClick={() => speak(word)} aria-label="发音" className="shrink-0 text-lg">
+        <button onClick={() => speak(word, courseLocale())} aria-label="发音" className="shrink-0 text-lg">
           🔊
         </button>
       </div>

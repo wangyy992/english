@@ -8,8 +8,11 @@ export interface CantoSentence {
   zh: string; // 普通話中文
 }
 
+export type CantoLessonType = 'dialogue' | 'broadcast';
+
 export interface CantoLesson {
   id: string;
+  type: CantoLessonType;
   title: string;
   desc: string;
   sentences: CantoSentence[];
@@ -18,6 +21,7 @@ export interface CantoLesson {
 export const CANTO_LESSONS: CantoLesson[] = [
   {
     id: 'greetings',
+    type: 'dialogue',
     title: '打招呼',
     desc: '日常見面寒暄',
     sentences: [
@@ -31,6 +35,7 @@ export const CANTO_LESSONS: CantoLesson[] = [
   },
   {
     id: 'chachaanteng',
+    type: 'dialogue',
     title: '茶餐廳點餐',
     desc: '喺茶餐廳嗌嘢食',
     sentences: [
@@ -44,6 +49,7 @@ export const CANTO_LESSONS: CantoLesson[] = [
   },
   {
     id: 'directions',
+    type: 'dialogue',
     title: '問路',
     desc: '喺街搵路',
     sentences: [
@@ -52,6 +58,55 @@ export const CANTO_LESSONS: CantoLesson[] = [
       { text: '地鐵站點去啊?', jyut: 'dei6 tit3 zaam6 dim2 heoi3 aa3?', zh: '地鐵站怎麼去?' },
       { text: '過馬路,轉左就係。', jyut: 'gwo3 maa5 lou6, zyun3 zo2 zau6 hai6.', zh: '過馬路,左轉就是。' },
       { text: '唔該晒!', jyut: 'm4 goi1 saai3!', zh: '太謝謝了!' },
+    ],
+  },
+  {
+    id: 'weather',
+    type: 'broadcast',
+    title: '天氣報告',
+    desc: '電台天氣廣播',
+    sentences: [
+      { text: '各位聽眾,依家報告天氣。', jyut: 'gok3 wai2 ting1 zung3, ji4 gaa1 bou3 gou3 tin1 hei3.', zh: '各位聽眾,現在報告天氣。' },
+      { text: '今日多雲,有幾陣驟雨。', jyut: 'gam1 jat6 do1 wan4, jau5 gei2 zan6 zaau6 jyu5.', zh: '今天多雲,有幾陣驟雨。' },
+      { text: '氣溫二十六至三十度。', jyut: 'hei3 wan1 ji6 sap6 luk6 zi3 saam1 sap6 dou6.', zh: '氣溫二十六到三十度。' },
+      { text: '濕度百分之八十。', jyut: 'sap1 dou6 baak3 fan6 zi1 baat3 sap6.', zh: '濕度百分之八十。' },
+      { text: '出門記得帶遮。', jyut: 'ceot1 mun4 gei3 dak1 daai3 ze1.', zh: '出門記得帶傘。' },
+    ],
+  },
+  {
+    id: 'news',
+    type: 'broadcast',
+    title: '新聞快訊',
+    desc: '簡短新聞播報',
+    sentences: [
+      { text: '以下係新聞重點。', jyut: 'ji5 haa6 hai6 san1 man4 zung6 dim2.', zh: '以下是新聞重點。' },
+      { text: '政府今日公布咗新措施。', jyut: 'zing3 fu2 gam1 jat6 gung1 bou3 zo2 san1 cou3 si1.', zh: '政府今天公布了新措施。' },
+      { text: '大部分市民反應正面。', jyut: 'daai6 bou6 fan6 si5 man4 faan2 jing3 zing3 min6.', zh: '大部分市民反應正面。' },
+      { text: '詳情請留意稍後嘅報道。', jyut: 'coeng4 cing4 cing2 lau4 ji3 saau2 hau6 ge3 bou3 dou6.', zh: '詳情請留意稍後的報道。' },
+    ],
+  },
+  {
+    id: 'mtr',
+    type: 'broadcast',
+    title: '港鐵廣播',
+    desc: '車廂到站廣播',
+    sentences: [
+      { text: '列車即將到站,請小心月台空隙。', jyut: 'lit6 ce1 zik1 zoeng1 dou3 zaam6, cing2 siu2 sam1 jyut6 toi4 hung1 kwik1.', zh: '列車即將到站,請小心月台空隙。' },
+      { text: '落車嘅乘客,唔該借借。', jyut: 'lok6 ce1 ge3 sing4 haak3, m4 goi1 ze3 ze3.', zh: '下車的乘客,勞駕讓一讓。' },
+      { text: '下一站,中環。', jyut: 'haa6 jat1 zaam6, zung1 waan4.', zh: '下一站,中環。' },
+      { text: '請企穩,扶好扶手。', jyut: 'cing2 kei5 wan2, fu4 hou2 fu4 sau2.', zh: '請站穩,扶好扶手。' },
+    ],
+  },
+  {
+    id: 'radio',
+    type: 'broadcast',
+    title: '電台早晨節目',
+    desc: '清談節目開場',
+    sentences: [
+      { text: '早晨,各位聽眾!', jyut: 'zou2 san4, gok3 wai2 ting1 zung3!', zh: '早上好,各位聽眾!' },
+      { text: '歡迎收聽今朝嘅節目。', jyut: 'fun1 jing4 sau1 ting1 gam1 ziu1 ge3 zit3 muk6.', zh: '歡迎收聽今早的節目。' },
+      { text: '今日我哋會傾下香港美食。', jyut: 'gam1 jat6 ngo5 dei6 wui5 king1 haa5 hoeng1 gong2 mei5 sik6.', zh: '今天我們會聊聊香港美食。' },
+      { text: '各位可以打電話入嚟分享。', jyut: 'gok3 wai2 ho2 ji5 daa2 din6 waa2 jap6 lei4 fan1 hoeng2.', zh: '各位可以打電話進來分享。' },
     ],
   },
 ];

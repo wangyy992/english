@@ -5,23 +5,37 @@ import { assessScripted, canAssess, speak, speakSequence } from '../../lib/speec
 
 const LOCALE = 'zh-HK';
 
+const SECTIONS: { type: 'dialogue' | 'broadcast'; label: string }[] = [
+  { type: 'dialogue', label: '情景对话' },
+  { type: 'broadcast', label: '广播' },
+];
+
 export function CantoListenList() {
   return (
     <div className="p-4 pb-8">
       <h1 className="text-xl font-semibold text-gray-900">粤语听力</h1>
-      <p className="mt-1 text-xs text-gray-400">短对话精听:先盲听,再逐句看粤拼与中文,最后跟读评分。</p>
-      <div className="mt-4 space-y-3">
-        {CANTO_LESSONS.map((l) => (
-          <Link
-            key={l.id}
-            to={`/listen/${l.id}`}
-            className="block rounded-2xl border border-gray-200/70 bg-white p-4 shadow-card"
-          >
-            <div className="font-medium text-gray-900">{l.title}</div>
-            <div className="text-sm text-gray-500">{l.desc} · {l.sentences.length} 句</div>
-          </Link>
-        ))}
-      </div>
+      <p className="mt-1 text-xs text-gray-400">先盲听整段,再逐句看粤拼与中文,最后跟读评分。</p>
+      {SECTIONS.map((sec) => {
+        const items = CANTO_LESSONS.filter((l) => l.type === sec.type);
+        if (items.length === 0) return null;
+        return (
+          <section key={sec.type} className="mt-5">
+            <h2 className="text-sm font-semibold text-gray-800">{sec.label}</h2>
+            <div className="mt-2 space-y-3">
+              {items.map((l) => (
+                <Link
+                  key={l.id}
+                  to={`/listen/${l.id}`}
+                  className="block rounded-2xl border border-gray-200/70 bg-white p-4 shadow-card"
+                >
+                  <div className="font-medium text-gray-900">{l.title}</div>
+                  <div className="text-sm text-gray-500">{l.desc} · {l.sentences.length} 句</div>
+                </Link>
+              ))}
+            </div>
+          </section>
+        );
+      })}
       <p className="mt-5 rounded-xl bg-gray-100 px-4 py-3 text-xs text-gray-500">
         朗读由设备语音合成(粤语 zh-HK),需系统装有粤语语音;真实电台素材接入待后续。
       </p>

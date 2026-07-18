@@ -4,7 +4,8 @@ import { chatJSON, hasApiKey } from '../../lib/deepseek';
 import { speak } from '../../lib/speech';
 import * as vocab from '../../lib/vocab';
 import * as wordbooks from '../../lib/wordbooks';
-import { courseLocale, isEnglishCourse } from '../../lib/lang';
+import * as yuedict from '../../lib/yuedict';
+import { courseLocale, getCourseLang, isEnglishCourse } from '../../lib/lang';
 
 interface LocalHit {
   w: string;
@@ -29,7 +30,10 @@ export default function DictSearch({ onAdded }: { onAdded?: () => void }) {
     if (!word) return;
     setAdded(false);
     if (!english) {
-      const hits = await wordbooks.searchLocalWords(word);
+      setState({ status: 'loading', word });
+      // 粵語走開放詞典(12 萬詞條);韓/法暫用內置詞書內搜索
+      const hits =
+        getCourseLang() === 'yue' ? await yuedict.searchYue(word) : await wordbooks.searchLocalWords(word);
       setState({ status: 'local', word, hits });
       return;
     }
@@ -66,7 +70,7 @@ export default function DictSearch({ onAdded }: { onAdded?: () => void }) {
   };
 
   const addLocal = (hit: LocalHit) => {
-    vocab.addEntry({
+    const entry = vocab.addEntry({
       term: hit.w,
       phonetic: hit.jyut,
       defZh: hit.zh,
@@ -74,6 +78,18 @@ export default function DictSearch({ onAdded }: { onAdded?: () => void }) {
       source: { module: 'dict', materialId: '' },
     });
     onAdded?.();
+    // 詞典只給讀音;有 Key 時異步補一條中文釋義
+    if (!hit.zh && hasApiKey()) {
+      chatJSON<{ defZh: string }>(
+        '你是粤语教学助手。只输出严格的 JSON,不要任何多余文字或 Markdown 围栏。',
+        `用简体中文简明解释粤语词「${hit.w}」(粤拼 ${hit.jyut ?? ''})的意思,输出 JSON {"defZh":"..."}`,
+        { temperature: 0.3 },
+      )
+        .then((r) => {
+          if (r?.defZh) vocab.updateEntry(entry.id, { defZh: r.defZh });
+        })
+        .catch(() => {});
+    }
   };
 
   return (
@@ -83,7 +99,13 @@ export default function DictSearch({ onAdded }: { onAdded?: () => void }) {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           onKeyDown={(e) => e.key === 'Enter' && search()}
-          placeholder={english ? '查任意单词,如 resilience' : '查词书内的字词(汉字/粤拼/中文)'}
+          placeholder={
+            english
+              ? '查任意单词,如 resilience'
+              : getCourseLang() === 'yue'
+                ? '查任意粤语字词(汉字或粤拼)'
+                : '查词书内的字词'
+          }
           className="flex-1 rounded-xl border border-gray-200 px-3 py-2.5 text-sm"
           autoComplete="off"
           autoCapitalize="off"

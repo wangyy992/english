@@ -6,6 +6,7 @@ import { lookupWord } from '../../lib/dictionary';
 import { chatJSON, hasApiKey } from '../../lib/deepseek';
 import * as vocab from '../../lib/vocab';
 import { courseLocale, isEnglishCourse } from '../../lib/lang';
+import SelectableText from '../SelectableText';
 import type { VocabEntry } from '../../types';
 import SourceLink from './SourceLink';
 
@@ -78,7 +79,11 @@ export default function ReviewCard({
       <div
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
-        onClick={() => setFlipped((f) => !f)}
+        onClick={() => {
+          // 劃選查詞時不翻卡
+          if (window.getSelection()?.toString().trim()) return;
+          setFlipped((f) => !f);
+        }}
         className="flex min-h-[280px] flex-col justify-center rounded-3xl bg-white p-6 text-center shadow-sm"
       >
         {!flipped ? (
@@ -120,7 +125,15 @@ export default function ReviewCard({
             {(entry.defZh ?? lazyDef?.defZh) && (
               <p className="mt-1 text-sm text-gray-500">{entry.defZh ?? lazyDef?.defZh}</p>
             )}
-            {entry.context && <p className="mt-3 text-sm leading-relaxed text-gray-700">{entry.context}</p>}
+            {entry.context && (
+              <SelectableText
+                as="p"
+                context={entry.context}
+                source={entry.source}
+                className="mt-3 text-sm leading-relaxed text-gray-700"
+              />
+            )}
+            {entry.context && <p className="mt-1 text-[11px] text-gray-300">选中例句中的词可查词并加入生词本</p>}
             <SourceLink source={entry.source} />
           </div>
         )}

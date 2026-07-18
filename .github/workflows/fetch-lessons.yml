@@ -48,7 +48,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/data/lessons.json public/data/articles.json public/data/canto-lessons.json
+          git add public/data/lessons.json public/data/articles.json public/data/canto-lessons.json public/data/canto-skip.json
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else

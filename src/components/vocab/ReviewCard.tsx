@@ -5,6 +5,7 @@ import { blankTerm } from '../../lib/text';
 import { lookupWord } from '../../lib/dictionary';
 import { chatJSON, hasApiKey } from '../../lib/deepseek';
 import * as vocab from '../../lib/vocab';
+import { courseLocale, isEnglishCourse } from '../../lib/lang';
 import type { VocabEntry } from '../../types';
 import SourceLink from './SourceLink';
 
@@ -27,9 +28,10 @@ export default function ReviewCard({
   }, [entry.id]);
 
   // 詞書卡建卡時不帶釋義:翻面時懶加載詞典(免費)+ 中文釋義(有 Key 時),
-  // 並回寫入生詞本,之後不再請求。
+  // 並回寫入生詞本,之後不再請求。僅英語課程走英文詞典懶加載;其他語言的
+  // 詞條建卡時已帶粵拼/釋義,無需查詞。
   useEffect(() => {
-    if (!flipped || entry.defEn || lazyDef) return;
+    if (!flipped || entry.defEn || lazyDef || !isEnglishCourse()) return;
     let alive = true;
     (async () => {
       const dict = await lookupWord(entry.term);
@@ -92,7 +94,7 @@ export default function ReviewCard({
             <button
               onClick={(e) => {
                 e.stopPropagation();
-                speak(entry.term);
+                speak(entry.term, courseLocale());
               }}
               aria-label="发音"
               className="mt-2 text-xl"
@@ -109,7 +111,9 @@ export default function ReviewCard({
             {(entry.phonetic ?? lazyDef?.phonetic) && (
               <p className="mt-0.5 text-sm text-gray-400">{entry.phonetic ?? lazyDef?.phonetic}</p>
             )}
-            {!entry.defEn && !lazyDef && <p className="mt-2 text-sm text-gray-400">释义加载中…</p>}
+            {isEnglishCourse() && !entry.defEn && !lazyDef && (
+              <p className="mt-2 text-sm text-gray-400">释义加载中…</p>
+            )}
             {(entry.defEn ?? lazyDef?.defEn) && (
               <p className="mt-2 text-sm text-gray-600">{entry.defEn ?? lazyDef?.defEn}</p>
             )}

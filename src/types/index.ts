@@ -50,6 +50,8 @@ export interface PlanHistoryEntry {
 
 export interface Settings {
   deepseekApiKey: string;
+  /** 當前課程語言:en(完整家教)/ yue / ko / fr(詞彙+發音課程) */
+  courseLang: 'en' | 'yue' | 'ko' | 'fr';
   level: CEFRLevel;
   interests: string[];
   /** 每日新卡上限 */

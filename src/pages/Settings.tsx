@@ -6,6 +6,7 @@ import * as vocab from '../lib/vocab';
 import { MODULE_LABEL, PLAN_MODULES } from '../lib/planner';
 import { ACHIEVEMENTS, getRewards } from '../lib/rewards';
 import { getMonthAzureSeconds, testAzureConnection } from '../lib/speech';
+import { COURSE_LANGS } from '../lib/lang';
 import * as sync from '../lib/sync';
 import ConfirmDialog from '../components/ConfirmDialog';
 import type { CEFRLevel } from '../types';
@@ -261,6 +262,26 @@ export default function Settings() {
   return (
     <div className="space-y-6 p-4 pb-8">
       <h1 className="text-xl font-semibold text-gray-900">设置</h1>
+
+      <section className="rounded-2xl bg-white p-4 shadow-card">
+        <h2 className="text-sm font-semibold text-gray-900">学习语言</h2>
+        <p className="mt-1 text-xs text-gray-500">
+          英语为完整家教;粤/韩/法为词汇 + 发音课程。各语言的生词与进度相互独立,切换后页面会刷新。
+        </p>
+        <div className="mt-3 grid grid-cols-4 gap-2">
+          {COURSE_LANGS.map((l) => (
+            <button
+              key={l.id}
+              onClick={() => l.id !== settings.courseLang && updateSettings({ courseLang: l.id })}
+              className={`rounded-xl py-2 text-sm font-medium ${
+                settings.courseLang === l.id ? 'bg-brand-600 text-white' : 'bg-gray-100 text-gray-600'
+              }`}
+            >
+              {l.name}
+            </button>
+          ))}
+        </div>
+      </section>
 
       <section className="rounded-2xl bg-white p-4 shadow-sm">
         <h2 className="text-sm font-semibold text-gray-900">DeepSeek API Key</h2>

@@ -1,0 +1,5 @@
+[
+  {"id":"basics","name":"生活基础","desc":"最常用的字词与虚词","count":20},
+  {"id":"food","name":"饮食","desc":"吃喝点餐相关","count":20},
+  {"id":"transit","name":"出行","desc":"交通问路相关","count":20}
+]

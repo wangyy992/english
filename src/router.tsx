@@ -8,6 +8,7 @@ import ReadArticle from './pages/read/ReadArticle';
 import WriteHome from './pages/write/WriteHome';
 import Translate from './pages/write/Translate';
 import FreeWrite from './pages/write/FreeWrite';
+import MyWrite from './pages/write/MyWrite';
 import VocabHome from './pages/vocab/VocabHome';
 import Settings from './pages/Settings';
 import Placement from './pages/Placement';
@@ -32,6 +33,7 @@ export const router = createHashRouter([
       { path: 'write', element: <WriteHome /> },
       { path: 'write/translate', element: <Translate /> },
       { path: 'write/free', element: <FreeWrite /> },
+      { path: 'write/custom', element: <MyWrite /> },
       { path: 'vocab', element: <VocabHome /> },
       { path: 'settings', element: <Settings /> },
       { path: 'placement', element: <Placement /> },

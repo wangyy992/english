@@ -13,6 +13,10 @@ export default function WriteHome() {
           <h2 className="font-medium text-gray-900">自由写作</h2>
           <p className="mt-1 text-sm text-gray-500">选一个主题,写一篇短文</p>
         </Link>
+        <Link to="/write/custom" className="block rounded-2xl bg-white p-4 shadow-sm">
+          <h2 className="font-medium text-gray-900">自命题写作</h2>
+          <p className="mt-1 text-sm text-gray-500">贴一封来信或自定主题,写完 AI 评分并给出修改版</p>
+        </Link>
       </div>
     </div>
   );

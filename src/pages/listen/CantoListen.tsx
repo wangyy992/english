@@ -1,17 +1,21 @@
 import { useEffect, useRef, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import { getCantoLesson, loadCantoLessons, type CantoLesson, type CantoSentence } from '../../data/canto-listening';
 import { assessScripted, canAssess, speak, speakSequence } from '../../lib/speech';
+import { deleteCustomLesson, saveCustomLesson } from '../../lib/customListen';
+import { transcribeAudioUrl } from '../../lib/transcribe';
 
 const LOCALE = 'zh-HK';
 
 const SECTIONS: { type: CantoLesson['type']; label: string }[] = [
+  { type: 'custom', label: '自定义音频' },
   { type: 'dialogue', label: '情景对话' },
   { type: 'broadcast', label: '广播' },
   { type: 'live', label: '电台节目（真实音频）' },
 ];
 
 export function CantoListenList() {
+  const navigate = useNavigate();
   const [lessons, setLessons] = useState<CantoLesson[] | null>(null);
   useEffect(() => {
     loadCantoLessons().then(setLessons);
@@ -21,6 +25,14 @@ export function CantoListenList() {
     <div className="p-4 pb-8">
       <h1 className="text-xl font-semibold text-gray-900">粤语听力</h1>
       <p className="mt-1 text-xs text-gray-400">先盲听整段,再逐句看粤拼与中文,最后跟读评分。</p>
+
+      <button
+        onClick={() => navigate('/custom-listen')}
+        className="mt-3 w-full rounded-2xl border border-dashed border-brand-300 bg-brand-50 py-3 text-sm font-medium text-brand-700"
+      >
+        ＋ 添加自定义音频(粘贴链接,浏览器内转写)
+      </button>
+
       {lessons === null && <p className="mt-4 text-sm text-gray-400">加载中…</p>}
       {lessons &&
         SECTIONS.map((sec) => {
@@ -31,17 +43,30 @@ export function CantoListenList() {
               <h2 className="text-sm font-semibold text-gray-800">{sec.label}</h2>
               <div className="mt-2 space-y-3">
                 {items.map((l) => (
-                  <Link
-                    key={l.id}
-                    to={`/listen/${l.id}`}
-                    className="block rounded-2xl border border-gray-200/70 bg-white p-4 shadow-card"
-                  >
-                    <div className="font-medium text-gray-900">{l.title}</div>
-                    <div className="text-sm text-gray-500">
-                      {l.type === 'live' && l.source ? `${l.source} · ` : `${l.desc} · `}
-                      {l.sentences.length} 句
-                    </div>
-                  </Link>
+                  <div key={l.id} className="relative">
+                    <Link
+                      to={`/listen/${l.id}`}
+                      className="block rounded-2xl border border-gray-200/70 bg-white p-4 shadow-card"
+                    >
+                      <div className="font-medium text-gray-900">{l.title}</div>
+                      <div className="text-sm text-gray-500">
+                        {l.type === 'live' && l.source ? `${l.source} · ` : `${l.desc} · `}
+                        {l.sentences.length} 句
+                      </div>
+                    </Link>
+                    {l.type === 'custom' && (
+                      <button
+                        onClick={() => {
+                          deleteCantoCustom(l.id);
+                          setLessons((prev) => prev?.filter((x) => x.id !== l.id) ?? null);
+                        }}
+                        className="absolute right-3 top-3 rounded-lg px-2 py-1 text-xs text-gray-400 hover:text-red-500"
+                        aria-label="删除"
+                      >
+                        删除
+                      </button>
+                    )}
+                  </div>
                 ))}
               </div>
             </section>
@@ -292,4 +317,112 @@ function ShadowRow({ sentence, canScore }: { sentence: CantoSentence; canScore: 
       )}
     </div>
   );
+}
+
+// ---- 自定義聽力:貼音頻直鏈 → 瀏覽器內 Whisper 轉寫 → 保存為課程 ----
+export function CantoCustom() {
+  const navigate = useNavigate();
+  const [title, setTitle] = useState('');
+  const [url, setUrl] = useState('');
+  const [status, setStatus] = useState<'idle' | 'working' | 'done' | 'error'>('idle');
+  const [progress, setProgress] = useState('');
+  const [sentences, setSentences] = useState<CantoSentence[] | null>(null);
+
+  const run = async () => {
+    const u = url.trim();
+    if (!u) return;
+    setStatus('working');
+    setSentences(null);
+    setProgress('准备中…');
+    try {
+      const result = await transcribeAudioUrl(u, 'yue', (msg, pct) =>
+        setProgress(pct !== undefined ? `${msg} ${pct}%` : msg),
+      );
+      if (result.length === 0) {
+        setStatus('error');
+        setProgress('没有转写出内容(音频可能无人声,或格式不支持)。');
+        return;
+      }
+      setSentences(result);
+      setStatus('done');
+    } catch {
+      setStatus('error');
+      setProgress('转写失败:多半是该链接不允许跨域读取(CORS),或不是可直接播放的音频直链。换一个允许跨域的 mp3/m4a 直链再试。');
+    }
+  };
+
+  const save = () => {
+    if (!sentences) return;
+    const lesson: CantoLesson = {
+      id: `custom-${Date.now()}`,
+      type: 'custom',
+      title: title.trim() || '自定义音频',
+      desc: '自定义',
+      source: '自定义',
+      audioUrl: url.trim(),
+      sentences,
+    };
+    saveCustomLesson(lesson);
+    navigate('/listen');
+  };
+
+  return (
+    <div className="p-4 pb-8">
+      <h1 className="text-xl font-semibold text-gray-900">添加自定义音频</h1>
+      <p className="mt-1 text-xs text-gray-400">
+        粘贴一个粤语音频直链(mp3/m4a),浏览器用开源 Whisper 本地转写成带时间戳的文本。首次会下载模型(数十 MB),音频越长越慢。
+      </p>
+
+      <input
+        value={title}
+        onChange={(e) => setTitle(e.target.value)}
+        placeholder="标题(可选)"
+        className="mt-4 w-full rounded-xl border border-gray-200 px-3 py-2.5 text-sm"
+      />
+      <input
+        value={url}
+        onChange={(e) => setUrl(e.target.value)}
+        placeholder="音频直链 https://….mp3"
+        className="mt-2 w-full rounded-xl border border-gray-200 px-3 py-2.5 text-sm"
+        autoComplete="off"
+      />
+
+      {url.trim() && <audio src={url.trim()} controls preload="none" className="mt-3 w-full" />}
+
+      <button
+        onClick={run}
+        disabled={!url.trim() || status === 'working'}
+        className="mt-3 w-full rounded-xl bg-brand-600 py-3 text-sm font-medium text-white disabled:opacity-50"
+      >
+        {status === 'working' ? '转写中…' : '生成文本'}
+      </button>
+
+      {status !== 'idle' && progress && (
+        <p className={`mt-3 text-xs ${status === 'error' ? 'text-red-500' : 'text-gray-500'}`}>{progress}</p>
+      )}
+
+      {sentences && (
+        <div className="mt-4">
+          <div className="flex items-center justify-between">
+            <p className="text-sm font-medium text-gray-800">转写结果({sentences.length} 句)</p>
+            <button onClick={save} className="rounded-lg bg-brand-600 px-4 py-1.5 text-sm font-medium text-white">
+              保存到听力
+            </button>
+          </div>
+          <div className="mt-2 space-y-1.5">
+            {sentences.map((s, i) => (
+              <p key={i} className="rounded-lg bg-white p-2 text-sm text-gray-800 shadow-card">
+                <span className="mr-2 text-[11px] text-gray-300">{Math.floor((s.start ?? 0) / 60)}:{String(Math.floor((s.start ?? 0) % 60)).padStart(2, '0')}</span>
+                {s.text}
+              </p>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+export function deleteCantoCustom(id: string): void {
+  deleteCustomLesson(id);
 }

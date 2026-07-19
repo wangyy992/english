@@ -2,6 +2,7 @@ import { createHashRouter } from 'react-router-dom';
 import RootLayout from './RootLayout';
 import Today from './pages/Today';
 import { ListenListRoute, ListenLessonRoute } from './pages/listen/ListenRoute';
+import { CantoCustom } from './pages/listen/CantoListen';
 import ReadList from './pages/read/ReadList';
 import ReadArticle from './pages/read/ReadArticle';
 import WriteHome from './pages/write/WriteHome';
@@ -25,6 +26,7 @@ export const router = createHashRouter([
       { index: true, element: <Today /> },
       { path: 'listen', element: <ListenListRoute /> },
       { path: 'listen/:id', element: <ListenLessonRoute /> },
+      { path: 'custom-listen', element: <CantoCustom /> },
       { path: 'read', element: <ReadList /> },
       { path: 'read/:id', element: <ReadArticle /> },
       { path: 'write', element: <WriteHome /> },

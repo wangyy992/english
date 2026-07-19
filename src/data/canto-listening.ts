@@ -2,6 +2,8 @@
 // 採用「音頻不落庫」策略,發音由瀏覽器/Azure TTS 即時合成,無外部音頻授權問題。
 // 真實粵語素材源(RTHK Naked Cantonese、CantoTalk 等)記於 docs,留待日後真音頻管線。
 
+import { getCustomLessons } from '../lib/customListen';
+
 export interface CantoSentence {
   text: string; // 漢字(粵語書面)
   jyut?: string; // 粵拼(自編課程有)
@@ -10,8 +12,8 @@ export interface CantoSentence {
   end?: number; // 真音頻課程:句子結束秒
 }
 
-// dialogue/broadcast:自編 + TTS;live:抓取的真實電台音頻 + whisper 轉寫
-export type CantoLessonType = 'dialogue' | 'broadcast' | 'live';
+// dialogue/broadcast:自編 + TTS;live:抓取的真實電台音頻;custom:用戶自定義(URL + 瀏覽器 whisper)
+export type CantoLessonType = 'dialogue' | 'broadcast' | 'live' | 'custom';
 
 export interface CantoLesson {
   id: string;
@@ -134,12 +136,13 @@ async function loadFetched(): Promise<CantoLesson[]> {
   return fetchedCache;
 }
 
-/** 自編課程 + 抓取的真實課程,合併(自編在前)。 */
+/** 自編課程 + 抓取的真實課程 + 用戶自定義,合併(自定義在前)。 */
 export async function loadCantoLessons(): Promise<CantoLesson[]> {
   const fetched = await loadFetched();
-  return [...CANTO_LESSONS, ...fetched];
+  return [...getCustomLessons(), ...CANTO_LESSONS, ...fetched];
 }
 
+// 同步查找僅覆蓋自編課程;自定義與抓取課程由頁面經 loadCantoLessons 異步兜底。
 export function getCantoLesson(id: string): CantoLesson | undefined {
-  return CANTO_LESSONS.find((l) => l.id === id) ?? fetchedCache?.find((l) => l.id === id);
+  return CANTO_LESSONS.find((l) => l.id === id);
 }

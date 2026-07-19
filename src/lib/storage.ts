@@ -19,7 +19,8 @@ export type StorageKey =
   | 'rewards'
   | 'plan_history'
   | 'llm_usage'
-  | 'wordbook';
+  | 'wordbook'
+  | 'custom_listen';
 
 import { migrateVocabData } from './srs';
 
@@ -134,6 +135,7 @@ const ALL_KEYS: StorageKey[] = [
   'plan_history',
   'llm_usage',
   'wordbook',
+  'custom_listen',
 ];
 
 const SCOPED_KEYS = ALL_KEYS.filter((k) => !GLOBAL_KEYS.has(k));

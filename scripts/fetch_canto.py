@@ -54,14 +54,10 @@ WHISPER_MODEL = "small"
 # RTHK Naked Cantonese 為教學向(英語偏多,可能被守門過濾);理想是純粵語原生
 # 節目(如 RTHK 廣東話新聞/清談,或 Canto Be Like 等)。RSS URL 無法在沙盒
 # 驗證,以 CI 首跑為準。
-FEEDS: list[dict] = [
-    {
-        "prefix": "rthk-naked",
-        "source": "RTHK Naked Cantonese",
-        "source_url": "https://podcast.rthk.hk/podcast/item.php?pid=45",
-        "rss": "https://podcast.rthk.hk/podcast/rss.php?pid=45&lang=zh-CN",
-    },
-]
+# 暫無已驗證的純粵語 feed:RTHK rss.php?pid=45 在 CI 實測 0 集(4 秒退出),
+# Chatty Cantonese 為英語教學。等一個「純粵語音頻 + 授權清晰」的 RSS 再填。
+# 管線已加固:語言守門(丟英語集)、skip 冪等、每次 1 集、封頂 80 句。
+FEEDS: list[dict] = []
 
 # Browser-like UA: some podcast hosts (e.g. Buzzsprout) 403 unknown agents.
 USER_AGENT = "Mozilla/5.0 (compatible; RobinPodcastFetcher/1.0; +https://github.com/wangyy992/english)"

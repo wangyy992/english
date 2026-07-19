@@ -319,23 +319,39 @@ function ShadowRow({ sentence, canScore }: { sentence: CantoSentence; canScore: 
   );
 }
 
-// ---- 自定義聽力:貼音頻直鏈 → 瀏覽器內 Whisper 轉寫 → 保存為課程 ----
+// ---- 自定義聽力:本地文件 / 音頻直鏈 → 瀏覽器內 Whisper 轉寫 → 保存為課程 ----
 export function CantoCustom() {
   const navigate = useNavigate();
   const [title, setTitle] = useState('');
   const [url, setUrl] = useState('');
+  const [file, setFile] = useState<File | null>(null);
+  const [objectUrl, setObjectUrl] = useState<string>('');
   const [status, setStatus] = useState<'idle' | 'working' | 'done' | 'error'>('idle');
   const [progress, setProgress] = useState('');
   const [sentences, setSentences] = useState<CantoSentence[] | null>(null);
 
+  // 本地文件轉為臨時 object URL 供試聽/轉寫;卸載或換文件時釋放。
+  useEffect(() => {
+    if (!file) {
+      setObjectUrl('');
+      return;
+    }
+    const u = URL.createObjectURL(file);
+    setObjectUrl(u);
+    return () => URL.revokeObjectURL(u);
+  }, [file]);
+
+  // 有本地文件時用文件(不受跨域/DRM 限制),否則用粘貼的直鏈。
+  const src = file ? objectUrl : url.trim();
+  const usingFile = !!file;
+
   const run = async () => {
-    const u = url.trim();
-    if (!u) return;
+    if (!src) return;
     setStatus('working');
     setSentences(null);
     setProgress('准备中…');
     try {
-      const result = await transcribeAudioUrl(u, 'yue', (msg, pct) =>
+      const result = await transcribeAudioUrl(src, 'yue', (msg, pct) =>
         setProgress(pct !== undefined ? `${msg} ${pct}%` : msg),
       );
       if (result.length === 0) {
@@ -347,7 +363,11 @@ export function CantoCustom() {
       setStatus('done');
     } catch {
       setStatus('error');
-      setProgress('转写失败:多半是该链接不允许跨域读取(CORS),或不是可直接播放的音频直链。换一个允许跨域的 mp3/m4a 直链再试。');
+      setProgress(
+        usingFile
+          ? '转写失败:该文件可能不是浏览器能解码的音频/视频格式,换 mp3/m4a/mp4 再试。'
+          : '转写失败:多半是该链接不允许跨域读取(CORS),或不是可直接播放的音频直链。改用「选择本地文件」最稳。',
+      );
     }
   };
 
@@ -356,10 +376,11 @@ export function CantoCustom() {
     const lesson: CantoLesson = {
       id: `custom-${Date.now()}`,
       type: 'custom',
-      title: title.trim() || '自定义音频',
+      title: title.trim() || (file?.name ?? '自定义音频'),
       desc: '自定义',
       source: '自定义',
-      audioUrl: url.trim(),
+      // 本地文件的 object URL 刷新即失效,故不落庫;保留文本,回放用设备语音(TTS)。
+      ...(usingFile ? {} : { audioUrl: url.trim() }),
       sentences,
     };
     saveCustomLesson(lesson);
@@ -370,7 +391,8 @@ export function CantoCustom() {
     <div className="p-4 pb-8">
       <h1 className="text-xl font-semibold text-gray-900">添加自定义音频</h1>
       <p className="mt-1 text-xs text-gray-400">
-        粘贴一个粤语音频直链(mp3/m4a),浏览器用开源 Whisper 本地转写成带时间戳的文本。首次会下载模型(数十 MB),音频越长越慢。
+        选本地音频/视频文件(最稳,YouTube 视频下载后也能传),或粘贴允许跨域的音频直链。浏览器用开源 Whisper
+        本地转写成带时间戳的文本。首次会下载模型(数十 MB),音频越长越慢。
       </p>
 
       <input
@@ -379,23 +401,52 @@ export function CantoCustom() {
         placeholder="标题(可选)"
         className="mt-4 w-full rounded-xl border border-gray-200 px-3 py-2.5 text-sm"
       />
+
+      <label className="mt-2 flex w-full cursor-pointer items-center justify-center rounded-xl border border-dashed border-brand-300 bg-brand-50 py-3 text-sm font-medium text-brand-700">
+        {file ? `已选:${file.name}` : '选择本地文件(mp3 / m4a / mp4…)'}
+        <input
+          type="file"
+          accept="audio/*,video/*"
+          className="hidden"
+          onChange={(e) => {
+            setFile(e.target.files?.[0] ?? null);
+            setSentences(null);
+            setStatus('idle');
+            setProgress('');
+          }}
+        />
+      </label>
+
+      <div className="my-2 flex items-center gap-3 text-[11px] text-gray-300">
+        <span className="h-px flex-1 bg-gray-200" />或粘贴直链<span className="h-px flex-1 bg-gray-200" />
+      </div>
+
       <input
         value={url}
-        onChange={(e) => setUrl(e.target.value)}
+        onChange={(e) => {
+          setUrl(e.target.value);
+          if (e.target.value) setFile(null);
+        }}
         placeholder="音频直链 https://….mp3"
-        className="mt-2 w-full rounded-xl border border-gray-200 px-3 py-2.5 text-sm"
+        className="w-full rounded-xl border border-gray-200 px-3 py-2.5 text-sm"
         autoComplete="off"
       />
 
-      {url.trim() && <audio src={url.trim()} controls preload="none" className="mt-3 w-full" />}
+      {src && <audio src={src} controls preload="none" className="mt-3 w-full" />}
 
       <button
         onClick={run}
-        disabled={!url.trim() || status === 'working'}
+        disabled={!src || status === 'working'}
         className="mt-3 w-full rounded-xl bg-brand-600 py-3 text-sm font-medium text-white disabled:opacity-50"
       >
         {status === 'working' ? '转写中…' : '生成文本'}
       </button>
+
+      {usingFile && (
+        <p className="mt-2 text-[11px] text-gray-400">
+          本地文件不会上传或保存,刷新后原音频无法回放;保存的课程会保留文本,回放改用设备粤语语音朗读。
+        </p>
+      )}
 
       {status !== 'idle' && progress && (
         <p className={`mt-3 text-xs ${status === 'error' ? 'text-red-500' : 'text-gray-500'}`}>{progress}</p>

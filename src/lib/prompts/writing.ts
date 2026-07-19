@@ -9,3 +9,11 @@ export function buildTranslationGradePrompt(zh: string, answer: string): string 
 export function buildFreeWriteGradePrompt(topic: string, essay: string): string {
   return `写作主题:${topic}。学生作文:${essay}。只输出 JSON:{"score": 1-5, "errors": [{"original": "错误片段", "suggestion": "改正", "type": "语法|用词|搭配", "explanation": "一句话中文解释"}], "better_version": "更地道的完整译文", "upgrades": [{"phrase": "值得学的表达", "note": "中文说明"}], "structure_feedback": "一句话结构建议", "rewritten_paragraph": "只重写最弱的一段作示范"}`;
 }
+
+// 自命题写作:context 可能是一封来信、题目或情景,也可能为空(纯自命题)。
+export function buildCustomWriteGradePrompt(context: string, draft: string): string {
+  const ctx = context.trim()
+    ? `写作背景/要求(可能是收到的一封英文邮件、题目或情景):\n${context.trim()}\n\n`
+    : '';
+  return `${ctx}学生写的英文:\n${draft}\n\n请批改。若上面有背景/来信,要判断学生的回复是否切题、语气是否得体。只输出 JSON:{"score": 1-5, "comment": "一到两句中文总体点评(含是否切题得体与语言水平)", "errors": [{"original": "错误片段", "suggestion": "改正", "type": "语法|用词|搭配|语气", "explanation": "一句话中文解释"}], "revised": "修改后的完整英文版本(保留学生原意,改正错误、更自然地道)", "upgrades": [{"phrase": "值得学的表达", "note": "中文说明"}]}`;
+}

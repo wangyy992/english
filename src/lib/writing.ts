@@ -1,7 +1,7 @@
 import { chatJSON } from './deepseek';
 import * as storage from './storage';
-import { buildFreeWriteGradePrompt, buildTranslationGradePrompt, GRADE_SYSTEM_PROMPT } from './prompts/writing';
-import type { CEFRLevel, FreeWriteResult, FreeWriteTopic, TranslationItem, TranslationResult, WritingCache } from '../types';
+import { buildCustomWriteGradePrompt, buildFreeWriteGradePrompt, buildTranslationGradePrompt, GRADE_SYSTEM_PROMPT } from './prompts/writing';
+import type { CEFRLevel, CustomWriteResult, FreeWriteResult, FreeWriteTopic, TranslationItem, TranslationResult, WritingCache } from '../types';
 
 const N_SENTENCES = 5;
 
@@ -63,6 +63,12 @@ export async function generateFreeWriteTopics(interests: string[]): Promise<Free
 
 export async function gradeFreeWrite(topic: string, essay: string): Promise<FreeWriteResult> {
   return chatJSON<FreeWriteResult>(GRADE_SYSTEM_PROMPT, buildFreeWriteGradePrompt(topic, essay), {
+    temperature: 0.3,
+  });
+}
+
+export async function gradeCustomWrite(context: string, draft: string): Promise<CustomWriteResult> {
+  return chatJSON<CustomWriteResult>(GRADE_SYSTEM_PROMPT, buildCustomWriteGradePrompt(context, draft), {
     temperature: 0.3,
   });
 }

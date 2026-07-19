@@ -162,6 +162,15 @@ export interface FreeWriteTopic {
   questions: [string, string];
 }
 
+// 自命题写作:用户贴一段背景(如收到的邮件)或自定主题,写完后 AI 评分并给出完整修改版。
+export interface CustomWriteResult {
+  score: number;
+  comment: string; // 总体点评(是否切题得体 + 语言水平)
+  errors: { original: string; suggestion: string; type: string; explanation: string }[];
+  revised: string; // 修改后的完整英文版本
+  upgrades: { phrase: string; note: string }[];
+}
+
 export interface WritingCache {
   translationSet: TranslationItem[];
   generatedAt: number;

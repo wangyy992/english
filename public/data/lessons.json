@@ -1,5 +1,3195 @@
 [
  {
+  "id": "bbc-tews-the-english-we-speak-lock-in",
+  "guid": "urn:bbc:podcast:p0msb3kh",
+  "source": "BBC The English We Speak",
+  "title": "The English We Speak: Lock in",
+  "level": 1,
+  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0msb3cc.mp3",
+  "sentences": [
+   {
+    "start": 73.18,
+    "end": 86.91,
+    "text": "Thank you. Bye. Hello and welcome to The English We Speak, where we're explaining phrases used by fluent English speakers so that you can use them too."
+   },
+   {
+    "start": 86.91,
+    "end": 89.31,
+    "text": "I'm Feifei and I'm here with Beth."
+   },
+   {
+    "start": 89.31,
+    "end": 93.51,
+    "text": "Hi Beth. Hi Feifei. I am exhausted."
+   },
+   {
+    "start": 93.51,
+    "end": 97.31,
+    "text": "I've been studying for hours before my Spanish exam."
+   },
+   {
+    "start": 97.31,
+    "end": 99.71,
+    "text": "I really had to lock in last night."
+   },
+   {
+    "start": 99.71,
+    "end": 102.91,
+    "text": "Lock in? You weren't locked in a room, were you?"
+   },
+   {
+    "start": 102.91,
+    "end": 107.31,
+    "text": "No. Lock in means focus really hard on something."
+   },
+   {
+    "start": 107.31,
+    "end": 110.61,
+    "text": "Commit to the tasks and avoid distractions."
+   },
+   {
+    "start": 110.61,
+    "end": 113.91,
+    "text": "I turned off my phone and studied as much as I could."
+   },
+   {
+    "start": 113.91,
+    "end": 118.91,
+    "text": "I see. So you worked seriously and with concentration."
+   },
+   {
+    "start": 118.91,
+    "end": 124.31,
+    "text": "Lock in is all about intense focus, determination and boosting productivity."
+   },
+   {
+    "start": 124.31,
+    "end": 127.51,
+    "text": "Exactly. All my focus was on my revision."
+   },
+   {
+    "start": 127.51,
+    "end": 132.51,
+    "text": "No distractions. You might also hear lock in about sports."
+   },
+   {
+    "start": 132.51,
+    "end": 135.91,
+    "text": "Players might lock in before they play a big match."
+   },
+   {
+    "start": 135.91,
+    "end": 139.31,
+    "text": "Yes. Also, we can lock in on our goals."
+   },
+   {
+    "start": 139.31,
+    "end": 146.11,
+    "text": "For example, I'm preparing to run a half marathon in three months, so I need to lock in on my fitness goals."
+   },
+   {
+    "start": 146.11,
+    "end": 148.71,
+    "text": "Wow. Good luck. Yes, thank you."
+   },
+   {
+    "start": 148.71,
+    "end": 155.86,
+    "text": "Let's listen to more examples of lock in."
+   },
+   {
+    "start": 155.86,
+    "end": 159.06,
+    "text": "I really need to stop failing my driving test."
+   },
+   {
+    "start": 159.06,
+    "end": 162.86,
+    "text": "I'm going to have to just lock in and do loads of practice."
+   },
+   {
+    "start": 162.86,
+    "end": 171.86,
+    "text": "Right, guys. I've done no work all day, so I've had a coffee and this afternoon I really just need to lock in and get some stuff done."
+   },
+   {
+    "start": 171.86,
+    "end": 174.26,
+    "text": "I never see my kids in the evening anymore."
+   },
+   {
+    "start": 174.26,
+    "end": 180.1,
+    "text": "They're locking in for their exams."
+   },
+   {
+    "start": 180.1,
+    "end": 181.9,
+    "text": "Lock in is informal."
+   },
+   {
+    "start": 181.9,
+    "end": 186.3,
+    "text": "You're more likely to use it with friends and family than in a professional setting."
+   },
+   {
+    "start": 186.3,
+    "end": 194.1,
+    "text": "We can also describe someone as being locked in, meaning they're doing something with extreme focus."
+   },
+   {
+    "start": 194.1,
+    "end": 198.3,
+    "text": "Well, I was definitely locked in last night and I'm ready for this exam."
+   },
+   {
+    "start": 198.3,
+    "end": 203.5,
+    "text": "Good luck and we'll be back next time with another useful English phrase."
+   },
+   {
+    "start": 203.5,
+    "end": 205.1,
+    "text": "See you soon. Goodbye."
+   },
+   {
+    "start": 205.1,
+    "end": 209.1,
+    "text": "Thanks for listening to this BBC Learning English podcast."
+   },
+   {
+    "start": 209.1,
+    "end": 212.1,
+    "text": "Have you tried any of our other podcasts?"
+   },
+   {
+    "start": 212.1,
+    "end": 214.7,
+    "text": "Learn English from news headlines."
+   },
+   {
+    "start": 214.7,
+    "end": 218.5,
+    "text": "Hear classic stories in English you can understand."
+   },
+   {
+    "start": 218.5,
+    "end": 227.7,
+    "text": "Listen to real conversations and explore stories from around the world or while learning vocabulary, grammar and pronunciation."
+   },
+   {
+    "start": 227.7,
+    "end": 241.8,
+    "text": "Find all our podcasts by searching BBC Learning English in your podcast app or visit bbclearningenglish.com Hello, Greg Jenner here."
+   },
+   {
+    "start": 241.8,
+    "end": 245.8,
+    "text": "I'm the host of You're Dead To Me, the BBC comedy show that takes history seriously."
+   },
+   {
+    "start": 245.8,
+    "end": 253.6,
+    "text": "Every episode I pair up a top historian with a fantastic comedian and we have a lovely, funny, fascinating chat about a different subject from world history."
+   },
+   {
+    "start": 253.6,
+    "end": 260.2,
+    "text": "And in this new series, we're beginning with an epic voyage through the story of Homer, the Iliad and the Odyssey."
+   },
+   {
+    "start": 260.2,
+    "end": 262.6,
+    "text": "And that's with Kyle Smith-Bino joining us."
+   },
+   {
+    "start": 262.6,
+    "end": 269.0,
+    "text": "And then we'll be learning about Francis Galton and the racist, discredited pseudoscience of eugenics with Desiree Birch."
+   },
+   {
+    "start": 269.0,
+    "end": 273.8,
+    "text": "We'll meet many medieval saints in their bone boxes with Rachel Parrott."
+   },
+   {
+    "start": 273.8,
+    "end": 278.6,
+    "text": "So if that sounds like your sort of thing, listen to You're Dead To Me wherever you get your podcasts."
+   },
+   {
+    "start": 278.6,
+    "end": 280.0,
+    "text": "Thank you. Bye."
+   }
+  ],
+  "addedAt": 1786860584357
+ },
+ {
+  "id": "bbc-tews-the-english-we-speak-aura-farming",
+  "guid": "urn:bbc:podcast:p0mtpx67",
+  "source": "BBC The English We Speak",
+  "title": "The English We Speak: Aura farming",
+  "level": 1,
+  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0mtpw6j.mp3",
+  "sentences": [
+   {
+    "start": 73.18,
+    "end": 87.11,
+    "text": "Thank you. Bye. Hello and welcome to The English We Speak, where we explain phrases used by fluent English speakers so that you can use them too."
+   },
+   {
+    "start": 87.11,
+    "end": 89.51,
+    "text": "I'm Feifei and I'm joined by Beth."
+   },
+   {
+    "start": 89.51,
+    "end": 96.71,
+    "text": "Hi Feifei. Did you see Gary taking more arty pictures of his coffee this morning and posting them online?"
+   },
+   {
+    "start": 96.71,
+    "end": 100.91,
+    "text": "He wrote in the caption that he is living his best life."
+   },
+   {
+    "start": 100.91,
+    "end": 102.71,
+    "text": "Classic aura farming."
+   },
+   {
+    "start": 102.71,
+    "end": 109.91,
+    "text": "For sure. Everyone drinks coffee, but not everyone posts pictures of it to make themselves look cool."
+   },
+   {
+    "start": 109.91,
+    "end": 114.71,
+    "text": "He's doing it for attention or praise, and that's what aura farming is."
+   },
+   {
+    "start": 114.71,
+    "end": 118.51,
+    "text": "We see people aura farming online a lot these days."
+   },
+   {
+    "start": 118.51,
+    "end": 131.91,
+    "text": "People might post images of themselves doing a good deed for someone else, or might manipulate a photo to make themselves look more attractive or rich, all because they want to boost their aura, their reputation."
+   },
+   {
+    "start": 131.91,
+    "end": 138.91,
+    "text": "Yes, a friend of mine loves going to fancy and expensive restaurants and then posting pictures of them."
+   },
+   {
+    "start": 138.91,
+    "end": 141.11,
+    "text": "She's definitely aura farming."
+   },
+   {
+    "start": 141.11,
+    "end": 142.51,
+    "text": "Yeah, it sounds like it."
+   },
+   {
+    "start": 142.51,
+    "end": 145.71,
+    "text": "Sometimes it's harmless, but sometimes it's a bit obvious."
+   },
+   {
+    "start": 145.71,
+    "end": 149.71,
+    "text": "Yes. Let's listen to more examples of aura farming."
+   },
+   {
+    "start": 150.71,
+    "end": 156.41,
+    "text": "That guy's always carrying a skateboard."
+   },
+   {
+    "start": 156.41,
+    "end": 158.21,
+    "text": "He doesn't even know how to use it."
+   },
+   {
+    "start": 158.21,
+    "end": 160.41,
+    "text": "He's just aura farming."
+   },
+   {
+    "start": 160.41,
+    "end": 162.01,
+    "text": "I went to this party."
+   },
+   {
+    "start": 162.01,
+    "end": 163.01,
+    "text": "You won't believe this."
+   },
+   {
+    "start": 163.01,
+    "end": 167.01,
+    "text": "There were a couple of people there in the dark wearing sunglasses."
+   },
+   {
+    "start": 167.01,
+    "end": 170.41,
+    "text": "I mean, stop aura farming, guys."
+   },
+   {
+    "start": 170.41,
+    "end": 176.21,
+    "text": "I have this friend that always poses next to sports cars and then posts them on social media like the cars are his."
+   },
+   {
+    "start": 176.21,
+    "end": 177.41,
+    "text": "He's just aura farming."
+   },
+   {
+    "start": 177.41,
+    "end": 186.74,
+    "text": "So embarrassing. Aura farming is a very social media inspired phrase."
+   },
+   {
+    "start": 186.74,
+    "end": 189.74,
+    "text": "People are farming for likes and compliments."
+   },
+   {
+    "start": 189.74,
+    "end": 196.24,
+    "text": "They're intentionally doing actions repetitively to create a different and better image of themselves."
+   },
+   {
+    "start": 196.24,
+    "end": 200.14,
+    "text": "We can also say someone is trying to earn aura points."
+   },
+   {
+    "start": 200.14,
+    "end": 203.54,
+    "text": "Yes, this is when somebody does something to look cool."
+   },
+   {
+    "start": 203.54,
+    "end": 209.94,
+    "text": "It could be genuine or it could be an attempt to look cool for attention to earn those aura points."
+   },
+   {
+    "start": 209.94,
+    "end": 214.14,
+    "text": "I think my brother was trying to earn aura points on holiday."
+   },
+   {
+    "start": 214.14,
+    "end": 220.54,
+    "text": "He kept looking out at the sea wearing his new cool sunglasses and asking me to take pictures of him."
+   },
+   {
+    "start": 220.54,
+    "end": 224.34,
+    "text": "Oh dear. It sounds like he was definitely after those aura points."
+   },
+   {
+    "start": 224.34,
+    "end": 229.34,
+    "text": "You're right. Well, we'll be back next time with another useful English phrase."
+   },
+   {
+    "start": 229.34,
+    "end": 230.94,
+    "text": "Goodbye for now. Goodbye."
+   },
+   {
+    "start": 230.94,
+    "end": 234.94,
+    "text": "Do you know someone who is starting to learn English?"
+   },
+   {
+    "start": 234.94,
+    "end": 239.14,
+    "text": "We have a new easy video series just for them."
+   },
+   {
+    "start": 239.14,
+    "end": 241.94,
+    "text": "The London Letter Challenge."
+   },
+   {
+    "start": 241.94,
+    "end": 248.94,
+    "text": "Three teams race around London to find eight letters which will take them to the winning crowns."
+   },
+   {
+    "start": 248.94,
+    "end": 263.53,
+    "text": "Watch the series on our website now, bbclearningenglish.com Hello, Greg Jenner here."
+   },
+   {
+    "start": 263.53,
+    "end": 267.63,
+    "text": "I'm the host of You're Dead To Me, the BBC comedy show that takes history seriously."
+   },
+   {
+    "start": 267.63,
+    "end": 275.43,
+    "text": "Every episode I pair up a top historian with a fantastic comedian and we have a lovely, funny, fascinating chat about a different subject from world history."
+   },
+   {
+    "start": 275.43,
+    "end": 282.03,
+    "text": "And in this new series, we're beginning with an epic voyage through the story of Homer, the Iliad and the Odyssey."
+   },
+   {
+    "start": 282.03,
+    "end": 284.53,
+    "text": "And that's with Kyle Smith-Bino joining us."
+   },
+   {
+    "start": 284.53,
+    "end": 290.83,
+    "text": "And then we'll be learning about Francis Galton and the racist, discredited pseudoscience of eugenics with Desiree Birch."
+   },
+   {
+    "start": 290.83,
+    "end": 295.63,
+    "text": "We'll meet many medieval saints in their bone boxes with Rachel Parrott."
+   },
+   {
+    "start": 295.63,
+    "end": 300.43,
+    "text": "So if that sounds like your sort of thing, listen to You're Dead To Me wherever you get your podcasts."
+   },
+   {
+    "start": 300.43,
+    "end": 301.63,
+    "text": "Thank you. Bye."
+   }
+  ],
+  "addedAt": 1786860527478
+ },
+ {
+  "id": "bbc-tews-beating-speaking-anxiety-1-im-scared-of-making-m",
+  "guid": "urn:bbc:podcast:p0mvt9s1",
+  "source": "BBC The English We Speak",
+  "title": "Beating Speaking Anxiety: 1. I’m scared of making mistakes",
+  "level": 1,
+  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0mvt7pg.mp3",
+  "sentences": [
+   {
+    "start": 0.0,
+    "end": 3.6,
+    "text": "This BBC podcast is supported by ads outside the UK."
+   },
+   {
+    "start": 32.6,
+    "end": 40.18,
+    "text": "Hello, Greg Jenner here, I'm the host of You're Dead To Me, the BBC comedy show that takes history seriously."
+   },
+   {
+    "start": 40.18,
+    "end": 47.78,
+    "text": "Every episode I pair up a top historian with a fantastic comedian and we have a lovely, funny, fascinating chat about a different subject from world history."
+   },
+   {
+    "start": 47.78,
+    "end": 54.58,
+    "text": "And in this new series, we're beginning with an epic voyage through the story of Homer, the Iliad and the Odyssey."
+   },
+   {
+    "start": 54.58,
+    "end": 56.98,
+    "text": "And that's with Kyle Smith-Bino joining us."
+   },
+   {
+    "start": 56.98,
+    "end": 63.58,
+    "text": "And then we'll be learning about Francis Galton and the racist, discredited pseudoscience of eugenics with Desiree Birch."
+   },
+   {
+    "start": 63.58,
+    "end": 68.38,
+    "text": "We'll meet many medieval saints in their bone boxes with Rachel Parrott."
+   },
+   {
+    "start": 68.38,
+    "end": 73.18,
+    "text": "So if that sounds like your sort of thing, listen to You're Dead To Me wherever you get your podcasts."
+   },
+   {
+    "start": 73.18,
+    "end": 100.08,
+    "text": "Thank you. Bye. I hear from learners, speak to experts and give you tips to improve your speaking."
+   },
+   {
+    "start": 100.08,
+    "end": 102.88,
+    "text": "And each week we'll talk about a different fear."
+   },
+   {
+    "start": 102.88,
+    "end": 107.68,
+    "text": "Our first episode is called, I'm Scared Of Making Mistakes."
+   },
+   {
+    "start": 107.68,
+    "end": 110.28,
+    "text": "Do you get anxious when you speak English?"
+   },
+   {
+    "start": 110.28,
+    "end": 122.76,
+    "text": "You're not alone. I guess I'd say that my experience speaking English is full of dread and regret."
+   },
+   {
+    "start": 122.76,
+    "end": 127.96,
+    "text": "I don't know why, but I cannot find the courage to speak to someone."
+   },
+   {
+    "start": 128.96,
+    "end": 132.56,
+    "text": "For me, it was very important to be good in English."
+   },
+   {
+    "start": 132.56,
+    "end": 140.36,
+    "text": "And I was like thinking what people will think about me when I'm speaking the wrong way or my pronunciation is not correct."
+   },
+   {
+    "start": 141.36,
+    "end": 155.76,
+    "text": "Imagine that if you are able to sound very intelligent, very wise, very smart in your first language, but then in the second language, you are not able to do that."
+   },
+   {
+    "start": 155.76,
+    "end": 160.36,
+    "text": "It isn't about perfection and it isn't about necessarily being very fluent."
+   },
+   {
+    "start": 160.36,
+    "end": 163.56,
+    "text": "It's about communicating well."
+   },
+   {
+    "start": 163.56,
+    "end": 175.7,
+    "text": "In this special series from BBC Learning English, we'll be helping you understand speaking anxiety and improve your confidence in English."
+   },
+   {
+    "start": 175.7,
+    "end": 178.9,
+    "text": "Hello and welcome to Beating Speaking Anxiety."
+   },
+   {
+    "start": 178.9,
+    "end": 183.9,
+    "text": "I'm Georgie, an English teacher and presenter at BBC Learning English."
+   },
+   {
+    "start": 183.9,
+    "end": 192.1,
+    "text": "And I'm Hanan, a bilingual reporter for BBC Arabic and presenter of the Arabic educational series Ders."
+   },
+   {
+    "start": 192.1,
+    "end": 199.9,
+    "text": "So as an English teacher, something my students used to ask me all the time was, how can I get better at speaking?"
+   },
+   {
+    "start": 199.9,
+    "end": 208.5,
+    "text": "And sometimes they mean they want to make fewer mistakes, but most often it's about confidence and wanting to stop feeling so nervous."
+   },
+   {
+    "start": 208.5,
+    "end": 211.5,
+    "text": "They're worried about being judged for their mistakes."
+   },
+   {
+    "start": 211.5,
+    "end": 216.1,
+    "text": "They're scared they'll forget their words, that people won't understand their accent."
+   },
+   {
+    "start": 216.1,
+    "end": 220.5,
+    "text": "There are so many fears when it comes to speaking a foreign language."
+   },
+   {
+    "start": 220.5,
+    "end": 225.9,
+    "text": "Yes, it's something I struggled with too when I moved to the UK to work at the BBC."
+   },
+   {
+    "start": 225.9,
+    "end": 232.3,
+    "text": "My English was actually pretty good, but having conversations with people, I found it really difficult."
+   },
+   {
+    "start": 232.3,
+    "end": 243.7,
+    "text": "So when I first joined the BBC, the Learning English team made an assessment of my English level, which they used to do for all new joiners to see if they need any help or courses."
+   },
+   {
+    "start": 243.7,
+    "end": 264.5,
+    "text": "My results were pretty good and I was fluent, but on that very same day, leaving the building and going to get some coffee, I couldn't really understand what the barista was saying and I felt pretty nervous to order coffee and was trying to stress every single word, hoping that my grammar is correct and I'm pronouncing the words right."
+   },
+   {
+    "start": 264.5,
+    "end": 267.7,
+    "text": "Yeah, I'm sure that's a situation lots of people can relate to."
+   },
+   {
+    "start": 267.7,
+    "end": 273.1,
+    "text": "So in this series, we're going to look at all the things that make us afraid of speaking in a new language."
+   },
+   {
+    "start": 273.1,
+    "end": 286.1,
+    "text": "We'll speak to experts to understand why speaking makes us so anxious, learn about what happens to our brain when we learn a new language, and explore some tips to help make speaking English less stressful."
+   },
+   {
+    "start": 286.1,
+    "end": 292.7,
+    "text": "Each week for the next eight weeks, we will focus on a different fear learners have when speaking English."
+   },
+   {
+    "start": 292.7,
+    "end": 296.1,
+    "text": "And we start with one of the most common fears for learners."
+   },
+   {
+    "start": 296.1,
+    "end": 301.93,
+    "text": "I'm scared of making mistakes."
+   },
+   {
+    "start": 301.93,
+    "end": 303.53,
+    "text": "Let's hear more from some learners."
+   },
+   {
+    "start": 303.53,
+    "end": 308.73,
+    "text": "Cindy from Colombia, David from Brazil, and Elisa from Mexico."
+   },
+   {
+    "start": 308.73,
+    "end": 320.73,
+    "text": "And I feel afraid when I speak English because I don't have a more vocabulary and I feel afraid for mistake and can communicate my idea."
+   },
+   {
+    "start": 320.73,
+    "end": 322.93,
+    "text": "I felt very self-conscious."
+   },
+   {
+    "start": 322.93,
+    "end": 327.73,
+    "text": "I felt really insecure sometimes because I was like, oh, am I saying the right things?"
+   },
+   {
+    "start": 327.73,
+    "end": 331.53,
+    "text": "Do I say, do I know things well enough?"
+   },
+   {
+    "start": 331.53,
+    "end": 333.93,
+    "text": "I don't like making mistakes."
+   },
+   {
+    "start": 333.93,
+    "end": 344.33,
+    "text": "And knowing they know more than me, I put pressure on myself to avoid making mistakes and being foolish."
+   },
+   {
+    "start": 344.33,
+    "end": 348.33,
+    "text": "All of those learners are worried about making mistakes."
+   },
+   {
+    "start": 348.33,
+    "end": 360.73,
+    "text": "Yes. A time when I felt this fear the most was when I worked as an English teacher in Spain and I had to have meetings with my students' parents to discuss their progress, all in Spanish."
+   },
+   {
+    "start": 360.73,
+    "end": 367.53,
+    "text": "I was so scared of making mistakes because in my head, it was linked to my job and my professionalism."
+   },
+   {
+    "start": 367.53,
+    "end": 372.33,
+    "text": "I didn't want the parents to judge me and think I was a bad teacher."
+   },
+   {
+    "start": 372.33,
+    "end": 378.33,
+    "text": "Totally. And you know, it's not just new learners of English who are worried about making mistakes."
+   },
+   {
+    "start": 378.33,
+    "end": 380.73,
+    "text": "Even advanced learners talk about this."
+   },
+   {
+    "start": 380.73,
+    "end": 404.07,
+    "text": "So what's going on? You know, usually the beliefs that cause anxiety, especially severe anxiety are, we call it irrational beliefs and also like some low self-perceptions, fear of negative evaluation, all those learner internal factors."
+   },
+   {
+    "start": 404.07,
+    "end": 410.07,
+    "text": "This is Han Luo, Associate Professor of Chinese at Lafayette College in the United States."
+   },
+   {
+    "start": 410.07,
+    "end": 415.87,
+    "text": "Han has done lots of research into the sources of anxiety or where that fear comes from."
+   },
+   {
+    "start": 415.87,
+    "end": 419.47,
+    "text": "Han says irrational beliefs can make us anxious."
+   },
+   {
+    "start": 419.47,
+    "end": 424.47,
+    "text": "Irrational beliefs are beliefs that aren't based on things that are true."
+   },
+   {
+    "start": 424.47,
+    "end": 430.27,
+    "text": "And Han says that learners worry about mistakes because they're scared of negative evaluation."
+   },
+   {
+    "start": 430.27,
+    "end": 435.47,
+    "text": "In other words, that people will judge them for their mistakes and think badly of them."
+   },
+   {
+    "start": 435.47,
+    "end": 453.87,
+    "text": "Imagine that if you are able to sound very intelligent, very wise, very smart, in your first language, you are, you know, admired by people, but then in the second language, you are not able to do that, right?"
+   },
+   {
+    "start": 453.87,
+    "end": 459.87,
+    "text": "When people speak in another language, they worry about what other people might think about them."
+   },
+   {
+    "start": 459.87,
+    "end": 465.47,
+    "text": "But Han says this judgment doesn't come from other people, it comes from within."
+   },
+   {
+    "start": 465.47,
+    "end": 472.27,
+    "text": "Yes, but in the moment when we try to speak, we're often not aware of what's causing the anxiety and stress."
+   },
+   {
+    "start": 472.27,
+    "end": 479.07,
+    "text": "And so the first step to reducing the fear of making mistakes is to recognise that fear."
+   },
+   {
+    "start": 479.07,
+    "end": 485.87,
+    "text": "We want to make those implicit beliefs into conscious beliefs."
+   },
+   {
+    "start": 485.87,
+    "end": 489.07,
+    "text": "That is already like a very, very important step."
+   },
+   {
+    "start": 489.07,
+    "end": 492.87,
+    "text": "Often the beliefs that are making us anxious are implicit."
+   },
+   {
+    "start": 492.87,
+    "end": 494.47,
+    "text": "We don't notice them."
+   },
+   {
+    "start": 494.47,
+    "end": 498.27,
+    "text": "And we need to make them conscious so that we do notice them."
+   },
+   {
+    "start": 498.27,
+    "end": 507.87,
+    "text": "You realise it now. Oh, nobody will laugh at me if I make a mistake because everyone is in the same boat, right?"
+   },
+   {
+    "start": 507.87,
+    "end": 512.67,
+    "text": "So when you realise this, you know, now I tell you, you don't have to worry about it."
+   },
+   {
+    "start": 512.67,
+    "end": 521.47,
+    "text": "So are you able to just remove your anxiety, you know, and then your beliefs are changed?"
+   },
+   {
+    "start": 521.47,
+    "end": 525.47,
+    "text": "I find what Han said about irrational beliefs really interesting."
+   },
+   {
+    "start": 525.47,
+    "end": 536.87,
+    "text": "So I'm an English teacher, so I know that mistakes help us learn and also that as long as you communicate your ideas effectively, it doesn't really matter if you make a few mistakes."
+   },
+   {
+    "start": 536.87,
+    "end": 542.27,
+    "text": "But I still have an irrational fear of making mistakes in Spanish."
+   },
+   {
+    "start": 542.27,
+    "end": 547.87,
+    "text": "I need to make my feelings match my belief that making mistakes is fine."
+   },
+   {
+    "start": 547.87,
+    "end": 550.07,
+    "text": "And you know what, Georgie?"
+   },
+   {
+    "start": 550.07,
+    "end": 553.27,
+    "text": "We already make mistakes in our own languages."
+   },
+   {
+    "start": 553.27,
+    "end": 558.67,
+    "text": "So I feel like we should encourage ourselves and tell ourselves it's OK to make mistakes."
+   },
+   {
+    "start": 558.67,
+    "end": 561.27,
+    "text": "100%, I totally agree."
+   },
+   {
+    "start": 561.27,
+    "end": 573.73,
+    "text": "Han says recognising that these fears of making mistakes are irrational is the first step."
+   },
+   {
+    "start": 573.73,
+    "end": 578.13,
+    "text": "But is there anything we can do practically to help get rid of this fear?"
+   },
+   {
+    "start": 578.13,
+    "end": 583.33,
+    "text": "It isn't about perfection, and it isn't about necessarily being very fluent."
+   },
+   {
+    "start": 583.33,
+    "end": 587.33,
+    "text": "It's about communicating well."
+   },
+   {
+    "start": 587.33,
+    "end": 589.33,
+    "text": "This is Barnaby Griffith."
+   },
+   {
+    "start": 589.33,
+    "end": 595.33,
+    "text": "He's a speaking coach who works with the students who want to improve their speaking in English."
+   },
+   {
+    "start": 595.33,
+    "end": 601.73,
+    "text": "Barnaby says if we think about speaking as communicating rather than like a test, then we can relax."
+   },
+   {
+    "start": 601.73,
+    "end": 604.13,
+    "text": "So embrace your mistakes."
+   },
+   {
+    "start": 604.13,
+    "end": 610.33,
+    "text": "Above all, allow for mistakes, so self-correct is fine."
+   },
+   {
+    "start": 610.33,
+    "end": 614.73,
+    "text": "Allow pauses and silence within your communication."
+   },
+   {
+    "start": 614.73,
+    "end": 616.93,
+    "text": "And learn to correct yourself."
+   },
+   {
+    "start": 616.93,
+    "end": 623.33,
+    "text": "And also introduce elements such as humour and smile and laugh when things go wrong."
+   },
+   {
+    "start": 623.33,
+    "end": 624.93,
+    "text": "And say, oh, I didn't mean to say that."
+   },
+   {
+    "start": 624.93,
+    "end": 636.14,
+    "text": "And have phrases like, let me rephrase that, or I need to say that again, and be vulnerable."
+   },
+   {
+    "start": 636.14,
+    "end": 640.94,
+    "text": "I love Barnaby's advice to just smile and laugh when things go wrong."
+   },
+   {
+    "start": 640.94,
+    "end": 645.54,
+    "text": "But I imagine it might be difficult to be vulnerable, like Barnaby says."
+   },
+   {
+    "start": 645.54,
+    "end": 646.94,
+    "text": "Do you have any tips, Georgie?"
+   },
+   {
+    "start": 646.94,
+    "end": 653.94,
+    "text": "Yes, I do. I think the best way to get comfortable making mistakes is to start in situations where you feel safe."
+   },
+   {
+    "start": 653.94,
+    "end": 657.14,
+    "text": "So you could practice with someone you feel comfortable with."
+   },
+   {
+    "start": 657.14,
+    "end": 659.94,
+    "text": "And another idea is to do a language exchange."
+   },
+   {
+    "start": 659.94,
+    "end": 666.14,
+    "text": "So this is when you find someone who wants to practice your language and you want to practice their language."
+   },
+   {
+    "start": 666.14,
+    "end": 672.94,
+    "text": "This is really good because you're both practicing languages and you're both making mistakes and you're kind of in the same situation."
+   },
+   {
+    "start": 672.94,
+    "end": 678.74,
+    "text": "That's true. I had a similar experience actually when I was learning Turkish."
+   },
+   {
+    "start": 678.74,
+    "end": 682.74,
+    "text": "So I did an exchange with a Turkish friend."
+   },
+   {
+    "start": 682.74,
+    "end": 685.54,
+    "text": "She was teaching me Turkish and I was funny enough."
+   },
+   {
+    "start": 685.54,
+    "end": 688.94,
+    "text": "I was actually giving her some English tips."
+   },
+   {
+    "start": 688.94,
+    "end": 694.74,
+    "text": "And it was really good because it is with someone you know and you feel comfortable with."
+   },
+   {
+    "start": 694.74,
+    "end": 697.74,
+    "text": "And you don't worry too much about mistakes."
+   },
+   {
+    "start": 697.74,
+    "end": 702.34,
+    "text": "I was making mistakes in both languages and that felt okay."
+   },
+   {
+    "start": 702.34,
+    "end": 704.54,
+    "text": "Yeah, it's great because there's no judgment is there?"
+   },
+   {
+    "start": 704.54,
+    "end": 712.34,
+    "text": "Exactly. Thanks for listening to this episode of Beating Speaking Anxiety."
+   },
+   {
+    "start": 712.34,
+    "end": 721.94,
+    "text": "To learn more about speaking anxiety, head to our website where Georgie has made videos for each of the speaking fears we talk about in this series."
+   },
+   {
+    "start": 721.94,
+    "end": 727.34,
+    "text": "You will hear more advice and see some tips in action with real learners."
+   },
+   {
+    "start": 727.34,
+    "end": 734.69,
+    "text": "Use the link in the notes for this episode or visit bbclearningenglish.com."
+   },
+   {
+    "start": 734.69,
+    "end": 738.09,
+    "text": "And we'd love to hear about your experience speaking English."
+   },
+   {
+    "start": 738.09,
+    "end": 741.89,
+    "text": "Please send us an email and tell us what scares you about speaking."
+   },
+   {
+    "start": 741.89,
+    "end": 746.69,
+    "text": "Our email address is learningenglishatbbc.co.uk."
+   },
+   {
+    "start": 746.69,
+    "end": 753.29,
+    "text": "And in the next episode we'll be talking about what to do when you're speaking English and your mind suddenly goes blank."
+   },
+   {
+    "start": 753.29,
+    "end": 770.1,
+    "text": "See you then. Bye. Hello, Greg Jenner here."
+   },
+   {
+    "start": 770.1,
+    "end": 774.3,
+    "text": "I'm the host of You're Dead To Me, the BBC comedy show that takes history seriously."
+   },
+   {
+    "start": 774.3,
+    "end": 782.1,
+    "text": "Every episode I pair up a top historian with a fantastic comedian and we have a lovely, funny, fascinating chat about a different subject from world history."
+   },
+   {
+    "start": 782.1,
+    "end": 788.7,
+    "text": "And in this new series, we're beginning with an epic voyage through the story of Homer, the Iliad and the Odyssey."
+   },
+   {
+    "start": 788.7,
+    "end": 791.3,
+    "text": "And that's with Kyle Smith-Bino joining us."
+   },
+   {
+    "start": 791.3,
+    "end": 797.5,
+    "text": "And then we'll be learning about Francis Galton and the racist, discredited pseudoscience of eugenics with Desiree Burch."
+   },
+   {
+    "start": 797.5,
+    "end": 802.3,
+    "text": "We'll meet many medieval saints in their bone boxes with Rachel Parrott."
+   },
+   {
+    "start": 802.3,
+    "end": 807.1,
+    "text": "So if that sounds like your sort of thing, listen to You're Dead To Me wherever you get your podcasts."
+   },
+   {
+    "start": 807.1,
+    "end": 808.7,
+    "text": "Thank you. Bye."
+   }
+  ],
+  "addedAt": 1786860468834
+ },
+ {
+  "id": "bbc-tews-the-english-we-speak-hot-on-the-heels",
+  "guid": "urn:bbc:podcast:p0mw12q3",
+  "source": "BBC The English We Speak",
+  "title": "The English We Speak: Hot on the heels",
+  "level": 1,
+  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0mw11kt.mp3",
+  "sentences": [
+   {
+    "start": 96.61,
+    "end": 111.41,
+    "text": "Find Beating Speaking Anxiety on our website, bbclearningenglish.com Hello and welcome to The English We Speak, where we explain phrases used by fluent English speakers so that you can use them too."
+   },
+   {
+    "start": 111.41,
+    "end": 113.61,
+    "text": "I'm Feifei and I'm here with Beth."
+   },
+   {
+    "start": 113.61,
+    "end": 120.81,
+    "text": "Hi, Feifei. I heard an interesting phrase on one of our BBC Learning English podcasts this week."
+   },
+   {
+    "start": 120.81,
+    "end": 128.21,
+    "text": "The interviewee was talking about cyber-attacks on shops and hot on the heels of that, there were cyber-attacks on airlines."
+   },
+   {
+    "start": 128.21,
+    "end": 129.61,
+    "text": "I heard this episode."
+   },
+   {
+    "start": 129.61,
+    "end": 131.01,
+    "text": "It was very interesting."
+   },
+   {
+    "start": 131.01,
+    "end": 134.61,
+    "text": "Just like this phrase, hot on the heels."
+   },
+   {
+    "start": 134.61,
+    "end": 140.21,
+    "text": "It means something happens immediately after something else, often unexpectedly."
+   },
+   {
+    "start": 140.21,
+    "end": 145.01,
+    "text": "Yes. Events happen one after the other with not much of a break."
+   },
+   {
+    "start": 145.01,
+    "end": 152.21,
+    "text": "For example, my cousin won a cooking competition last week and hot on the heels of that, she's been asked to cater for a wedding."
+   },
+   {
+    "start": 152.21,
+    "end": 161.61,
+    "text": "That's great. One of my favourite singers just released a new album and her new world tour announcement came hot on the heels of the album's release."
+   },
+   {
+    "start": 161.61,
+    "end": 163.81,
+    "text": "I booked tickets straight away."
+   },
+   {
+    "start": 163.81,
+    "end": 166.41,
+    "text": "I can't wait. Oh, how exciting!"
+   },
+   {
+    "start": 166.41,
+    "end": 169.81,
+    "text": "Let's listen to more examples of hot on the heels."
+   },
+   {
+    "start": 173.52,
+    "end": 177.72,
+    "text": "There's another storm coming tonight, hot on the heels of the flooding yesterday."
+   },
+   {
+    "start": 177.72,
+    "end": 180.32,
+    "text": "Hot on the heels of my massive pay rise."
+   },
+   {
+    "start": 180.32,
+    "end": 185.12,
+    "text": "I won the lottery. Hot on the heels of their league win, the team then won the cup."
+   },
+   {
+    "start": 189.24,
+    "end": 198.84,
+    "text": "We also use hot on the heels to talk about following closely behind someone or something, especially if you're likely to succeed in what you're aiming to do."
+   },
+   {
+    "start": 198.84,
+    "end": 208.24,
+    "text": "Yes. So, we could say the police car was hot on the heels of the robber, which means the officers were very physically close to the robber, chasing them."
+   },
+   {
+    "start": 208.24,
+    "end": 214.24,
+    "text": "Yes. Or in a running race, the person in second might be hot on the heels of the person in front."
+   },
+   {
+    "start": 214.24,
+    "end": 216.24,
+    "text": "They are very close to beating them."
+   },
+   {
+    "start": 216.24,
+    "end": 222.44,
+    "text": "And variations of this phrase include hot on the tail or hot on the trail."
+   },
+   {
+    "start": 222.44,
+    "end": 227.84,
+    "text": "For example, I watched a film last night where detectives were hot on the tail of a con man."
+   },
+   {
+    "start": 227.84,
+    "end": 229.44,
+    "text": "Well, that sounds dramatic."
+   },
+   {
+    "start": 229.44,
+    "end": 232.64,
+    "text": "We'll be back next time with another useful English phrase."
+   },
+   {
+    "start": 232.64,
+    "end": 234.24,
+    "text": "Goodbye for now. Goodbye."
+   },
+   {
+    "start": 238.88,
+    "end": 240.08,
+    "text": "Hello, Greg Jenner here."
+   },
+   {
+    "start": 240.08,
+    "end": 244.28,
+    "text": "I'm the host of You're Dead To Me, the BBC comedy show that takes history seriously."
+   },
+   {
+    "start": 244.28,
+    "end": 251.88,
+    "text": "Every episode, I pair up a top historian with a fantastic comedian and we have a lovely, funny, fascinating chat about a different subject from world history."
+   },
+   {
+    "start": 251.88,
+    "end": 258.48,
+    "text": "And in this new series, we're beginning with an epic voyage through the story of Homer, the Iliad and the Odyssey."
+   },
+   {
+    "start": 258.48,
+    "end": 261.08,
+    "text": "And that's with Kyle Smith-Bino joining us."
+   },
+   {
+    "start": 261.08,
+    "end": 267.48,
+    "text": "And then we'll be learning about Francis Galton and the racist, discredited pseudoscience of eugenics with Desiree Birch."
+   },
+   {
+    "start": 267.48,
+    "end": 272.08,
+    "text": "We'll meet many medieval saints in their bone boxes with Rachel Parrott."
+   },
+   {
+    "start": 272.08,
+    "end": 277.08,
+    "text": "So, if that sounds like your sort of thing, listen to You're Dead To Me wherever you get your podcasts."
+   },
+   {
+    "start": 277.08,
+    "end": 278.48,
+    "text": "Thank you. Bye."
+   }
+  ],
+  "addedAt": 1786860311096
+ },
+ {
+  "id": "bbc-tews-beating-speaking-anxiety-2-im-scared-of-forgetti",
+  "guid": "urn:bbc:podcast:p0mx73zk",
+  "source": "BBC The English We Speak",
+  "title": "Beating Speaking Anxiety: 2. I’m scared of forgetting my words",
+  "level": 1,
+  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0mx72rh.mp3",
+  "sentences": [
+   {
+    "start": 84.38,
+    "end": 87.98,
+    "text": "We'll have another episode of the English We Speak soon."
+   },
+   {
+    "start": 87.98,
+    "end": 99.18,
+    "text": "But today, we're continuing with our special series, Beating Speaking Anxiety, a podcast to help you fight your fears of speaking in English."
+   },
+   {
+    "start": 99.18,
+    "end": 103.98,
+    "text": "This episode is called I'm Scared Of Forgetting My Words."
+   },
+   {
+    "start": 103.98,
+    "end": 112.12,
+    "text": "Have you ever been speaking English and suddenly you forget a word?"
+   },
+   {
+    "start": 112.12,
+    "end": 117.92,
+    "text": "I forgot the word when I tried to speak."
+   },
+   {
+    "start": 117.92,
+    "end": 122.72,
+    "text": "For a moment, my mind is blank."
+   },
+   {
+    "start": 122.72,
+    "end": 125.12,
+    "text": "I know what I want to say."
+   },
+   {
+    "start": 125.12,
+    "end": 129.12,
+    "text": "But no words come to mind."
+   },
+   {
+    "start": 129.12,
+    "end": 134.12,
+    "text": "Like, my mind just shuts down."
+   },
+   {
+    "start": 134.12,
+    "end": 144.78,
+    "text": "The bilingual faces a big challenge in that they have double of everything."
+   },
+   {
+    "start": 144.78,
+    "end": 152.18,
+    "text": "In today's episode, we're going to talk about how to avoid panicking when things go wrong speaking English."
+   },
+   {
+    "start": 152.18,
+    "end": 162.02,
+    "text": "Hello and welcome to Beating Speaking Anxiety, the podcast to help you fight your fears of speaking English."
+   },
+   {
+    "start": 162.02,
+    "end": 166.62,
+    "text": "I'm Georgie, an English teacher and presenter at BBC Learning English."
+   },
+   {
+    "start": 166.62,
+    "end": 174.62,
+    "text": "And I'm Hanan, a bilingual reporter for BBC Arabic and presenter of the Arabic educational series Ders."
+   },
+   {
+    "start": 174.62,
+    "end": 182.22,
+    "text": "You can find a transcript for this episode and other resources to help you on our website, bbclearningenglish.com."
+   },
+   {
+    "start": 182.22,
+    "end": 190.22,
+    "text": "We heard at the start of the programme about that terrifying feeling when you forget your words, when you're speaking a new language."
+   },
+   {
+    "start": 190.22,
+    "end": 192.22,
+    "text": "Has that ever happened to you, Georgie?"
+   },
+   {
+    "start": 192.22,
+    "end": 196.82,
+    "text": "Oh, so many times. It happened all the time when I was learning Spanish."
+   },
+   {
+    "start": 196.82,
+    "end": 198.22,
+    "text": "Your mind goes blank."
+   },
+   {
+    "start": 198.22,
+    "end": 199.82,
+    "text": "There's an awkward pause."
+   },
+   {
+    "start": 199.82,
+    "end": 201.02,
+    "text": "That makes you stressed."
+   },
+   {
+    "start": 201.02,
+    "end": 203.42,
+    "text": "And then it's even harder to remember the word."
+   },
+   {
+    "start": 203.42,
+    "end": 207.84,
+    "text": "It's a vicious cycle."
+   },
+   {
+    "start": 207.84,
+    "end": 211.24,
+    "text": "And this is very common when you're using a second language."
+   },
+   {
+    "start": 211.24,
+    "end": 214.44,
+    "text": "Even if you feel like you know lots of vocabulary."
+   },
+   {
+    "start": 214.44,
+    "end": 219.64,
+    "text": "We spoke to Maria from Ukraine who finds her mind goes blank when speaking English."
+   },
+   {
+    "start": 219.64,
+    "end": 224.64,
+    "text": "I've noticed that I forgot even simple words."
+   },
+   {
+    "start": 224.64,
+    "end": 235.24,
+    "text": "Because for me, it's easier to have a conversation with a difficult topic connected with water supply with some political situation."
+   },
+   {
+    "start": 235.24,
+    "end": 244.44,
+    "text": "Maria can have a conversation about complicated things, like politics, but she finds it harder to remember words for everyday situations."
+   },
+   {
+    "start": 244.44,
+    "end": 256.24,
+    "text": "But when I need to ask something really simple, for example, in a bus or trying to find some place, I'm completely lost and frustrated."
+   },
+   {
+    "start": 256.24,
+    "end": 264.84,
+    "text": "I don't know why. It's not that Maria doesn't know the words for these situations, but in the moment she finds it difficult to remember them."
+   },
+   {
+    "start": 264.84,
+    "end": 266.64,
+    "text": "So why does this happen?"
+   },
+   {
+    "start": 266.64,
+    "end": 273.44,
+    "text": "Well, to answer that question, we need to understand what's happening in our brains when we learn a new language."
+   },
+   {
+    "start": 273.44,
+    "end": 281.04,
+    "text": "So when you're first learning a language, you're doing a lot of really conscious activity that you don't do when you're speaking your native language."
+   },
+   {
+    "start": 284.56,
+    "end": 289.56,
+    "text": "This is Alyssa Melinger, a professor at the University of Dundee."
+   },
+   {
+    "start": 289.56,
+    "end": 297.96,
+    "text": "Alyssa researches the way we choose our words when we're speaking, and she says that speaking a new language requires conscious activity."
+   },
+   {
+    "start": 297.96,
+    "end": 307.16,
+    "text": "That means your brain has to think things through with a lot of effort, rather than doing things automatically, like you would when you speak your first language."
+   },
+   {
+    "start": 307.16,
+    "end": 315.16,
+    "text": "Consciously thinking this word first, then that word, now I have to put this other word that I wouldn't normally put here, but this is where it goes."
+   },
+   {
+    "start": 315.16,
+    "end": 316.96,
+    "text": "I must remember that this is where it goes."
+   },
+   {
+    "start": 316.96,
+    "end": 320.76,
+    "text": "So you're doing a lot of kind of very explicit thinking."
+   },
+   {
+    "start": 320.76,
+    "end": 331.56,
+    "text": "Alyssa says that because your brain is doing all this work, it can struggle to reach the final step of finding a specific word to say, even if it's a word you know."
+   },
+   {
+    "start": 331.56,
+    "end": 341.16,
+    "text": "It could be. It could be a sort of processing overload that you can't find the word because you spent so much energy trying to remember what order the words are supposed to go in."
+   },
+   {
+    "start": 341.16,
+    "end": 345.16,
+    "text": "Alyssa calls this situation a processing overload."
+   },
+   {
+    "start": 345.16,
+    "end": 353.56,
+    "text": "Your brain is trying to do too much at once, and she says it can be a particular problem in the early stages of learning a language."
+   },
+   {
+    "start": 353.56,
+    "end": 356.96,
+    "text": "You think like you go on holiday and you think, right, I need to learn how to say please."
+   },
+   {
+    "start": 356.96,
+    "end": 358.76,
+    "text": "I need to learn how to say thank you."
+   },
+   {
+    "start": 358.76,
+    "end": 362.76,
+    "text": "I need to learn how to, you know, ask for the bill."
+   },
+   {
+    "start": 362.76,
+    "end": 365.96,
+    "text": "You're not really learning those words or learning that language."
+   },
+   {
+    "start": 365.96,
+    "end": 369.16,
+    "text": "You're just memorizing sort of sounds."
+   },
+   {
+    "start": 369.16,
+    "end": 383.36,
+    "text": "When you only know words as a translation of your native language and you haven't used them, they're much harder for your brain to find in that stressful moment where you need to order a coffee or ask directions."
+   },
+   {
+    "start": 383.36,
+    "end": 386.86,
+    "text": "Those words that you're learning, they don't have their own kind of meanings."
+   },
+   {
+    "start": 386.86,
+    "end": 391.16,
+    "text": "They're not grounded in your experience of having used them."
+   },
+   {
+    "start": 391.16,
+    "end": 403.04,
+    "text": "You can fail to access them because they were only sort of, they were never very strongly represented in the first place."
+   },
+   {
+    "start": 403.04,
+    "end": 411.44,
+    "text": "And so for Maria, who we heard from at the start of the program, her problem remembering simple words could be because she hasn't used them enough."
+   },
+   {
+    "start": 411.44,
+    "end": 415.34,
+    "text": "But as we know, advanced learners often forget words too."
+   },
+   {
+    "start": 415.34,
+    "end": 422.64,
+    "text": "According to Alyssa, this could just be a part of being bilingual, which is how we describe someone who can speak two languages."
+   },
+   {
+    "start": 422.64,
+    "end": 429.54,
+    "text": "The bilingual faces a big challenge in that they have double of everything."
+   },
+   {
+    "start": 429.54,
+    "end": 434.24,
+    "text": "So they have double the vocabulary."
+   },
+   {
+    "start": 434.24,
+    "end": 440.84,
+    "text": "When you're switching between two languages, you are probably using the words in both languages less frequently."
+   },
+   {
+    "start": 440.84,
+    "end": 447.34,
+    "text": "As we know, if you use words less, they are harder for your brain to remember when you're speaking."
+   },
+   {
+    "start": 447.34,
+    "end": 462.04,
+    "text": "One explanation is that the two languages are competing with one another and so that just introduces uncertainty or interference in the processing and makes it harder for you to eventually find the sounds you're looking for."
+   },
+   {
+    "start": 462.04,
+    "end": 470.24,
+    "text": "Alternatively, it's because for any bilingual, you're using each language half as much as a monolingual would use their single language."
+   },
+   {
+    "start": 470.24,
+    "end": 473.34,
+    "text": "So all your representations are sort of weaker."
+   },
+   {
+    "start": 473.34,
+    "end": 480.64,
+    "text": "Hearing from Alyssa, it makes me realise how amazing our brains are and how hard they have to work when we speak a different language."
+   },
+   {
+    "start": 480.64,
+    "end": 487.74,
+    "text": "Yes, and it sounds like things can get easier the more you practice speaking and using the words you learn."
+   },
+   {
+    "start": 487.74,
+    "end": 491.14,
+    "text": "The words become more accessible the more you use them."
+   },
+   {
+    "start": 491.14,
+    "end": 496.14,
+    "text": "Yeah, exactly. But as Alyssa says, even fluent bilinguals forget words."
+   },
+   {
+    "start": 496.14,
+    "end": 498.94,
+    "text": "It's just part of holding two languages in your head."
+   },
+   {
+    "start": 498.94,
+    "end": 502.44,
+    "text": "So we need to have some ideas for what to do when this happens."
+   },
+   {
+    "start": 502.44,
+    "end": 505.24,
+    "text": "Yes, Georgie, do you have any tips?"
+   },
+   {
+    "start": 505.24,
+    "end": 508.04,
+    "text": "I think the best way is to find a way to describe that word."
+   },
+   {
+    "start": 508.04,
+    "end": 514.84,
+    "text": "So if you can't remember the word table, for example, you can say something like, it's something we eat food off."
+   },
+   {
+    "start": 514.84,
+    "end": 517.14,
+    "text": "It's flat and has four legs."
+   },
+   {
+    "start": 517.14,
+    "end": 521.14,
+    "text": "Then the other person can guess the word and you can continue with your conversation."
+   },
+   {
+    "start": 521.14,
+    "end": 523.84,
+    "text": "So the idea is to not get stuck."
+   },
+   {
+    "start": 523.84,
+    "end": 530.64,
+    "text": "But if you really do want to find that specific word, learn some what we call buying time phrases."
+   },
+   {
+    "start": 530.64,
+    "end": 533.04,
+    "text": "For example, sorry, I can't think of the word."
+   },
+   {
+    "start": 533.04,
+    "end": 535.84,
+    "text": "Just bear with me or my mind has gone blank."
+   },
+   {
+    "start": 535.84,
+    "end": 537.84,
+    "text": "Just give me a second."
+   },
+   {
+    "start": 537.84,
+    "end": 550.14,
+    "text": "I love that. And do you remember, Georgie, we have some tips from last week that you feel free to be vulnerable, make a joke out of it, share your embarrassment and you know, the other person will probably help you."
+   },
+   {
+    "start": 550.14,
+    "end": 556.35,
+    "text": "Yeah, people are kinder than we think sometimes."
+   },
+   {
+    "start": 556.35,
+    "end": 560.45,
+    "text": "That's it for this episode of Beating Speaking Anxiety."
+   },
+   {
+    "start": 560.45,
+    "end": 565.05,
+    "text": "Find a video with more tips to help you with your anxiety on our website."
+   },
+   {
+    "start": 565.05,
+    "end": 574.35,
+    "text": "Visit bbclearningenglish.com Next up in this series, what to do when you don't understand the other person in the conversation."
+   },
+   {
+    "start": 574.35,
+    "end": 586.44,
+    "text": "Goodbye for now. Bye-bye."
+   },
+   {
+    "start": 586.44,
+    "end": 587.74,
+    "text": "Hello, Greg Jenner here."
+   },
+   {
+    "start": 587.74,
+    "end": 591.84,
+    "text": "I'm the host of You're Dead To Me, the BBC comedy show that takes history seriously."
+   },
+   {
+    "start": 591.84,
+    "end": 599.54,
+    "text": "Every episode I pair up a top historian with a fantastic comedian and we have a lovely, funny, fascinating chat about a different subject from world history."
+   },
+   {
+    "start": 599.54,
+    "end": 606.14,
+    "text": "And in this new series, we're beginning with an epic voyage through the story of Homer, the Iliad and the Odyssey."
+   },
+   {
+    "start": 606.14,
+    "end": 608.74,
+    "text": "And that's with Kyle Smith-Bino joining us."
+   },
+   {
+    "start": 608.74,
+    "end": 615.04,
+    "text": "And then we'll be learning about Francis Galton and the racist, discredited pseudoscience of eugenics with Desiree Burch."
+   },
+   {
+    "start": 615.04,
+    "end": 619.74,
+    "text": "We'll meet many medieval saints in their bone boxes with Rachel Parrott."
+   },
+   {
+    "start": 619.74,
+    "end": 624.64,
+    "text": "So if that sounds like your sort of thing, listen to You're Dead To Me wherever you get your podcasts."
+   },
+   {
+    "start": 624.64,
+    "end": 625.84,
+    "text": "Thank you. Bye."
+   }
+  ],
+  "addedAt": 1786860251843
+ },
+ {
+  "id": "bbc-6min-should-we-eat-ultra-processed-food",
+  "guid": "urn:bbc:podcast:p0nhfvyw",
+  "source": "BBC 6 Minute English",
+  "title": "Should we eat ultra-processed food?",
+  "level": 2,
+  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0nhfvh9.mp3",
+  "sentences": [
+   {
+    "start": 102.13,
+    "end": 106.37,
+    "text": "Hello, this is 6 Minute English from BBC Learning English. I'm Phil."
+   },
+   {
+    "start": 106.37,
+    "end": 114.53,
+    "text": "And I'm Pippa. If you've eaten anything today, then it's likely that some of your food was ultra-processed."
+   },
+   {
+    "start": 114.53,
+    "end": 118.45,
+    "text": "Food containing artificial ingredients like additives and sweetness."
+   },
+   {
+    "start": 119.33,
+    "end": 124.13,
+    "text": "Ultra-processed foods are everywhere, from sliced bread to chocolate biscuits and crisps."
+   },
+   {
+    "start": 124.77,
+    "end": 142.21,
+    "text": "They might taste good, but the bad news is that ultra-processed foods have been linked to poor health. They often contain lots of sugar and salt and have been linked to problems like obesity and diabetes. So how can we tell what food is ultra-processed and what's not?"
+   },
+   {
+    "start": 142.21,
+    "end": 147.57,
+    "text": "Here's health reporter Annabelle Rackham on BBC World Service programme What in the World."
+   },
+   {
+    "start": 147.57,
+    "end": 161.17,
+    "text": "Ultra-processed foods are things that contain five or more ingredients and things that you wouldn't find in your average kitchen. It's going to have things on there like emulsifiers, preservatives, additives, dyes and sweeteners."
+   },
+   {
+    "start": 161.17,
+    "end": 172.69,
+    "text": "Annabelle describes ultra-processed foods as things containing ingredients you wouldn't find in your kitchen. Do you eat much ultra-processed food, Pippa, or do you try to avoid it?"
+   },
+   {
+    "start": 172.69,
+    "end": 185.49,
+    "text": "I used to eat a lot of ultra-processed foods and now I try to cook everything myself and not eat things like chocolate and snacks all day. How about you?"
+   },
+   {
+    "start": 185.49,
+    "end": 219.33,
+    "text": "I think the same. I try to cook things using just your normal ingredients just so you know what's gone into it. In this episode we'll be discussing ultra-processed food as well as learning some useful new vocabulary. And remember there's also a quiz and worksheet available on our website bbclearningenglish.com. But now I have a question for you, Pippa. Fizzy drinks like cola and lemonade are another example of popular ultra-processed foods. But when were fizzy drinks invented?"
+   },
+   {
+    "start": 219.33,
+    "end": 228.77,
+    "text": "Was it a. 1772 b. 1872 or c. 1972?"
+   },
+   {
+    "start": 229.41,
+    "end": 240.77,
+    "text": "Well, I think it was before 1972 but 1772 sounds like too early so I'm going to say b. 1872."
+   },
+   {
+    "start": 240.77,
+    "end": 257.89,
+    "text": "We'll find out the answer at the end of the programme. One reason for the popularity of ultra-processed food is convenience. Let's hear more from health reporter Annabelle who talks here with Hannah Gelbart, presenter of BBC World Services What in the World."
+   },
+   {
+    "start": 257.89,
+    "end": 280.61,
+    "text": "So I do think convenience is the main issue there and again with a ready meal you put it in the microwave for a couple of minutes it's done it's hot it's served to you whereas you know sometimes cooking a fresh meal from scratch that can take a really long time. What's your ultra-processed guilty food? A packet of biscuits something like that a cake that is my that's my guilty pleasure."
+   },
+   {
+    "start": 280.61,
+    "end": 373.41,
+    "text": "Ultra-processed foods like ready meals are convenient a ready meal is a meal from a supermarket that has already been prepared and can be heated up quickly in a microwave that's a lot quicker and easier than cooking from scratch an idiom meaning to do something from the very beginning without using anything that's already been made. Even though ultra-processed foods are often unhealthy they taste good that's why Annabelle calls chocolate her guilty pleasure. A guilty pleasure is something you enjoy but think you shouldn't and feel a little embarrassed about. Ultra-processed food is a tricky topic we know these foods have been linked to poor health but at the same time they're cheap convenient and taste good so what should we do? Here's Hannah and Annabelle discussing this for BBC programme What in the World. Is it okay for me to have a packet of crisps once in a while? Should we be cutting ultra-processed foods out of our diets completely or is there a way for us to still enjoy them from time to time? I think the best thing to do is just not to panic everything is fine in moderation. Hannah asks if it's okay to eat ultra-processed foods once in a while or from time to time. The phrases once in a while and from time to time mean occasionally sometimes but not very often. Annabelle replies using the phrase everything in moderation which advises us that it's best to avoid too much of anything."
+   },
+   {
+    "start": 373.41,
+    "end": 378.69,
+    "text": "That sounds sensible to me and it also means I won't feel bad about eating chocolate now and then."
+   },
+   {
+    "start": 379.41,
+    "end": 415.89,
+    "text": "Okay Pippa it's time to reveal the answer to my question. Now I asked you when fizzy drinks were invented. You said 1872 I'm afraid the correct answer was 1772. Apparently carbonated water was used to try to prevent scurvy on sea voyages. Wow that is amazing I wouldn't have thought it was that long ago. Right let's recap the vocabulary we've learned starting with ready meal a meal from a supermarket that has already been prepared so you can heat it up quickly."
+   },
+   {
+    "start": 415.89,
+    "end": 459.81,
+    "text": "If you do something from scratch you do it from the very beginning without using anything that's already been made. A guilty pleasure is something you enjoy but feel guilty or embarrassed about because you think you shouldn't do it. The phrases once in a while and from time to time mean occasionally not very often. And finally the phrase everything in moderation is used to advise someone that it's best to avoid too much of anything. Once again our six minutes are up but if you're hungry for more head over to our website bbclearningenglish.com for more tasty topics and useful vocabulary. See you again soon but for now it's goodbye."
+   }
+  ],
+  "addedAt": 1786860121272
+ },
+ {
+  "id": "bbc-6min-searching-for-life-on-another-planet",
+  "guid": "urn:bbc:podcast:p0njsn2d",
+  "source": "BBC 6 Minute English",
+  "title": "Searching for life on another planet",
+  "level": 2,
+  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0njskv5.mp3",
+  "sentences": [
+   {
+    "start": 95.1,
+    "end": 110.13,
+    "text": "Hello, this is 6 Minute English from BBC Learning English. I'm Neil."
+   },
+   {
+    "start": 110.13,
+    "end": 115.93,
+    "text": "And I'm Becca. Neil, do you believe that life exists away from planet Earth?"
+   },
+   {
+    "start": 115.93,
+    "end": 126.73,
+    "text": "Well, I'm not sure about the kind of little green men that you see in science fiction movies but also I think we cannot be alone in the universe."
+   },
+   {
+    "start": 126.73,
+    "end": 128.73,
+    "text": "What about you, Becca? What do you think?"
+   },
+   {
+    "start": 128.73,
+    "end": 137.73,
+    "text": "I agree. I think that maybe life does exist beyond our planet, but maybe not as we see in alien movies."
+   },
+   {
+    "start": 137.73,
+    "end": 148.13,
+    "text": "Well, in this episode we'll be learning from science and space experts about whether the conditions for life exist on a planet 40 light years away."
+   },
+   {
+    "start": 148.13,
+    "end": 157.93,
+    "text": "Yes, and as usual you can find a transcript for this episode along with all the vocabulary and a worksheet on our website, bbclearningenglish.com."
+   },
+   {
+    "start": 157.93,
+    "end": 160.13,
+    "text": "OK, a quiz question for you, Becca."
+   },
+   {
+    "start": 160.13,
+    "end": 166.53,
+    "text": "How long would it take to drive a car to the sun at 100 kilometres an hour?"
+   },
+   {
+    "start": 166.53,
+    "end": 174.33,
+    "text": "Is it a. 70 years, b. 170 years or c. 1700 years?"
+   },
+   {
+    "start": 174.33,
+    "end": 181.93,
+    "text": "Well, Neil, the sun seems very far away, so I'll go for c. 1700 years."
+   },
+   {
+    "start": 181.93,
+    "end": 187.13,
+    "text": "I hope you have enough petrol for that. Well, we'll find out the answer to the question later."
+   },
+   {
+    "start": 187.13,
+    "end": 194.13,
+    "text": "Now, though, some science and space experts are excited about a planet in a different solar system from our own."
+   },
+   {
+    "start": 194.13,
+    "end": 200.73,
+    "text": "Science journalist Caroline Steele talks about this discovery on the BBC World Service programme What in the World."
+   },
+   {
+    "start": 200.73,
+    "end": 203.93,
+    "text": "So scientists have been looking at an exoplanet."
+   },
+   {
+    "start": 203.93,
+    "end": 210.13,
+    "text": "So that's a planet that exists in a solar system that is in our own called Trappist-1e."
+   },
+   {
+    "start": 210.13,
+    "end": 212.43,
+    "text": "And it's a rocky planet like Earth."
+   },
+   {
+    "start": 212.43,
+    "end": 219.23,
+    "text": "It's a similar size to Earth and it exists in the habitable zone around its sun."
+   },
+   {
+    "start": 219.23,
+    "end": 222.03,
+    "text": "And its sun is called Trappist-1."
+   },
+   {
+    "start": 222.03,
+    "end": 230.63,
+    "text": "Caroline explains that scientists have discovered that the planet Trappist-1e exists in the habitable zone around its sun."
+   },
+   {
+    "start": 230.63,
+    "end": 236.43,
+    "text": "The adjective habitable describes a place or habitat that is suitable for something to live."
+   },
+   {
+    "start": 236.43,
+    "end": 239.93,
+    "text": "Yes, and a zone is an area with a particular feature."
+   },
+   {
+    "start": 239.93,
+    "end": 245.43,
+    "text": "For example, people who live in earthquake zones have to be prepared for danger."
+   },
+   {
+    "start": 245.43,
+    "end": 249.63,
+    "text": "So a habitable zone is an area where something could live."
+   },
+   {
+    "start": 249.63,
+    "end": 254.13,
+    "text": "Caroline goes on to explain why they think Trappist-1e may be habitable."
+   },
+   {
+    "start": 254.13,
+    "end": 266.93,
+    "text": "Scientists have been looking at the potential atmosphere around Trappist-1e and they've ruled out that it's really full of hydrogen or carbon dioxide, which is a great thing because they're greenhouse gases which would make the planet really hot."
+   },
+   {
+    "start": 266.93,
+    "end": 276.53,
+    "text": "And there are some small clues that it might be a nitrogen-dominated atmosphere, which again is another sort of clue that there could be life there."
+   },
+   {
+    "start": 276.53,
+    "end": 282.83,
+    "text": "Caroline Steele says that scientists are looking at the potential atmosphere around Trappist-1e."
+   },
+   {
+    "start": 282.83,
+    "end": 289.23,
+    "text": "That is, they want to find out if the atmosphere is capable or likely to become able to host life."
+   },
+   {
+    "start": 289.23,
+    "end": 294.43,
+    "text": "If something has potential, it already has the qualities or abilities to do something."
+   },
+   {
+    "start": 294.43,
+    "end": 299.53,
+    "text": "The adjective potential has a similar meaning but refers to future capability."
+   },
+   {
+    "start": 299.53,
+    "end": 305.33,
+    "text": "Exactly. We could say the data has potential in that it shows signs of helping the research."
+   },
+   {
+    "start": 305.33,
+    "end": 311.43,
+    "text": "But when we talk about potential data, we're referring to data that could help us with future research."
+   },
+   {
+    "start": 311.53,
+    "end": 318.73,
+    "text": "She also mentions how scientists have ruled out that Trappist-1e is full of hydrogen or carbon dioxide."
+   },
+   {
+    "start": 318.73,
+    "end": 324.03,
+    "text": "The phrasal verb rule out means to dismiss the possibility or idea of something."
+   },
+   {
+    "start": 324.03,
+    "end": 328.43,
+    "text": "Scientists have found that Trappist-1e is not full of those greenhouse gases."
+   },
+   {
+    "start": 328.43,
+    "end": 329.73,
+    "text": "They've ruled it out."
+   },
+   {
+    "start": 329.73,
+    "end": 336.93,
+    "text": "Indeed. And Caroline goes on to say how the atmosphere of Trappist-1e is dominated by nitrogen."
+   },
+   {
+    "start": 336.93,
+    "end": 343.13,
+    "text": "If something is dominated by something else, it is controlled by it or is the most significant element of it."
+   },
+   {
+    "start": 343.13,
+    "end": 350.83,
+    "text": "Trappist-1e is full of nitrogen, which is exciting because nitrogen is a sign of life and habitability."
+   },
+   {
+    "start": 350.83,
+    "end": 354.43,
+    "text": "So what if nitrogen is actually found on this planet?"
+   },
+   {
+    "start": 354.43,
+    "end": 356.33,
+    "text": "Caroline Steele has more."
+   },
+   {
+    "start": 356.33,
+    "end": 368.93,
+    "text": "My guess is what we'll do is try and see what other gases are in the atmosphere and use models to work out how warm the planet could be and whether or not it's a temperature that basically could support life or maybe it's too hot or too cold."
+   },
+   {
+    "start": 368.93,
+    "end": 370.83,
+    "text": "But fingers crossed it has a nitrogen."
+   },
+   {
+    "start": 370.83,
+    "end": 376.43,
+    "text": "There's enough of it to keep the planet a decent temperature and then that's one step closer to finding life."
+   },
+   {
+    "start": 376.43,
+    "end": 382.13,
+    "text": "Caroline guesses that scientists will focus on the planet's temperature and whether it could support life."
+   },
+   {
+    "start": 382.13,
+    "end": 387.23,
+    "text": "She uses the expression fingers crossed to express hope for a positive outcome."
+   },
+   {
+    "start": 387.23,
+    "end": 391.93,
+    "text": "Yes, we often make the physical gesture of crossing our fingers for good luck."
+   },
+   {
+    "start": 391.93,
+    "end": 395.53,
+    "text": "We do. That reminds me, Neil, the answer to your question."
+   },
+   {
+    "start": 395.53,
+    "end": 397.63,
+    "text": "Fingers crossed that I answered correctly."
+   },
+   {
+    "start": 397.63,
+    "end": 399.63,
+    "text": "I see what you've done there, Becca."
+   },
+   {
+    "start": 399.63,
+    "end": 408.83,
+    "text": "Yes, I asked you how long it would take to drive to the sun at 100 kilometres an hour and you answered C, 1,700 years."
+   },
+   {
+    "start": 408.83,
+    "end": 414.53,
+    "text": "Well, the sun is very far away but the answer was B, only 170 years."
+   },
+   {
+    "start": 414.53,
+    "end": 417.83,
+    "text": "Oh well, that's still longer than my lifetime."
+   },
+   {
+    "start": 417.83,
+    "end": 426.93,
+    "text": "Now let's have a recap of the language we've learnt in this episode starting with habitable, which describes a place or habitat that is suitable for something to live."
+   },
+   {
+    "start": 426.93,
+    "end": 429.73,
+    "text": "A zone is an area with a particular feature."
+   },
+   {
+    "start": 429.73,
+    "end": 434.23,
+    "text": "Potential describes having possible qualities or abilities to do something."
+   },
+   {
+    "start": 434.23,
+    "end": 439.33,
+    "text": "The phrasal verb rule out means to dismiss the possibility or idea of something."
+   },
+   {
+    "start": 439.33,
+    "end": 441.73,
+    "text": "We also had dominated."
+   },
+   {
+    "start": 441.73,
+    "end": 448.33,
+    "text": "If something is dominated by something else, it is controlled by it or is the most significant element of it."
+   },
+   {
+    "start": 448.33,
+    "end": 453.63,
+    "text": "And finally, the expression fingers crossed is used to wish for hope or luck."
+   },
+   {
+    "start": 453.63,
+    "end": 461.03,
+    "text": "Once again, our six minutes are up, but head over to our website bbclearningenglish.com for a quiz and worksheet for this episode."
+   }
+  ],
+  "addedAt": 1786860025643
+ },
+ {
+  "id": "bbc-6min-how-reading-shapes-your-brain",
+  "guid": "urn:bbc:podcast:p0nl4mwz",
+  "source": "BBC 6 Minute English",
+  "title": "How reading shapes your brain",
+  "level": 2,
+  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0nl4l5w.mp3",
+  "sentences": [
+   {
+    "start": 94.58,
+    "end": 110.57,
+    "text": "Hello, welcome to 6 Minute English from BBC Learning English."
+   },
+   {
+    "start": 110.57,
+    "end": 112.47,
+    "text": "I'm Becca. And I'm Georgie."
+   },
+   {
+    "start": 112.47,
+    "end": 120.77,
+    "text": "Remember you can find all this episode's vocabulary along with a transcript and worksheet on our website, bbclearningenglish.com."
+   },
+   {
+    "start": 120.77,
+    "end": 122.57,
+    "text": "Now Becca, do you read a lot?"
+   },
+   {
+    "start": 122.57,
+    "end": 124.87,
+    "text": "Hmm, I don't read often."
+   },
+   {
+    "start": 124.87,
+    "end": 127.17,
+    "text": "I just feel like I don't have the time, Georgie."
+   },
+   {
+    "start": 127.17,
+    "end": 132.57,
+    "text": "How about yourself? I would love to read more, but I don't read very much at the moment."
+   },
+   {
+    "start": 132.57,
+    "end": 138.57,
+    "text": "I read mostly before bed because I feel like it helps me relax and go to sleep."
+   },
+   {
+    "start": 138.57,
+    "end": 140.77,
+    "text": "And today we're talking all about reading."
+   },
+   {
+    "start": 140.77,
+    "end": 144.77,
+    "text": "We'll be hearing from some experts about how reading can change our brains."
+   },
+   {
+    "start": 144.77,
+    "end": 148.67,
+    "text": "And as usual, we'll be learning some useful new words and phrases."
+   },
+   {
+    "start": 148.67,
+    "end": 150.77,
+    "text": "Let's start with a quiz question."
+   },
+   {
+    "start": 150.77,
+    "end": 162.37,
+    "text": "The longest novel in the world is widely thought to be by friend author Marcel Proust, a book which, when translated into English, means remembrance of things past."
+   },
+   {
+    "start": 162.37,
+    "end": 164.87,
+    "text": "But how many words does the book contain?"
+   },
+   {
+    "start": 164.87,
+    "end": 170.07,
+    "text": "Is it A, 130,000? B, 1.3 million?"
+   },
+   {
+    "start": 170.07,
+    "end": 174.97,
+    "text": "Or C, 13 million? Okay, the longest novel in the world."
+   },
+   {
+    "start": 174.97,
+    "end": 178.47,
+    "text": "I still think 13 million words sounds too many."
+   },
+   {
+    "start": 178.47,
+    "end": 181.37,
+    "text": "So I'm going to go with B, 1.3 million."
+   },
+   {
+    "start": 181.37,
+    "end": 184.57,
+    "text": "Alright, we'll find out at the end of the programme."
+   },
+   {
+    "start": 184.57,
+    "end": 188.07,
+    "text": "Now, we might think of reading as like speaking."
+   },
+   {
+    "start": 188.07,
+    "end": 191.27,
+    "text": "We're born with the potential to do it, and then we learn."
+   },
+   {
+    "start": 191.27,
+    "end": 197.07,
+    "text": "It's natural. If something is natural, it's something you were born with or that comes from nature."
+   },
+   {
+    "start": 197.07,
+    "end": 203.47,
+    "text": "But Marianne Wolf, author of the book Reader Come Home, says that this isn't true."
+   },
+   {
+    "start": 203.47,
+    "end": 210.47,
+    "text": "We think of language as natural and reading is written language, so it must be natural."
+   },
+   {
+    "start": 210.47,
+    "end": 214.27,
+    "text": "But it isn't. It isn't natural at all."
+   },
+   {
+    "start": 214.27,
+    "end": 223.87,
+    "text": "Scientific studies suggest that when we're born, our brains already have the networks that allow our eyes to see and our vocal cords to produce sounds."
+   },
+   {
+    "start": 223.87,
+    "end": 226.77,
+    "text": "But not with the pathways we need to read."
+   },
+   {
+    "start": 226.77,
+    "end": 233.07,
+    "text": "Let's hear more from psychologist and neuroscientist Rebecca Gottlieb, speaking to the BBC World Service."
+   },
+   {
+    "start": 233.07,
+    "end": 239.67,
+    "text": "From an evolutionary timescale, our brain hasn't had enough time to develop a dedicated reading brain."
+   },
+   {
+    "start": 239.67,
+    "end": 251.47,
+    "text": "And so to build a reading brain network, we co-op parts of the brain involved in vision and auditory processing and language and attention and affect."
+   },
+   {
+    "start": 251.47,
+    "end": 254.37,
+    "text": "Reading is really a whole brain process."
+   },
+   {
+    "start": 254.37,
+    "end": 259.77,
+    "text": "It involves activation in all four lobes of the cortex."
+   },
+   {
+    "start": 259.77,
+    "end": 270.57,
+    "text": "The process of developing a reading brain alters everything from brain activity to brain structure and brain connectivity."
+   },
+   {
+    "start": 270.57,
+    "end": 275.07,
+    "text": "The power of deep reading is really fundamental to our humanity."
+   },
+   {
+    "start": 275.07,
+    "end": 279.87,
+    "text": "When we read deeply, we change our brains and we change who we are."
+   },
+   {
+    "start": 279.87,
+    "end": 285.07,
+    "text": "Rebecca says that our brains haven't evolved to include a dedicated reading brain."
+   },
+   {
+    "start": 285.07,
+    "end": 289.37,
+    "text": "Dedicated here means designed and used for one particular purpose."
+   },
+   {
+    "start": 289.37,
+    "end": 296.77,
+    "text": "So, because we don't have a part of the brain designed specifically for reading, when we learn to read, we co-opt other parts of the brain."
+   },
+   {
+    "start": 296.77,
+    "end": 301.37,
+    "text": "Co-opt here means to include someone or something often against their will."
+   },
+   {
+    "start": 301.37,
+    "end": 312.47,
+    "text": "Right. Learning to read means using lots of different parts of the brain that are designed for other things, and this changes our brain structure compared to someone who hasn't learned to read."
+   },
+   {
+    "start": 312.47,
+    "end": 315.37,
+    "text": "And the language we read also shapes our brain."
+   },
+   {
+    "start": 315.37,
+    "end": 322.57,
+    "text": "Chinese characters, for example, use symbols instead of letters of the alphabet to represent words and ideas."
+   },
+   {
+    "start": 322.57,
+    "end": 329.97,
+    "text": "Research suggests that learning to read these symbols activates different areas of the brain to reading an alphabet-based system."
+   },
+   {
+    "start": 329.97,
+    "end": 335.67,
+    "text": "Scientists studied a bilingual man who could read and speak Chinese and English."
+   },
+   {
+    "start": 335.67,
+    "end": 342.07,
+    "text": "The man suffered a stroke, which affected parts of his brain, including his ability to read Chinese."
+   },
+   {
+    "start": 342.07,
+    "end": 345.87,
+    "text": "But amazingly, he was still able to read English."
+   },
+   {
+    "start": 345.87,
+    "end": 350.27,
+    "text": "Marianne Wolf explains more to the BBC World Service."
+   },
+   {
+    "start": 350.37,
+    "end": 370.07,
+    "text": "It's a beautiful example of how the brain circuit reflects the requirements of Chinese, which inevitably means more visual memory and visual processing of those beautifully intricate symbols or characters."
+   },
+   {
+    "start": 370.47,
+    "end": 374.87,
+    "text": "Marianne says that the brain circuit is shaped by learning to read Chinese."
+   },
+   {
+    "start": 374.97,
+    "end": 377.27,
+    "text": "A circuit is a system of connections."
+   },
+   {
+    "start": 377.27,
+    "end": 388.27,
+    "text": "The visual qualities of Chinese symbols inevitably mean more visual areas of the brain are developed, inevitably means in a way that cannot be stopped or avoided."
+   },
+   {
+    "start": 388.47,
+    "end": 393.07,
+    "text": "Marianne describes the symbolic Chinese characters as beautifully intricate."
+   },
+   {
+    "start": 393.27,
+    "end": 400.97,
+    "text": "If something is intricate, it has lots of detail and something which also has lots of detail or certainly lots of words."
+   },
+   {
+    "start": 401.27,
+    "end": 407.47,
+    "text": "I asked you Georgie, how many words are in Marcel Proust's Remembrance of Things Past?"
+   },
+   {
+    "start": 407.57,
+    "end": 411.67,
+    "text": "I said 1.3 million. And you were correct!"
+   },
+   {
+    "start": 411.67,
+    "end": 418.87,
+    "text": "Yay! The book also contains lots of very long sentences, including one with over 900 words."
+   },
+   {
+    "start": 418.87,
+    "end": 420.77,
+    "text": "One sentence with 900 words."
+   },
+   {
+    "start": 420.77,
+    "end": 430.77,
+    "text": "That is a lot. Okay, it's time to recap the language we learned during this programme, starting with natural, which describes something you were born with or that comes from nature."
+   },
+   {
+    "start": 431.27,
+    "end": 436.17,
+    "text": "Dedicated can describe something that is designed and used for one particular purpose."
+   },
+   {
+    "start": 436.37,
+    "end": 440.97,
+    "text": "If you co-opt someone or something, you involve them, sometimes against their will."
+   },
+   {
+    "start": 441.27,
+    "end": 445.47,
+    "text": "A circuit is a system of connections, for example, in the brain."
+   },
+   {
+    "start": 445.67,
+    "end": 449.17,
+    "text": "Inevitably means in a way that cannot be stopped or avoided."
+   },
+   {
+    "start": 449.37,
+    "end": 452.97,
+    "text": "And intricate describes something which has lots of detail."
+   },
+   {
+    "start": 453.17,
+    "end": 455.77,
+    "text": "That's it for this episode of 6 Minute English."
+   },
+   {
+    "start": 455.97,
+    "end": 460.37,
+    "text": "Tell us what you've learnt with the worksheet on our website bbclearningenglish.com."
+   },
+   {
+    "start": 460.47,
+    "end": 461.57,
+    "text": "Thanks for joining us."
+   },
+   {
+    "start": 461.57,
+    "end": 468.37,
+    "text": "Goodbye. Bye. English from bbclearningenglish.com."
+   }
+  ],
+  "addedAt": 1786859932449
+ },
+ {
+  "id": "bbc-6min-making-cities-feel-quieter",
+  "guid": "urn:bbc:podcast:p0nmg0q1",
+  "source": "BBC 6 Minute English",
+  "title": "Making cities feel quieter",
+  "level": 2,
+  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0nmfyjw.mp3",
+  "sentences": [
+   {
+    "start": 73.18,
+    "end": 111.54,
+    "text": "Thank you. Bye. Hello, this is 6 Minute English from BBC Learning English."
+   },
+   {
+    "start": 111.54,
+    "end": 113.54,
+    "text": "I'm Neil. And I'm Georgie."
+   },
+   {
+    "start": 113.54,
+    "end": 119.34,
+    "text": "Neil, I'm going to play you two sound recordings and I want you to tell me how you feel when you hear them."
+   },
+   {
+    "start": 119.34,
+    "end": 127.48,
+    "text": "OK. First this... And now this..."
+   },
+   {
+    "start": 132.05,
+    "end": 136.25,
+    "text": "Oh, well, that first clip made me feel really relaxed."
+   },
+   {
+    "start": 136.25,
+    "end": 138.25,
+    "text": "But the second one, oh, it's horrible."
+   },
+   {
+    "start": 138.25,
+    "end": 140.45,
+    "text": "I felt quite stressed out, actually."
+   },
+   {
+    "start": 140.45,
+    "end": 145.85,
+    "text": "Oh no! Well, this little experiment shows how much we are affected by the noise around us."
+   },
+   {
+    "start": 145.85,
+    "end": 150.65,
+    "text": "And that's a problem if you're one of the 4 billion people around the world who live in cities."
+   },
+   {
+    "start": 150.65,
+    "end": 161.65,
+    "text": "Yes, whether it's the rattle of train tracks, honking car horns or the roar of airplanes overhead, modern cities are full of noise, and this can have serious effects."
+   },
+   {
+    "start": 161.65,
+    "end": 169.05,
+    "text": "The World Health Organization reports that by 2050 around 2.5 billion people will experience hearing loss."
+   },
+   {
+    "start": 169.05,
+    "end": 173.05,
+    "text": "And exposure to loud noise has been linked to stress and anxiety."
+   },
+   {
+    "start": 173.05,
+    "end": 181.25,
+    "text": "In this episode, we'll be hearing about ways to make our cities quieter, more relaxing places, using some useful new words and phrases."
+   },
+   {
+    "start": 181.25,
+    "end": 188.65,
+    "text": "And remember, you'll find all the vocabulary along with a quiz and worksheet on our website, bbclearningenglish.com."
+   },
+   {
+    "start": 188.65,
+    "end": 191.45,
+    "text": "But now, I have a question for you, Georgie."
+   },
+   {
+    "start": 191.45,
+    "end": 194.45,
+    "text": "Sound is measured in units called decibels."
+   },
+   {
+    "start": 194.45,
+    "end": 200.85,
+    "text": "But how many decibels would it be if I whispered a whisper is speaking like this?"
+   },
+   {
+    "start": 200.85,
+    "end": 207.05,
+    "text": "Is it a. 3 decibels, b. 13 decibels, or c. 30 decibels?"
+   },
+   {
+    "start": 207.05,
+    "end": 208.85,
+    "text": "Oh, that's really hard."
+   },
+   {
+    "start": 208.85,
+    "end": 211.45,
+    "text": "I'll go for b. 13 decibels."
+   },
+   {
+    "start": 211.45,
+    "end": 215.45,
+    "text": "Well, we'll find out the answer at the end of the programme."
+   },
+   {
+    "start": 215.45,
+    "end": 229.65,
+    "text": "Let's start in one of the noisiest cities in the world, Mumbai, in India, where daytime noise levels regularly hit 80 decibels, which is over 20 decibels higher than World Health Organization recommendations."
+   },
+   {
+    "start": 229.65,
+    "end": 239.05,
+    "text": "Listen to Mumbai native Chavi Satchdev share her experiences of living in this noisy city with BBC World Service programme People Fixing the World."
+   },
+   {
+    "start": 239.05,
+    "end": 242.05,
+    "text": "I mean, India in general is just really loud."
+   },
+   {
+    "start": 242.05,
+    "end": 243.45,
+    "text": "We are a loud people."
+   },
+   {
+    "start": 243.45,
+    "end": 245.05,
+    "text": "We dress loud. We talk loud."
+   },
+   {
+    "start": 245.05,
+    "end": 247.65,
+    "text": "We celebrate loud. We watch movies loud."
+   },
+   {
+    "start": 247.65,
+    "end": 257.85,
+    "text": "When people ask me what I miss about living abroad, I tell them it's the quiet, because after 12 years of living in the US and Europe, when I got back, I realised I couldn't handle it anymore."
+   },
+   {
+    "start": 257.85,
+    "end": 260.25,
+    "text": "I'd gotten used to lower levels of noise."
+   },
+   {
+    "start": 260.25,
+    "end": 264.65,
+    "text": "Chavi says Indians talk loud, celebrate loud and dress loud."
+   },
+   {
+    "start": 264.65,
+    "end": 269.25,
+    "text": "To dress loud means to wear clothes with bright colours and large, bold patterns."
+   },
+   {
+    "start": 269.25,
+    "end": 274.85,
+    "text": "When Chavi returned to India after living overseas, she says she couldn't handle the noise."
+   },
+   {
+    "start": 274.85,
+    "end": 279.05,
+    "text": "If you can't handle something, you find it difficult to deal or cope with."
+   },
+   {
+    "start": 279.05,
+    "end": 282.85,
+    "text": "So what can be done to tackle noise in cities like Mumbai?"
+   },
+   {
+    "start": 282.85,
+    "end": 288.05,
+    "text": "One interesting approach involves using sound itself to make things feel quieter."
+   },
+   {
+    "start": 288.05,
+    "end": 295.45,
+    "text": "Soundscaping is the idea of adding certain sounds to busy public spaces so that they sound and feel more relaxing."
+   },
+   {
+    "start": 295.45,
+    "end": 302.45,
+    "text": "Sound artist Charles Montembeau lives near the park de Madeleineau, a busy city park in Montreal, Canada."
+   },
+   {
+    "start": 302.45,
+    "end": 310.05,
+    "text": "Charles was inspired to recreate the ocean sounds he heard on holiday in the Madeleine Islands in his city park back home."
+   },
+   {
+    "start": 310.05,
+    "end": 320.45,
+    "text": "On BBC World Service programme People Fixing the World, he tells reporter Natasha Fernandez that these sounds included ocean waves and some unusual sounding sand."
+   },
+   {
+    "start": 320.45,
+    "end": 323.45,
+    "text": "The sand and the Madeleine Island can sing."
+   },
+   {
+    "start": 323.45,
+    "end": 328.25,
+    "text": "When you walk into the sound firmly, the sand makes some squeaky sounds."
+   },
+   {
+    "start": 328.25,
+    "end": 332.05,
+    "text": "So that's one sound that is kind of funny, kind of special."
+   },
+   {
+    "start": 332.05,
+    "end": 341.45,
+    "text": "Inside the small park, surrounded by busy roads, Charles and his team set up an immersive sound installation in the form of speakers planted in flower beds."
+   },
+   {
+    "start": 341.45,
+    "end": 348.65,
+    "text": "So the installation was really to make this park a little quieter by adding some quiet noises."
+   },
+   {
+    "start": 348.65,
+    "end": 358.45,
+    "text": "So it's counterintuitive, but you can make a park less noisy by adding some calmer sounds."
+   },
+   {
+    "start": 358.45,
+    "end": 361.25,
+    "text": "The sand on the Madeleine Islands is squeaky."
+   },
+   {
+    "start": 361.45,
+    "end": 365.05,
+    "text": "It makes a high-pitched sound called a squeak when stepped on."
+   },
+   {
+    "start": 365.05,
+    "end": 371.85,
+    "text": "Charles played recordings of this sand, ocean waves and other relaxing sounds through speakers hidden in the park."
+   },
+   {
+    "start": 371.85,
+    "end": 378.05,
+    "text": "He created an art installation, a work of art designed to give people an interactive experience."
+   },
+   {
+    "start": 378.05,
+    "end": 384.05,
+    "text": "By adding more relaxing sounds, Charles' installation actually made the park feel quieter."
+   },
+   {
+    "start": 384.05,
+    "end": 390.25,
+    "text": "It's an example of something that's counterintuitive, meaning it happens differently from how you would expect."
+   },
+   {
+    "start": 390.45,
+    "end": 398.85,
+    "text": "What a great idea! And similar soundscapes are now helping city dwellers relax in other cities too, including Tokyo and Barcelona."
+   },
+   {
+    "start": 398.85,
+    "end": 404.05,
+    "text": "Now, Neil, you asked me a question about a very quiet sound – a whisper."
+   },
+   {
+    "start": 404.05,
+    "end": 406.85,
+    "text": "So, are you going to reveal the correct answer?"
+   },
+   {
+    "start": 406.85,
+    "end": 410.65,
+    "text": "I asked you how loud a whisper is."
+   },
+   {
+    "start": 410.65,
+    "end": 413.25,
+    "text": "Yes, and I said 13 decibels."
+   },
+   {
+    "start": 413.25,
+    "end": 416.25,
+    "text": "Well, 13 is an unlucky number and you are wrong."
+   },
+   {
+    "start": 416.25,
+    "end": 420.05,
+    "text": "Ugh! It was actually 30."
+   },
+   {
+    "start": 420.05,
+    "end": 425.85,
+    "text": "OK, let's recap the vocabulary we've learned, starting with decibel – the unit for measuring sound."
+   },
+   {
+    "start": 425.85,
+    "end": 430.85,
+    "text": "Someone who dresses loud likes to wear clothes with bright colours and bold designs."
+   },
+   {
+    "start": 430.85,
+    "end": 434.45,
+    "text": "If you can't handle something, you find it difficult to deal with."
+   },
+   {
+    "start": 434.45,
+    "end": 440.45,
+    "text": "An art installation is an artwork designed to create an interactive experience in a certain space."
+   },
+   {
+    "start": 440.45,
+    "end": 446.05,
+    "text": "The adjective squeaky describes things which make a high-pitched sound, like a mouse."
+   },
+   {
+    "start": 446.05,
+    "end": 453.25,
+    "text": "Squeak squeak! And finally, if you call something counterintuitive, you mean it happens differently from how you would expect."
+   },
+   {
+    "start": 453.25,
+    "end": 464.45,
+    "text": "Once again, our six minutes are up, but if you'd like to hear more about this and many other trending topics, you'll find more episodes and learning activities on our website, bbclearningenglish.com."
+   }
+  ],
+  "addedAt": 1786859835159
+ },
+ {
+  "id": "bbc-6min-living-with-debt",
+  "guid": "urn:bbc:podcast:p0nnpsqf",
+  "source": "BBC 6 Minute English",
+  "title": "Living with debt",
+  "level": 2,
+  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0nnpnyn.mp3",
+  "sentences": [
+   {
+    "start": 73.18,
+    "end": 111.66,
+    "text": "Thank you. Bye. Hello, this is 6 Minute English from BBC Learning English."
+   },
+   {
+    "start": 111.66,
+    "end": 113.86,
+    "text": "I'm Neil. And I'm Pippa."
+   },
+   {
+    "start": 113.86,
+    "end": 115.86,
+    "text": "Are you good at saving money, Neil?"
+   },
+   {
+    "start": 115.86,
+    "end": 117.86,
+    "text": "Or do you like to spend it?"
+   },
+   {
+    "start": 117.86,
+    "end": 120.46,
+    "text": "Well, actually, a bit of both."
+   },
+   {
+    "start": 120.46,
+    "end": 127.46,
+    "text": "I like to spend money on nice things, but I also try to save mainly because I've got children."
+   },
+   {
+    "start": 127.46,
+    "end": 130.26,
+    "text": "How about you? Yeah, I'm the same."
+   },
+   {
+    "start": 130.26,
+    "end": 134.66,
+    "text": "I like to save money, or I try to, for the future."
+   },
+   {
+    "start": 134.66,
+    "end": 136.86,
+    "text": "But I also do spend it."
+   },
+   {
+    "start": 136.86,
+    "end": 142.46,
+    "text": "I don't count every penny that I spend and save every single penny that I earn."
+   },
+   {
+    "start": 142.46,
+    "end": 148.46,
+    "text": "Well, whether you're a saver or a spender, being in debt is common in the UK."
+   },
+   {
+    "start": 148.46,
+    "end": 158.46,
+    "text": "Debt refers to money a person has borrowed to buy something in which they have to pay back, usually to a bank, a credit card company or another person."
+   },
+   {
+    "start": 158.46,
+    "end": 163.26,
+    "text": "Many people avoid talking about debt, but it affects us all."
+   },
+   {
+    "start": 163.26,
+    "end": 172.46,
+    "text": "In 2025, over 1,000 people contacted the UK Citizens' Advice Bureau every single day of the year for help with their debt."
+   },
+   {
+    "start": 172.46,
+    "end": 176.66,
+    "text": "And when debt gets out of control, it causes stress and worry."
+   },
+   {
+    "start": 176.66,
+    "end": 182.86,
+    "text": "BBC Radio 4 programme Thinking Allowed interviewed one young man, Jason, about his debt."
+   },
+   {
+    "start": 182.86,
+    "end": 185.46,
+    "text": "Whatever jobs there are aren't enough to provide for a family."
+   },
+   {
+    "start": 185.46,
+    "end": 187.06,
+    "text": "Sometimes you need to take out loans."
+   },
+   {
+    "start": 187.06,
+    "end": 189.86,
+    "text": "I've done it a few times, but you can't ever pay it back."
+   },
+   {
+    "start": 189.86,
+    "end": 192.86,
+    "text": "You can't say a way out other than winning the lottery or something."
+   },
+   {
+    "start": 192.86,
+    "end": 197.66,
+    "text": "I'd like to think I could clear them all one day, even if it means, like, five years paying them off."
+   },
+   {
+    "start": 197.66,
+    "end": 208.46,
+    "text": "Jason uses three phrases, pay back, pay off, and clear debt, all of which mean the same thing, to give back the money you've borrowed."
+   },
+   {
+    "start": 208.66,
+    "end": 215.06,
+    "text": "In this episode, we'll hear more about living with debt by learning some useful new words and phrases."
+   },
+   {
+    "start": 215.06,
+    "end": 222.86,
+    "text": "And remember, you'll find all the vocabulary used plus a quiz and worksheet on our website, bbclearningenglish.com."
+   },
+   {
+    "start": 222.86,
+    "end": 225.66,
+    "text": "But first, I have a question for you, Pippa."
+   },
+   {
+    "start": 225.66,
+    "end": 237.86,
+    "text": "According to debt support group The Money Charity, roughly how much is the average British adult in debt through credit cards, overdrafts and personal loans?"
+   },
+   {
+    "start": 237.86,
+    "end": 246.46,
+    "text": "Is it A, £2,200, B, £4,200 or C, £6,200?"
+   },
+   {
+    "start": 246.46,
+    "end": 250.46,
+    "text": "Hmm, I'm not sure. I'll say £2,200."
+   },
+   {
+    "start": 250.46,
+    "end": 254.26,
+    "text": "OK, well, we will find out the answer later in the programme."
+   },
+   {
+    "start": 254.26,
+    "end": 259.06,
+    "text": "Jason's story features in a new book by sociologist Ryan Davy."
+   },
+   {
+    "start": 259.06,
+    "end": 265.66,
+    "text": "Ryan spent months living in a low-income housing estate which he gave the fictional name Waldham."
+   },
+   {
+    "start": 265.66,
+    "end": 268.86,
+    "text": "He talked with residents and listened to their money worries."
+   },
+   {
+    "start": 268.86,
+    "end": 273.46,
+    "text": "Here, Ryan explains more to BBC Radio 4's Thinking Allowed."
+   },
+   {
+    "start": 273.46,
+    "end": 285.26,
+    "text": "My approach was to let people know that I was interested in learning about their lives and how they were making ends meet, so I did some interviews with residents and I paid attention to where debt came up in everyday conversations."
+   },
+   {
+    "start": 285.26,
+    "end": 298.66,
+    "text": "For many people in Waldham, Jason included, debt was an ordinary feature of daily life and beyond that, being in a rear, so being behind with one or more monthly payment commitment was part of daily life."
+   },
+   {
+    "start": 298.66,
+    "end": 302.06,
+    "text": "The people of Waldham were making ends meet."
+   },
+   {
+    "start": 302.06,
+    "end": 309.66,
+    "text": "To make ends meet means having just enough money to pay for basic living expenses like food, bills and rent."
+   },
+   {
+    "start": 309.66,
+    "end": 317.46,
+    "text": "Ryan found that many residents were in arrears, a phrase meaning to still owe money that should have already been repaid."
+   },
+   {
+    "start": 317.46,
+    "end": 321.86,
+    "text": "For most residents, debt was a normal part of daily life."
+   },
+   {
+    "start": 321.86,
+    "end": 330.86,
+    "text": "With a regular income, debt can be managed, but for those who are unemployed or on low incomes, it can cause serious distress."
+   },
+   {
+    "start": 330.86,
+    "end": 337.46,
+    "text": "Here, Ryan discusses how the residents he met felt about their debt with BBC Radio 4's Thinking Allowed."
+   },
+   {
+    "start": 337.46,
+    "end": 352.26,
+    "text": "Jason actually fluctuated between wanting to clear all of his debts on the one hand and on the other, what he described as living on the never-never and actually questioning the supposed moral obligation to pay his debts."
+   },
+   {
+    "start": 352.26,
+    "end": 362.46,
+    "text": "Over the months that I knew him, the financial strain on him and his partner increased, they missed some of their bills, their internet was disconnected."
+   },
+   {
+    "start": 362.46,
+    "end": 371.66,
+    "text": "Jason was living on the never-never, an informal phrase for buying the things you need by making regular, small payments over a long time."
+   },
+   {
+    "start": 371.66,
+    "end": 376.26,
+    "text": "It's called the never-never because it seems the debt will never be repaid."
+   },
+   {
+    "start": 376.26,
+    "end": 385.26,
+    "text": "Jason experienced financial strain, emotional stress caused by a lack of money to meet his basic needs or to repay his debt."
+   },
+   {
+    "start": 385.26,
+    "end": 391.26,
+    "text": "Debt is a serious issue, it affects many people and there are support groups who can help if you need it."
+   },
+   {
+    "start": 391.26,
+    "end": 394.46,
+    "text": "OK, Neil, what was the answer to your question?"
+   },
+   {
+    "start": 394.46,
+    "end": 402.66,
+    "text": "I asked what the average amount of debt a British adult has through credit cards, overdrafts and personal loans."
+   },
+   {
+    "start": 402.66,
+    "end": 405.86,
+    "text": "I said it was around £2,200."
+   },
+   {
+    "start": 405.86,
+    "end": 408.26,
+    "text": "I'm afraid that's not the right answer."
+   },
+   {
+    "start": 408.26,
+    "end": 412.66,
+    "text": "In fact, it's £4,232."
+   },
+   {
+    "start": 412.66,
+    "end": 420.26,
+    "text": "OK, let's recap the vocabulary we've learnt starting with debt – money a person has borrowed and needs to give back."
+   },
+   {
+    "start": 420.26,
+    "end": 427.26,
+    "text": "The phrases to pay back, to pay off and to clear a debt all mean to give back money you have borrowed."
+   },
+   {
+    "start": 427.26,
+    "end": 438.26,
+    "text": "If someone is making ends meet, they have just enough money to pay for basic living expenses and if they are in arrears, they still owe money that should have been repaid already."
+   },
+   {
+    "start": 438.26,
+    "end": 445.26,
+    "text": "If you buy something on the never-never, you buy it by making small, regular payments over a long period."
+   },
+   {
+    "start": 445.26,
+    "end": 452.26,
+    "text": "And finally, financial strain is emotional stress caused by a lack of money to meet your basic needs."
+   },
+   {
+    "start": 452.26,
+    "end": 464.26,
+    "text": "Once again, our six minutes are up but if you'd like to know how debt is spelled and all the other words from this episode, visit our website bbclearningenglish.com to find a full vocabulary list."
+   }
+  ],
+  "addedAt": 1786859728665
+ },
+ {
   "id": "bbc-tews-the-english-we-speak-shoot-off",
   "guid": "urn:bbc:podcast:p0mxfwd7",
   "source": "BBC The English We Speak",
@@ -17388,1445 +20578,5 @@
    }
   ],
   "addedAt": 1786255789101
- },
- {
-  "id": "bbc-tews-the-english-we-speak-on-their-toes",
-  "guid": "urn:bbc:podcast:p0mmgll4",
-  "source": "BBC The English We Speak",
-  "title": "The English We Speak: On their toes",
-  "level": 1,
-  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0mmgjls.mp3",
-  "sentences": [
-   {
-    "start": 50.11,
-    "end": 59.63,
-    "text": "Hello and welcome to The English We Speak, where we explain expressions used by fluent English speakers so that you can use them too."
-   },
-   {
-    "start": 59.63,
-    "end": 64.11,
-    "text": "I'm Feifei and I thought Georgie was going to join me today."
-   },
-   {
-    "start": 64.11,
-    "end": 67.31,
-    "text": "Boo! Oh, you were hiding under the desk."
-   },
-   {
-    "start": 67.31,
-    "end": 68.83,
-    "text": "Why did you do that?"
-   },
-   {
-    "start": 68.83,
-    "end": 71.47,
-    "text": "We're supposed to be recording a programme."
-   },
-   {
-    "start": 71.47,
-    "end": 74.27,
-    "text": "Feifei, I love playing jokes on people."
-   },
-   {
-    "start": 74.27,
-    "end": 76.43,
-    "text": "You should never get too relaxed around here."
-   },
-   {
-    "start": 76.43,
-    "end": 78.59,
-    "text": "I'm just trying to keep you on your toes."
-   },
-   {
-    "start": 78.59,
-    "end": 83.15,
-    "text": "Keep me on my toes. Well, shall we learn that expression then?"
-   },
-   {
-    "start": 83.15,
-    "end": 85.07,
-    "text": "I think that's a good idea."
-   },
-   {
-    "start": 85.07,
-    "end": 90.99,
-    "text": "If you keep someone on their toes, it means you do something to make sure a person stays alert."
-   },
-   {
-    "start": 90.99,
-    "end": 92.27,
-    "text": "Think about it literally."
-   },
-   {
-    "start": 92.27,
-    "end": 98.99,
-    "text": "If you're standing or walking around on your toes, you're slightly tense and ready to move rather than being relaxed."
-   },
-   {
-    "start": 98.99,
-    "end": 100.91,
-    "text": "You're ready for anything that might happen."
-   },
-   {
-    "start": 100.91,
-    "end": 104.99,
-    "text": "Yes, think about a boxer being on their toes."
-   },
-   {
-    "start": 104.99,
-    "end": 112.03,
-    "text": "The phrase keep someone on their toes has a sense of being prepared in case something unexpected happens."
-   },
-   {
-    "start": 112.03,
-    "end": 117.39,
-    "text": "For example, at the moment, my working week looks very different from one week to another."
-   },
-   {
-    "start": 117.39,
-    "end": 119.47,
-    "text": "So every week I'm doing different things."
-   },
-   {
-    "start": 119.47,
-    "end": 122.11,
-    "text": "So that really keeps me on my toes."
-   },
-   {
-    "start": 122.11,
-    "end": 124.99,
-    "text": "I bet it does. OK, let's hear some more examples."
-   },
-   {
-    "start": 129.17,
-    "end": 138.77,
-    "text": "I never really liked science class because the teacher would always ask us a question and we had to answer quickly in front of the whole class."
-   },
-   {
-    "start": 138.77,
-    "end": 140.69,
-    "text": "It really kept us on our toes."
-   },
-   {
-    "start": 141.81,
-    "end": 147.49,
-    "text": "The chef at the restaurant changes the menu every week that really keeps the staff on their toes."
-   },
-   {
-    "start": 148.45,
-    "end": 152.77,
-    "text": "There's always new roadworks in different places in my town at the moment."
-   },
-   {
-    "start": 152.77,
-    "end": 154.29,
-    "text": "But at least it keeps me on my toes."
-   },
-   {
-    "start": 154.29,
-    "end": 156.05,
-    "text": "I need to pay attention when I'm driving."
-   },
-   {
-    "start": 160.22,
-    "end": 167.5,
-    "text": "So keep someone on their toes is about one person making another feel ready for something unexpected."
-   },
-   {
-    "start": 167.5,
-    "end": 173.98,
-    "text": "That's right. But if you want a phrase to describe yourself or another person, you can use be on the ball."
-   },
-   {
-    "start": 173.98,
-    "end": 177.9,
-    "text": "If you are on the ball, it means you're quick to understand or react."
-   },
-   {
-    "start": 177.9,
-    "end": 181.58,
-    "text": "I've had a couple of coffees this morning so I'm feeling very on the ball."
-   },
-   {
-    "start": 181.58,
-    "end": 182.94,
-    "text": "Yes, it seems like it."
-   },
-   {
-    "start": 183.5,
-    "end": 192.06,
-    "text": "Let's recap. We learnt keep someone on their toes which means you do something to make someone else stay alert and ready for anything to happen."
-   },
-   {
-    "start": 192.06,
-    "end": 193.1,
-    "text": "Thanks for joining us."
-   },
-   {
-    "start": 193.1,
-    "end": 203.5,
-    "text": "Bye. Goodbye."
-   }
-  ],
-  "addedAt": 1786169678294
- },
- {
-  "id": "bbc-tews-the-english-we-speak-moment-of-truth",
-  "guid": "urn:bbc:podcast:p0mnw6zb",
-  "source": "BBC The English We Speak",
-  "title": "The English We Speak: Moment of truth",
-  "level": 1,
-  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0mnw6qg.mp3",
-  "sentences": [
-   {
-    "start": 56.77,
-    "end": 65.41,
-    "text": "Hello and welcome to The English We Speak, where we explain expressions used by fluent English speakers so that you can use them too."
-   },
-   {
-    "start": 65.41,
-    "end": 68.53,
-    "text": "I'm Feifei and I'm joined by Georgie. How's it going?"
-   },
-   {
-    "start": 68.53,
-    "end": 72.45,
-    "text": "Well, Feifei, I've spent the year studying for a Spanish exam."
-   },
-   {
-    "start": 72.45,
-    "end": 77.57,
-    "text": "The exam was last month and I've got the results in my hands right now."
-   },
-   {
-    "start": 77.57,
-    "end": 81.97,
-    "text": "Shall I open them? Yes, go on. It's the moment of truth. How did you do?"
-   },
-   {
-    "start": 84.13,
-    "end": 90.53,
-    "text": "I passed! Yay! Yay! Now, the moment of truth is the phrase we're learning in this programme."
-   },
-   {
-    "start": 90.53,
-    "end": 94.61,
-    "text": "Now, how is truth related to my Spanish results, Feifei?"
-   },
-   {
-    "start": 94.61,
-    "end": 104.85,
-    "text": "Well, the phrase the moment of truth means the moment when everything becomes clear and the truth is revealed. It's when you finally see the results after process."
-   },
-   {
-    "start": 105.57,
-    "end": 110.45,
-    "text": "Yes, so the grades I have here in my hand are the result of a year of studying Spanish."
-   },
-   {
-    "start": 111.25,
-    "end": 125.81,
-    "text": "Now, the moment of truth can be used in many different contexts, not just exam results. Another example is that recently we've been brainstorming some ideas for a new project at work and soon we're going to present them to our boss to see if he likes any of them."
-   },
-   {
-    "start": 125.81,
-    "end": 127.97,
-    "text": "That will be the moment of truth."
-   },
-   {
-    "start": 127.97,
-    "end": 132.29,
-    "text": "Well, hopefully that goes well for you. Let's listen to more examples."
-   },
-   {
-    "start": 136.27,
-    "end": 143.23,
-    "text": "I've experimented with a new cake recipe and I'm not sure what it's going to be like but it's about to come out of the oven. This is the moment of truth."
-   },
-   {
-    "start": 144.19,
-    "end": 149.55,
-    "text": "It's the moment of truth. This panity shot will decide who will win the football match."
-   },
-   {
-    "start": 150.51,
-    "end": 157.39,
-    "text": "It's the moment of truth. I have dyed my hair and I'm about to dry it. So let's see what it looks like."
-   },
-   {
-    "start": 159.79,
-    "end": 165.14,
-    "text": "So the moment of truth is quite dramatic, isn't it?"
-   },
-   {
-    "start": 165.14,
-    "end": 170.02,
-    "text": "Yes, it is. We use it to add drama and suspense when the truth is revealed."
-   },
-   {
-    "start": 170.02,
-    "end": 174.18,
-    "text": "It has this sense that now is the time we have all been waiting for."
-   },
-   {
-    "start": 174.42,
-    "end": 178.66,
-    "text": "Everyone's wondering, ooh, what's going to happen? It's the moment of truth."
-   },
-   {
-    "start": 178.66,
-    "end": 190.02,
-    "text": "OK, let's recap. We learnt the moment of truth, which is the moment that the results of something are revealed after a period of waiting. Join us again next time. Bye."
-   },
-   {
-    "start": 190.02,
-    "end": 190.5,
-    "text": "Bye."
-   }
-  ],
-  "addedAt": 1786169644378
- },
- {
-  "id": "bbc-tews-the-english-we-speak-a-little-something",
-  "guid": "urn:bbc:podcast:p0mq690v",
-  "source": "BBC The English We Speak",
-  "title": "The English We Speak: A little something",
-  "level": 1,
-  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0mq66g9.mp3",
-  "sentences": [
-   {
-    "start": 31.6,
-    "end": 45.84,
-    "text": "Hello, and welcome to The English We Speak, where we explain phrases and expressions used by fluent English speakers so that you can use them too. I'm Feifei."
-   },
-   {
-    "start": 45.84,
-    "end": 49.76,
-    "text": "And I'm Phil. Merry Christmas, Feifei. I got you a little something."
-   },
-   {
-    "start": 49.76,
-    "end": 54.8,
-    "text": "Oh, thanks. Wow. It is little. Never mind."
-   },
-   {
-    "start": 54.8,
-    "end": 69.08,
-    "text": "It's just a gift card, but I thought I'd get you something as we've spent another year explaining phrases and expressions used by fluent English speakers. We use a little something to talk about small presents. Yes, it doesn't have to be a Christmas present."
-   },
-   {
-    "start": 69.08,
-    "end": 79.16,
-    "text": "For example, we sometimes get people a little something for their birthday or when they leave a job, and we can bring people a little something back from a trip abroad."
-   },
-   {
-    "start": 79.16,
-    "end": 91.16,
-    "text": "Sometimes a little something really is just a small present. However, in English, especially British English, we often like to make things sound less significant than they really are."
-   },
-   {
-    "start": 91.16,
-    "end": 96.52,
-    "text": "And so sometimes what we call a little something isn't that little."
-   },
-   {
-    "start": 96.52,
-    "end": 102.28,
-    "text": "No. So sometimes people can feel embarrassed about giving or receiving a large present."
-   },
-   {
-    "start": 102.28,
-    "end": 106.68,
-    "text": "So we might call it a little something to make it feel less awkward."
-   },
-   {
-    "start": 106.68,
-    "end": 110.52,
-    "text": "Let's hear some examples of people talking about a little something."
-   },
-   {
-    "start": 114.01,
-    "end": 138.01,
-    "text": "So my friend has just had a baby, and she said to not bring any presents, but I took her a little something just because I thought I'm not going to go and not take a present for the baby. Hi, thanks for coming to my party. I've just got a little something over here in case you get a bit hungry. My best friend said that he would give me a little something for my birthday, and I'm very excited about it."
-   },
-   {
-    "start": 138.01,
-    "end": 146.7,
-    "text": "We've been learning the expression a little something to talk about small gifts."
-   },
-   {
-    "start": 147.42,
-    "end": 153.5,
-    "text": "As we said before, sometimes a little something doesn't actually mean something that little."
-   },
-   {
-    "start": 153.5,
-    "end": 163.98,
-    "text": "We just want to make things less awkward. Linked to this is the fact that we often use the adverb just with it. We just got you a little something."
-   },
-   {
-    "start": 163.98,
-    "end": 167.82,
-    "text": "Or it's just a little something, but we hope you like it."
-   },
-   {
-    "start": 168.46,
-    "end": 173.82,
-    "text": "That's it for this programme. Think of it as a little something from us to help your English."
-   },
-   {
-    "start": 173.82,
-    "end": 179.9,
-    "text": "That's right, and we'll have another little something for you next time. See you then. Bye!"
-   },
-   {
-    "start": 179.9,
-    "end": 203.1,
-    "text": "Bye! learning English from the news in your podcast app or visit bbclearningenglish.com"
-   }
-  ],
-  "addedAt": 1786169613952
- },
- {
-  "id": "bbc-tews-the-english-we-speak-passing-ships",
-  "guid": "urn:bbc:podcast:p0ny1qsl",
-  "source": "BBC The English We Speak",
-  "title": "The English We Speak: Passing Ships",
-  "level": 1,
-  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0ny1pmb.mp3",
-  "sentences": [
-   {
-    "start": 31.6,
-    "end": 47.06,
-    "text": "Hello and welcome to The English We Speak where we explain words and expressions used by fluent English speakers so that you can use them too. I'm Feifei and I'm joined by Georgie. How are you?"
-   },
-   {
-    "start": 47.06,
-    "end": 49.14,
-    "text": "I'm very well thank you Feifei. How are you?"
-   },
-   {
-    "start": 49.14,
-    "end": 54.02,
-    "text": "I'm very well. Thank you Georgie. I haven't seen you much lately. What's going on?"
-   },
-   {
-    "start": 54.02,
-    "end": 57.14,
-    "text": "I know. I think our schedules are quite different at the moment."
-   },
-   {
-    "start": 57.14,
-    "end": 71.38,
-    "text": "Whenever I'm at my desk you seem to be in meetings and then when you're back at your desk I'm doing something else somewhere else in the office building. We're like passing ships at the moment. Passing ships. That's the expression we're learning in this programme."
-   },
-   {
-    "start": 71.38,
-    "end": 75.38,
-    "text": "The longer version is like ships that pass in the night."
-   },
-   {
-    "start": 75.38,
-    "end": 89.22,
-    "text": "Yes so let's actually imagine that. Two ships at night. They briefly see each other in the darkness and then they continue in different directions. The encounter is brief and the people on board the ships probably don't have time to speak to each other."
-   },
-   {
-    "start": 89.22,
-    "end": 99.22,
-    "text": "Right. So recently our schedules are different. So we're not seeing each other very much and when we do the interaction is very short. We're like passing ships."
-   },
-   {
-    "start": 99.22,
-    "end": 102.5,
-    "text": "Yeah. Hopefully our schedules line up a bit soon so we can catch up."
-   },
-   {
-    "start": 103.22,
-    "end": 113.54,
-    "text": "Passing ships is often used to talk about busy adult life when two people are finding it hard to meet. That's right. Let's hear some more examples from our BBC Learning English colleagues."
-   },
-   {
-    "start": 114.34,
-    "end": 126.1,
-    "text": "I really need to meet up properly with my neighbour and have dinner. We talk a lot over the fence but we never have time. It's like we're passing ships."
-   },
-   {
-    "start": 127.14,
-    "end": 193.71,
-    "text": "My brothers and sister always seem to visit my town when I'm away so I never get to catch up with them. We're like passing ships. I've got a colleague I get on with really well but we work different shifts so we're like passing ships. We only see each other for a couple of minutes every time. Now because we're comparing ourselves to passing ships we often use the word like. We're like passing ships. We can also make the metaphor stronger by removing like. We're passing ships at the moment. Yes. Now another phrase that expresses a similar idea is cross paths. Again you can imagine this literally. Two people walking on separate paths which they meet but metaphorically it means that two people's lives intersect in some way. Yeah so for example my best friend and I crossed paths at university but we didn't actually become friends until much later. Great. Now let's recap. We learned the expression passing ships which means that two people are on different schedules and are limited to brief encounters."
-   },
-   {
-    "start": 193.71,
-    "end": 196.03,
-    "text": "Thanks for joining us. Goodbye. Goodbye."
-   }
-  ],
-  "addedAt": 1786169584529
- },
- {
-  "id": "bbc-tews-the-english-we-speak-one-size-fits-all",
-  "guid": "urn:bbc:podcast:p0ny1vkp",
-  "source": "BBC The English We Speak",
-  "title": "The English We Speak: One size fits all",
-  "level": 1,
-  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0ny1t2h.mp3",
-  "sentences": [
-   {
-    "start": 31.6,
-    "end": 51.92,
-    "text": "Hello and welcome to The English We Speak where we explain phrases and expressions used by fluent English speakers so that you can use them too. I'm Feifei. And I'm Phil. Hi Feifei, I've got the new teen t-shirts. Have this one. They're one size fits all."
-   },
-   {
-    "start": 51.92,
-    "end": 57.2,
-    "text": "But this is enormous. One size fits all? I'm not sure it does."
-   },
-   {
-    "start": 57.2,
-    "end": 62.08,
-    "text": "OK, but it does help us tell people about the expression one size fits all."
-   },
-   {
-    "start": 62.08,
-    "end": 65.36,
-    "text": "It sounds like something you would use to talk about clothes."
-   },
-   {
-    "start": 65.36,
-    "end": 71.44,
-    "text": "Yes, and that's where it comes from. Clothes are sometimes sold as one size fits all."
-   },
-   {
-    "start": 71.44,
-    "end": 75.04,
-    "text": "It's sold as one size and it's supposed to fit everyone."
-   },
-   {
-    "start": 75.04,
-    "end": 84.4,
-    "text": "Well, I'm not sure it works for these t-shirts. But I can imagine it working for something like a hat. We don't just use it to talk about clothes, do we?"
-   },
-   {
-    "start": 84.4,
-    "end": 109.6,
-    "text": "No, we don't. It's become more general. One size fits all is often used to describe a way of doing something where everyone is treated in the same way. A training programme for a company might be described as one size fits all. Everyone does the same training. A one size fits all approach to problem solving means trying to solve every problem the same way."
-   },
-   {
-    "start": 109.6,
-    "end": 126.56,
-    "text": "Yes, and in the same way that one size fits all clothes don't always fit everyone, this expression is sometimes used negatively. We might describe something as one size fits all to suggest that it ignores the needs of individuals or a particular situation."
-   },
-   {
-    "start": 126.56,
-    "end": 130.4,
-    "text": "Let's hear some more people using the expression one size fits all."
-   },
-   {
-    "start": 134.19,
-    "end": 145.23,
-    "text": "Me and my cousin are such different people. I mean, I always try to find creative ways to deal with problems, but he always takes a one size fits all kind of approach."
-   },
-   {
-    "start": 145.23,
-    "end": 164.51,
-    "text": "I need to order some new computer software for the office. Everybody uses things slightly differently. They've all got different requests. But I'm hoping we can get something that's one size fits all that we can all use. When I go to the barbers, it doesn't matter what I ask for, they give me the same haircut. It's one size fits all in there."
-   },
-   {
-    "start": 165.15,
-    "end": 201.04,
-    "text": "We've been learning the expression one size fits all to describe something where people or situations are all treated the same. Yes. Other expressions that are similar are off the peg or off the shelf. They can be about clothes, meaning standard sizes that haven't been fitted or tailored. But we can now use these to talk about products or ways to solve problems. An off the shelf solution or an off the peg solution is a standard way of doing things. It hasn't been adapted to a specific situation."
-   },
-   {
-    "start": 201.04,
-    "end": 213.92,
-    "text": "OK. That's it for this programme, but join us next time. We have lots of different ways to help you learn English because when it comes to learning a language, one size doesn't fit all. See you next time."
-   },
-   {
-    "start": 213.92,
-    "end": 214.56,
-    "text": "Bye bye."
-   }
-  ],
-  "addedAt": 1786169550131
- },
- {
-  "id": "bbc-6min-are-saunas-good-for-you",
-  "guid": "urn:bbc:podcast:p0nb6y5v",
-  "source": "BBC 6 Minute English",
-  "title": "Are saunas good for you?",
-  "level": 2,
-  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0nb6w9d.mp3",
-  "sentences": [
-   {
-    "start": 65.84,
-    "end": 69.68,
-    "text": "Hello, this is 6 Minute English from BBC Learning English. I'm Neil."
-   },
-   {
-    "start": 69.68,
-    "end": 92.24,
-    "text": "And I'm Georgie. In winter, people find different ways of keeping warm, like wearing extra clothes or staying indoors. But in some countries, there's another way of keeping the cold out – going for a sauna. Yes, Nordic countries like Sweden and Finland have a long history of taking saunas, but now they're popping up in Britain too. Have you ever been for a sauna, Georgie?"
-   },
-   {
-    "start": 92.24,
-    "end": 99.52,
-    "text": "I have, yes, and if I'm honest, I'm not a huge fan – I don't really like being too hot – it's uncomfortable. What about you, Neil?"
-   },
-   {
-    "start": 99.52,
-    "end": 104.0,
-    "text": "Oh, really? I quite like a sauna – you feel really refreshed afterwards."
-   },
-   {
-    "start": 104.0,
-    "end": 121.6,
-    "text": "So, what is a sauna? Well, a typical sauna is a small wooden room, heated with steam to around 80 degrees Celsius. It's hot enough to make anyone sweat. But are saunas good for your health as well? That's what James Gallagher wanted to find out for BBC Radio 4 programme Inside Health."
-   },
-   {
-    "start": 121.6,
-    "end": 137.12,
-    "text": "We're seeing what saunas do to the human body. They're popping up all over the country with claims that high temperatures boost your health and wellbeing. But are they all they're cracked up to be? James wants to find out if saunas are all they're cracked up to be."
-   },
-   {
-    "start": 137.12,
-    "end": 145.2,
-    "text": "He means, are they as good as people say. And that's exactly what we'll be finding out in this episode, along with some useful new words and phrases."
-   },
-   {
-    "start": 145.2,
-    "end": 153.44,
-    "text": "And remember, you can practise all the new vocabulary from this episode with the quiz and worksheet on our website, bbclearningenglish.com."
-   },
-   {
-    "start": 153.44,
-    "end": 158.72,
-    "text": "But now, I have a question for you, Georgie. The word sauna comes from the Finnish language."
-   },
-   {
-    "start": 158.72,
-    "end": 166.48,
-    "text": "But what does it mean? Does it mean a. sweat, b. hot water, or c. bathhouse?"
-   },
-   {
-    "start": 167.44,
-    "end": 170.64,
-    "text": "I'm going to guess c. bathhouse."
-   },
-   {
-    "start": 170.64,
-    "end": 173.6,
-    "text": "OK. Well, we'll find out if you're right at the end of the programme."
-   },
-   {
-    "start": 174.32,
-    "end": 178.48,
-    "text": "In recent winters, saunas have grown in popularity in the UK."
-   },
-   {
-    "start": 179.12,
-    "end": 188.16,
-    "text": "BBC reporter James Gallagher met some people going to More Arsona, a beach sauna in South Wales. He asked them why they love saunas so much."
-   },
-   {
-    "start": 191.28,
-    "end": 194.64,
-    "text": "Hello, everyone. Who loves a sauna?"
-   },
-   {
-    "start": 197.2,
-    "end": 204.32,
-    "text": "Tell me why. Oh, it's just so relaxing. It just makes you feel at ease."
-   },
-   {
-    "start": 204.32,
-    "end": 208.24,
-    "text": "It's also great for relaxing muscles if you're up tense or anything like that at all."
-   },
-   {
-    "start": 208.24,
-    "end": 218.72,
-    "text": "Yeah, I always love coming down here when I'm a bit stressed out, and by the time that I'm finished, I feel like I've completely reset. It's wonderful."
-   },
-   {
-    "start": 219.6,
-    "end": 225.52,
-    "text": "The first speaker says saunas make her feel at ease, a phrase meaning comfortable and relaxed."
-   },
-   {
-    "start": 225.52,
-    "end": 232.56,
-    "text": "And the next speaker thinks saunas are great if you feel tense, an adjective meaning worried and unable to relax."
-   },
-   {
-    "start": 232.56,
-    "end": 242.24,
-    "text": "Saunas make the final speaker feel like she's reset. You might already know the word reset to mean turning a computer off and on again when it's not working."
-   },
-   {
-    "start": 242.24,
-    "end": 249.44,
-    "text": "But used in connection with a person, reset means to start again after a rest so that you feel better about life."
-   },
-   {
-    "start": 249.44,
-    "end": 256.0,
-    "text": "So, it seems saunas do help people feel better, but is there actual medical evidence that it's good for us?"
-   },
-   {
-    "start": 256.0,
-    "end": 265.12,
-    "text": "Here's James Gallagher again, speaking with Professor Damian Bailey, an expert in human physiology for BBC Radio 4 programme Inside Health."
-   },
-   {
-    "start": 265.12,
-    "end": 270.88,
-    "text": "When we start to connect this to the arguments around health benefits, is there a health benefit to going in a sauna?"
-   },
-   {
-    "start": 270.88,
-    "end": 274.08,
-    "text": "Yeah, I mean, I looked at the research really closely."
-   },
-   {
-    "start": 274.08,
-    "end": 278.88,
-    "text": "I was fascinated by the evidence. Huge benefits. I mean, really huge benefits."
-   },
-   {
-    "start": 278.88,
-    "end": 283.92,
-    "text": "And it's cultural, of course. Five million people in Finland, 90% of them use saunas."
-   },
-   {
-    "start": 283.92,
-    "end": 292.32,
-    "text": "Maybe we should be copying what the Finns do, because there's a 40% reduction in all cause mortality with the sauna goers."
-   },
-   {
-    "start": 292.32,
-    "end": 299.12,
-    "text": "Now, this is what we would call observational data, but it's based on thousands and thousands of sauna goers."
-   },
-   {
-    "start": 299.12,
-    "end": 304.16,
-    "text": "These are observational data sets, so we really do need what we call RCTs, randomised controlled trials."
-   },
-   {
-    "start": 304.16,
-    "end": 307.84,
-    "text": "So everything, just as you've mentioned there, everything is absolutely controlled."
-   },
-   {
-    "start": 307.84,
-    "end": 312.32,
-    "text": "But we can't turn our noses up at the current data, the observational data."
-   },
-   {
-    "start": 312.32,
-    "end": 319.36,
-    "text": "Damian discusses the evidence from Finland, a country where 90% of the population are regular sauna goers."
-   },
-   {
-    "start": 319.36,
-    "end": 324.48,
-    "text": "And it's impressive, a 40% reduction in deaths from all causes."
-   },
-   {
-    "start": 324.48,
-    "end": 335.44,
-    "text": "But it's important to remember that this is based on observational data, information collected from watching people's natural behaviour, and not from controlled medical trials."
-   },
-   {
-    "start": 335.44,
-    "end": 342.48,
-    "text": "Nevertheless, this observational data is based on evidence from thousands and thousands of Finns over many years."
-   },
-   {
-    "start": 342.48,
-    "end": 345.84,
-    "text": "That's why Damian thinks we shouldn't turn our noses up at it."
-   },
-   {
-    "start": 345.84,
-    "end": 349.36,
-    "text": "We shouldn't reject it simply because we think it's not good enough for us."
-   },
-   {
-    "start": 349.92,
-    "end": 353.92,
-    "text": "Well, all this talk about saunas has made me want to give it another try."
-   },
-   {
-    "start": 353.92,
-    "end": 357.04,
-    "text": "But not before you reveal the answer to your question, Neil."
-   },
-   {
-    "start": 357.04,
-    "end": 360.32,
-    "text": "I asked you what the Finnish word sauna means."
-   },
-   {
-    "start": 360.96,
-    "end": 364.8,
-    "text": "Is it A, sweat, B, hot water, or C, bathhouse?"
-   },
-   {
-    "start": 364.8,
-    "end": 367.52,
-    "text": "And I said bathhouse, am I right?"
-   },
-   {
-    "start": 367.52,
-    "end": 369.92,
-    "text": "You are absolutely correct. Well done."
-   },
-   {
-    "start": 369.92,
-    "end": 374.18,
-    "text": "Yay! OK, let's recap the vocabulary we've learnt in this episode."
-   },
-   {
-    "start": 374.74,
-    "end": 380.02,
-    "text": "If something is not all it's cracked up to be, it isn't as good as people say."
-   },
-   {
-    "start": 380.02,
-    "end": 388.26,
-    "text": "When someone's at ease, they feel comfortable and unstressed, whereas a tense person is worried and unable to relax."
-   },
-   {
-    "start": 388.26,
-    "end": 393.7,
-    "text": "When someone resets, they start again after a rest, which has made them feel better about life."
-   },
-   {
-    "start": 393.7,
-    "end": 400.42,
-    "text": "Observational data is information collected from watching people's natural behaviour without interfering in it."
-   },
-   {
-    "start": 400.42,
-    "end": 406.34,
-    "text": "And finally, if you turn your nose up at something, you reject it because you think it's not good enough for you."
-   },
-   {
-    "start": 407.22,
-    "end": 417.22,
-    "text": "Once again, our six minutes are up, but if you want to improve your English with more trending topics and useful vocabulary, you'll find plenty on our website, bbclearningenglish.com."
-   }
-  ],
-  "addedAt": 1786169514259
- },
- {
-  "id": "bbc-6min-the-future-of-food",
-  "guid": "urn:bbc:podcast:p0nccgt3",
-  "source": "BBC 6 Minute English",
-  "title": "The future of food",
-  "level": 2,
-  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0nccg0b.mp3",
-  "sentences": [
-   {
-    "start": 62.98,
-    "end": 77.28,
-    "text": "at bbclearningenglish.com Hello. This is 6 Minute English from BBC Learning English."
-   },
-   {
-    "start": 77.28,
-    "end": 79.44,
-    "text": "I'm Neil. And I'm Pippa."
-   },
-   {
-    "start": 79.44,
-    "end": 84.08,
-    "text": "Many of us don't think twice about where the food in our kitchen comes from."
-   },
-   {
-    "start": 84.08,
-    "end": 92.96,
-    "text": "One trip to the supermarket and we can buy anything we want, whether that's fruit grown in South America, tomatoes from Spain or rice flown in from Asia."
-   },
-   {
-    "start": 93.52,
-    "end": 96.4,
-    "text": "Do you know where the food you buy comes from, Neil?"
-   },
-   {
-    "start": 96.4,
-    "end": 103.6,
-    "text": "I try to pay attention and buy stuff that's locally produced, but actually sometimes I don't really look."
-   },
-   {
-    "start": 103.6,
-    "end": 112.48,
-    "text": "How about you? I actually have a calendar on my kitchen wall which tells me which fruits and vegetables are grown at what times of year."
-   },
-   {
-    "start": 112.48,
-    "end": 117.36,
-    "text": "The reality is that the supply of fresh food to the UK is fragile."
-   },
-   {
-    "start": 117.36,
-    "end": 127.2,
-    "text": "The UK imports around 40% of its food and this supply chain can easily be disrupted by wars, shortages and increasingly by climate change."
-   },
-   {
-    "start": 127.92,
-    "end": 142.32,
-    "text": "In fact, the UK Government's Department for Environment, Food and Rural Affairs recently reported on the importance of food security, the term for having a reliable enough supply of affordable, healthy food to feed everyone."
-   },
-   {
-    "start": 142.32,
-    "end": 148.24,
-    "text": "In this episode, we'll be investigating the issues affecting food production in the UK."
-   },
-   {
-    "start": 148.24,
-    "end": 158.72,
-    "text": "As usual, we'll learn some useful new vocabulary and remember there's a quiz, worksheet and transcript of this episode on our website bbclearningenglish.com."
-   },
-   {
-    "start": 158.72,
-    "end": 162.4,
-    "text": "But first, of course, Pippa, I have a quiz question for you."
-   },
-   {
-    "start": 162.4,
-    "end": 168.56,
-    "text": "I mentioned that Britain imports 40% of its food from other producers, mostly in Europe."
-   },
-   {
-    "start": 168.56,
-    "end": 173.12,
-    "text": "But which European country does the UK import the most food from?"
-   },
-   {
-    "start": 173.12,
-    "end": 176.96,
-    "text": "Is it a. France, b. The Netherlands or c. Ireland?"
-   },
-   {
-    "start": 177.52,
-    "end": 185.2,
-    "text": "Hmm, I've seen the Netherlands on a lot of food packaging in the UK, so I'm going to say b. The Netherlands."
-   },
-   {
-    "start": 185.2,
-    "end": 188.32,
-    "text": "OK, well, we'll find out if you're right later in the programme."
-   },
-   {
-    "start": 189.04,
-    "end": 195.12,
-    "text": "According to the UK Government's recent report, there are many issues affecting Britain's food supply."
-   },
-   {
-    "start": 195.12,
-    "end": 198.16,
-    "text": "Geopolitical conflicts like those in Ukraine and Iran."
-   },
-   {
-    "start": 198.72,
-    "end": 200.64,
-    "text": "Droughts and water shortages."
-   },
-   {
-    "start": 200.64,
-    "end": 204.24,
-    "text": "Loss of biodiversity caused by climate change."
-   },
-   {
-    "start": 204.24,
-    "end": 206.0,
-    "text": "The list goes on and on."
-   },
-   {
-    "start": 206.0,
-    "end": 213.6,
-    "text": "Here, climate reporter Mark Pointing discusses the report's conclusions with BBC Radio 4's The Food Programme."
-   },
-   {
-    "start": 213.6,
-    "end": 224.48,
-    "text": "And it really draws on scientific research to come up with what it calls as a reasonable worst-case scenario for how biodiversity loss could affect UK security."
-   },
-   {
-    "start": 224.48,
-    "end": 227.12,
-    "text": "And its conclusions are really quite stark."
-   },
-   {
-    "start": 227.12,
-    "end": 235.6,
-    "text": "The first line of the report says global ecosystem degradation and collapse threatens the UK's national security."
-   },
-   {
-    "start": 235.68,
-    "end": 241.2,
-    "text": "The report describes a worst-case scenario, where Britain runs out of food."
-   },
-   {
-    "start": 241.2,
-    "end": 247.2,
-    "text": "A worst-case scenario is the worst possible thing that could happen in a particular situation."
-   },
-   {
-    "start": 247.2,
-    "end": 254.08,
-    "text": "Mark says the report's conclusions are stark, an adjective which in this case means obvious or severe."
-   },
-   {
-    "start": 254.08,
-    "end": 258.16,
-    "text": "Another problem with food security relates to climate change."
-   },
-   {
-    "start": 258.16,
-    "end": 270.0,
-    "text": "Carbon emissions from food production make up around a third of all greenhouse gases from the diesel used to drive tractors, to fertilisers, to cows and sheep producing methane."
-   },
-   {
-    "start": 270.72,
-    "end": 275.12,
-    "text": "Emma Pinchbeck is the Chief Executive of the UK's Climate Change Committee."
-   },
-   {
-    "start": 275.12,
-    "end": 279.28,
-    "text": "She spoke about this problem with BBC Radio 4's The Food Programme."
-   },
-   {
-    "start": 279.28,
-    "end": 284.72,
-    "text": "The biggest chunk of emissions from agriculture comes from simply having livestock on the land."
-   },
-   {
-    "start": 284.72,
-    "end": 287.52,
-    "text": "That's the bit of the puzzle that we need to think about going forward."
-   },
-   {
-    "start": 287.52,
-    "end": 294.56,
-    "text": "And in the way that we've thought about it, for every cow or sheep we take off the land, we put on something else."
-   },
-   {
-    "start": 294.56,
-    "end": 300.0,
-    "text": "And what that does overall is it makes farmers and landowners part of the solution to climate change, not the problem."
-   },
-   {
-    "start": 300.64,
-    "end": 307.76,
-    "text": "Livestock, that's farm animals such as cattle, sheep and pigs, contribute most of the carbon emissions from agriculture."
-   },
-   {
-    "start": 307.76,
-    "end": 317.68,
-    "text": "Moving towards a sustainable food supply involves reducing the amount of meat and dairy we eat in favour of non-animal protein, such as beans and lentils."
-   },
-   {
-    "start": 317.68,
-    "end": 323.6,
-    "text": "Encouraging farmers and consumers to move away from meat is a piece of the puzzle, according to Emma."
-   },
-   {
-    "start": 324.16,
-    "end": 332.32,
-    "text": "A piece of the puzzle means a part of the solution to a problem, in this case the twin problems of food security and climate change."
-   },
-   {
-    "start": 332.32,
-    "end": 336.72,
-    "text": "Emma says it's important to think again about how farmland is used."
-   },
-   {
-    "start": 336.72,
-    "end": 343.44,
-    "text": "For every cow or sheep taken off the land, something else, such as a fruit tree or vegetable crop, is put in its place."
-   },
-   {
-    "start": 344.16,
-    "end": 347.92,
-    "text": "That way farmers become part of the solution, not the problem."
-   },
-   {
-    "start": 347.92,
-    "end": 353.84,
-    "text": "An idiom meaning that if you are not actively trying to fix a problem, you are helping it continue."
-   },
-   {
-    "start": 353.84,
-    "end": 356.24,
-    "text": "Lots of ideas to chew over there, Neil."
-   },
-   {
-    "start": 356.24,
-    "end": 360.0,
-    "text": "But now, isn't it time you revealed the answer to your question?"
-   },
-   {
-    "start": 360.0,
-    "end": 365.68,
-    "text": "My question was, which European country does the UK import the most food from?"
-   },
-   {
-    "start": 365.68,
-    "end": 368.24,
-    "text": "And you said, be the Netherlands."
-   },
-   {
-    "start": 368.24,
-    "end": 370.8,
-    "text": "And you were absolutely correct, Pippa."
-   },
-   {
-    "start": 370.8,
-    "end": 372.0,
-    "text": "It is the Netherlands."
-   },
-   {
-    "start": 372.0,
-    "end": 378.8,
-    "text": "The UK imports £7.6 billion worth of imports, especially vegetables and dairy."
-   },
-   {
-    "start": 379.44,
-    "end": 390.24,
-    "text": "OK, let's recap the vocabulary we've learned, starting with food security – the situation where a country has a reliable enough supply of food to feed its population."
-   },
-   {
-    "start": 390.24,
-    "end": 396.72,
-    "text": "The worst-case scenario is the worst possible thing that could happen in a particular situation."
-   },
-   {
-    "start": 396.72,
-    "end": 401.84,
-    "text": "The adjective stock has several meanings, including obvious and severe."
-   },
-   {
-    "start": 401.84,
-    "end": 407.84,
-    "text": "Livestock are animals and birds that are kept on a farm, such as cows, sheep or chickens."
-   },
-   {
-    "start": 407.84,
-    "end": 412.24,
-    "text": "The phrase a piece of the puzzle means a part of the solution to a problem."
-   },
-   {
-    "start": 412.24,
-    "end": 422.08,
-    "text": "And finally, the idiom be part of the solution, not the problem, means that if you are not actively trying to fix a problem, you are helping it continue."
-   },
-   {
-    "start": 422.08,
-    "end": 424.16,
-    "text": "Once again, our six minutes are up."
-   },
-   {
-    "start": 424.16,
-    "end": 432.24,
-    "text": "But if this topic has made you hungry for more, why not check out our food topic page on our website, bbclearningenglish.com."
-   },
-   {
-    "start": 432.24,
-    "end": 433.6,
-    "text": "Bye for now. Goodbye."
-   },
-   {
-    "start": 435.28,
-    "end": 439.28,
-    "text": "That's English from bbclearningenglish.com."
-   }
-  ],
-  "addedAt": 1786169435471
- },
- {
-  "id": "bbc-6min-love-the-foods-you-hate",
-  "guid": "urn:bbc:podcast:p0ndq0lv",
-  "source": "BBC 6 Minute English",
-  "title": "Love the foods you hate",
-  "level": 2,
-  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0ndpzkz.mp3",
-  "sentences": [
-   {
-    "start": 67.1,
-    "end": 78.47,
-    "text": "Hello, this is 6 Minute English from BBC Learning English. I'm Neil."
-   },
-   {
-    "start": 78.47,
-    "end": 85.11,
-    "text": "And I'm Becca. Neil, are there any foods that you used to really hate in the past but now don't mind?"
-   },
-   {
-    "start": 85.11,
-    "end": 97.59,
-    "text": "Yes, actually. There's a Japanese food called umiboshi, which when I first tried it I really didn't like. But after a while I got used to it and actually now I really love it. How about you?"
-   },
-   {
-    "start": 97.59,
-    "end": 105.35,
-    "text": "A similar story to me with olives. I used to really hate olives but as I've grown older I've also grown to love them."
-   },
-   {
-    "start": 105.35,
-    "end": 114.75,
-    "text": "Well, in this episode we'll be learning from food experts about why there are some foods we just hate and whether it's possible to learn to love them."
-   },
-   {
-    "start": 114.75,
-    "end": 124.03,
-    "text": "Yes, and as usual you can find a transcript for this episode along with all the vocabulary and a worksheet on our website, bbclearningenglish.com."
-   },
-   {
-    "start": 124.03,
-    "end": 138.99,
-    "text": "OK, it's a question for you, Becca. What word means to have a fear of new things, such as trying new foods? Is it A, aerophobia, B, claustrophobia or C, neophobia?"
-   },
-   {
-    "start": 138.99,
-    "end": 144.67,
-    "text": "Well, Neil, I'll go for C, neophobia, because Neo sounds like noob."
-   },
-   {
-    "start": 144.67,
-    "end": 151.87,
-    "text": "That's clever thinking but let's see. Now though, back to food, some experts have said that we can teach ourselves to like new things."
-   },
-   {
-    "start": 151.87,
-    "end": 162.27,
-    "text": "Ruth Alexander asks Dr Dana Small of McGill University where our dislike of certain foods comes from in this BBC World Service programme, The Food Chain."
-   },
-   {
-    "start": 162.27,
-    "end": 168.71,
-    "text": "Are food dislikes learned or genetic, hardwired in some way?"
-   },
-   {
-    "start": 168.71,
-    "end": 234.19,
-    "text": "Both. So there's many reasons why you can dislike a food. For example, you could via genetics smell coriander or taste coriander differently. So that's genetic, but there's also a really strong learning component. Dana explains that how we taste or smell something can be different depending on our genetics. However, how we taste or smell something can also be learnt. Ruth asked if a dislike for certain food is hardwired. And Dana confirmed that this is sometimes the case. The adjective hardwired describes automatically thinking or behaving in a particular way, for instance, because it's genetic. And Dana says that you could taste food differently to others via genetics. The preposition via means by the way of or by the use of. For example, I get to work via a train. So there are lots of different reasons why we dislike some foods, but can we change that? Let's listen to dietitian Claire Thornton Wood explaining on the BBC World Service programme, The Food Chain."
-   },
-   {
-    "start": 234.19,
-    "end": 307.69,
-    "text": "One of the really good techniques that we might use is something called masking, where you dip a food that you don't like into something that you do like. For those parents who really say they like everything, we actually get chocolate covered insects. And we offer those and actually people do eat them and try them. And I think it's the concept that it's an insect, but usually they find that once they eat it, there isn't anything inherently unpleasant about it. It's a little bit like eating just a bit of crunchy chocolate. Claire uses masking. Masking is the act of stopping something from being seen. In Claire's clinic, she masks the disliked foods with something that is liked. Yes. And what parents usually find out is that the food they dislike isn't inherently bad. The adverb inherently describes something that exists in a way which is natural or essential. So insects aren't inherently unpleasant to eat. Some of us think they are because the concept of eating them could be strange to us culturally. We talked about how people sometimes fear trying new food. Claire talks about where these fears might come from."
-   },
-   {
-    "start": 307.69,
-    "end": 352.77,
-    "text": "For instance, just say that you had eaten prawns in the past and you had become unwell from eating them, you know, you'd have what you call a dodgy prawn. There's a good chance that you might actually associate that with eating the prawn and think, oh, I don't want to eat prawn again because it's going to make me unwell. So that's a sort of fear-based avoidance. Claire said that you're likely to have a fear of a food if you've had a bad experience with it. She uses the example of eating a dodgy prawn, which would make you unwell. If something is dodgy, it's generally bad or has a bad reputation. But when we talk about food, it could mean that it's undercooked, old or has been left out, therefore making you sick."
-   },
-   {
-    "start": 352.77,
-    "end": 372.65,
-    "text": "In fact, we may avoid dodgy things. To avoid is to keep away from something. So, avoidance is the act of keeping away. Now, Neil, that reminds me of the question you asked Ah, yes. I asked you what word means to have a fear of new things and you answered C – neophobia."
-   },
-   {
-    "start": 372.65,
-    "end": 376.17,
-    "text": "And Becca, I'm pleased to say your answer was correct."
-   },
-   {
-    "start": 376.17,
-    "end": 379.05,
-    "text": "So my thinking was right! That's great!"
-   },
-   {
-    "start": 379.05,
-    "end": 392.17,
-    "text": "Now let's have a recap of the language we've learnt in this episode, starting with hard-wired, which describes automatically thinking or behaving in a particular way – because of genetics, for example."
-   },
-   {
-    "start": 392.17,
-    "end": 396.33,
-    "text": "Fire is a preposition that means by way of or by use of."
-   },
-   {
-    "start": 396.33,
-    "end": 400.93,
-    "text": "We had masking – that's hiding or stopping something from being seen."
-   },
-   {
-    "start": 400.93,
-    "end": 406.43,
-    "text": "The adverb inherently describes something that exists in a way which is natural or essential."
-   },
-   {
-    "start": 406.43,
-    "end": 412.09,
-    "text": "We also had avoidance – that is the act of keeping away from something."
-   },
-   {
-    "start": 412.09,
-    "end": 417.89,
-    "text": "And finally, when we talk about food, dodgy means something that can make you unwell."
-   },
-   {
-    "start": 417.89,
-    "end": 427.53,
-    "text": "Once again, our six minutes are up, but head over to our website, bbclearningenglish.com, for a quiz and worksheet for this episode. See you there soon, but for now, it's goodbye!"
-   }
-  ],
-  "addedAt": 1786169363426
- },
- {
-  "id": "bbc-6min-why-are-we-all-so-stressed",
-  "guid": "urn:bbc:podcast:p0ng2d84",
-  "source": "BBC 6 Minute English",
-  "title": "Why are we all so stressed?",
-  "level": 2,
-  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0ng2c3n.mp3",
-  "sentences": [
-   {
-    "start": 72.16,
-    "end": 76.4,
-    "text": "Hello, this is 6 Minute English from BBC Learning English. I'm Neil."
-   },
-   {
-    "start": 76.4,
-    "end": 82.4,
-    "text": "And I'm Becca. Worrying about work or exams, war and climate change in the news?"
-   },
-   {
-    "start": 82.4,
-    "end": 87.2,
-    "text": "It's no wonder that modern life is stressful. What makes you stress, Neil?"
-   },
-   {
-    "start": 87.2,
-    "end": 94.08,
-    "text": "Good question. I think not having enough time to do something that really makes me stressed out."
-   },
-   {
-    "start": 94.08,
-    "end": 103.2,
-    "text": "How about you? When I'm trying to do something that I've never tried before and I'm not very good at it, that makes me feel really stressed."
-   },
-   {
-    "start": 104.0,
-    "end": 105.28,
-    "text": "I find that stressful too."
-   },
-   {
-    "start": 106.24,
-    "end": 109.28,
-    "text": "And how do you cope with stressful situations, Neil?"
-   },
-   {
-    "start": 109.28,
-    "end": 120.96,
-    "text": "Well, I try to slow down, pause, take a breath and think that at some point, probably later today, everything will be OK again. How about you?"
-   },
-   {
-    "start": 120.96,
-    "end": 126.4,
-    "text": "Yeah, same. But in my mind, I'm telling myself that I will be better at what I'm doing."
-   },
-   {
-    "start": 126.4,
-    "end": 127.76,
-    "text": "I just need to practise more."
-   },
-   {
-    "start": 129.2,
-    "end": 135.6,
-    "text": "Many young people who feel stressed about the modern world use the word overwhelm to describe their feelings."
-   },
-   {
-    "start": 135.6,
-    "end": 143.84,
-    "text": "And overwhelm was also the topic of a recent BBC World Service programme, What in the World? Here's Ikra Farooq and Claudia Hammond."
-   },
-   {
-    "start": 144.4,
-    "end": 149.2,
-    "text": "So overwhelm is an emotional state where you are struggling with your current situation."
-   },
-   {
-    "start": 149.2,
-    "end": 152.32,
-    "text": "So you might feel overloaded, you might feel you can't cope."
-   },
-   {
-    "start": 152.32,
-    "end": 161.44,
-    "text": "And that might be a temporary thing, hopefully, but if it's not in the longer term, if that becomes more of a kind of chronic kind of stress, then that might lead to burnout in the end."
-   },
-   {
-    "start": 162.08,
-    "end": 169.2,
-    "text": "Feeling overwhelmed and unable to cope with life can become chronic, meaning that it lasts for a long time."
-   },
-   {
-    "start": 169.2,
-    "end": 174.64,
-    "text": "Overwhelmed can lead to burnout, mental or physical exhaustion caused by working too hard."
-   },
-   {
-    "start": 175.28,
-    "end": 179.84,
-    "text": "So how can we manage the stress in our lives and feel happier and healthier?"
-   },
-   {
-    "start": 179.84,
-    "end": 184.88,
-    "text": "That's what we'll be discussing in this episode, along with some useful new words and phrases."
-   },
-   {
-    "start": 184.88,
-    "end": 190.72,
-    "text": "You'll find all the vocabulary from this episode on our website, bbclearningenglish.com."
-   }
-  ],
-  "addedAt": 1786169291181
- },
- {
-  "id": "bbc-6min-how-do-climate-scientists-make-predictions",
-  "guid": "urn:bbc:podcast:p0p2yh63",
-  "source": "BBC 6 Minute English",
-  "title": "How do climate scientists make predictions?",
-  "level": 2,
-  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0p2ygrc.mp3",
-  "sentences": [
-   {
-    "start": 63.07,
-    "end": 70.91,
-    "text": "Hello. This is 6 Minute English from BBC Learning English. I'm Phil."
-   },
-   {
-    "start": 70.91,
-    "end": 87.79,
-    "text": "And I'm Pippa. This summer is becoming one of the hottest ever, with heat waves across Europe. Here in the UK, a new record for the highest June temperature was set at a sweltering 37.7 degrees Celsius."
-   },
-   {
-    "start": 87.79,
-    "end": 92.51,
-    "text": "It seems that year after year, temperatures are going up."
-   },
-   {
-    "start": 92.51,
-    "end": 99.63,
-    "text": "In 2015, the COP21 summit agreed to limit global warming to 1.5 degrees Celsius."
-   },
-   {
-    "start": 100.19,
-    "end": 108.91,
-    "text": "But since then, research shows temperatures exceeding that, leading to warnings of catastrophic damage to Earth's life support systems."
-   },
-   {
-    "start": 109.55,
-    "end": 122.19,
-    "text": "In this episode, we'll be discussing how hot the planet could get using some useful new vocabulary. And remember, you'll find a free transcript to read along with on our website, bbclearningenglish.com."
-   }
-  ],
-  "addedAt": 1786169227076
  }
 ]

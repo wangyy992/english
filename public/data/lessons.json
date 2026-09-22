@@ -1,5 +1,979 @@
 [
  {
+  "id": "bbc-6min-how-are-influencers-affecting-politics",
+  "guid": "urn:bbc:podcast:p0mk3d0p",
+  "source": "BBC 6 Minute English",
+  "title": "How are influencers affecting politics?",
+  "level": 2,
+  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0mk3cw9.mp3",
+  "sentences": [
+   {
+    "start": 87.31,
+    "end": 103.36,
+    "text": "bbclearningenglish.com Hello! This is 6 Minute English from BBC Learning English. I'm Beth."
+   },
+   {
+    "start": 103.36,
+    "end": 113.36,
+    "text": "And I'm Pippa. Everywhere you look online, from gaming and fashion to music, travel and culture, you'll find social media influences."
+   },
+   {
+    "start": 113.36,
+    "end": 119.36,
+    "text": "These social media influences do what they're famous for, influencing and creating trends."
+   },
+   {
+    "start": 119.36,
+    "end": 122.36,
+    "text": "Do you follow any social media influences, Beth?"
+   },
+   {
+    "start": 122.36,
+    "end": 132.36,
+    "text": "I don't follow any specifically, I would say, but I do see influences on Facebook and Instagram, things like that."
+   },
+   {
+    "start": 132.36,
+    "end": 144.36,
+    "text": "Well, the most successful influencers have millions of followers and not surprisingly, this has caught the attention of another group of people trying to get their message out to the public – politicians."
+   },
+   {
+    "start": 144.36,
+    "end": 156.36,
+    "text": "Politicians using the media to win elections is nothing new, but in this episode we'll be finding out what happens when social media influences become politicians themselves."
+   },
+   {
+    "start": 156.36,
+    "end": 165.36,
+    "text": "As usual, we'll be learning some useful new words and phrases and remember there's a transcript of this episode to read along with while you listen."
+   },
+   {
+    "start": 165.36,
+    "end": 173.36,
+    "text": "It's available now on our website, bbclearningenglish.com But first I have a question for you, Beth."
+   },
+   {
+    "start": 173.36,
+    "end": 179.36,
+    "text": "The most followed Instagram account of 2025 belongs to footballer Cristiano Ronaldo."
+   },
+   {
+    "start": 179.36,
+    "end": 182.36,
+    "text": "But how many followers does he have?"
+   },
+   {
+    "start": 182.36,
+    "end": 194.36,
+    "text": "a. 6.7 million b. 67 million or c. 667 million Ooh, I'm going to go down the middle, 67 million."
+   },
+   {
+    "start": 194.36,
+    "end": 197.36,
+    "text": "Well, we'll find out the answer later in the programme."
+   },
+   {
+    "start": 197.36,
+    "end": 203.36,
+    "text": "Around the world, politicians are realising that they can reach a lot of people through social media influences."
+   },
+   {
+    "start": 203.36,
+    "end": 212.36,
+    "text": "There have even been allegations of politicians paying for the support of influencers in places like Colombia, Argentina and Indonesia."
+   },
+   {
+    "start": 212.36,
+    "end": 218.36,
+    "text": "And one place where politics has become a big topic on social media is Nigeria."
+   },
+   {
+    "start": 218.36,
+    "end": 222.36,
+    "text": "Nigeria is a country with a huge young population."
+   },
+   {
+    "start": 222.36,
+    "end": 228.36,
+    "text": "There are around 200 million people in total and 70% of them are under 30."
+   },
+   {
+    "start": 228.36,
+    "end": 234.36,
+    "text": "Many of these young voters are turned off, meaning not interested in traditional media."
+   },
+   {
+    "start": 234.36,
+    "end": 237.36,
+    "text": "But they do follow social media influences."
+   },
+   {
+    "start": 237.36,
+    "end": 242.36,
+    "text": "Adeline Okere is BBC Ebo news editor in Lagos, Nigeria."
+   },
+   {
+    "start": 242.36,
+    "end": 248.36,
+    "text": "She spoke with BBC World Service programme The Fifth Floor about the situation there."
+   },
+   {
+    "start": 249.36,
+    "end": 256.36,
+    "text": "Influencers are super important to shaping the narrative of these young people."
+   },
+   {
+    "start": 256.36,
+    "end": 260.36,
+    "text": "Some of them started, you know, activism."
+   },
+   {
+    "start": 260.36,
+    "end": 265.36,
+    "text": "Some of them started out with lifestyle and then branched into politics."
+   },
+   {
+    "start": 265.36,
+    "end": 270.36,
+    "text": "Adeline thinks influencers are super important in Nigerian politics."
+   },
+   {
+    "start": 270.36,
+    "end": 274.36,
+    "text": "She uses super to mean very extremely or more than usual."
+   },
+   {
+    "start": 274.36,
+    "end": 279.36,
+    "text": "For example, if you say you're super happy about something, you mean you're very happy about it."
+   },
+   {
+    "start": 279.36,
+    "end": 284.36,
+    "text": "In Nigeria, influencers are shaping the narrative of elections."
+   },
+   {
+    "start": 284.36,
+    "end": 290.36,
+    "text": "If someone shapes a narrative, they have a strong influence over how something is presented or understood."
+   },
+   {
+    "start": 290.36,
+    "end": 295.36,
+    "text": "Influencing things, of course, is exactly what influencers do."
+   },
+   {
+    "start": 295.36,
+    "end": 301.36,
+    "text": "But now more and more social media personalities are branching out into politics."
+   },
+   {
+    "start": 301.36,
+    "end": 308.36,
+    "text": "When you branch out, you start doing something different from what you usually do, such as a new activity or job."
+   },
+   {
+    "start": 308.36,
+    "end": 313.36,
+    "text": "So what happens when influencers become politicians themselves?"
+   },
+   {
+    "start": 313.36,
+    "end": 320.36,
+    "text": "Here, Adeline Okere explains more to Farin Akamidi, presenter of BBC World Service's The Fifth Floor."
+   },
+   {
+    "start": 320.36,
+    "end": 327.36,
+    "text": "What about in Nigeria? Is there a pushback against these influencers who got involved in promoting political parties?"
+   },
+   {
+    "start": 327.36,
+    "end": 330.36,
+    "text": "Absolutely, a huge pushback."
+   },
+   {
+    "start": 330.36,
+    "end": 338.36,
+    "text": "They will also go back and dig up information about these people from their personal lives and then publish them on social media."
+   },
+   {
+    "start": 338.36,
+    "end": 344.36,
+    "text": "In Nigeria, there was a pushback against social media influencers turned politicians."
+   },
+   {
+    "start": 344.36,
+    "end": 350.36,
+    "text": "A pushback is a negative reaction or rejection of something that has happened."
+   },
+   {
+    "start": 350.36,
+    "end": 358.36,
+    "text": "In fact, the public reaction was so bad, people started to dig up information about influencers who promote politicians."
+   },
+   {
+    "start": 358.36,
+    "end": 363.36,
+    "text": "If you dig up information about someone, you try to find details about them."
+   },
+   {
+    "start": 363.36,
+    "end": 371.36,
+    "text": "We have a similar phrase, dig up dirt on someone, which means trying to find information about someone which could damage their reputation."
+   },
+   {
+    "start": 371.36,
+    "end": 381.36,
+    "text": "So social media can be a powerful tool for politicians, but getting involved in politics doesn't always go well for social media influencers."
+   },
+   {
+    "start": 381.36,
+    "end": 386.36,
+    "text": "Okay, Pippa, isn't it time you revealed the answer to your question?"
+   },
+   {
+    "start": 386.36,
+    "end": 397.36,
+    "text": "Yes, I asked how many followers does Cristiano Ronaldo the footballer have, and the answer was C, 667 million at the time of recording."
+   },
+   {
+    "start": 397.36,
+    "end": 399.36,
+    "text": "That's a lot more than I have, Beth."
+   },
+   {
+    "start": 399.36,
+    "end": 408.36,
+    "text": "And me, wow. Okay, let's recap the vocabulary we've learned, starting with the phrasal verb, turned off, meaning uninterested."
+   },
+   {
+    "start": 408.36,
+    "end": 413.36,
+    "text": "When super is placed before an adjective, it means very or more than usual."
+   },
+   {
+    "start": 413.36,
+    "end": 420.36,
+    "text": "Social media influencers who shape the narrative have a strong influence over how something is presented or understood."
+   },
+   {
+    "start": 420.36,
+    "end": 427.36,
+    "text": "If you branch out into something new, you start doing an activity or job that is different from what you usually do."
+   },
+   {
+    "start": 427.36,
+    "end": 432.36,
+    "text": "A pushback is a negative reaction to something new that has happened."
+   },
+   {
+    "start": 432.36,
+    "end": 437.36,
+    "text": "And finally, the phrasal verb, dig up, means to try and find information."
+   },
+   {
+    "start": 437.36,
+    "end": 444.36,
+    "text": "This is often about a person and their private life in order to try and damage their reputation."
+   },
+   {
+    "start": 444.36,
+    "end": 454.36,
+    "text": "Once again, our six minutes are up, but why not head over to our website, bbclearningenglish.com, to try the quiz and worksheets for this episode."
+   }
+  ],
+  "addedAt": 1790072533670
+ },
+ {
+  "id": "bbc-6min-whats-your-favourite-flavour-of-crisp",
+  "guid": "urn:bbc:podcast:p0mljpc3",
+  "source": "BBC 6 Minute English",
+  "title": "What’s your favourite flavour of crisp?",
+  "level": 2,
+  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0mljn3d.mp3",
+  "sentences": [
+   {
+    "start": 111.41,
+    "end": 115.81,
+    "text": "Hello, this is 6 Minute English from BBC Learning English. I'm Neil."
+   },
+   {
+    "start": 115.81,
+    "end": 122.13,
+    "text": "And I'm Beth. In Britain, we call them crisps and you might know them as potato chips."
+   },
+   {
+    "start": 122.13,
+    "end": 128.85,
+    "text": "But whatever you call them, these fried potato slices are probably the world's favourite snack."
+   },
+   {
+    "start": 128.85,
+    "end": 132.37,
+    "text": "Neil, are you a big crisp eater? And what's your favourite flavour?"
+   },
+   {
+    "start": 132.37,
+    "end": 136.21,
+    "text": "I love crisps, Beth. They are my favourite snack."
+   },
+   {
+    "start": 136.21,
+    "end": 145.17,
+    "text": "My favourite flavour is prawn cocktail, which is controversial because a lot of people don't like that flavour. I think my favourite is salt and vinegar."
+   },
+   {
+    "start": 145.17,
+    "end": 146.85,
+    "text": "Yummy. You're making me hungry."
+   },
+   {
+    "start": 146.85,
+    "end": 154.61,
+    "text": "Well, crisps might be popular, but with lots of oil and salt, they're not the healthiest food. So why do we love them so much?"
+   },
+   {
+    "start": 154.61,
+    "end": 159.17,
+    "text": "That's what BBC World Service programme The Food Chain wanted to find out."
+   },
+   {
+    "start": 159.17,
+    "end": 166.37,
+    "text": "Here, presenter Ruth Alexander talks to Mitchell Dingwall, a food executive responsible for developing new crisp flavours."
+   },
+   {
+    "start": 166.93,
+    "end": 169.49,
+    "text": "Why do we love crisps so much?"
+   },
+   {
+    "start": 170.45,
+    "end": 178.37,
+    "text": "I think it's just that crunch, right? You can't beat the crunch and then that delicious salty feeling in your mouth and it just becomes a snowball effect."
+   },
+   {
+    "start": 178.37,
+    "end": 179.49,
+    "text": "You just want more of it."
+   },
+   {
+    "start": 179.49,
+    "end": 183.73,
+    "text": "For Mitchell, the best thing about crisps is the loud crunch."
+   },
+   {
+    "start": 183.73,
+    "end": 191.73,
+    "text": "He says you can't beat it, an idiom meaning something like that's the best thing and you won't find anything better."
+   },
+   {
+    "start": 191.73,
+    "end": 198.05,
+    "text": "Mitchell says once you've started eating crisps, it's hard to stop and you just want to eat more and more."
+   },
+   {
+    "start": 198.05,
+    "end": 204.45,
+    "text": "He calls this a snowball effect, a situation where doing something causes other similar things to happen."
+   },
+   {
+    "start": 204.45,
+    "end": 208.21,
+    "text": "You eat one crisp and before you know it, the whole packet's gone."
+   },
+   {
+    "start": 208.21,
+    "end": 212.93,
+    "text": "In this episode, we'll be visiting two countries in love with crisps."
+   },
+   {
+    "start": 212.93,
+    "end": 222.45,
+    "text": "And as usual, we'll be learning some useful new words and phrases, all of which you can find on our website, bbclearningenglish.com."
+   },
+   {
+    "start": 222.45,
+    "end": 224.53,
+    "text": "But first, I have a question for you, Beth."
+   },
+   {
+    "start": 225.17,
+    "end": 230.53,
+    "text": "The record for the world's largest packet of crisps was recently broken in Saudi Arabia."
+   },
+   {
+    "start": 230.53,
+    "end": 232.61,
+    "text": "But how much did the packet weigh?"
+   },
+   {
+    "start": 232.61,
+    "end": 241.09,
+    "text": "Was it a. About 1.5 tonnes, b. About 2.5 tonnes, or c. About 3.5 tonnes?"
+   },
+   {
+    "start": 241.09,
+    "end": 246.61,
+    "text": "OK, wow, they are all huge. I'm going to guess about 3.5 tonnes."
+   },
+   {
+    "start": 247.65,
+    "end": 249.97,
+    "text": "OK, we'll find out the answer later."
+   },
+   {
+    "start": 249.97,
+    "end": 257.89,
+    "text": "Let's travel first to Singapore, home of Jolene Ng, a market research analyst who specialises in salty snacks."
+   },
+   {
+    "start": 257.89,
+    "end": 262.45,
+    "text": "Here's Jolene talking with Ruth Alexander for BBC programme The Food Chain."
+   },
+   {
+    "start": 262.45,
+    "end": 266.85,
+    "text": "Is the potato chip the most popular of all salty snacks?"
+   },
+   {
+    "start": 267.65,
+    "end": 270.37,
+    "text": "It's very, very much dependent on personal preference."
+   },
+   {
+    "start": 270.37,
+    "end": 277.01,
+    "text": "But if I were to look at certain countries, you could see like in the UK, it's very much part and parcel of life."
+   },
+   {
+    "start": 277.01,
+    "end": 279.09,
+    "text": "You don't have it only during snack times."
+   },
+   {
+    "start": 279.09,
+    "end": 281.17,
+    "text": "You have it with lunch as well."
+   },
+   {
+    "start": 281.17,
+    "end": 284.93,
+    "text": "You put it, my husband's from UK and he kind of put it in his sandwich as well."
+   },
+   {
+    "start": 284.93,
+    "end": 288.77,
+    "text": "Yeah, a cheese sandwich with a crisp inside. Oh yeah, that's great."
+   },
+   {
+    "start": 288.77,
+    "end": 300.53,
+    "text": "Exactly. Jolene says the popularity of different snacks depends on personal preference, someone's subjective liking or disliking for something based on their personal opinion."
+   },
+   {
+    "start": 301.17,
+    "end": 304.85,
+    "text": "In some places, crisps are part and parcel of everyday life."
+   },
+   {
+    "start": 305.41,
+    "end": 309.89,
+    "text": "Part and parcel means to be an essential element or feature of something."
+   },
+   {
+    "start": 309.89,
+    "end": 314.45,
+    "text": "In Britain, crisps are so essential that people even eat crisp sandwiches."
+   },
+   {
+    "start": 314.45,
+    "end": 318.05,
+    "text": "But not everywhere is so in love with potato chips."
+   },
+   {
+    "start": 318.69,
+    "end": 322.45,
+    "text": "Let's meet Jenny Martinez, a food blogger from Mexico."
+   },
+   {
+    "start": 323.01,
+    "end": 333.57,
+    "text": "In Mexico, tortilla corn chips are eaten instead of potato chips and it's common to see street vendors selling bags of corn tortillas filled with different sources."
+   },
+   {
+    "start": 334.29,
+    "end": 340.05,
+    "text": "Here, Jenny tells Ruth Alexander Moore for BBC World Service programme The Food Chain."
+   },
+   {
+    "start": 340.05,
+    "end": 344.61,
+    "text": "For you, which is your go-to snack, the tortilla chip or the potato chip?"
+   },
+   {
+    "start": 344.61,
+    "end": 346.05,
+    "text": "Definitely the tortilla chip."
+   },
+   {
+    "start": 346.05,
+    "end": 361.01,
+    "text": "Why? Because you could do so many things, dip it in almost everything, adding some guacamole, spicy salsa or just sour cream with a mixture of chipotle sauce."
+   },
+   {
+    "start": 361.09,
+    "end": 365.17,
+    "text": "Ruth asks if tortillas are Jenny's go-to snack."
+   },
+   {
+    "start": 365.17,
+    "end": 372.61,
+    "text": "You can use the phrase go-to to describe something which is relied upon to be the best thing for a particular purpose."
+   },
+   {
+    "start": 372.61,
+    "end": 378.21,
+    "text": "For example, for a lot of people, Wikipedia is the go-to website for online information."
+   },
+   {
+    "start": 378.21,
+    "end": 390.93,
+    "text": "And Jenny thinks corn tortillas are especially good with guacamole, a paste made of mashed avocado, which sounds delicious, and maybe a little healthier than a British crisp sandwich."
+   },
+   {
+    "start": 391.57,
+    "end": 394.77,
+    "text": "Speaking of which, what was the answer to your question, Neil?"
+   },
+   {
+    "start": 394.77,
+    "end": 398.77,
+    "text": "I asked you how heavy the world's largest bag of crisps was."
+   },
+   {
+    "start": 398.77,
+    "end": 402.53,
+    "text": "And I said very heavy, over three and a half tonnes."
+   },
+   {
+    "start": 402.53,
+    "end": 404.13,
+    "text": "Well, it's not that big."
+   },
+   {
+    "start": 404.13,
+    "end": 406.21,
+    "text": "But the real answer is still enormous."
+   },
+   {
+    "start": 406.21,
+    "end": 411.73,
+    "text": "About 1.5 tonnes. The bag, made in Riyadh, was nine metres tall."
+   },
+   {
+    "start": 411.73,
+    "end": 421.81,
+    "text": "Yeah. OK, let's recap the vocabulary we've learned, starting with the phrase you can't beat that, meaning that something is the best and you won't find anything better."
+   },
+   {
+    "start": 421.81,
+    "end": 428.05,
+    "text": "A snowball effect is a situation where one action causes other similar actions to happen."
+   },
+   {
+    "start": 428.05,
+    "end": 435.09,
+    "text": "Someone's personal preference is their subjective liking or disliking for something based on their own opinion."
+   },
+   {
+    "start": 435.09,
+    "end": 440.93,
+    "text": "To be part and parcel of something means to be an essential or integral feature of it."
+   },
+   {
+    "start": 440.93,
+    "end": 447.81,
+    "text": "And something which is described as the go-to can be relied upon as the best thing for a particular situation."
+   },
+   {
+    "start": 447.81,
+    "end": 453.65,
+    "text": "And finally, guacamole is a paste made of mashed avocado, lime juice and salt."
+   },
+   {
+    "start": 453.65,
+    "end": 456.93,
+    "text": "Delicious. Once again, our six minutes are up."
+   },
+   {
+    "start": 456.93,
+    "end": 466.61,
+    "text": "But if you're hungry for more, then head over to our website, bbclearningenglish.com, where you'll find a worksheet and quiz for this episode."
+   },
+   {
+    "start": 466.61,
+    "end": 469.01,
+    "text": "See you again soon, but for now, goodbye."
+   },
+   {
+    "start": 469.01,
+    "end": 474.93,
+    "text": "Goodbye. Six minutes English from bbclearningenglish.com."
+   }
+  ],
+  "addedAt": 1790072374978
+ },
+ {
+  "id": "bbc-6min-stress-free-family-meals",
+  "guid": "urn:bbc:podcast:p0ntzwl0",
+  "source": "BBC 6 Minute English",
+  "title": "Stress-free family meals",
+  "level": 2,
+  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0ntzw6q.mp3",
+  "sentences": [
+   {
+    "start": 114.29,
+    "end": 118.37,
+    "text": "Hello, this is 6 Minute English from BBC Learning English. I'm Neil."
+   },
+   {
+    "start": 118.37,
+    "end": 136.13,
+    "text": "And I'm Georgie. Some kids hate eating broccoli. For others, it's mushrooms. And worst of all, of course, are Brussels sprouts. Every parent of young children knows what food they will and won't eat. What food did you dislike as a child, Georgie?"
+   },
+   {
+    "start": 137.01,
+    "end": 148.85,
+    "text": "When I was little, I used to absolutely hate nuts and avocados. But now, as an adult, I absolutely love both of those things. I'm not surprised. They're delicious."
+   },
+   {
+    "start": 148.85,
+    "end": 151.57,
+    "text": "What about you, Neil? Did you dislike any foods?"
+   },
+   {
+    "start": 151.57,
+    "end": 154.21,
+    "text": "Do you know what? I think I liked most things."
+   },
+   {
+    "start": 154.77,
+    "end": 175.65,
+    "text": "Family dinner time can be fun. A chance to reconnect, hear about everyone's day and share a meal. But when children refuse to eat the food that's been cooked, the result is often conflict rather than family fun. BBC Radio 4 programme The Food Chain asks child nutritionist and mother of two, Charlotte Stirling-Reed, whether her kids eat everything she gives them."
+   },
+   {
+    "start": 175.65,
+    "end": 188.77,
+    "text": "They definitely don't. We go through multiple periods of up and downs where their appetite is much lower and then all of a sudden it comes right back. It depends on the weather, what they've been doing that day. It can depend on their mood."
+   },
+   {
+    "start": 188.77,
+    "end": 196.29,
+    "text": "At dinner time, Charlotte's children go through ups and downs, a phrase meaning that a mixture of good and bad things happen to them."
+   },
+   {
+    "start": 196.29,
+    "end": 199.81,
+    "text": "Sometimes they eat everything happily, other times they don't."
+   },
+   {
+    "start": 200.37,
+    "end": 205.57,
+    "text": "It depends on many things, including their day, the weather and their mood."
+   },
+   {
+    "start": 205.57,
+    "end": 209.25,
+    "text": "A person's mood is the way they're feeling at a particular time."
+   },
+   {
+    "start": 209.25,
+    "end": 213.09,
+    "text": "So, how can parents make dinner time something everyone enjoys?"
+   },
+   {
+    "start": 213.09,
+    "end": 220.69,
+    "text": "In this episode, we'll be hearing from three experts on young children's eating habits and learning some useful new words and phrases too."
+   },
+   {
+    "start": 220.69,
+    "end": 228.61,
+    "text": "And remember you'll find all the vocabulary from this episode, along with a quiz and worksheet on our website, bbclearningenglish.com."
+   },
+   {
+    "start": 228.61,
+    "end": 231.49,
+    "text": "But first, of course, Georgie, I have a question for you."
+   },
+   {
+    "start": 232.37,
+    "end": 239.81,
+    "text": "Charlotte Stirling-Reed is a child nutritionist and she has some tips for stress-free family meals."
+   },
+   {
+    "start": 239.81,
+    "end": 242.85,
+    "text": "Which of these do you think she recommends?"
+   },
+   {
+    "start": 242.85,
+    "end": 247.89,
+    "text": "Is it A. Make sure your child eats five pieces of fruit and veg a day?"
+   },
+   {
+    "start": 247.89,
+    "end": 251.41,
+    "text": "B. Don't pressure your child to eat everything on the plate?"
+   },
+   {
+    "start": 251.41,
+    "end": 256.29,
+    "text": "Or C. Introduce your child to lots of new flavours quickly?"
+   },
+   {
+    "start": 256.29,
+    "end": 259.81,
+    "text": "That's quite hard. They all seem like quite good tips."
+   },
+   {
+    "start": 259.81,
+    "end": 264.37,
+    "text": "I'm going to go with C. Introduce your child to lots of new flavours quickly."
+   },
+   {
+    "start": 264.37,
+    "end": 267.73,
+    "text": "OK, we'll find out the answer later in the programme."
+   },
+   {
+    "start": 267.73,
+    "end": 271.57,
+    "text": "Dr Anne Fischl is another expert in child nutrition."
+   },
+   {
+    "start": 271.57,
+    "end": 278.05,
+    "text": "She co-founded the Family Dinner Project, an organisation promoting children's healthy eating in the US."
+   },
+   {
+    "start": 278.05,
+    "end": 286.85,
+    "text": "Here, Anne explains one reason why meal times can become stressful, to Ruth Alexander for BBC World Service programme The Food Chain."
+   },
+   {
+    "start": 286.85,
+    "end": 291.17,
+    "text": "Many parents say dinner time can become a battleground."
+   },
+   {
+    "start": 291.17,
+    "end": 296.13,
+    "text": "So why is it that what you're eating can trigger so much tension?"
+   },
+   {
+    "start": 296.13,
+    "end": 301.33,
+    "text": "I think for small children, it's one of the few areas that they have control over."
+   },
+   {
+    "start": 301.41,
+    "end": 308.77,
+    "text": "I mean, parents can cook what they want and serve it when they want, but it's up to kids to decide whether they're going to eat it."
+   },
+   {
+    "start": 308.77,
+    "end": 312.53,
+    "text": "And for young kids, that's a big deal. They have some control."
+   },
+   {
+    "start": 312.53,
+    "end": 317.41,
+    "text": "Dinner time often becomes a battleground, a place where argument or conflict happens."
+   },
+   {
+    "start": 317.41,
+    "end": 321.97,
+    "text": "Anne thinks that's because it's one of the few areas where children have control."
+   },
+   {
+    "start": 321.97,
+    "end": 328.13,
+    "text": "For kids, controlling what they're willing to eat is a big deal, something of special importance to them."
+   },
+   {
+    "start": 328.13,
+    "end": 339.73,
+    "text": "If experts like Charlotte and Anne struggle at meal times, imagine how hard it could be if your child has a food allergy, a condition where the body makes you sick after eating certain foods."
+   },
+   {
+    "start": 339.73,
+    "end": 347.97,
+    "text": "That was the experience of Sharon Wee, a food writer from Singapore, who speaks here with BBC World Service programme The Food Chain."
+   },
+   {
+    "start": 347.97,
+    "end": 353.49,
+    "text": "My daughter was born with allergies and it was quite a struggle at first."
+   },
+   {
+    "start": 353.49,
+    "end": 364.29,
+    "text": "And to be honest with you, we found the winning formula, which was rice and beans. She grew up eating rice and beans probably for the first five years of her life."
+   },
+   {
+    "start": 364.29,
+    "end": 370.29,
+    "text": "Sharon's daughter's allergies restricted what she could eat, making cooking for the whole family a struggle."
+   },
+   {
+    "start": 370.29,
+    "end": 376.21,
+    "text": "Luckily, Sharon discovered the winning formula, something her daughter could safely eat – rice and beans."
+   },
+   {
+    "start": 376.21,
+    "end": 381.17,
+    "text": "A winning formula is a method or strategy that produces successful results."
+   },
+   {
+    "start": 381.17,
+    "end": 385.73,
+    "text": "So, Georgie, how can parents help their children develop good eating habits?"
+   },
+   {
+    "start": 385.73,
+    "end": 389.17,
+    "text": "Well, there are some things that our experts all agree upon."
+   },
+   {
+    "start": 389.17,
+    "end": 396.21,
+    "text": "For one, give children a choice – for example, by offering small, healthy snacks and dips before the meal."
+   },
+   {
+    "start": 396.21,
+    "end": 404.29,
+    "text": "And most importantly of all, create a stress-free atmosphere by not pressurising kids to finish everything on their plate."
+   },
+   {
+    "start": 404.29,
+    "end": 407.33,
+    "text": "Right. Well, that also helps with your quiz question, Neil."
+   },
+   {
+    "start": 407.33,
+    "end": 410.29,
+    "text": "So why not go ahead and reveal the correct answer."
+   },
+   {
+    "start": 410.29,
+    "end": 417.41,
+    "text": "I asked you what child food nutritionist Charlotte Stirling-Reed recommends for stress-free family meals."
+   },
+   {
+    "start": 417.41,
+    "end": 421.81,
+    "text": "Yes, I said c – introduce your child to lots of new flavours quickly."
+   },
+   {
+    "start": 421.81,
+    "end": 423.65,
+    "text": "I'm afraid you were wrong, Georgie."
+   },
+   {
+    "start": 423.65,
+    "end": 428.61,
+    "text": "The answer is actually b – don't pressure your child to eat everything on the plate."
+   },
+   {
+    "start": 430.21,
+    "end": 439.01,
+    "text": "OK, let's recap the vocabulary we've learnt, starting with ups and downs – a phrase describing the mixture of good and bad things that happen to someone."
+   },
+   {
+    "start": 439.01,
+    "end": 441.89,
+    "text": "Your mood is how you feel at a particular time."
+   },
+   {
+    "start": 441.89,
+    "end": 446.69,
+    "text": "A battleground is a place or situation where argument or conflict happens."
+   },
+   {
+    "start": 446.69,
+    "end": 450.29,
+    "text": "If something is a big deal, it's of special importance to you."
+   },
+   {
+    "start": 450.29,
+    "end": 455.33,
+    "text": "A food allergy is a medical condition where certain foods make your body sick."
+   },
+   {
+    "start": 455.33,
+    "end": 461.09,
+    "text": "And finally, a winning formula is a method or strategy that produces successful results."
+   },
+   {
+    "start": 461.09,
+    "end": 462.85,
+    "text": "Once again, our six minutes are up."
+   },
+   {
+    "start": 462.85,
+    "end": 471.09,
+    "text": "But if you'd like to learn more vocabulary on the topic of food, you can head to our topic page on our website – bbclearningenglish.com."
+   }
+  ],
+  "addedAt": 1790072264067
+ },
+ {
+  "id": "bbc-6min-can-apps-teach-you-a-language",
+  "guid": "urn:bbc:podcast:p0p8w5sh",
+  "source": "BBC 6 Minute English",
+  "title": "Can apps teach you a language?",
+  "level": 2,
+  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0p8w5by.mp3",
+  "sentences": [
+   {
+    "start": 82.04,
+    "end": 98.7,
+    "text": "Or find much more at bbclearningenglish.com Hello and welcome to 6 Minute English from BBC Learning English. I'm Neil."
+   },
+   {
+    "start": 98.7,
+    "end": 104.7,
+    "text": "And I'm Pippa. Apps like Duolingo, Babble and Busu all aim to help you learn a language."
+   },
+   {
+    "start": 104.7,
+    "end": 110.7,
+    "text": "But do they really help? We'll be trying to answer that question in today's episode of 6 Minute English."
+   },
+   {
+    "start": 110.7,
+    "end": 113.7,
+    "text": "And as usual, we'll be learning some useful new vocabulary too."
+   },
+   {
+    "start": 113.7,
+    "end": 120.7,
+    "text": "Yes, and don't forget to head to our website for a transcript of this episode and a free worksheet to test what you've learnt."
+   },
+   {
+    "start": 120.7,
+    "end": 126.7,
+    "text": "It's all at bbclearningenglish.com OK, Neil. Let's start with a quiz question."
+   }
+  ],
+  "addedAt": 1790072056145
+ },
+ {
   "id": "bbc-tews-the-english-we-speak-kick-the-can-down-the-road",
   "guid": "urn:bbc:podcast:p0n6xl40",
   "source": "BBC The English We Speak",
@@ -16365,1315 +17339,6 @@
    }
   ],
   "addedAt": 1789296072005
- },
- {
-  "id": "bbc-6min-do-you-like-garlic",
-  "guid": "urn:bbc:podcast:p0mdyhc0",
-  "source": "BBC 6 Minute English",
-  "title": "Do you like garlic?",
-  "level": 2,
-  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0mdyh4m.mp3",
-  "sentences": [
-   {
-    "start": 91.18,
-    "end": 107.81,
-    "text": "bbclearningenglish.com Hello. This is 6 Minute English from BBC Learning English."
-   },
-   {
-    "start": 107.81,
-    "end": 113.25,
-    "text": "I'm Neil. And I'm Beth. It smells delicious – sizzling in oil."
-   },
-   {
-    "start": 113.25,
-    "end": 115.81,
-    "text": "And it's great for keeping vampires away."
-   },
-   {
-    "start": 115.81,
-    "end": 118.45,
-    "text": "But don't eat it on a first date."
-   },
-   {
-    "start": 118.45,
-    "end": 121.57,
-    "text": "I'm talking, of course, about garlic."
-   },
-   {
-    "start": 121.57,
-    "end": 123.09,
-    "text": "Neil, do you like garlic?"
-   },
-   {
-    "start": 123.09,
-    "end": 127.81,
-    "text": "Oh yes, I love garlic. I had a very garlicky meal last night."
-   },
-   {
-    "start": 127.81,
-    "end": 129.81,
-    "text": "Mmm, I know. I can smell it from here."
-   },
-   {
-    "start": 131.49,
-    "end": 146.85,
-    "text": "Here is Jason Chan, an Australian chef who specialises in Asian cuisine, and Paul Eric Jensen, a Danish chef living in France, talking about their love of garlic to BBC World Service programme The Food Chain."
-   },
-   {
-    "start": 146.85,
-    "end": 154.37,
-    "text": "I love garlic because it's a versatile ingredient that can be used for cooking and offers various health benefits."
-   },
-   {
-    "start": 154.37,
-    "end": 162.85,
-    "text": "We use it a lot. So, from stalks to soups and in vegetable dishes, meat dishes, there's very certain a clove of garlic in somewhere."
-   },
-   {
-    "start": 163.41,
-    "end": 166.45,
-    "text": "Yeah, it's unimaginable not using garlic."
-   },
-   {
-    "start": 166.45,
-    "end": 172.05,
-    "text": "Jason loves garlic because it's versatile, meaning it can be used in many different ways."
-   },
-   {
-    "start": 172.05,
-    "end": 179.73,
-    "text": "And Paul thinks cooking without garlic is unimaginable, meaning it's difficult to imagine because it would be so bad."
-   },
-   {
-    "start": 179.73,
-    "end": 187.57,
-    "text": "Love garlic or hate it? In this episode, we'll be finding out more about this versatile, strong-smelling food."
-   },
-   {
-    "start": 187.57,
-    "end": 191.81,
-    "text": "And, as usual, we'll be learning some useful new words and phrases as well."
-   },
-   {
-    "start": 191.81,
-    "end": 198.77,
-    "text": "And remember, you can find all the vocabulary from this episode on our website, bbclearningenglish.com."
-   },
-   {
-    "start": 198.77,
-    "end": 200.77,
-    "text": "Now, Beth, I have a question for you."
-   },
-   {
-    "start": 200.77,
-    "end": 212.93,
-    "text": "It's a little-known fact that of the 600 varieties of garlic, many grew only in the former Soviet Union and were unavailable in the West until the fall of communism in the 1990s."
-   },
-   {
-    "start": 212.93,
-    "end": 218.37,
-    "text": "So, which of the following varieties of garlic grew in the former USSR?"
-   },
-   {
-    "start": 218.37,
-    "end": 224.13,
-    "text": "Is it a. rock'n'bowl b. fire or c. resig?"
-   },
-   {
-    "start": 224.13,
-    "end": 227.41,
-    "text": "Oh, I have no idea. I'm going to guess fire."
-   },
-   {
-    "start": 227.97,
-    "end": 231.89,
-    "text": "OK. We'll find out if you're right at the end of the programme."
-   },
-   {
-    "start": 231.89,
-    "end": 234.93,
-    "text": "Garlic is much more than just a cooking ingredient."
-   },
-   {
-    "start": 234.93,
-    "end": 241.89,
-    "text": "For centuries, garlic was an important food throughout ancient Egypt, Greece and Rome, as well as India and China."
-   },
-   {
-    "start": 242.45,
-    "end": 246.61,
-    "text": "It was the Roman Empire that brought garlic to European countries like France."
-   },
-   {
-    "start": 247.17,
-    "end": 251.65,
-    "text": "And everywhere garlic grew, it was praised for its health-giving powers."
-   },
-   {
-    "start": 251.65,
-    "end": 263.57,
-    "text": "Here, BBC presenter Rummela Dasgupta asks author and garlic expert, Robin Cherry, about garlic's medicinal uses on BBC World Service's The Food Chain."
-   },
-   {
-    "start": 263.57,
-    "end": 268.21,
-    "text": "And what kind of illnesses or conditions would they have treated, for instance?"
-   },
-   {
-    "start": 268.21,
-    "end": 275.49,
-    "text": "Everything from cancer, scurvy, the plague, respiratory ailments, it was used as an aphrodisiac."
-   },
-   {
-    "start": 275.49,
-    "end": 278.53,
-    "text": "Garlic was used to treat respiratory ailments."
-   },
-   {
-    "start": 278.53,
-    "end": 285.65,
-    "text": "An ailment is another word for an illness or minor health problem, so a respiratory ailment is an illness of the lungs."
-   },
-   {
-    "start": 286.21,
-    "end": 293.89,
-    "text": "In ancient Greece, garlic was also used as an aphrodisiac, a food or drink believed to increase sexual desire."
-   },
-   {
-    "start": 294.45,
-    "end": 304.37,
-    "text": "But, interestingly, this was the same reason why some cultures avoided eating garlic altogether, including a religious group from India called Jains."
-   },
-   {
-    "start": 305.01,
-    "end": 313.65,
-    "text": "Yes, Jainism is an ancient Indian religion, like Hinduism and Buddhism, based on the idea of Uhimsa, or non-violence."
-   },
-   {
-    "start": 313.65,
-    "end": 320.69,
-    "text": "But unlike many Hindus and Buddhists, Jains' definition of non-violence includes plants and vegetables."
-   },
-   {
-    "start": 321.33,
-    "end": 327.65,
-    "text": "Jains don't eat garlic because uprooting the plant kills both it and the soil ecosystem it grows in."
-   },
-   {
-    "start": 327.65,
-    "end": 341.01,
-    "text": "Here's Sanal Vett, a Mumbai-based cooking show host and author of many books on Indian cuisine, explaining another reason why Jains avoid garlic to BBC World Service programme The Food Chain."
-   },
-   {
-    "start": 341.01,
-    "end": 346.61,
-    "text": "According to Hinduism also, garlic is considered a food which is called the tamsik food."
-   },
-   {
-    "start": 346.61,
-    "end": 359.25,
-    "text": "It is believed to stimulate desire, passion, aggression, and that's why they abstain from eating those kinds of food, because it is believed to impact your spiritual growth and also your mental clarity."
-   },
-   {
-    "start": 359.89,
-    "end": 362.13,
-    "text": "Jains abstain from eating garlic."
-   },
-   {
-    "start": 362.69,
-    "end": 366.85,
-    "text": "If you abstain from doing something, you choose not to do it."
-   },
-   {
-    "start": 366.85,
-    "end": 373.09,
-    "text": "For example, you might abstain from tobacco or alcohol because you know they're bad for your health."
-   },
-   {
-    "start": 373.17,
-    "end": 378.29,
-    "text": "Like the ancient Greeks, Jains believed that garlic stimulates sexual desire."
-   },
-   {
-    "start": 378.29,
-    "end": 383.17,
-    "text": "The verb to stimulate means encourage it or cause it to develop and grow."
-   },
-   {
-    "start": 383.81,
-    "end": 392.93,
-    "text": "Modern medicine has confirmed some of these ancient beliefs about the health benefits of garlic, including reduced blood pressure and better gut health."
-   },
-   {
-    "start": 392.93,
-    "end": 396.53,
-    "text": "OK, Neil, isn't it time you revealed the answer to your question?"
-   },
-   {
-    "start": 396.53,
-    "end": 401.81,
-    "text": "Yes, Beth, I asked you which variety of garlic grew in the former USSR."
-   },
-   {
-    "start": 401.81,
-    "end": 404.69,
-    "text": "And I said fire. Was I right?"
-   },
-   {
-    "start": 404.69,
-    "end": 406.77,
-    "text": "You were absolutely correct."
-   },
-   {
-    "start": 407.41,
-    "end": 414.05,
-    "text": "Fire or Georgian fire is a hot white garlic from the Republic of Georgia in the former Soviet Union."
-   },
-   {
-    "start": 414.61,
-    "end": 422.85,
-    "text": "OK, let's recap the vocabulary we've learned starting with versatile and adjective meaning to have many different purposes or uses."
-   },
-   {
-    "start": 422.85,
-    "end": 430.53,
-    "text": "The phrase it's unimaginable is used to say that something is difficult to imagine because it would be so good or so bad."
-   },
-   {
-    "start": 430.53,
-    "end": 433.33,
-    "text": "An ailment is an illness or health problem."
-   },
-   {
-    "start": 433.33,
-    "end": 438.37,
-    "text": "An aphrodisiac is a food or drink believed to increase sexual desire."
-   },
-   {
-    "start": 438.37,
-    "end": 441.65,
-    "text": "If you abstain from something, you choose not to do it."
-   },
-   {
-    "start": 441.65,
-    "end": 446.29,
-    "text": "And finally, to stimulate means to encourage something or cause it to grow."
-   },
-   {
-    "start": 446.93,
-    "end": 449.17,
-    "text": "Once again, our six minutes are up."
-   },
-   {
-    "start": 449.17,
-    "end": 459.57,
-    "text": "If you've enjoyed this episode, then head over to our website, bbclearningenglish.com, where you'll find a quiz and worksheet to practice the vocabulary you've learnt."
-   }
-  ],
-  "addedAt": 1789295893717
- },
- {
-  "id": "bbc-6min-how-important-is-play",
-  "guid": "urn:bbc:podcast:p0mg882t",
-  "source": "BBC 6 Minute English",
-  "title": "How important is play?",
-  "level": 2,
-  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0mg86hg.mp3",
-  "sentences": [
-   {
-    "start": 105.28,
-    "end": 109.6,
-    "text": "Hello. This is 6 Minute English from BBC Learning English. I'm Pippa."
-   },
-   {
-    "start": 109.6,
-    "end": 113.52,
-    "text": "And I'm Phil. What was your favourite game when you were a child, Pippa?"
-   },
-   {
-    "start": 113.52,
-    "end": 117.84,
-    "text": "I think my favourite game was skipping with a skipping rope. How about you?"
-   },
-   {
-    "start": 118.8,
-    "end": 122.48,
-    "text": "Well, I could never skip, so I think I just preferred playing football."
-   },
-   {
-    "start": 122.48,
-    "end": 124.56,
-    "text": "Ah, well, that's a good game to play in the playground."
-   },
-   {
-    "start": 125.2,
-    "end": 134.8,
-    "text": "80 years ago, it was quite common for children in Britain's cities to play in bomb sites, the ruins of houses which had been destroyed in World War II."
-   },
-   {
-    "start": 135.44,
-    "end": 144.48,
-    "text": "Today, the idea is back in fashion, with kids playing not in bomb sites, but in junk playgrounds, also called adventure playgrounds."
-   },
-   {
-    "start": 144.48,
-    "end": 154.96,
-    "text": "In contrast to pre-made playgrounds, where swings and slides are fixed in place, adventure playgrounds provide pieces of building materials for kids to build things themselves."
-   },
-   {
-    "start": 154.96,
-    "end": 163.12,
-    "text": "Reporter William Kramer went to see one such playground in Wrexham, North Wales, for BBC World Service programme People Fixing the World."
-   },
-   {
-    "start": 163.68,
-    "end": 167.12,
-    "text": "At first glance, the land is little more than a junkyard."
-   },
-   {
-    "start": 167.12,
-    "end": 171.04,
-    "text": "There are stacks of used wooden pallets and big reels for holding wires."
-   },
-   {
-    "start": 171.68,
-    "end": 177.28,
-    "text": "But if you look a little bit closer, you'll see crooked homemade structures, hidey holes and turrets."
-   },
-   {
-    "start": 178.0,
-    "end": 179.6,
-    "text": "Children run barefoot."
-   },
-   {
-    "start": 179.6,
-    "end": 183.68,
-    "text": "They swing on ropes and throw themselves down a makeshift water slide."
-   },
-   {
-    "start": 183.68,
-    "end": 186.8,
-    "text": "At first glance, William sees only junk."
-   },
-   {
-    "start": 186.8,
-    "end": 193.28,
-    "text": "The phrase, at first glance, means looking at something for the first time before having a chance to look more carefully."
-   },
-   {
-    "start": 193.28,
-    "end": 201.92,
-    "text": "Adventure playgrounds are indeed full of junk, pieces of construction material like old tyres, planks of wood and lengths of rope."
-   },
-   {
-    "start": 202.64,
-    "end": 209.28,
-    "text": "But look closely, and you'll see children using the junk to play, building dens and hidey holes."
-   },
-   {
-    "start": 209.28,
-    "end": 215.12,
-    "text": "A hidey hole is a small place for hiding things, or in this case, for children to hide themselves."
-   },
-   {
-    "start": 215.68,
-    "end": 221.2,
-    "text": "In this episode, we'll be hearing how adventure playgrounds are giving kids the freedom and space to play."
-   },
-   {
-    "start": 221.84,
-    "end": 225.28,
-    "text": "As usual, we'll be learning some useful new words and phrases."
-   },
-   {
-    "start": 225.28,
-    "end": 232.96,
-    "text": "And remember, you can find all this episode's vocabulary, along with a transcript, on our website, bbclearningenglish.com."
-   },
-   {
-    "start": 232.96,
-    "end": 235.76,
-    "text": "But now I have a question for you, Pippa."
-   },
-   {
-    "start": 235.76,
-    "end": 242.0,
-    "text": "We know that adventure playgrounds started off after the Second World War, but in which country?"
-   },
-   {
-    "start": 242.0,
-    "end": 247.12,
-    "text": "Was it… a. France b. Germany or c. Denmark?"
-   },
-   {
-    "start": 248.56,
-    "end": 250.24,
-    "text": "I think maybe France?"
-   },
-   {
-    "start": 250.24,
-    "end": 252.96,
-    "text": "I think French children maybe were very adventurous."
-   },
-   {
-    "start": 253.52,
-    "end": 257.12,
-    "text": "OK, well, we'll find out the answer to that question later in the programme."
-   },
-   {
-    "start": 257.84,
-    "end": 262.24,
-    "text": "Adventure playgrounds give kids the freedom to choose how they play."
-   },
-   {
-    "start": 262.24,
-    "end": 272.48,
-    "text": "According to child development expert Dr Anna Housley Justa, this freedom is vital, as she explains here to BBC World Services, people fixing the world."
-   },
-   {
-    "start": 273.04,
-    "end": 289.04,
-    "text": "It's true. We do tend to minimise play in certain ways, but actually, after the most basic needs are met for children, so food, shelter, water, safe place to be, play is by far the most important factor for healthy child development."
-   },
-   {
-    "start": 289.04,
-    "end": 298.72,
-    "text": "Anna thinks play is as important as a child's basic needs like food and safety, but unfortunately, the importance of play tends to be minimised."
-   },
-   {
-    "start": 298.72,
-    "end": 303.44,
-    "text": "If something tends to happen, it happens often and is likely to happen again."
-   },
-   {
-    "start": 303.44,
-    "end": 311.44,
-    "text": "Anna says that after a child's basic needs are met, play is by far the most important factor in a healthy childhood."
-   },
-   {
-    "start": 311.52,
-    "end": 316.4,
-    "text": "She uses the phrase by far to mean by a greater amount."
-   },
-   {
-    "start": 316.4,
-    "end": 320.8,
-    "text": "For example, your teacher might say you're by far the best student in class."
-   },
-   {
-    "start": 321.36,
-    "end": 326.88,
-    "text": "The freedom to take controlled risks in a safe environment is what Anna calls self-directed play."
-   },
-   {
-    "start": 327.44,
-    "end": 332.72,
-    "text": "Here she explains more to Myra Anoubi, presenter of BBC programme People Fixing the World."
-   },
-   {
-    "start": 333.44,
-    "end": 340.16,
-    "text": "So what you're saying is letting kids play, free play actually, or play on their own and kind of come up with the ideas."
-   },
-   {
-    "start": 340.16,
-    "end": 342.4,
-    "text": "That's really crucial for their development."
-   },
-   {
-    "start": 342.4,
-    "end": 345.12,
-    "text": "It's 100% crucial for their development."
-   },
-   {
-    "start": 345.12,
-    "end": 354.08,
-    "text": "In what I meant when I said that it's protective is that kids build resiliency, confidence, coping strategies, regulation strategies."
-   },
-   {
-    "start": 354.08,
-    "end": 360.0,
-    "text": "So many of the skills that we know lead to healthy human development are developed in play."
-   },
-   {
-    "start": 360.64,
-    "end": 368.08,
-    "text": "Myra mentions the importance of free play, and Anna says it's 100% crucial, meaning completely."
-   },
-   {
-    "start": 369.04,
-    "end": 375.68,
-    "text": "You can also say 100% as an informal response to mean, yes, I agree with you completely."
-   },
-   {
-    "start": 375.68,
-    "end": 378.56,
-    "text": "Adventure playgrounds have lots of small dangers."
-   },
-   {
-    "start": 378.56,
-    "end": 381.92,
-    "text": "Hard pieces of wood, sharp metal, nails."
-   },
-   {
-    "start": 381.92,
-    "end": 393.6,
-    "text": "According to Anna, taking small risks when playing with these makes kids more resilient and builds coping strategies, a term for the psychological ways children develop to manage challenging situations."
-   },
-   {
-    "start": 393.6,
-    "end": 396.88,
-    "text": "And Phil, I think it's time for the answer to your quiz question."
-   },
-   {
-    "start": 396.88,
-    "end": 400.88,
-    "text": "Yes, I asked you in which country adventure playgrounds started."
-   },
-   {
-    "start": 401.92,
-    "end": 405.68,
-    "text": "You said France, but I'm afraid the correct answer was Denmark."
-   },
-   {
-    "start": 405.68,
-    "end": 409.36,
-    "text": "They were introduced by Danish architect Carl Theodor Sorensen."
-   },
-   {
-    "start": 410.4,
-    "end": 421.2,
-    "text": "Okay, let's recap the vocabulary we've learned, starting with the phrase at first glance, where you see something quickly without a chance to consider it more carefully."
-   },
-   {
-    "start": 421.2,
-    "end": 426.0,
-    "text": "A hidey hole is a small place for hiding things in, or hiding yourself in."
-   },
-   {
-    "start": 426.0,
-    "end": 432.16,
-    "text": "If people tend to do something, they do it often and will probably continue to do it in the future."
-   },
-   {
-    "start": 432.16,
-    "end": 435.04,
-    "text": "The phrase by far means by a great amount."
-   },
-   {
-    "start": 435.92,
-    "end": 443.68,
-    "text": "Saying 100% means completely and can be used to emphasise a statement or show that you totally agree with it."
-   },
-   {
-    "start": 443.68,
-    "end": 450.16,
-    "text": "And finally, coping strategies are psychological ways of managing your emotions in challenging situations."
-   },
-   {
-    "start": 450.16,
-    "end": 452.0,
-    "text": "Once again, our six minutes are up."
-   },
-   {
-    "start": 452.0,
-    "end": 460.64,
-    "text": "But remember, you can find many more trending topics, plus a quiz and worksheet for this episode on our website, bbclearningenglish.com."
-   }
-  ],
-  "addedAt": 1789295793115
- },
- {
-  "id": "bbc-6min-how-advertisers-make-us-spend-money",
-  "guid": "urn:bbc:podcast:p0nrcjdn",
-  "source": "BBC 6 Minute English",
-  "title": "How advertisers make us spend money",
-  "level": 2,
-  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0nrcdc1.mp3",
-  "sentences": [
-   {
-    "start": 95.41,
-    "end": 99.25,
-    "text": "Hello. This is 6 Minute English from BBC Learning English."
-   },
-   {
-    "start": 99.25,
-    "end": 101.65,
-    "text": "I'm Pippa. And I'm Phil."
-   },
-   {
-    "start": 101.65,
-    "end": 103.57,
-    "text": "What's the last thing you bought?"
-   },
-   {
-    "start": 103.57,
-    "end": 105.01,
-    "text": "And why did you buy it?"
-   },
-   {
-    "start": 106.29,
-    "end": 114.29,
-    "text": "I bought a new pair of headphones recently because my old ones broke and I did lots of research to try and find a good pair."
-   },
-   {
-    "start": 114.29,
-    "end": 118.29,
-    "text": "How about you? I bought a soft drink on the way to work this morning."
-   },
-   {
-    "start": 119.01,
-    "end": 123.01,
-    "text": "It might be because I saw someone I like promoting it in an advert."
-   },
-   {
-    "start": 123.01,
-    "end": 125.57,
-    "text": "We call this a celebrity endorsement."
-   },
-   {
-    "start": 125.57,
-    "end": 127.01,
-    "text": "But why do they work?"
-   },
-   {
-    "start": 127.57,
-    "end": 135.17,
-    "text": "Let's start by hearing from Ben Jones, a behavioural research expert speaking to BBC World Service programme Business Daily."
-   },
-   {
-    "start": 135.17,
-    "end": 136.93,
-    "text": "When we're unsure, we don't know what to do."
-   },
-   {
-    "start": 136.93,
-    "end": 141.57,
-    "text": "It's kind of easy to follow the lead of those who we think are credible or knowledgeable."
-   },
-   {
-    "start": 141.57,
-    "end": 142.69,
-    "text": "It's a mental shortcut."
-   },
-   {
-    "start": 142.69,
-    "end": 146.93,
-    "text": "It's something that helps us navigate uncertain times or make quick choices."
-   },
-   {
-    "start": 147.65,
-    "end": 149.33,
-    "text": "We start doing that from an early age."
-   },
-   {
-    "start": 149.33,
-    "end": 150.77,
-    "text": "We've got our parents for some people."
-   },
-   {
-    "start": 150.77,
-    "end": 152.05,
-    "text": "We've got our teachers."
-   },
-   {
-    "start": 152.29,
-    "end": 155.01,
-    "text": "These people help us learn and make sense of the world."
-   },
-   {
-    "start": 155.01,
-    "end": 163.01,
-    "text": "And some businesses can draw on this through things like endorsements, dentists recommending toothpaste, athletes endorsing sportswear."
-   },
-   {
-    "start": 163.01,
-    "end": 166.61,
-    "text": "Ben says that endorsements work as a mental shortcut."
-   },
-   {
-    "start": 166.61,
-    "end": 169.49,
-    "text": "This is something that helps us make a decision quickly."
-   },
-   {
-    "start": 169.49,
-    "end": 173.25,
-    "text": "If we trust the endorsement, then we don't need to think about it that much."
-   },
-   {
-    "start": 173.25,
-    "end": 178.29,
-    "text": "In this episode, we're going to look at the way that people can be convinced to do things."
-   },
-   {
-    "start": 178.29,
-    "end": 188.37,
-    "text": "And as usual, we'll learn some useful new words and phrases and remember you'll find all the vocabulary and a quiz on our website, bbclearningenglish.com."
-   },
-   {
-    "start": 188.37,
-    "end": 191.49,
-    "text": "OK, but first I have a question for you, Pippa."
-   },
-   {
-    "start": 192.05,
-    "end": 195.17,
-    "text": "Today, we're talking about behavioural science."
-   },
-   {
-    "start": 195.73,
-    "end": 199.97,
-    "text": "What's the name of the theory that says people respond to small prompts?"
-   },
-   {
-    "start": 200.53,
-    "end": 206.69,
-    "text": "Is it a – push theory, b – pull theory, or c – nudge theory?"
-   },
-   {
-    "start": 207.65,
-    "end": 210.53,
-    "text": "I'm not sure. I'm going to say b – pull theory."
-   },
-   {
-    "start": 211.09,
-    "end": 214.13,
-    "text": "OK, well, we'll find out the answer at the end of the programme."
-   },
-   {
-    "start": 215.01,
-    "end": 221.09,
-    "text": "In recent years, many fast food chains have installed touchscreen machines for people to order their food."
-   },
-   {
-    "start": 221.65,
-    "end": 224.53,
-    "text": "They've reported taking more money as a result."
-   },
-   {
-    "start": 225.33,
-    "end": 228.93,
-    "text": "Could behavioural science tell us why this happens?"
-   },
-   {
-    "start": 228.93,
-    "end": 234.69,
-    "text": "Here's product designer Dean Ward speaking to BBC World Service's Business Daily."
-   },
-   {
-    "start": 234.69,
-    "end": 240.05,
-    "text": "Firstly, the psychology of speaking to someone and feeling judged, we think, is a key factor."
-   },
-   {
-    "start": 240.13,
-    "end": 241.57,
-    "text": "So would you like extra fry?"
-   },
-   {
-    "start": 241.57,
-    "end": 242.77,
-    "text": "Would you like to go large?"
-   },
-   {
-    "start": 243.41,
-    "end": 250.13,
-    "text": "Not all people, but I think there's definitely a large proportion of people who may feel judged in those instances and may say no."
-   },
-   {
-    "start": 250.13,
-    "end": 252.05,
-    "text": "There's the fact that you've got more time to look."
-   },
-   {
-    "start": 252.93,
-    "end": 254.93,
-    "text": "You can see the product. You can see what's in it."
-   },
-   {
-    "start": 254.93,
-    "end": 257.25,
-    "text": "You can see all the products linked to it as well."
-   },
-   {
-    "start": 257.25,
-    "end": 261.33,
-    "text": "And also around upsell as well, would you like to add this? Would you like to do that?"
-   },
-   {
-    "start": 261.33,
-    "end": 267.17,
-    "text": "Because you've got more time and you're not being judged, you're very much more inclined to actually say yes to these things."
-   },
-   {
-    "start": 267.17,
-    "end": 268.69,
-    "text": "And that's typically what we're seeing."
-   },
-   {
-    "start": 268.69,
-    "end": 271.25,
-    "text": "An increased basket spend of typically 25, 30%."
-   },
-   {
-    "start": 272.13,
-    "end": 276.61,
-    "text": "If people feel judged, then it means that they worry what other people will think of them."
-   },
-   {
-    "start": 276.61,
-    "end": 283.73,
-    "text": "If we have to ask a human for extra fries, we might worry what they think of us, but no one feels judged by a computer screen."
-   },
-   {
-    "start": 283.73,
-    "end": 288.05,
-    "text": "If you upsell something, then you get someone to spend more."
-   },
-   {
-    "start": 288.05,
-    "end": 294.21,
-    "text": "For example, waiters often try to get people to buy larger portions, more drinks or dessert."
-   },
-   {
-    "start": 294.21,
-    "end": 297.97,
-    "text": "Dean says that upselling can increase people's basket spend."
-   },
-   {
-    "start": 298.05,
-    "end": 304.21,
-    "text": "A basket spend is the total amount that someone spends in one transaction, on everything that's in their basket."
-   },
-   {
-    "start": 304.77,
-    "end": 313.73,
-    "text": "Now, this is an example of a business using behavioural science to nudge people to do things, but it's not just businesses that use behavioural science in this way."
-   },
-   {
-    "start": 313.73,
-    "end": 320.61,
-    "text": "In Tunisia, the United Nations World Food Programme wanted to encourage people to eat food together more often."
-   },
-   {
-    "start": 320.61,
-    "end": 323.01,
-    "text": "They made a TV show set in a restaurant."
-   },
-   {
-    "start": 323.57,
-    "end": 329.17,
-    "text": "Let's hear from Takwa Khalifi from the World Food Programme, talking to BBC World Services Business Daily."
-   },
-   {
-    "start": 356.61,
-    "end": 365.81,
-    "text": "Takwa says that they needed to think outside the box."
-   },
-   {
-    "start": 365.81,
-    "end": 370.53,
-    "text": "This means to try and think in a different way to come up with something creative."
-   },
-   {
-    "start": 370.53,
-    "end": 374.53,
-    "text": "The TV programme leads to people modelling behaviour."
-   },
-   {
-    "start": 374.53,
-    "end": 378.45,
-    "text": "If you model behaviour, then you behave in a way that other people can copy."
-   },
-   {
-    "start": 379.09,
-    "end": 382.37,
-    "text": "Now Phil, I think it's time to hear the answer to your question."
-   },
-   {
-    "start": 382.37,
-    "end": 389.33,
-    "text": "Yes, it is. I asked what theory says that people respond to small prompts to change their behaviour."
-   },
-   {
-    "start": 389.33,
-    "end": 391.33,
-    "text": "I thought it was pull theory."
-   },
-   {
-    "start": 392.13,
-    "end": 394.53,
-    "text": "Which I'm afraid was the wrong answer."
-   },
-   {
-    "start": 395.33,
-    "end": 401.09,
-    "text": "Nudge theory says that people's behaviour can be changed by small prompts or nudges."
-   },
-   {
-    "start": 401.73,
-    "end": 411.97,
-    "text": "OK, let's recap the vocabulary we've learned, starting with mental shortcut, which is something that helps us make a decision quickly, usually because we don't need to think about it."
-   },
-   {
-    "start": 412.61,
-    "end": 417.25,
-    "text": "If someone feels judged, then they're worried about what other people think about them."
-   },
-   {
-    "start": 417.81,
-    "end": 423.25,
-    "text": "Upsell refers to persuading someone to buy something extra, like a dessert at a restaurant."
-   },
-   {
-    "start": 423.89,
-    "end": 429.17,
-    "text": "Basket spend is what you spend in one transaction, on the things in your shopping basket."
-   },
-   {
-    "start": 429.81,
-    "end": 435.41,
-    "text": "If you think outside the box, then you think about something in a different way to come up with a creative solution."
-   },
-   {
-    "start": 436.13,
-    "end": 440.69,
-    "text": "And finally, modelling is behaving in a way that others can copy."
-   },
-   {
-    "start": 440.69,
-    "end": 451.09,
-    "text": "Once again, our six minutes are up, but why not head over to our website, bbclearningenglish.com, to try the quiz and worksheet for this episode."
-   }
-  ],
-  "addedAt": 1789295686505
- },
- {
-  "id": "bbc-6min-limiting-screen-time-for-children",
-  "guid": "urn:bbc:podcast:p0nsp28m",
-  "source": "BBC 6 Minute English",
-  "title": "Limiting screen time for children",
-  "level": 2,
-  "audioUrl": "https://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0nsp04k.mp3",
-  "sentences": [
-   {
-    "start": 95.44,
-    "end": 100.04,
-    "text": "Six Minute English from BBC Learning English dot com."
-   },
-   {
-    "start": 103.1,
-    "end": 106.62,
-    "text": "Hello, this is Six Minute English from BBC Learning English."
-   },
-   {
-    "start": 106.62,
-    "end": 108.3,
-    "text": "I'm Neil. And I'm Becca."
-   },
-   {
-    "start": 108.5,
-    "end": 114.46,
-    "text": "Neil, I noticed that you were checking your phone before you came into the studio to record this programme."
-   },
-   {
-    "start": 114.58,
-    "end": 116.46,
-    "text": "Yes, I probably was."
-   },
-   {
-    "start": 116.46,
-    "end": 123.74,
-    "text": "You know, Becca, I spent far too much time looking at my phone and I really don't like it. How about you?"
-   },
-   {
-    "start": 123.78,
-    "end": 125.26,
-    "text": "I don't think you're alone."
-   },
-   {
-    "start": 125.46,
-    "end": 129.02,
-    "text": "I also spend way too much time looking at my phone."
-   },
-   {
-    "start": 129.22,
-    "end": 142.78,
-    "text": "Well, Becca, we are both adults, but today we're talking about screen time and children. Screen time, that's how much time you spend using devices like smartphones, tablets and laptops."
-   },
-   {
-    "start": 142.98,
-    "end": 149.42,
-    "text": "Yes, and it's a particular worry of many parents that their children spend too much time on these devices."
-   },
-   {
-    "start": 149.82,
-    "end": 158.9,
-    "text": "At the end of last year, Australia banned access to social media apps for under 16s and countries like the UK are considering similar measures."
-   },
-   {
-    "start": 159.3,
-    "end": 173.54,
-    "text": "So why is this? In this episode, we'll hear from a clinical psychologist and research associate at the University of Cambridge talking about screen time and children. As usual, we'll be learning some useful new words and phrases."
-   },
-   {
-    "start": 173.54,
-    "end": 180.54,
-    "text": "And remember, you'll find all this episode's vocabulary along with the transcript on our website, bbclearningenglish.com."
-   },
-   {
-    "start": 180.98,
-    "end": 183.9,
-    "text": "But first, Neil, I have a question for you."
-   },
-   {
-    "start": 184.18,
-    "end": 196.66,
-    "text": "According to the UK media regulator, how many children aged three to four have a smartphone? Is it A, one in 20, B, one in 10 or C, one in five?"
-   },
-   {
-    "start": 196.78,
-    "end": 202.42,
-    "text": "Wow. Well, I'm going to guess one in 20, but I think it's probably more than that."
-   },
-   {
-    "start": 202.7,
-    "end": 204.94,
-    "text": "Well, we'll find out the answer later."
-   },
-   {
-    "start": 205.1,
-    "end": 210.14,
-    "text": "Dr. Emily Gudeka is a research associate at the University of Cambridge."
-   },
-   {
-    "start": 210.38,
-    "end": 220.3,
-    "text": "Here, she tells Shona McCollum, presenter of BBC World Service programme Tech Life, her thoughts on whether we should take away children's screen devices completely."
-   },
-   {
-    "start": 220.62,
-    "end": 230.54,
-    "text": "Yeah, I think it's not as much as getting them away from technology, but being really intentional about how we use technology with children."
-   },
-   {
-    "start": 230.58,
-    "end": 233.74,
-    "text": "For me, the bar absolutely needs to be higher."
-   },
-   {
-    "start": 234.1,
-    "end": 249.82,
-    "text": "And therefore, I think about how to design products that think about childhood first and really think about how children at different stages learn and develop and then see if there's a way that technology can enable that."
-   },
-   {
-    "start": 250.02,
-    "end": 258.3,
-    "text": "Emily highlights how, rather than stopping children from using technology, parents need to be more intentional about how their children use it."
-   },
-   {
-    "start": 258.5,
-    "end": 261.5,
-    "text": "An intention is a plan or reason to do something."
-   },
-   {
-    "start": 261.94,
-    "end": 266.14,
-    "text": "So to be intentional is to act with that plan or reason in mind."
-   },
-   {
-    "start": 266.42,
-    "end": 269.22,
-    "text": "It may make you act more carefully as a result."
-   },
-   {
-    "start": 269.5,
-    "end": 272.66,
-    "text": "Emily also says the bar needs to be higher."
-   },
-   {
-    "start": 272.86,
-    "end": 280.54,
-    "text": "The idiom the bar is low means that the standards, expectations or requirements are minimal and very easy to meet."
-   },
-   {
-    "start": 280.82,
-    "end": 283.86,
-    "text": "Therefore, she believes the bar needs to be higher."
-   },
-   {
-    "start": 284.14,
-    "end": 286.9,
-    "text": "Parents need to make their expectations higher."
-   },
-   {
-    "start": 287.14,
-    "end": 292.94,
-    "text": "They need to think or act more carefully when considering how much time children spend with technology."
-   },
-   {
-    "start": 293.26,
-    "end": 296.98,
-    "text": "You might also hear people say set the bar higher or lower."
-   },
-   {
-    "start": 297.22,
-    "end": 305.14,
-    "text": "Emily believes that being more intentional and setting the bar higher will enable children to learn and develop alongside technology."
-   },
-   {
-    "start": 305.74,
-    "end": 311.7,
-    "text": "If you enable something, you encourage somebody's ability to do something or to make something possible."
-   },
-   {
-    "start": 311.94,
-    "end": 325.1,
-    "text": "Now let's hear Dr. Becky Kennedy, a clinical psychologist and founder of an online parenting platform talking about how parents feel about tech and children for BBC World Service programme TechLife."
-   },
-   {
-    "start": 325.3,
-    "end": 338.82,
-    "text": "I find parents are very, very eager to understand what's really happening around technology and kids and then have practical, realistic things they can do in their home to make little shifts that feel better."
-   },
-   {
-    "start": 338.9,
-    "end": 344.06,
-    "text": "Becky has found that many parents are eager to understand their children's use of technology."
-   },
-   {
-    "start": 344.46,
-    "end": 349.46,
-    "text": "Eager is an adjective that describes wanting to do or have something very much."
-   },
-   {
-    "start": 349.7,
-    "end": 352.62,
-    "text": "Becky also talks about making little shifts."
-   },
-   {
-    "start": 353.02,
-    "end": 354.94,
-    "text": "A shift is a small change."
-   },
-   {
-    "start": 355.06,
-    "end": 357.42,
-    "text": "It can be used as a verb or a noun."
-   },
-   {
-    "start": 357.66,
-    "end": 365.82,
-    "text": "Becky shares an example of a shift that can help parents reduce children's screen time, moving the device somewhere it can't be seen."
-   },
-   {
-    "start": 366.02,
-    "end": 368.5,
-    "text": "You can even say to a kid, you know why I moved it?"
-   },
-   {
-    "start": 369.1,
-    "end": 375.7,
-    "text": "Actually because it's a really hard thing for me to expect from you to see a screen in a room and not want to use it."
-   },
-   {
-    "start": 375.82,
-    "end": 378.22,
-    "text": "I wasn't setting you up for success."
-   },
-   {
-    "start": 378.38,
-    "end": 384.94,
-    "text": "Becky explains how it's difficult for children to be expected to reduce their screen time if they can see their device."
-   },
-   {
-    "start": 385.26,
-    "end": 388.86,
-    "text": "Having the device in view doesn't set them up for success."
-   },
-   {
-    "start": 389.26,
-    "end": 392.58,
-    "text": "If you set someone up for something, you prepare them for it."
-   },
-   {
-    "start": 392.86,
-    "end": 400.18,
-    "text": "Yes, for example, earlier I set Neil up for a shock when I asked him a question about screen time."
-   },
-   {
-    "start": 400.42,
-    "end": 408.18,
-    "text": "Neil, I asked you, according to the UK media regulator, how many children aged 3 to 4 have a smartphone?"
-   },
-   {
-    "start": 408.46,
-    "end": 414.7,
-    "text": "And I said 1 in 20. Well, it is in fact, see, 1 in 5."
-   },
-   {
-    "start": 415.02,
-    "end": 417.3,
-    "text": "Wow, I thought it might be more than I said."
-   },
-   {
-    "start": 417.94,
-    "end": 422.18,
-    "text": "Now let's recap the vocabulary we've learned starting with intentional."
-   },
-   {
-    "start": 422.54,
-    "end": 426.7,
-    "text": "It's an adjective that describes acting with a plan or reason in mind."
-   },
-   {
-    "start": 426.98,
-    "end": 430.18,
-    "text": "We had the expression, the bar needs to be higher."
-   },
-   {
-    "start": 430.46,
-    "end": 434.14,
-    "text": "To set the bar higher is to make your expectations higher."
-   },
-   {
-    "start": 434.42,
-    "end": 440.3,
-    "text": "We also had enable. This is to encourage someone's ability to do something or to make something possible."
-   },
-   {
-    "start": 440.58,
-    "end": 444.82,
-    "text": "To be eager is to want to do or have something very much."
-   },
-   {
-    "start": 445.14,
-    "end": 446.9,
-    "text": "A shift is a small change."
-   },
-   {
-    "start": 446.94,
-    "end": 450.94,
-    "text": "You can also use it as a verb to mean changing something slightly."
-   },
-   {
-    "start": 451.26,
-    "end": 454.86,
-    "text": "And if you set someone up for something, you prepare them for it."
-   },
-   {
-    "start": 455.18,
-    "end": 457.22,
-    "text": "Once again, our six minutes are up."
-   },
-   {
-    "start": 457.46,
-    "end": 467.06,
-    "text": "If you enjoyed this episode, you'll find a quiz and a free worksheet to practise the vocabulary you've learnt on our website, bbclearningenglish.com."
-   }
-  ],
-  "addedAt": 1789295583990
  },
  {
   "id": "bbc-tews-the-english-we-speak-a-big-ask",
